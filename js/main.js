@@ -11,19 +11,20 @@ console.log(
 import { initLanguageRedirect } from 'https://tonytony-modules.netlify.app/js/initLanguageRedirect.js?v=1.0.0';
 import { InitSmoothScrollManager } from 'https://tonytony-modules.netlify.app/js/InitSmoothScrollManager.js?v=1.0.0';
 import { initNavigation } from 'https://tonytony-modules.netlify.app/js/initNavigation.js?v=1.0.0'
+
 import { initMixItUp } from 'https://tonytony-modules.netlify.app/js/initMixItUp.js?v=1.0.0';
-import { initRevealTextClaim } from 'https://tonytony-modules.netlify.app/js/initRevealTextClaim.js?v=1.0.0';
 import { initVerticalMarquees } from 'https://tonytony-modules.netlify.app/js/initVerticalMarquees.js?v=1.0.0';
 import { initFAQModule } from 'https://tonytony-modules.netlify.app/js/initFAQModule.js?v=1.0.0';
 import { initDrawCheck } from 'https://tonytony-modules.netlify.app/js/initDrawCheck.js?v=1.0.0';
+import { initRevealTextClaim } from 'https://tonytony-modules.netlify.app/js/initRevealTextClaim.js?v=1.0.0';
 
 import { initScrubOpacityIntoView } from 'https://tonytony-modules.netlify.app/js/initScrubOpacityIntoView.js?v=1.0.0';
 import { initScrubScaleIntoView } from 'https://tonytony-modules.netlify.app/js/initScrubScaleIntoView.js?v=1.0.0';
 import { initScrubUnblurIntoView } from 'https://tonytony-modules.netlify.app/js/initScrubUnblurIntoView.js?v=1.0.0';
 
-import { injectCurrentYear } from 'https://tonytony-modules.netlify.app/js/injectCurrentYear.js?v=1.0.0';
-import { initScrollProgress } from 'https://tonytony-modules.netlify.app/js/initScrollProgress.js?v=1.0.0';
 import { initCustomCursor } from 'https://tonytony-modules.netlify.app/js/initCustomCursor.js?v=1.0.0';
+import { initScrollProgress } from 'https://tonytony-modules.netlify.app/js/initScrollProgress.js?v=1.0.0';
+import { injectCurrentYear } from 'https://tonytony-modules.netlify.app/js/injectCurrentYear.js?v=1.0.0';
 
 // IIFEs
 initLanguageRedirect();
