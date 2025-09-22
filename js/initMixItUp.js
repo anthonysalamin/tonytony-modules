@@ -1,6 +1,6 @@
 /**
  * PORTFOLIO | MixItUp v.2 (ES6 Module)
- * Build: 22.09.2025 @16:58
+ * @build 22.09.25 @updated 16:58 PHT
  */
 
 export function initMixItUp(production = false) {
