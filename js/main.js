@@ -13,6 +13,7 @@ import { InitSmoothScrollManager } from 'https://tonytony-modules.netlify.app/js
 import { initNavigation } from 'https://tonytony-modules.netlify.app/js/initNavigation.js?v=1.0.0'
 import { initMixItUp } from 'https://tonytony-modules.netlify.app/js/initMixItUp.js?v=1.0.0';
 import { initRevealTextClaim } from 'https://tonytony-modules.netlify.app/js/initRevealTextClaim.js?v=1.0.0';
+import { initVerticalMarquees } from 'https://tonytony-modules.netlify.app/js/initVerticalMarquees.js?v=1.0.0';
 
 // IIFEs
 initLanguageRedirect();
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // on load
     initNavigation();
     initMixItUp();
+    initVerticalMarquees();
 
     // font-dependent
     document.fonts.ready.then(() => {
