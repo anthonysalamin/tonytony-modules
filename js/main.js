@@ -17,6 +17,7 @@ import { initVerticalMarquees } from 'https://tonytony-modules.netlify.app/js/in
 import { initFAQModule } from 'https://tonytony-modules.netlify.app/js/initFAQModule.js?v=1.0.0';
 import { initDrawCheck } from 'https://tonytony-modules.netlify.app/js/initDrawCheck.js?v=1.0.0';
 import { initScrollProgress } from 'https://tonytony-modules.netlify.app/js/initScrollProgress.js?v=1.0.0';
+import { initCustomCursor } from 'https://tonytony-modules.netlify.app/js/initCustomCursor.js?v=1.0.0';
 
 // IIFEs
 initLanguageRedirect();
@@ -34,6 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
         position: "left",
         breakpoint: 768,
         hideAtPercentage: 0.9
+    });
+    initCustomCursor({
+        BREAKPOINT: 768
     });
 
     // font-dependent
