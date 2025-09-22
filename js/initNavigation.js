@@ -1,6 +1,7 @@
 /**
  * PORTFOLIO | navigation v5
  * @build 22.09.25 @updated 16:40 PHT
+ * Toggles a mobile navigation menu with animated burger icon and disables/enables smooth scroll.
  */
 
 export function initNavigation() {
@@ -14,7 +15,7 @@ export function initNavigation() {
     const svgElement = document.querySelector(".burger-rotate");
 
     // 🔑 Access the Lenis instance (assuming it's initialized globally)
-    const lenis = window.lenis;
+    const lenis = window.lenis__pageScroll;
 
     function openMenu() {
         gsap.to(menu, { x: "0%", duration: 0.5 });

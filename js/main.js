@@ -8,19 +8,19 @@ console.log(
     "color: white; background: purple; padding: 2px 6px; border-radius: 3px;",
 );
 
-import { initLenis } from 'https://tonytony-modules.netlify.app/js/initLenis.js?v=1.0.0';
+import { InitSmoothScrollManager } from 'https://tonytony-modules.netlify.app/js/InitSmoothScrollManager.js?v=1.0.0';
 import { initNavigation } from 'https://tonytony-modules.netlify.app/js/initNavigation.js?v=1.0.0'
 import { initMixItUp } from 'https://tonytony-modules.netlify.app/js/initMixItUp.js?v=1.0.0';
 import { initRevealTextClaim } from 'https://tonytony-modules.netlify.app/js/initRevealTextClaim.js?v=1.0.0';
 
 // Initialize core functionality
 document.addEventListener("DOMContentLoaded", () => {
-    const lenis = initLenis();
 
+    // on load
     initNavigation();
     initMixItUp();
 
-    // Font-dependent animations
+    // font-dependent
     document.fonts.ready.then(() => {
         initRevealTextClaim();
         console.log(`✅ Initialized all font-dependent modules`);
@@ -30,9 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Initialize smooth scrolling after full page load
-/*
 window.addEventListener("load", () => {
     new InitSmoothScrollManager();
     console.log(`✅ Initialized all load-dependent modules`);
 });
-*/
