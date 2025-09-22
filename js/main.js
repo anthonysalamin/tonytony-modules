@@ -8,6 +8,7 @@ console.log(
     "color: white; background: purple; padding: 2px 6px; border-radius: 3px;",
 );
 
+import { initLanguageRedirect } from 'https://tonytony-modules.netlify.app/js/initLanguageRedirect.js?v=1.0.0';
 import { InitSmoothScrollManager } from 'https://tonytony-modules.netlify.app/js/InitSmoothScrollManager.js?v=1.0.0';
 import { initNavigation } from 'https://tonytony-modules.netlify.app/js/initNavigation.js?v=1.0.0'
 import { initMixItUp } from 'https://tonytony-modules.netlify.app/js/initMixItUp.js?v=1.0.0';
