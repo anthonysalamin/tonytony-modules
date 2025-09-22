@@ -8,7 +8,7 @@ console.log(
     "color: white; background: purple; padding: 2px 6px; border-radius: 3px;",
 );
 
-import { initLanguageRedirect } from 'https://tonytony-modules.netlify.app/js/header/en/initSublineAnimation.js?v=1.0.0';
+import { initSublineAnimation } from 'https://tonytony-modules.netlify.app/js/header/en/initSublineAnimation.js?v=1.0.0';
 
 // Initialize core functionality
 document.addEventListener("DOMContentLoaded", () => {
