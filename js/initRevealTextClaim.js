@@ -1,298 +1,128 @@
 /**
- * PORTFOLIO | MixItUp v.2 (ES6 Module) - REWRITTEN
- * @build 22.09.25 @updated 16:58 PHT
- * Enhanced with better ScrollTrigger integration
+ * UTILITY | initRevealTextClaim
+ * @build 11.09.25 @updated 11:12 PHT
+ * Reveals text and claims on scroll by fading characters from low-opacity to full color, with staggered animation.
  */
 
-export function initMixItUp(production = false) {
-    setDataAttribute();
-    filterChecked();
-    featToClass();
-    categToClass();
-    titleToClass();
-    mixItUp(production);
-}
+function convertToRgbaWithAlpha(colorString, alphaValue) {
+    const rgbaMatch = colorString.match(/rgba?\((\d+), (\d+), (\d+),? ?([\d\.]*)?\)/);
 
-/**
- * Clean and normalize string for CSS class names
- * Removes accents, special characters, and converts to lowercase
- */
-function cleanAndTransformString(str) {
-    const accentMap = {
-        ä: "a", Ä: "a",
-        à: "a", À: "a",
-        é: "e", É: "e",
-        è: "e", È: "e",
-        ö: "o", Ö: "o",
-        ü: "u", Ü: "u"
-    };
-
-    let cleanedString = str;
-    for (const accentChar in accentMap) {
-        const normalChar = accentMap[accentChar];
-        const accentRegex = new RegExp(accentChar, "g");
-        cleanedString = cleanedString.replace(accentRegex, normalChar);
+    if (rgbaMatch) {
+        const [, redValue, greenValue, blueValue] = rgbaMatch;
+        return `rgba(${redValue}, ${greenValue}, ${blueValue}, ${alphaValue})`;
     }
 
-    return cleanedString
-        .replace(/[^a-zA-Z0-9-]/g, "")
-        .toLowerCase();
+    return colorString;
 }
 
-/**
- * Set filter buttons with normalized data attributes
- * Converts button text content to CSS selector format
- */
-function setDataAttribute() {
-    const controls = document.getElementById("mixitup-controls");
-    if (!controls) return;
-
-    const buttons = controls.querySelectorAll('[data-filter=""]');
-    Array.from(buttons).forEach((button) => {
-        const content = button.textContent;
-        const contentCleaned = cleanAndTransformString(content);
-        button.setAttribute("data-filter", `.${contentCleaned}`);
-    });
+function getElementRealHeight(element) {
+    return element.offsetHeight;
 }
 
-/**
- * Manage button state for filter controls
- * Handles active/checked state switching
- */
-function filterChecked() {
-    const controls = document.getElementById("mixitup-controls");
-    if (!controls) return;
+function initializeTextRevealAnimation(targetConfig, animationConfig, isProduction) {
+    const targetElements = document.querySelectorAll(targetConfig.SELECTOR);
 
-    const buttons = document.getElementsByClassName("filter");
-    Array.from(buttons).forEach((button) => {
-        button.addEventListener("click", (event) => {
-            const target = event.currentTarget;
-            if (!target.classList.contains("checked")) {
-                // Remove checked from current active button
-                const currentChecked = controls.querySelector(".filter.checked");
-                if (currentChecked) {
-                    currentChecked.classList.remove("checked");
-                }
-                // Add checked to clicked button
-                target.classList.add("checked");
-            }
+    targetElements.forEach(element => {
+        // Split text into individual characters for animation
+        const splitTextInstance = new SplitText(element, {
+            type: "words,chars"
         });
-    });
-}
 
-/**
- * Convert Webflow switch "featuring" into CSS combo class
- * Adds featuring status as a class to portfolio items
- */
-function featToClass() {
-    const mixes = document.querySelectorAll(".mixitup__collection-item");
-    Array.from(mixes).forEach((mix) => {
-        const featuringElement = mix.querySelector(".mixitup__featuring");
-        if (featuringElement && !featuringElement.classList.contains("w-condition-invisible")) {
-            const stringFeat = featuringElement.textContent;
-            const classNameFeat = stringFeat.replace(/\s+/g, "").toLowerCase();
-            mix.classList.add(classNameFeat);
-        }
-    });
-}
+        // Store original colors of each character
+        const originalCharacterColors = splitTextInstance.chars.map(char =>
+            window.getComputedStyle(char).color
+        );
 
-/**
- * Convert Webflow text field "category" into CSS combo class
- * Adds category names as classes to portfolio items
- */
-function categToClass() {
-    const mixes = document.getElementsByClassName("mixitup__collection-item");
-    Array.from(mixes).forEach((mix) => {
-        const categories = mix.querySelectorAll(".mixitup__category");
-        categories.forEach((category) => {
-            const classNameCateg = cleanAndTransformString(category.textContent);
-            mix.classList.add(classNameCateg);
-        });
-    });
-}
-
-/**
- * Convert Webflow text field "title" into CSS combo class
- * Adds title as a searchable class to portfolio items
- */
-function titleToClass() {
-    const mixes = document.getElementsByClassName("mixitup__collection-item");
-    Array.from(mixes).forEach((mix) => {
-        const titleElement = mix.querySelector(".mixitup__title");
-        if (titleElement) {
-            const stringTitle = titleElement.textContent;
-            const cleanTitle = stringTitle.split(" ").join("").toLowerCase().trim();
-            mix.classList.add(cleanTitle);
-        }
-    });
-}
-
-/**
- * Refresh ScrollTrigger with proper timing
- * Ensures DOM is fully settled before refresh
- */
-function refreshScrollTrigger() {
-    // Multiple approaches for maximum reliability
-    requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-                if (typeof ScrollTrigger !== 'undefined') {
-                    ScrollTrigger.refresh();
-                }
+        // Set initial low-opacity state for all characters
+        splitTextInstance.chars.forEach((char, index) => {
+            const fadedColor = convertToRgbaWithAlpha(originalCharacterColors[index], 0.1);
+            gsap.set(char, {
+                color: fadedColor
             });
         });
+
+        // Create scroll-triggered animation to reveal characters
+        gsap.fromTo(splitTextInstance.chars,
+            {
+                // From: low opacity colors
+                color: (index) => convertToRgbaWithAlpha(originalCharacterColors[index], 0.1)
+            },
+            {
+                // To: original full opacity colors
+                color: (index) => originalCharacterColors[index],
+                duration: animationConfig.DURATION,
+                stagger: animationConfig.STAGGER,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: element,
+                    start: `${targetConfig.START.ELEMENT} ${targetConfig.START.VIEWPORT}`,
+                    end: `bottom ${targetConfig.END.VIEWPORT}`,
+                    scrub: true,
+                    markers: !isProduction, // Show markers only in development
+                    toggleActions: "play play reverse reverse"
+                }
+            }
+        );
     });
-
-    // Backup timeout method for extra reliability
-    setTimeout(() => {
-        if (typeof ScrollTrigger !== 'undefined') {
-            ScrollTrigger.refresh();
-        }
-    }, 100);
 }
 
 /**
- * Handle successful mix completion
- * Updates status and refreshes ScrollTrigger
+ * Main initialization function for text reveal animations
+ * Sets up reveal animations for both regular text and claim elements
  */
-function handleMixEnd(mixer) {
-    const totalItems = document.querySelectorAll(".mixitup__collection-item").length;
-    const filteredItems = mixer.getState().totalShow;
-    const displayElement = document.querySelector("#status");
+export function initRevealTextClaim() {
+    // Configuration object with all animation settings
+    const REVEAL_CONFIG = {
+        PRODUCTION: true,
 
-    if (displayElement) {
-        displayElement.textContent = `${filteredItems} result${filteredItems > 1 ? "s" : ""}`;
-    }
+        // Common animation properties
+        ANIMATION_SETTINGS: {
+            TYPE: "words, chars",
+            DURATION: 0.3,
+            STAGGER: 0.02
+        },
 
-    // Refresh ScrollTrigger after DOM is fully settled
-    refreshScrollTrigger();
-}
+        // Target element configurations
+        ANIMATION_TARGETS: [
+            {
+                SELECTOR: '[data-reveal="text"]',
+                START: {
+                    ELEMENT: "top",
+                    VIEWPORT: "95%"
+                },
+                END: {
+                    VIEWPORT: "92%"
+                }
+            },
+            {
+                SELECTOR: '[data-reveal="claim"]',
+                START: {
+                    ELEMENT: "top",
+                    VIEWPORT: "80%"
+                },
+                END: {
+                    VIEWPORT: "center"
+                }
+            }
+        ]
+    };
 
-/**
- * Handle mix failure
- * Shows error message and resets to show all items
- */
-function handleMixFail(mixer) {
-    const statusElement = document.querySelector("#status");
-    if (statusElement) {
-        statusElement.textContent = "No matching item to display.";
-    }
+    // Safety check: Filter out targets that don't exist in the DOM
+    const existingTargets = REVEAL_CONFIG.ANIMATION_TARGETS.filter(targetConfig =>
+        document.querySelector(targetConfig.SELECTOR)
+    );
 
-    // Reset to show all items after a brief delay
-    setTimeout(() => {
-        mixer.filter("*");
-        // Refresh ScrollTrigger after reset
-        setTimeout(() => {
-            refreshScrollTrigger();
-        }, 200);
-    }, 1000);
-}
-
-/**
- * Filter items by search string
- * Handles both search and reset functionality
- */
-function filterByString(mixer, searchValue) {
-    if (searchValue) {
-        mixer.filter(`[class*="${searchValue}"]`);
-    } else {
-        // Reset to featured items when search is cleared
-        const currentChecked = document.querySelector(".filter.checked");
-        if (currentChecked) {
-            currentChecked.classList.remove("checked");
-        }
-
-        const featuredButton = document.querySelector("[data-filter*='featuring']");
-        if (featuredButton) {
-            featuredButton.classList.add("checked");
-            mixer.filter(".featuring");
-        } else {
-            mixer.filter("*");
-        }
-    }
-
-    // Refresh ScrollTrigger after search filter
-    setTimeout(() => {
-        refreshScrollTrigger();
-    }, 500);
-}
-
-/**
- * Initialize MixItUp 3 with search module
- * Main initialization function
- */
-function mixItUp(production) {
-    const container = document.getElementById("mixitup-container");
-    const inputSearch = document.getElementById("mixitup-search");
-    const status = document.getElementById("status");
-
-    // Early return if required elements don't exist
-    if (!container) {
-        console.warn("MixItUp: Container element not found");
+    if (!existingTargets.length) {
+        console.log("Reveal animation skipped: no matching target elements found");
         return;
     }
 
-    let keyupTimeout, searchValue;
-
-    // Set initial status
-    if (!production && status) {
-        status.innerHTML = "Portfolio";
-    }
-
-    // Initialize MixItUp with enhanced configuration
-    const mixer = mixitup(container, {
-        load: {
-            filter: ".featuring"
-        },
-        selectors: {
-            target: ".mixitup__collection-item"
-        },
-        animation: {
-            duration: 450,
-            nudge: true,
-            reverseOut: true,
-            effects: "fade scale(0.77) translateZ(-68px) stagger(6ms)"
-        },
-        callbacks: {
-            onMixStart: () => {
-                if (status) {
-                    status.textContent = "Searching...";
-                }
-            },
-            onMixEnd: () => handleMixEnd(mixer),
-            onMixFail: () => handleMixFail(mixer)
-        }
+    // Initialize animations for each valid target
+    existingTargets.forEach(targetConfig => {
+        initializeTextRevealAnimation(
+            targetConfig,
+            REVEAL_CONFIG.ANIMATION_SETTINGS,
+            REVEAL_CONFIG.PRODUCTION
+        );
     });
-
-    // Set up live search functionality
-    if (inputSearch) {
-        inputSearch.addEventListener("keyup", () => {
-            searchValue = inputSearch.value.length < 1
-                ? ""
-                : inputSearch.value.toLowerCase().trim();
-
-            // Clear previous timeout
-            clearTimeout(keyupTimeout);
-
-            // Debounce search to avoid excessive filtering
-            keyupTimeout = setTimeout(() => {
-                filterByString(mixer, searchValue);
-            }, 350);
-        });
-
-        // Clear search on escape key
-        inputSearch.addEventListener("keydown", (event) => {
-            if (event.key === "Escape") {
-                inputSearch.value = "";
-                filterByString(mixer, "");
-            }
-        });
-    }
-
-    // Initial ScrollTrigger refresh after setup
-    setTimeout(() => {
-        refreshScrollTrigger();
-    }, 100);
-
-    return mixer; // Return mixer instance for external access
 }
