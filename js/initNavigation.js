@@ -14,27 +14,22 @@ export function initNavigation() {
     const links = document.querySelectorAll(`[data-id="navbar-link"]`);
     const svgElement = document.querySelector(".burger-rotate");
 
-    // 🔑 Access the Lenis instance (assuming it's initialized globally)
-    const lenis = window.lenis__pageScroll;
-
     function openMenu() {
         gsap.to(menu, { x: "0%", duration: 0.5 });
 
-        // Stop Lenis smooth scroll
+        const lenis = window.lenis__pageScroll;
         if (lenis) lenis.stop();
 
-        // Prevent native scroll
         document.body.style.overflow = "hidden";
-        document.body.style.touchAction = "none"; // stops touch scroll on mobile
+        document.body.style.touchAction = "none";
     }
 
     function closeMenu() {
         gsap.to(menu, { x: "100%", duration: 0.5 });
 
-        // Restart Lenis smooth scroll
+        const lenis = window.lenis__pageScroll;
         if (lenis) lenis.start();
 
-        // Re-enable native scroll
         document.body.style.overflow = "";
         document.body.style.touchAction = "";
     }
