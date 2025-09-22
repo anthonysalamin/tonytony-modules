@@ -19,12 +19,24 @@ export function initNavigation() {
 
     function openMenu() {
         gsap.to(menu, { x: "0%", duration: 0.5 });
-        if (lenis) lenis.stop(); // 🚫 disable scroll
+
+        // Stop Lenis smooth scroll
+        if (lenis) lenis.stop();
+
+        // Prevent native scroll
+        document.body.style.overflow = "hidden";
+        document.body.style.touchAction = "none"; // stops touch scroll on mobile
     }
 
     function closeMenu() {
         gsap.to(menu, { x: "100%", duration: 0.5 });
-        if (lenis) lenis.start(); // ✅ enable scroll
+
+        // Restart Lenis smooth scroll
+        if (lenis) lenis.start();
+
+        // Re-enable native scroll
+        document.body.style.overflow = "";
+        document.body.style.touchAction = "";
     }
 
     function handleMenuAndLinks() {
