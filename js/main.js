@@ -16,6 +16,7 @@ import { initRevealTextClaim } from 'https://tonytony-modules.netlify.app/js/ini
 import { initVerticalMarquees } from 'https://tonytony-modules.netlify.app/js/initVerticalMarquees.js?v=1.0.0';
 import { initFAQModule } from 'https://tonytony-modules.netlify.app/js/initFAQModule.js?v=1.0.0';
 import { initDrawCheck } from 'https://tonytony-modules.netlify.app/js/initDrawCheck.js?v=1.0.0';
+import { initScrollProgress } from 'https://tonytony-modules.netlify.app/js/initScrollProgress.js?v=1.0.0';
 
 // IIFEs
 initLanguageRedirect();
@@ -29,6 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
     initVerticalMarquees();
     initFAQModule();
     initDrawCheck();
+    initScrollProgress({
+        position: "left",
+        breakpoint: 768,
+        hideAtPercentage: 0.9
+    });
 
     // font-dependent
     document.fonts.ready.then(() => {
