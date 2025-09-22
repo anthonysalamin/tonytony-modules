@@ -14,6 +14,7 @@ import { initNavigation } from 'https://tonytony-modules.netlify.app/js/initNavi
 import { initMixItUp } from 'https://tonytony-modules.netlify.app/js/initMixItUp.js?v=1.0.0';
 import { initRevealTextClaim } from 'https://tonytony-modules.netlify.app/js/initRevealTextClaim.js?v=1.0.0';
 import { initVerticalMarquees } from 'https://tonytony-modules.netlify.app/js/initVerticalMarquees.js?v=1.0.0';
+import { initFAQModule } from 'https://tonytony-modules.netlify.app/js/initFAQModule.js?v=1.0.0';
 
 // IIFEs
 initLanguageRedirect();
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initNavigation();
     initMixItUp();
     initVerticalMarquees();
+    initFAQModule();
 
     // font-dependent
     document.fonts.ready.then(() => {
