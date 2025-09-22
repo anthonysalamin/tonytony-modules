@@ -16,7 +16,11 @@ import { initRevealTextClaim } from 'https://tonytony-modules.netlify.app/js/ini
 import { initVerticalMarquees } from 'https://tonytony-modules.netlify.app/js/initVerticalMarquees.js?v=1.0.0';
 import { initFAQModule } from 'https://tonytony-modules.netlify.app/js/initFAQModule.js?v=1.0.0';
 import { initDrawCheck } from 'https://tonytony-modules.netlify.app/js/initDrawCheck.js?v=1.0.0';
+
+import { initScrubOpacityIntoView } from 'https://tonytony-modules.netlify.app/js/initScrubOpacityIntoView.js?v=1.0.0';
+import { initScrubScaleIntoView } from 'https://tonytony-modules.netlify.app/js/initScrubScaleIntoView.js?v=1.0.0';
 import { initUnblurIntoView } from 'https://tonytony-modules.netlify.app/js/initUnblurIntoView.js?v=1.0.0';
+
 import { injectCurrentYear } from 'https://tonytony-modules.netlify.app/js/injectCurrentYear.js?v=1.0.0';
 import { initScrollProgress } from 'https://tonytony-modules.netlify.app/js/initScrollProgress.js?v=1.0.0';
 import { initCustomCursor } from 'https://tonytony-modules.netlify.app/js/initCustomCursor.js?v=1.0.0';
@@ -33,16 +37,23 @@ document.addEventListener("DOMContentLoaded", () => {
     initVerticalMarquees();
     initFAQModule();
     initDrawCheck();
-    injectCurrentYear();
+
+    // scrub reveal
+    initScrubOpacityIntoView();
+    initScrubScaleIntoView();
     initUnblurIntoView();
+
     initScrollProgress({
         position: "left",
         breakpoint: 768,
         hideAtPercentage: 0.9
     });
+
     initCustomCursor({
         BREAKPOINT: 768
     });
+
+    injectCurrentYear();
 
     // font-dependent
     document.fonts.ready.then(() => {
