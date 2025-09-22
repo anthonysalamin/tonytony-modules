@@ -8,7 +8,7 @@ export function initCustomCursor({
     SIZE = "90px",
     RADIUS = "50%",
     FONT_SIZE = "18px",
-    COLOR = { BACKGROUND: "#635df6", TEXT: "white" },
+    COLOR = { BACKGROUND: "var(--accent)", TEXT: "var(--White)" },
     MIX_BLEND_MODE = "normal",
     TARGETS = document.querySelectorAll("[data-cursor]")
 } = {}) {
