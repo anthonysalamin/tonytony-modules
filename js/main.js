@@ -18,11 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const lenis = initLenis();
 
     initNavigation();
-    initMixItUp(true);
+    initMixItUp();
 
     // Font-dependent animations
     document.fonts.ready.then(() => {
-        initRevealTextClaim(true);
+        initRevealTextClaim();
         console.log(`✅ Initialized all font-dependent modules`);
     });
 
