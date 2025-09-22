@@ -9,10 +9,11 @@ console.log(
 );
 
 import { initMixItUp } from 'https://tonytony-modules.netlify.app/js/initMixItUp.js?v=1.0.0';
+import { initLenis } from 'https://tonytony-modules.netlify.app/js/initLenis.js?v=1.0.0';
 
 // Initialize core functionality
 document.addEventListener("DOMContentLoaded", () => {
-    // Core UI and overlay management
+    const lenis = initLenis();
     initMixItUp();
 
     // Font-dependent animations (wait for fonts to load)
