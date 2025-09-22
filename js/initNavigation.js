@@ -17,19 +17,22 @@ export function initNavigation() {
     function openMenu() {
         gsap.to(menu, { x: "0%", duration: 0.5 });
 
+        // dynamically grab Lenis instance
         const lenis = window.lenis__pageScroll;
-        if (lenis) lenis.stop();
+        if (lenis) lenis.stop(); // stop smooth scroll
 
+        // freeze native scroll
         document.body.style.overflow = "hidden";
-        document.body.style.touchAction = "none";
+        document.body.style.touchAction = "none"; // stops touch scroll on mobile
     }
 
     function closeMenu() {
         gsap.to(menu, { x: "100%", duration: 0.5 });
 
         const lenis = window.lenis__pageScroll;
-        if (lenis) lenis.start();
+        if (lenis) lenis.start(); // resume smooth scroll
 
+        // re-enable native scroll
         document.body.style.overflow = "";
         document.body.style.touchAction = "";
     }
@@ -50,12 +53,28 @@ export function initNavigation() {
         links.forEach((navLink) => {
             navLink.addEventListener("click", () => {
                 closeMenu();
-                burger.click(); // closes burger state
+                // remove active state from burger icon
+                if (burger.classList.contains("active")) {
+                    burger.classList.remove("active");
+                }
             });
         });
     }
 
+    // Only enable mobile navigation below 991px
     if (window.innerWidth < 991) {
         handleMenuAndLinks();
     }
+
+    // Optional: re-check on resize to attach/detach events
+    window.addEventListener("resize", () => {
+        if (window.innerWidth < 991 && !burger.dataset.mobileInit) {
+            handleMenuAndLinks();
+            burger.dataset.mobileInit = "true";
+        } else if (window.innerWidth >= 991 && burger.dataset.mobileInit) {
+            // Reset menu if resizing to desktop
+            closeMenu();
+            burger.dataset.mobileInit = "";
+        }
+    });
 }
