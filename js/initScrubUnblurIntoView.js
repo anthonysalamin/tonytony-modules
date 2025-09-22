@@ -1,5 +1,5 @@
 /** 
- * UTILITY | initUnblurIntoView
+ * UTILITY | initScrubUnblurIntoView
  * @build 09.09.25 @updated 16:50 PHT
  * Unblurs elements as they scroll into view, reducing blur progressively until sharp.
  */
@@ -10,7 +10,7 @@ const OPTIONS = {
     BLUR_START: "blur(20px)",
     BLUR_END: "blur(0px)",
     START: "top bottom",
-    END: "top center",
+    END: "top 95%",
     SCRUB: true,
     EASE: "none"
 };
@@ -34,7 +34,7 @@ function initUnblurElement({ EL, BLUR_START, BLUR_END, START, END, SCRUB, EASE }
 }
 
 // 🍑 export module
-export function initUnblurIntoView() {
+export function initScrubUnblurIntoView() {
     const elements = gsap.utils.toArray(OPTIONS.SELECTOR);
     if (!elements.length) return;
 

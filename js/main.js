@@ -19,7 +19,7 @@ import { initDrawCheck } from 'https://tonytony-modules.netlify.app/js/initDrawC
 
 import { initScrubOpacityIntoView } from 'https://tonytony-modules.netlify.app/js/initScrubOpacityIntoView.js?v=1.0.0';
 import { initScrubScaleIntoView } from 'https://tonytony-modules.netlify.app/js/initScrubScaleIntoView.js?v=1.0.0';
-import { initUnblurIntoView } from 'https://tonytony-modules.netlify.app/js/initUnblurIntoView.js?v=1.0.0';
+import { initScrubUnblurIntoView } from 'https://tonytony-modules.netlify.app/js/initScrubUnblurIntoView.js?v=1.0.0';
 
 import { injectCurrentYear } from 'https://tonytony-modules.netlify.app/js/injectCurrentYear.js?v=1.0.0';
 import { initScrollProgress } from 'https://tonytony-modules.netlify.app/js/initScrollProgress.js?v=1.0.0';
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // scrub reveal
     initScrubOpacityIntoView();
     initScrubScaleIntoView();
-    initUnblurIntoView();
+    initScrubUnblurIntoView();
 
     initScrollProgress({
         position: "left",
