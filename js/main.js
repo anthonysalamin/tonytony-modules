@@ -8,7 +8,7 @@ console.log(
     "color: white; background: purple; padding: 2px 6px; border-radius: 3px;",
 );
 
-import { initMixItUp } from 'https://tonytony-modules.netlify.app/js/initMixItUp.js?v=1.0.1';
+import { initMixItUp } from 'https://tonytony-modules.netlify.app/js/initMixItUp.js?v=1.0.0';
 
 // Initialize core functionality
 document.addEventListener("DOMContentLoaded", () => {
