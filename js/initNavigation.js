@@ -1,5 +1,5 @@
 /**
- * PORTFOLIO | navigation v5
+ * PORTFOLIO | initNavigation
  * @build 22.09.25 @updated 16:40 PHT
  * Toggles a mobile navigation menu with animated burger icon and disables/enables smooth scroll.
  */

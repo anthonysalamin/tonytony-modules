@@ -1,6 +1,7 @@
 /**
- * PORTFOLIO | MixItUp v.2
+ * PORTFOLIO | initMixItUp
  * @build 22.09.25 @updated 16:58 PHT
+ * Sets up portfolio filtering with MixItUp by converting Webflow content to CSS classes.
  */
 
 export function initMixItUp(production = false) {
