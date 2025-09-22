@@ -16,6 +16,7 @@ import { initRevealTextClaim } from 'https://tonytony-modules.netlify.app/js/ini
 import { initVerticalMarquees } from 'https://tonytony-modules.netlify.app/js/initVerticalMarquees.js?v=1.0.0';
 import { initFAQModule } from 'https://tonytony-modules.netlify.app/js/initFAQModule.js?v=1.0.0';
 import { initDrawCheck } from 'https://tonytony-modules.netlify.app/js/initDrawCheck.js?v=1.0.0';
+import { injectCurrentYear } from 'https://tonytony-modules.netlify.app/js/injectCurrentYear.js?v=1.0.0';
 import { initScrollProgress } from 'https://tonytony-modules.netlify.app/js/initScrollProgress.js?v=1.0.0';
 import { initCustomCursor } from 'https://tonytony-modules.netlify.app/js/initCustomCursor.js?v=1.0.0';
 
@@ -31,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initVerticalMarquees();
     initFAQModule();
     initDrawCheck();
+    injectCurrentYear();
     initScrollProgress({
         position: "left",
         breakpoint: 768,
