@@ -13,6 +13,9 @@ import { initNavigation } from 'https://tonytony-modules.netlify.app/js/initNavi
 import { initMixItUp } from 'https://tonytony-modules.netlify.app/js/initMixItUp.js?v=1.0.0';
 import { initRevealTextClaim } from 'https://tonytony-modules.netlify.app/js/initRevealTextClaim.js?v=1.0.0';
 
+// IIFEs
+initLanguageRedirect();
+
 // Initialize core functionality
 document.addEventListener("DOMContentLoaded", () => {
 
