@@ -9,12 +9,15 @@ console.log(
 );
 
 import { initLenis } from 'https://tonytony-modules.netlify.app/js/initLenis.js?v=1.0.0';
+import { initNavigation } from 'https://tonytony-modules.netlify.app/js/initNavigation.js?v=1.0.0'
 import { initMixItUp } from 'https://tonytony-modules.netlify.app/js/initMixItUp.js?v=1.0.0';
 import { initRevealTextClaim } from 'https://tonytony-modules.netlify.app/js/initRevealTextClaim.js?v=1.0.0';
 
 // Initialize core functionality
 document.addEventListener("DOMContentLoaded", () => {
     const lenis = initLenis();
+
+    initNavigation();
     initMixItUp();
 
     // Font-dependent animations
