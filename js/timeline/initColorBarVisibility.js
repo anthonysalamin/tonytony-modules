@@ -23,7 +23,7 @@ export function initColorBarVisibility() {
       gsap.timeline({
         scrollTrigger: {
           trigger,
-          start: `top top`,
+          start: `top center`,
           end: "bottom top",
           markers: false, // debug
           onEnter: () => gsap.to(bar, opacity.show),
