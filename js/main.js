@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initVerticalMarquees();
     initFAQModule();
     initDrawCheck();
-    InitUdeslyRedirect();
+    initUdeslyRedirect();
 
     // scrub reveal
     initScrubOpacityIntoView();
