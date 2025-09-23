@@ -16,7 +16,7 @@ import { initMixItUp } from 'https://cdn.tonytony.ch/js/initMixItUp.js?v=1.0.0';
 import { initVerticalMarquees } from 'https://cdn.tonytony.ch/js/initVerticalMarquees.js?v=1.0.0';
 import { initFAQModule } from 'https://cdn.tonytony.ch/js/initFAQModule.js?v=1.0.0';
 import { initDrawCheck } from 'https://cdn.tonytony.ch/js/initDrawCheck.js?v=1.0.0';
-import { InitUdeslyRedirect } from 'https://cdn.tonytony.ch/js/InitUdeslyRedirect.js?v=1.0.0';
+import { initUdeslyRedirect } from 'https://cdn.tonytony.ch/js/initUdeslyRedirect.js?v=1.0.0';
 
 import { initRevealTextClaim } from 'https://cdn.tonytony.ch/js/initRevealTextClaim.js?v=1.0.0';
 
