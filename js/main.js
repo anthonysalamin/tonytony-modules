@@ -31,10 +31,13 @@ import { injectCurrentYear } from 'https://cdn.tonytony.ch/js/injectCurrentYear.
 // IIFEs
 initLanguageRedirect();
 
-// Initialize core functionality
+// on DOM loaded
 document.addEventListener("DOMContentLoaded", () => {
 
-    // on load
+    // smooth scroll
+    new InitSmoothScrollManager();
+
+    // core
     initNavigation();
     initMixItUp();
     initVerticalMarquees();
@@ -71,7 +74,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Initialize smooth scrolling after full page load
+/*
 window.addEventListener("load", () => {
     new InitSmoothScrollManager();
     console.log(`✅ Initialized all load-dependent modules`);
 });
+*/
