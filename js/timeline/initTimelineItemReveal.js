@@ -13,7 +13,7 @@ export function initTimelineItemReveal() {
     const themes = {
         light: {
             full: "var(--accent)",
-            faded: "#var(--background)",
+            faded: "red",
         },
         dark: {
             full: "var(--accent)",
