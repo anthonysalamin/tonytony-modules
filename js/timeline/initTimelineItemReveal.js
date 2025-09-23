@@ -1,5 +1,5 @@
 /**
- * TONYTONY | initTimelineItemReveal
+ * UTILITY | initTimelineItemReveal
  * @build 26.10.23 @updated 15:03 PHT
  * Animates timeline items with GSAP, fading in sides and updating circle colors as they enter or leave the viewport.
  */
