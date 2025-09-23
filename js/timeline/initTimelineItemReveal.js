@@ -5,6 +5,7 @@
  */
 
 export function initTimelineItemReveal() {
+    console.log("yo");
     const duration = 1; // 1 second
     const delay = 0.35;
     const startOpacityLeft = 0.25;
