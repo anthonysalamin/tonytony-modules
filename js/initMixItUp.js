@@ -228,7 +228,7 @@ function mixItUp(production) {
 
     // Early return if required elements don't exist
     if (!container) {
-        console.warn("MixItUp: Container element not found");
+        // console.warn("MixItUp: Container element not found");
         return;
     }
 
