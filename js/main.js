@@ -27,8 +27,8 @@ import { initScrubUnblurIntoView } from 'https://cdn.tonytony.ch/js/initScrubUnb
 import { initCustomCursor } from 'https://cdn.tonytony.ch/js/initCustomCursor.js?v=1.0.0';
 import { initScrollProgress } from 'https://cdn.tonytony.ch/js/initScrollProgress.js?v=1.0.0';
 import { injectCurrentYear } from 'https://cdn.tonytony.ch/js/injectCurrentYear.js?v=1.0.0';
-
 import { initMarkeeMWG008 } from 'https://cdn.tonytony.ch/js/initMarkeeMWG008.js?v=1.0.0';
+
 // IIFEs
 initLanguageRedirect();
 
@@ -44,7 +44,12 @@ document.addEventListener("DOMContentLoaded", () => {
     initVerticalMarquees();
     initFAQModule();
     initDrawCheck();
-    initMarkeeMWG008();
+    
+    const marqueeRoot = document.querySelector(".mwg008");
+    if (marqueeRoot) {
+        initMarkeeMWG008(marqueeRoot);
+        console.log(`✅ Initialized markee MWG008`);
+    }
 
     // forms
     initUdeslyRedirect();
