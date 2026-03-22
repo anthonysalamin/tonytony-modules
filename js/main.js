@@ -67,10 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         hideAtPercentage: 0.9
     });
 
-    initCustomCursor({
-        BREAKPOINT: 768
-    });
-
+    initCustomCursor();
     injectCurrentYear();
 
     // font-dependent
