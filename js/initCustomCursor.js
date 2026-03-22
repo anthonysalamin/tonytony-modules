@@ -12,7 +12,7 @@ export function initCustomCursor(OPTIONS_CURSOR = {
     RADIUS: "50%",
     FONT_SIZE: "18px",
     COLOR: { BACKGROUND: "var(--accent)", TEXT: "var(--dark)" },
-    MIX_BLEND_MODE: "difference",
+    MIX_BLEND_MODE: "normal",
     OFFSET: 10,
     EDGE_MARGIN: 100,
 }) {
