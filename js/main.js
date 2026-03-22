@@ -19,6 +19,7 @@ import { initDrawCheck } from 'https://cdn.tonytony.ch/js/initDrawCheck.js?v=1.0
 import { initUdeslyRedirect } from 'https://cdn.tonytony.ch/js/initUdeslyRedirect.js?v=1.0.0';
 
 import { initRevealTextClaim } from 'https://cdn.tonytony.ch/js/initRevealTextClaim.js?v=1.0.0';
+import { initMarqueeDual } from 'https://cdn.tonytony.ch/js/initMarqueeDual.js?v=1.0.0';
 
 import { initScrubOpacityIntoView } from 'https://cdn.tonytony.ch/js/initScrubOpacityIntoView.js?v=1.0.0';
 import { initScrubScaleIntoView } from 'https://cdn.tonytony.ch/js/initScrubScaleIntoView.js?v=1.0.0';
@@ -42,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initNavigation();
     initMixItUp();
     initVerticalMarquees();
+    initMarqueeDual();
     initFAQModule();
     initDrawCheck();
     
