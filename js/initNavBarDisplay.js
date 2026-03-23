@@ -10,7 +10,7 @@ export function initNavBarDisplay() {
   if (!nav) return;
 
   let isHidden = false;
-  const threshold = window.innerHeight * 0.5;
+  const threshold = window.innerHeight * 0.65;
 
   const tl = gsap.timeline({ paused: true });
   tl.to(nav, {
