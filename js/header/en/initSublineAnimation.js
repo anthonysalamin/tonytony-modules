@@ -12,14 +12,14 @@ export function initSublineAnimation() {
     new Typed(el, {
         strings: [
             'Partner',
-            'Develoo^500\bper'
+            'Develoo^500',
+            'Developer'
         ],
         typeSpeed: 45,
         backSpeed: 30,
         startDelay: 1500,
         backDelay: 1500,
-        loop: true,
-        smartBackspace: false,
+        smartBackspace: true,
         showCursor: false
     });
 }
