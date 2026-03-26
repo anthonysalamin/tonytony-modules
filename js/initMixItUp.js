@@ -236,7 +236,7 @@ function mixItUp(production) {
 
     // Set initial status
     if (!production && status) {
-        status.innerHTML = "Portfolio";
+        status.innerHTML = "Case studies";
     }
 
     // Initialize MixItUp with enhanced configuration
