@@ -8,13 +8,8 @@ export function initSublineAnimation() {
     const shouldBlink = false;
 
     // 🥭 on load
-    initTyping("[data-id='punchline']", shouldBlink, [
-        {
-            text: "Developer",
-            typo: { at: 6, wrong: "o", pauseBefore: 400, pauseAfter: 250 }
-        },
-        { text: "Partner" }
-    ]);
+    initTyping("[data-id='punchline']", shouldBlink, ["Developer", "Partner"]);
+    
 }
 
 // -------------------------
@@ -53,29 +48,10 @@ function initTyping(selector, shouldBlink, words) {
     }
 
     function step() {
-        const entry = words[state.currentIndex];
-        const word = entry.text;
-        const typo = entry.typo;
+        const word = words[state.currentIndex];
 
         if (state.direction === DIRECTION.FORWARD) {
             state.charIndex++;
-
-            // Typo trigger: we just typed the wrong char
-            if (typo && state.charIndex === typo.at + 1) {
-                el.textContent = word.substring(0, typo.at) + typo.wrong;
-                clearInterval(state.typingInterval);
-                setTimeout(() => {
-                    // Delete the wrong char
-                    state.charIndex = typo.at;
-                    el.textContent = word.substring(0, state.charIndex);
-                    setTimeout(() => {
-                        // Resume normal typing
-                        startTyping();
-                    }, typo.pauseAfter);
-                }, typo.pauseBefore);
-                return;
-            }
-
             if (state.charIndex === word.length) {
                 state.direction = DIRECTION.BACKWARD;
                 clearInterval(state.typingInterval);
