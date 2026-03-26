@@ -32,6 +32,7 @@ import { injectCurrentYear } from 'https://cdn.tonytony.ch/js/injectCurrentYear.
 import { initMarkeeMWG008 } from 'https://cdn.tonytony.ch/js/initMarkeeMWG008.js?v=1.0.0';
 import { initFathomTrackEvents } from 'https://cdn.tonytony.ch/js/initFathomTrackEvents.js?v=1.0.0';
 
+
 // IIFEs
 initLanguageRedirect();
 

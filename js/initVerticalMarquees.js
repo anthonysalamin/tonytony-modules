@@ -1,6 +1,8 @@
 /**
  * UTILITY | initVerticalMarquees
- * @build 17.03.25 @updated 17:22 CEST
+ * It continuously scrolls vertical marquee columns up or down, creating an infinite looping animation.
+ * @build 17.03.25
+ * @updated 17:22 CEST
  */
 
 export function initVerticalMarquees() {
