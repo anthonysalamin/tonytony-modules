@@ -13,7 +13,7 @@ export function initMarqueeDual() {
 
     gsap.fromTo(
       el,
-      { x: offset },
+      { x: -offset },
       {
         x: -(scrollDistance + offset),
         ease: "none",
