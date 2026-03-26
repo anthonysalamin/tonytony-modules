@@ -1,6 +1,6 @@
 /**
  * TONYTONY | initMarqueeDual
- * Scroll-driven dual marquee with opposing horizontal movement, 20% viewport offset padding, and ScrollTrigger scrub.
+ * Scroll-driven dual marquee with opposing horizontal movement, 10% viewport offset padding, and ScrollTrigger scrub.
  * @build 22.03.26
  * @updated 27.03.26
  */
@@ -15,7 +15,7 @@ export function initMarqueeDual() {
       el,
       { x: offset },
       {
-        x: -(scrollDistance + offset),
+        x: -(scrollDistance - offset),
         ease: "none",
         scrollTrigger: {
           trigger: el,
@@ -35,7 +35,7 @@ export function initMarqueeDual() {
 
     gsap.fromTo(
       el,
-      { x: -(scrollDistance + offset) },
+      { x: -(scrollDistance - offset) },
       {
         x: offset,
         ease: "none",
