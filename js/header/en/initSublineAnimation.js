@@ -1,23 +1,72 @@
 /**
  * TONYTONY | initSublineAnimation
- * Typed.js cycling text with intentional typo correction on "Developer" for playful effect.
- * @build 26.03.26
- * @updated 16:19 PHT
+ * @build 30.03.25 @updated 21:49 PHT
  */
 
 export function initSublineAnimation() {
-    const el = document.querySelector("[data-id='punchline']");
+    // 🥭 options
+    const shouldBlink = false;
+
+    // 🥭 on load
+    initTyping("[data-id='punchline']", shouldBlink, ["Developer", "Partner"]);
+    
+}
+
+// -------------------------
+// Internal functions
+// -------------------------
+
+function addBlink(enable, selector) {
+    if (!enable) return;
+
+    const style = document.createElement("style");
+    style.textContent = `
+  ${selector}::after {
+    content: "|";
+    animation: typingBlink 1.15s linear infinite;
+  }
+  @keyframes typingBlink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }`;
+    document.head.appendChild(style);
+}
+
+function initTyping(selector, shouldBlink, words) {
+    const el = document.querySelector(selector);
     if (!el) return;
 
-    new Typed(el, {
-        strings: ["Partner^1500", "Develoope^100", "Developer^1500"],
-        typeSpeed: 60,
-        backSpeed: 30,
-        startDelay: 0,
-        backDelay: 0,
-        smartBackspace: true,
-        showCursor: true,
-        cursorChar: '_',
-        loop: true
-    });
+    addBlink(shouldBlink, selector);
+
+    const intervalTime = 45;
+    const pauseTime = 1500;
+    const state = { currentIndex: 0, charIndex: 0, direction: 0, typingInterval: null };
+    const DIRECTION = { FORWARD: 0, BACKWARD: 1 };
+
+    function startTyping() {
+        state.typingInterval = setInterval(step, intervalTime);
+    }
+
+    function step() {
+        const word = words[state.currentIndex];
+
+        if (state.direction === DIRECTION.FORWARD) {
+            state.charIndex++;
+            if (state.charIndex === word.length) {
+                state.direction = DIRECTION.BACKWARD;
+                clearInterval(state.typingInterval);
+                setTimeout(startTyping, pauseTime);
+            }
+        } else if (state.direction === DIRECTION.BACKWARD) {
+            state.charIndex--;
+            if (state.charIndex === 0) {
+                state.direction = DIRECTION.FORWARD;
+                state.currentIndex = (state.currentIndex + 1) % words.length;
+            }
+        }
+
+        el.textContent = word.substring(0, state.charIndex);
+    }
+
+    startTyping();
 }
