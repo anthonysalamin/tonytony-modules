@@ -1,8 +1,8 @@
 /**
  * TONYTONY | initSublineAnimation
  * Typed.js cycling text with intentional typo correction on "Developer" for playful effect.
- * @build 30.03.25
- * @updated 23:xx PHT
+ * @build 26.03.26
+ * @updated 16:19 PHT
  */
 
 export function initSublineAnimation() {
@@ -11,13 +11,15 @@ export function initSublineAnimation() {
 
     new Typed(el, {
         strings: [
-            'Develoo^400\b\boper',
-            'Partner'
+            'Partner',
+            'Develoo^500\b\boper'
         ],
         typeSpeed: 45,
         backSpeed: 30,
+        startDelay: 1500,
         backDelay: 1500,
         loop: true,
+        smartBackspace: false,
         showCursor: false
     });
 }
