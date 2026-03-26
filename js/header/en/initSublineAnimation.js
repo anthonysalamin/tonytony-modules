@@ -11,7 +11,7 @@ export function initSublineAnimation() {
 
     new Typed(el, {
         strings: ["Partner^1500", "Develoope^100", "Developer^1500"],
-        typeSpeed: 70,
+        typeSpeed: 60,
         backSpeed: 30,
         startDelay: 0,
         backDelay: 0,
