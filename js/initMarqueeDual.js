@@ -9,7 +9,7 @@ export function initMarqueeDual() {
     // Marquee UP — moves left
     document.querySelectorAll('[data-marquee="up"]').forEach((el) => {
       const scrollDistance = el.scrollWidth - el.offsetWidth;
-      const offset = el.scrollWidth * 0.2;
+      const offset = el.scrollWidth * 0.4;
   
       gsap.set(el, {
         x: offset,
