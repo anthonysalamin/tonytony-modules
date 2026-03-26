@@ -5,7 +5,7 @@
  * @updated 18:02 CET
  */
 
-export function initFathomTrackEvent() {
+export function initFathomTrackEvents() {
   window.addEventListener('load', () => {
     // Button tracking
     const btn = document.querySelector('[data-trackevent="btn-free-seo-audit"]');
