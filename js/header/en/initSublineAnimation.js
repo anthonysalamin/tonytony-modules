@@ -5,19 +5,11 @@
 
 export function initSublineAnimation() {
     // 🥭 options
-    const shouldBlink = false;
+    const shouldBlink = true;
 
     // 🥭 on load
     initTyping("[data-id='punchline']", shouldBlink, ["Developer", "Partner"]);
     
-    // 🥭 on load
-    initTyping("[data-id='subline']", shouldBlink, [
-        "create your MVP in 24 h.",
-        "master AI technologies",
-        "design & develop websites",
-        "develop corporate identities",
-        "am a problem solver",
-    ]);
 }
 
 // -------------------------
@@ -46,7 +38,7 @@ function initTyping(selector, shouldBlink, words) {
 
     addBlink(shouldBlink, selector);
 
-    const intervalTime = 20;
+    const intervalTime = 45;
     const pauseTime = 1500;
     const state = { currentIndex: 0, charIndex: 0, direction: 0, typingInterval: null };
     const DIRECTION = { FORWARD: 0, BACKWARD: 1 };

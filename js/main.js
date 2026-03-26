@@ -84,11 +84,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log(`✅ Initialized all DOM-dependent modules`);
 });
-
-// Initialize smooth scrolling after full page load
-/*
-window.addEventListener("load", () => {
-    new InitSmoothScrollManager();
-    console.log(`✅ Initialized all load-dependent modules`);
-});
-*/
