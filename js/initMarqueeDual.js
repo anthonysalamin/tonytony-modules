@@ -45,6 +45,7 @@ export function initMarqueeDual() {
         start: "top bottom",
         end: "bottom top",
         scrub: true,
+        markers: true,
         invalidateOnRefresh: true,
       },
     });
