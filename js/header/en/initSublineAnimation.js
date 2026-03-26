@@ -10,16 +10,14 @@ export function initSublineAnimation() {
     if (!el) return;
 
     new Typed(el, {
-        strings: [
-            'Partner',
-            'Develoo^500',
-            'Developer'
-        ],
-        typeSpeed: 45,
+        strings: ["Partner^1500", "Develoope^100", "Developer^1500"],
+        typeSpeed: 70,
         backSpeed: 30,
-        startDelay: 1500,
-        backDelay: 1500,
+        startDelay: 0,
+        backDelay: 0,
         smartBackspace: true,
-        showCursor: false
+        showCursor: true,
+        cursorChar: '_',
+        loop: true
     });
 }
