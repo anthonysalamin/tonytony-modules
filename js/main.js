@@ -30,6 +30,7 @@ import { initCustomCursor } from 'https://cdn.tonytony.ch/js/initCustomCursor.js
 import { initScrollProgress } from 'https://cdn.tonytony.ch/js/initScrollProgress.js?v=1.0.0';
 import { injectCurrentYear } from 'https://cdn.tonytony.ch/js/injectCurrentYear.js?v=1.0.0';
 import { initMarkeeMWG008 } from 'https://cdn.tonytony.ch/js/initMarkeeMWG008.js?v=1.0.0';
+import { initFathomTrackEvent } from 'https://cdn.tonytony.ch/js/initFathomTrackEvent.js?v=1.0.0';
 
 // IIFEs
 initLanguageRedirect();
@@ -62,6 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
     initScrubOpacityIntoView();
     initScrubScaleIntoView();
     initScrubUnblurIntoView();
+
+    // fathom track event
+    initFathomTrackEvent();
 
     initScrollProgress({
         position: "left",
