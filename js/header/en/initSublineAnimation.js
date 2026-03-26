@@ -12,7 +12,7 @@ export function initSublineAnimation() {
     new Typed(el, {
         strings: [
             'Partner',
-            'Develoo^500\b\boper'
+            'Develoo^500\bper'
         ],
         typeSpeed: 45,
         backSpeed: 30,
