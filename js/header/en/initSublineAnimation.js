@@ -5,7 +5,7 @@
 
 export function initSublineAnimation() {
     // 🥭 options
-    const shouldBlink = true;
+    const shouldBlink = false;
 
     // 🥭 on load
     initTyping("[data-id='punchline']", shouldBlink, ["Developer", "Partner"]);
@@ -22,7 +22,7 @@ function addBlink(enable, selector) {
     const style = document.createElement("style");
     style.textContent = `
   ${selector}::after {
-    content: "_";
+    content: "|";
     animation: typingBlink 1.15s linear infinite;
   }
   @keyframes typingBlink {
