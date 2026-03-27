@@ -77,6 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
     initCustomCursor();
     injectCurrentYear();
 
+    initMwg011();
+
     // font-dependent
     document.fonts.ready.then(() => {
         initRevealTextClaim();
