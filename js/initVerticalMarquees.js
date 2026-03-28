@@ -2,7 +2,7 @@
  * UTILITY | initVerticalMarquees
  * Continuously scrolls vertical marquee columns up or down, creating an infinite looping animation.
  * @build 17.03.25
- * @updated 28.03.26 — 17:45 PHT
+ * @updated 28.03.26 — 17:50 PHT
  */
 
 export function initVerticalMarquees() {
@@ -55,9 +55,6 @@ export function initVerticalMarquees() {
                 const clone = container.cloneNode(true);
                 clone.setAttribute(options.CLONE_ATTR, "");
 
-                // Pause cloned background videos to reduce GPU/decode overhead
-                muteClonedVideos(clone);
-
                 const isBackward = column.matches(options.COLUMN_BACKWARD);
 
                 if (isBackward) {
@@ -83,37 +80,6 @@ export function initVerticalMarquees() {
                     ease: "none",
                 });
             });
-    }
-
-    // ——————————————————————————————————————
-    // Video handling (Webflow background videos)
-    // ——————————————————————————————————————
-
-    function muteClonedVideos(cloneEl) {
-        // Catch any videos already present in the clone
-        cloneEl.querySelectorAll("video").forEach(pauseVideo);
-
-        // Catch any videos Webflow injects after cloning
-        const observer = new MutationObserver((mutations) => {
-            mutations.forEach((m) => {
-                m.addedNodes.forEach((node) => {
-                    if (node.nodeName === "VIDEO") pauseVideo(node);
-                    if (node.querySelectorAll) {
-                        node.querySelectorAll("video").forEach(pauseVideo);
-                    }
-                });
-            });
-        });
-
-        observer.observe(cloneEl, { childList: true, subtree: true });
-    }
-
-    function pauseVideo(v) {
-        v.pause();
-        v.preload = "none";
-        v.autoplay = false;
-        v.removeAttribute("autoplay");
-        v.removeAttribute("data-wf-ignore");
     }
 
     // ——————————————————————————————————————
