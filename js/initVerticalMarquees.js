@@ -1,8 +1,8 @@
 /**
  * UTILITY | initVerticalMarquees
- * It continuously scrolls vertical marquee columns up or down, creating an infinite looping animation.
+ * Continuously scrolls vertical marquee columns up or down, creating an infinite looping animation.
  * @build 17.03.25
- * @updated 17:22 CEST
+ * @updated 28.03.26 — 17:45 PHT
  */
 
 export function initVerticalMarquees() {
@@ -10,21 +10,115 @@ export function initVerticalMarquees() {
         MARKEES_CONTAINER: `[data-markees="container"]`,
         COLUMN_FORWARD: `[data-markees="column-forward"]`,
         COLUMN_BACKWARD: `[data-markees="column-backward"]`,
-        DURATION: 16
+        CLONE_ATTR: "data-markees-clone",
+        DURATION: 16,
     };
 
-    // 🥭 on load
-    initVerticalMarquees(OPTIONS);
+    let cachedWidth = window.innerWidth;
 
-    // 🥭 on resize
+    // 🥭 init
+    setupColumns(OPTIONS);
+
+    // 🥭 resize — only when width actually changes
     window.addEventListener(
         "resize",
         debounce(() => {
-            console.log("resized");
-            gsap.killTweensOf("[data-markees]");
-            initVerticalMarquees(OPTIONS);
-        }, 200)
+            if (window.innerWidth === cachedWidth) return;
+            cachedWidth = window.innerWidth;
+            gsap.killTweensOf(
+                `${OPTIONS.COLUMN_FORWARD}, ${OPTIONS.COLUMN_BACKWARD}`
+            );
+            setupColumns(OPTIONS);
+        }, 250)
     );
+
+    // ——————————————————————————————————————
+    // Setup
+    // ——————————————————————————————————————
+
+    function setupColumns(options) {
+        document
+            .querySelectorAll(
+                `${options.COLUMN_FORWARD}, ${options.COLUMN_BACKWARD}`
+            )
+            .forEach((column) => {
+                // Clean up previous clones (resize safety)
+                column
+                    .querySelectorAll(`[${options.CLONE_ATTR}]`)
+                    .forEach((el) => el.remove());
+
+                const container = column.querySelector(
+                    options.MARKEES_CONTAINER
+                );
+                if (!container) return;
+
+                const clone = container.cloneNode(true);
+                clone.setAttribute(options.CLONE_ATTR, "");
+
+                // Pause cloned background videos to reduce GPU/decode overhead
+                muteClonedVideos(clone);
+
+                const isBackward = column.matches(options.COLUMN_BACKWARD);
+
+                if (isBackward) {
+                    column.prepend(clone);
+                } else {
+                    column.appendChild(clone);
+                }
+
+                const height = container.offsetHeight;
+                const duration =
+                    options.DURATION * (0.8 + 2 * Math.random());
+
+                gsap.set(column, {
+                    y: isBackward ? -height : 0,
+                    force3D: true,
+                    willChange: "transform",
+                });
+
+                gsap.to(column, {
+                    y: isBackward ? 0 : -height,
+                    duration,
+                    repeat: -1,
+                    ease: "none",
+                });
+            });
+    }
+
+    // ——————————————————————————————————————
+    // Video handling (Webflow background videos)
+    // ——————————————————————————————————————
+
+    function muteClonedVideos(cloneEl) {
+        // Catch any videos already present in the clone
+        cloneEl.querySelectorAll("video").forEach(pauseVideo);
+
+        // Catch any videos Webflow injects after cloning
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((m) => {
+                m.addedNodes.forEach((node) => {
+                    if (node.nodeName === "VIDEO") pauseVideo(node);
+                    if (node.querySelectorAll) {
+                        node.querySelectorAll("video").forEach(pauseVideo);
+                    }
+                });
+            });
+        });
+
+        observer.observe(cloneEl, { childList: true, subtree: true });
+    }
+
+    function pauseVideo(v) {
+        v.pause();
+        v.preload = "none";
+        v.autoplay = false;
+        v.removeAttribute("autoplay");
+        v.removeAttribute("data-wf-ignore");
+    }
+
+    // ——————————————————————————————————————
+    // Helpers
+    // ——————————————————————————————————————
 
     function debounce(func, delay) {
         let timeout;
@@ -32,31 +126,5 @@ export function initVerticalMarquees() {
             clearTimeout(timeout);
             timeout = setTimeout(() => func.apply(this, args), delay);
         };
-    }
-
-    function initVerticalMarquees(options) {
-        document.querySelectorAll(`${options.COLUMN_FORWARD}, ${options.COLUMN_BACKWARD}`)
-            .forEach(column => {
-                const container = column.querySelector(options.MARKEES_CONTAINER);
-                if (!container) return;
-
-                const clone = container.cloneNode(true);
-                column.innerHTML = "";
-
-                const isBackward = column.matches(options.COLUMN_BACKWARD);
-                if (isBackward) {
-                    column.prepend(clone);
-                    column.prepend(container);
-                } else {
-                    column.appendChild(container);
-                    column.appendChild(clone);
-                }
-
-                const height = container.offsetHeight;
-                const duration = options.DURATION * (0.8 + 2 * Math.random());
-
-                gsap.set(column, { y: isBackward ? -height : 0 });
-                gsap.to(column, { y: isBackward ? 0 : -height, duration, repeat: -1, ease: "none" });
-            });
     }
 }
