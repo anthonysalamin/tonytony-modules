@@ -21,6 +21,7 @@ export function initGraphicSVG() {
                 trigger: svg,
                 start: "top bottom",
                 end: "bottom 90%",
+                markers: true,
                 scrub: true,
             },
         });
