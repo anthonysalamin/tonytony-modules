@@ -1,7 +1,9 @@
-// initGraphicSVG.js
-// Scroll-triggered SVG circle draw animation with scrub
-// Applies to all SVGs with [data-graphic] attribute
-// Updated: 28.03.26 PHT
+/**
+ * TONYTONY | initGraphicSVG
+ * Scroll-triggered SVG circle draw animation with scrub, applied to all [data-graphic] elements.
+ * @build 28.03.26
+ * @updated 15:42 PHT
+ */
 
 export function initGraphicSVG() {
     const svgs = document.querySelectorAll("[data-graphic]");
@@ -11,14 +13,9 @@ export function initGraphicSVG() {
       const circles = svg.querySelectorAll("circle");
       if (!circles.length) return;
   
-      // Set up each circle for stroke drawing
-      circles.forEach((circle) => {
-        const circumference = 2 * Math.PI * parseFloat(circle.getAttribute("r"));
-        circle.style.strokeDasharray = circumference;
-        circle.style.strokeDashoffset = circumference;
-      });
+      // Set initial state — fully hidden
+      gsap.set(circles, { drawSVG: "0%" });
   
-      // Create timeline with scrub-linked ScrollTrigger
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: svg,
@@ -28,12 +25,11 @@ export function initGraphicSVG() {
         },
       });
   
-      // Stagger the circle draws across the timeline
       circles.forEach((circle, i) => {
         tl.to(
           circle,
           {
-            strokeDashoffset: 0,
+            drawSVG: "100%",
             duration: 1,
             ease: "none",
           },
