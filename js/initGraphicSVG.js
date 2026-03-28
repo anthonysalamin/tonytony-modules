@@ -20,7 +20,7 @@ export function initGraphicSVG() {
             scrollTrigger: {
                 trigger: svg,
                 start: "top bottom",
-                end: "bottom bottom",
+                end: "bottom 98%",
                 markers: true,
                 scrub: true,
             },
