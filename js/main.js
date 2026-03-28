@@ -32,6 +32,7 @@ import { injectCurrentYear } from 'https://cdn.tonytony.ch/js/injectCurrentYear.
 import { initMarkeeMWG008 } from 'https://cdn.tonytony.ch/js/initMarkeeMWG008.js?v=1.0.0';
 import { initFathomTrackEvents } from 'https://cdn.tonytony.ch/js/initFathomTrackEvents.js?v=1.0.0';
 import { initMwg011 } from 'https://cdn.tonytony.ch/js/initMWG011.js?v=1.0.0';
+import { initGraphicSVG } from 'https://cdn.tonytony.ch/js/initGraphicSVG.js?v=1.0.0';
 
 
 // IIFEs
@@ -77,6 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     initCustomCursor();
     injectCurrentYear();
+    initGraphicSVG();
 
     initMwg011();
 
