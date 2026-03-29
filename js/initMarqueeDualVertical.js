@@ -19,8 +19,8 @@ export function initMarqueeDualVertical() {
 
     ScrollTrigger.create({
         trigger: container,
-        start: "top bottom",
-        end: "top top",
+        start: "top 90%",
+        end: "top 10%",
         scrub: true,
         markers: false,
         animation: gsap.timeline()
