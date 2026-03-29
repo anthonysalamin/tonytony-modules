@@ -6,6 +6,7 @@
  */
 
 export function initMarqueeDualVertical() {
+    console.log('initMarqueeDualVertical');
     const container = document.querySelector('[data-marquee="dual-container"]');
     if (!container) return;
 
