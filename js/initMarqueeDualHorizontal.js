@@ -1,11 +1,11 @@
 /**
- * TONYTONY | initMarqueeDual
+ * TONYTONY | initMarqueeDualHorizontal
  * Scroll-driven dual marquee with opposing horizontal movement, 20vw offset padding, and ScrollTrigger scrub.
  * @build 22.03.26
  * @updated 27.03.26
  */
 
-export function initMarqueeDual() {
+export function initMarqueeDualHorizontal() {
   const offset = window.innerWidth * 0.2;
 
   // Marquee UP — moves left
