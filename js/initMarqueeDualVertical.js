@@ -12,7 +12,7 @@ export function initMarqueeDualVertical() {
     const upward = container.querySelector('[data-marquee="upward"]');
     const downward = container.querySelector('[data-marquee="downward"]');
     const delta = 20;
-    const ease = "power2.out";
+    const ease = "none"; // "power2.out"
     if (!upward || !downward) return;
 
     gsap.set(upward, { yPercent: 0 });
