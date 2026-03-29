@@ -13,6 +13,7 @@ import { InitSmoothScrollManager } from 'https://cdn.tonytony.ch/js/InitSmoothSc
 import { initNavigation } from 'https://cdn.tonytony.ch/js/initNavigation.js?v=1.0.0';
 import { initNavBarDisplay } from 'https://cdn.tonytony.ch/js/initNavBarDisplay.js?v=1.0.0';
 import { initVideoState } from 'https://cdn.tonytony.ch/js/initVideoState.js?v=1.0.0';
+import { initMarqueeDualVertical } from 'https://cdn.tonytony.ch/js/initMarqueeDualVertical.js?v=1.0.0';
 
 import { initMixItUp } from 'https://cdn.tonytony.ch/js/initMixItUp.js?v=1.0.0';
 import { initVerticalMarquees } from 'https://cdn.tonytony.ch/js/initVerticalMarquees.js?v=1.0.0';
@@ -49,7 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
     initNavBarDisplay();
     initMarqueeDual();
     // initVideoState();
-    //initVerticalMarquees();
+    // initVerticalMarquees();
+    initMarqueeDualVertical();
 
     initMixItUp();
     initFAQModule();

@@ -1,0 +1,29 @@
+/**
+ * TONYTONY | initMarqueeDualVertical
+ * Dual vertical marquee with scroll-driven opposing Y translations
+ * @build 30.03.26
+ * @updated 30.03.26 PHT
+ */
+
+export function initMarqueeDualVertical() {
+    const container = document.querySelector('[data-marquee="dual-container"]');
+    if (!container) return;
+
+    const upward = container.querySelector('[data-marquee="upward"]');
+    const downward = container.querySelector('[data-marquee="downward"]');
+    if (!upward || !downward) return;
+
+    gsap.set(upward, { yPercent: 0 });
+    gsap.set(downward, { yPercent: 0 });
+
+    ScrollTrigger.create({
+        trigger: container,
+        start: "top bottom",
+        end: "top top",
+        scrub: true,
+        markers: true,
+        animation: gsap.timeline()
+            .to(upward, { yPercent: -20, ease: "none" }, 0)
+            .to(downward, { yPercent: 20, ease: "none" }, 0),
+    });
+}
