@@ -23,7 +23,7 @@ export function initMarqueeDualVertical() {
         start: "top bottom",
         end: "bottom top",
         scrub: true,
-        markers: true,
+        markers: false,
         animation: gsap.timeline()
             .to(upward, { yPercent: -delta, ease: ease }, 0)
             .to(downward, { yPercent: delta, ease: ease }, 0),
