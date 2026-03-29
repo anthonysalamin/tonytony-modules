@@ -10,8 +10,9 @@ console.log(
 
 import { initLanguageRedirect } from 'https://cdn.tonytony.ch/js/initLanguageRedirect.js?v=1.0.0';
 import { InitSmoothScrollManager } from 'https://cdn.tonytony.ch/js/InitSmoothScrollManager.js?v=1.0.0';
-import { initNavigation } from 'https://cdn.tonytony.ch/js/initNavigation.js?v=1.0.0'
-import { initNavBarDisplay } from 'https://cdn.tonytony.ch/js/initNavBarDisplay.js?v=1.0.0'
+import { initNavigation } from 'https://cdn.tonytony.ch/js/initNavigation.js?v=1.0.0';
+import { initNavBarDisplay } from 'https://cdn.tonytony.ch/js/initNavBarDisplay.js?v=1.0.0';
+import { initVideoState } from 'https://cdn.tonytony.ch/js/initVideoState.js?v=1.0.0';
 
 import { initMixItUp } from 'https://cdn.tonytony.ch/js/initMixItUp.js?v=1.0.0';
 import { initVerticalMarquees } from 'https://cdn.tonytony.ch/js/initVerticalMarquees.js?v=1.0.0';
@@ -34,7 +35,6 @@ import { initFathomTrackEvents } from 'https://cdn.tonytony.ch/js/initFathomTrac
 import { initMwg011 } from 'https://cdn.tonytony.ch/js/initMWG011.js?v=1.0.0';
 import { initGraphicSVG } from 'https://cdn.tonytony.ch/js/initGraphicSVG.js?v=1.0.0';
 
-
 // IIFEs
 initLanguageRedirect();
 
@@ -47,9 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // core
     initNavigation();
     initNavBarDisplay();
-    initMixItUp();
-    initVerticalMarquees();
+    initVideoState();
     initMarqueeDual();
+    initVerticalMarquees();
+
+    initMixItUp();
     initFAQModule();
     initDrawCheck();
     
