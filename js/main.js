@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // core
     initNavigation();
     initNavBarDisplay();
-    // initVideoState();
     initMarqueeDual();
-    initVerticalMarquees();
+    // initVideoState();
+    //initVerticalMarquees();
 
     initMixItUp();
     initFAQModule();
