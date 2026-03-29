@@ -12,6 +12,8 @@ export function initMarqueeDualVertical() {
 
     const upward = container.querySelector('[data-marquee="upward"]');
     const downward = container.querySelector('[data-marquee="downward"]');
+    const delta = 25;
+    const ease = "power2.out";
     if (!upward || !downward) return;
 
     gsap.set(upward, { yPercent: 0 });
@@ -24,7 +26,7 @@ export function initMarqueeDualVertical() {
         scrub: true,
         markers: true,
         animation: gsap.timeline()
-            .to(upward, { yPercent: -25, ease: "none" }, 0)
-            .to(downward, { yPercent: 25, ease: "none" }, 0),
+            .to(upward, { yPercent: -delta, ease: ease }, 0)
+            .to(downward, { yPercent: delta, ease: ease }, 0),
     });
 }
