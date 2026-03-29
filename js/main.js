@@ -13,16 +13,15 @@ import { InitSmoothScrollManager } from 'https://cdn.tonytony.ch/js/InitSmoothSc
 import { initNavigation } from 'https://cdn.tonytony.ch/js/initNavigation.js?v=1.0.0';
 import { initNavBarDisplay } from 'https://cdn.tonytony.ch/js/initNavBarDisplay.js?v=1.0.0';
 import { initVideoState } from 'https://cdn.tonytony.ch/js/initVideoState.js?v=1.0.0';
+import { initMarqueeDualHorizontal } from 'https://cdn.tonytony.ch/js/initMarqueeDualHorizontal.js?v=1.0.0';
 import { initMarqueeDualVertical } from 'https://cdn.tonytony.ch/js/initMarqueeDualVertical.js?v=1.0.0';
 
 import { initMixItUp } from 'https://cdn.tonytony.ch/js/initMixItUp.js?v=1.0.0';
-import { initVerticalMarquees } from 'https://cdn.tonytony.ch/js/initVerticalMarquees.js?v=1.0.0';
 import { initFAQModule } from 'https://cdn.tonytony.ch/js/initFAQModule.js?v=1.0.0';
 import { initDrawCheck } from 'https://cdn.tonytony.ch/js/initDrawCheck.js?v=1.0.0';
 import { initUdeslyRedirect } from 'https://cdn.tonytony.ch/js/initUdeslyRedirect.js?v=1.0.0';
 
 import { initRevealTextClaim } from 'https://cdn.tonytony.ch/js/initRevealTextClaim.js?v=1.0.0';
-import { initMarqueeDual } from 'https://cdn.tonytony.ch/js/initMarqueeDual.js?v=1.0.0';
 
 import { initScrubOpacityIntoView } from 'https://cdn.tonytony.ch/js/initScrubOpacityIntoView.js?v=1.0.0';
 import { initScrubScaleIntoView } from 'https://cdn.tonytony.ch/js/initScrubScaleIntoView.js?v=1.0.0';
@@ -48,9 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // core
     initNavigation();
     initNavBarDisplay();
-    initMarqueeDual();
     // initVideoState();
-    // initVerticalMarquees();
+    initMarqueeDualHorizontal();
     initMarqueeDualVertical();
 
     initMixItUp();
