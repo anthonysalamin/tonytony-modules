@@ -6,13 +6,12 @@
  */
 
 export function initMarqueeDualVertical() {
-    console.log('initMarqueeDualVertical');
     const container = document.querySelector('[data-marquee="dual-container"]');
     if (!container) return;
 
     const upward = container.querySelector('[data-marquee="upward"]');
     const downward = container.querySelector('[data-marquee="downward"]');
-    const delta = 25;
+    const delta = 10;
     const ease = "power2.out";
     if (!upward || !downward) return;
 
