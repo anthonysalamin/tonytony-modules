@@ -19,10 +19,10 @@ export function initMarqueeDualVertical() {
 
     ScrollTrigger.create({
         trigger: container,
-        start: "top 80%",
-        end: "top 20%",
+        start: "top bottom",
+        end: "top top",
         scrub: true,
-        markers: true,
+        markers: false,
         animation: gsap.timeline()
             .to(upward, { yPercent: -20, ease: "none" }, 0)
             .to(downward, { yPercent: 20, ease: "none" }, 0),
