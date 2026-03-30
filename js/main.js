@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initFAQModule();
     initDrawCheck();
     
-    const marqueeRoot = document.querySelector(".mwg008");
+    const marqueeRoot = document.querySelector('[data-mwg008="root"]');
     if (marqueeRoot) {
         initMarkeeMWG008(marqueeRoot);
         console.log(`✅ Initialized markee MWG008`);
