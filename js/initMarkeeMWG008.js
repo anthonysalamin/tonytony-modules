@@ -26,6 +26,9 @@ export function initMarkeeMWG008(root) {
     const cards = root.querySelectorAll('[data-mwg008="card"]');
     const originalCardsLength = cards.length;
 
+    // initial css states
+    content.style.cursor = "grab";
+
     // Clone all collection items to create seamless loop
     items.forEach((item) => {
       const clone = item.cloneNode(true);
@@ -62,12 +65,18 @@ export function initMarkeeMWG008(root) {
     const gsapObs = Observer.create({
       target: content,
       type: "pointer,touch",
-      onPress: () => tl.play(),
+      onPress: () => {
+        content.style.cursor = "grabbing";
+        tl.play();
+      },
       onDrag: (self) => {
         total += self.deltaX;
         xTo(total);
       },
-      onRelease: () => tl.reverse(),
+      onRelease: () => {
+        content.style.cursor = "grab";
+        tl.reverse();
+      },
       onStop: () => tl.reverse(),
     });
 
