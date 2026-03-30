@@ -30,7 +30,7 @@ import { initScrubUnblurIntoView } from 'https://cdn.tonytony.ch/js/initScrubUnb
 import { initCustomCursor } from 'https://cdn.tonytony.ch/js/initCustomCursor.js?v=1.0.0';
 import { initScrollProgress } from 'https://cdn.tonytony.ch/js/initScrollProgress.js?v=1.0.0';
 import { injectCurrentYear } from 'https://cdn.tonytony.ch/js/injectCurrentYear.js?v=1.0.0';
-import { initMarkeeMWG008 } from 'https://cdn.tonytony.ch/js/initMarkeeMWG008.js?v=1.0.0';
+import { initMarqueeClients } from 'https://cdn.tonytony.ch/js/initMarqueeClients.js?v=1.0.0';
 import { initFathomTrackEvents } from 'https://cdn.tonytony.ch/js/initFathomTrackEvents.js?v=1.0.0';
 import { initMwg011 } from 'https://cdn.tonytony.ch/js/initMWG011.js?v=1.0.0';
 import { initGraphicSVG } from 'https://cdn.tonytony.ch/js/initGraphicSVG.js?v=1.0.0';
@@ -55,11 +55,9 @@ document.addEventListener("DOMContentLoaded", () => {
     initFAQModule();
     initDrawCheck();
     
+    // marquee clients
     const marqueeRoot = document.querySelector('[data-mwg008="root"]');
-    if (marqueeRoot) {
-        initMarkeeMWG008(marqueeRoot);
-        console.log(`✅ Initialized markee MWG008`);
-    }
+    if (marqueeRoot) initMarqueeClients(marqueeRoot);
 
     // forms
     initUdeslyRedirect();

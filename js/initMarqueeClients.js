@@ -1,11 +1,11 @@
 /**
- * TONYTONY | initMarkeeMWG008
+ * TONYTONY | initMarqueeClients
  * Infinite marquee with GSAP-driven drag interaction, random card rotation on press, and seamless loop via cloning.
  * @build 02.02.26
  * @updated 10.03.26
  */
 
-export function initMarkeeMWG008(root) {
+export function initMarqueeClients(root) {
   function boot() {
     if (window.gsap && window.Observer) {
       initEffect();
