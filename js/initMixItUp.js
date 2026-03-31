@@ -173,7 +173,7 @@ function handleMixEnd(mixer) {
  * Shows error message and resets to show all items
  */
 function handleMixFail(mixer) {
-    const statusElement = document.querySelector("#status");
+    const statusElement = document.querySelector('[data-mixitup="status"]');
     if (statusElement) {
         statusElement.textContent = "No matching item to display.";
     }
