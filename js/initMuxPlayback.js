@@ -23,8 +23,8 @@ export function initMuxPlayback() {
 
       const description = data?.description;
       if (description) {
-        const legend = player.nextElementSibling;
-        if (legend?.hasAttribute("data-mux")) {
+        const legend = player.closest(`[data-mux="embed"]`)?.nextElementSibling;
+        if (legend?.getAttribute("data-mux") === "legend") {
           legend.textContent = description;
         }
       }
