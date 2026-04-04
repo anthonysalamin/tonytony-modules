@@ -2,7 +2,7 @@
  * TONYTONY | initMuxPlayback
  * Parses data-json on mux-player elements to inject Playback_ID into playback-id attribute and poster URL.
  * @build 04.04.26
- * @updated 16:30 CET
+ * @updated 16:35 CET
  */
 
 export function initMuxPlayback() {
@@ -20,6 +20,14 @@ export function initMuxPlayback() {
         "poster",
         `https://image.mux.com/${id}/thumbnail.png?width=50&height=28&time=30`
       );
+
+      const description = data?.description;
+      if (description) {
+        const legend = player.nextElementSibling;
+        if (legend?.hasAttribute("data-mux")) {
+          legend.textContent = description;
+        }
+      }
     } catch (e) {
       console.warn("initMuxPlayback: invalid JSON on element", player, e);
     }
