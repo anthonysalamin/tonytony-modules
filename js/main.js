@@ -34,6 +34,7 @@ import { initMarqueeClients } from 'https://cdn.tonytony.ch/js/initMarqueeClient
 import { initFathomTrackEvents } from 'https://cdn.tonytony.ch/js/initFathomTrackEvents.js?v=1.0.0';
 import { initMwg011 } from 'https://cdn.tonytony.ch/js/initMWG011.js?v=1.0.0';
 import { initGraphicSVG } from 'https://cdn.tonytony.ch/js/initGraphicSVG.js?v=1.0.0';
+import { initMuxPlayback } from 'https://cdn.tonytony.ch/js/initMuxPlayback.js?v=1.0.0';
 
 // IIFEs
 initLanguageRedirect();
@@ -54,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initMixItUp();
     initFAQModule();
     initDrawCheck();
+    initMuxPlayback();
     
     // marquee clients
     const marqueeRoot = document.querySelector('[data-mwg008="root"]');
