@@ -17,6 +17,7 @@ export function initMuxPlayback() {
 
       const ratio = (data?.ratio || "16:10").replace(":", "/");
 
+      player.setAttribute("min-resolution", "1080p");
       player.setAttribute("playback-id", id);
       player.setAttribute(
         "poster",
