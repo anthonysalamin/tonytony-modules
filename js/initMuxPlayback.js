@@ -1,8 +1,8 @@
 /**
  * TONYTONY | initMuxPlayback
- * Parses data-json on mux-player elements to inject Playback_ID into playback-id attribute and poster URL.
+ * Parses data-json on mux-player elements to inject Playback_ID, poster URL, ratio, and description.
  * @build 04.04.26
- * @updated 16:35 CET
+ * @updated 17:10 CET
  */
 
 export function initMuxPlayback() {
@@ -15,17 +15,20 @@ export function initMuxPlayback() {
 
       if (!id) return;
 
+      const ratio = data?.ratio || "16/10";
+
       player.setAttribute("playback-id", id);
       player.setAttribute(
         "poster",
         `https://image.mux.com/${id}/thumbnail.png?width=50&height=28&time=30`
       );
 
-      const description = data?.description;
-      if (description) {
+      player.style.aspectRatio = data?.ratio || "16/10";
+
+      if (data?.description) {
         const legend = player.closest(`[data-mux="embed"]`)?.nextElementSibling;
         if (legend?.getAttribute("data-mux") === "legend") {
-          legend.textContent = description;
+          legend.textContent = data.description;
         }
       }
     } catch (e) {
