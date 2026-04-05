@@ -22,15 +22,18 @@ export function initMuxPlayback() {
         "poster",
         `https://image.mux.com/${id}/thumbnail.png?width=50&height=28&time=30`
       );
-      
-      console.log(data.ratio);
+
       player.style.aspectRatio = ratio;
-      console.log(player.style.aspectRatio);
 
       if (data?.description) {
         const legend = player.closest(`[data-mux="embed"]`)?.nextElementSibling;
         if (legend?.getAttribute("data-mux") === "legend") {
           legend.textContent = data.description;
+        }
+      } else {
+        const legend = player.closest(`[data-mux="embed"]`)?.nextElementSibling;
+        if (legend?.getAttribute("data-mux") === "legend") {
+          legend.remove();
         }
       }
     } catch (e) {
