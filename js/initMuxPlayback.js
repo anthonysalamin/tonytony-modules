@@ -22,8 +22,10 @@ export function initMuxPlayback() {
         "poster",
         `https://image.mux.com/${id}/thumbnail.png?width=50&height=28&time=30`
       );
-
-      player.style.aspectRatio = data?.ratio || "16/10";
+      
+      console.log(data.ratio);
+      player.style.aspectRatio = ratio;
+      console.log(player.style.aspectRatio);
 
       if (data?.description) {
         const legend = player.closest(`[data-mux="embed"]`)?.nextElementSibling;
