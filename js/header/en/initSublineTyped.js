@@ -6,7 +6,7 @@
  */
 
 export function initSublineTyped() {
-    const el = document.querySelector("[data-id='subline']");
+    const el = document.querySelector("[data-typed='subline']");
     if (!el) return;
 
     new Typed(el, {
