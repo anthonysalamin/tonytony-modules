@@ -15,7 +15,7 @@ export function initMuxPlayback() {
 
       if (!id) return;
 
-      const ratio = data?.ratio || "16/10";
+      const ratio = (data?.ratio || "16:10").replace(":", "/");
 
       player.setAttribute("playback-id", id);
       player.setAttribute(
