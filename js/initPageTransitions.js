@@ -17,7 +17,7 @@ export function initPageTransitions() {
             cover.style.display = 'flex';
             gsap.fromTo(cover, { opacity: 0 }, {
                 opacity: 1,
-                duration: 0.4,
+                duration: 0.35,
                 ease: 'power2.in',
                 onComplete: () => {
                    window.location.href = href;

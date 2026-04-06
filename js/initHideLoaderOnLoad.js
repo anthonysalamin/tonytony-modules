@@ -13,8 +13,8 @@ export function initHideLoaderOnLoad() {
     const hideCover = () => {
         gsap.to(cover, {
             opacity: 0,
-            delay: 0.25,
-            duration: 0.8,
+            delay: 0.15,
+            duration: 0.75,
             ease: 'power2.out',
             onComplete: () => {
                 cover.style.display = 'none';
