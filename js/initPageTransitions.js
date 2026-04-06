@@ -20,7 +20,7 @@ export function initPageTransitions() {
                 duration: 0.4,
                 ease: 'power2.in',
                 onComplete: () => {
-                   // window.location.href = href;
+                   window.location.href = href;
                    console.log('transition complete');
                 },
             });
