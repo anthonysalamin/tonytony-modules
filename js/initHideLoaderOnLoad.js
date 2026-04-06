@@ -1,6 +1,7 @@
 /**
  * TONYTONY | initHideLoaderOnLoad
  * Fades out the full-page loading cover using GSAP on DOM load, then hides it.
+ * Also handles bfcache (browser back/forward) to ensure the loader is dismissed.
  * @build    06.04.26
  * @updated  10:28 PHT
  */
@@ -8,13 +9,22 @@
 export function initHideLoaderOnLoad() {
     const cover = document.querySelector('[data-element="loading-cover"]');
     if (!cover || !window.gsap) return;
-    gsap.to(cover, {
-        opacity: 0,
-        delay: 0.25,
-        duration: 0.8,
-        ease: 'power2.out',
-        onComplete: () => {
-            cover.style.display = 'none';
-        },
+
+    const hideCover = () => {
+        gsap.to(cover, {
+            opacity: 0,
+            delay: 0.25,
+            duration: 0.8,
+            ease: 'power2.out',
+            onComplete: () => {
+                cover.style.display = 'none';
+            },
+        });
+    };
+
+    hideCover();
+
+    window.addEventListener('pageshow', (e) => {
+        if (e.persisted) hideCover();
     });
 }
