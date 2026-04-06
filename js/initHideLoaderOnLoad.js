@@ -1,8 +1,8 @@
 /**
- * SAMUELDEVANTERY | initHideLoaderOnLoad
+ * TONYTONY | initHideLoaderOnLoad
  * Fades out the full-page loading cover using GSAP on DOM load, then hides it.
- * @build    25.02.26
- * @updated  19:10 PHT
+ * @build    06.04.26
+ * @updated  10:28 PHT
  */
 
 export function initHideLoaderOnLoad() {
