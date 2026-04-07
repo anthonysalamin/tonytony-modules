@@ -17,6 +17,7 @@ export function initSwitchTheme() {
         scrollTrigger: {
             trigger: section,
             start: "bottom 70%",
+            markers: true,
             toggleActions: "play none none reverse",
         },
     });
