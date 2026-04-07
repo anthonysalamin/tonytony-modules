@@ -30,7 +30,7 @@ export function initSwitchTheme() {
         onLeaveBack: () => {
             gsap.to("body", {
                 "--background": originalBg,
-                "--dark": originalColor,
+                "--text": originalColor,
                 color: originalColor,
                 backgroundColor: originalBg,
                 duration: 1,
