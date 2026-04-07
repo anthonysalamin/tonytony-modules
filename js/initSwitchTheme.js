@@ -16,6 +16,7 @@ export function initSwitchTheme() {
     ScrollTrigger.create({
         trigger: section,
         start: "top 40%",
+        end: "bottom 60%",
         // markers: true,
         onEnter: () => {
             gsap.to("body", {
