@@ -5,6 +5,7 @@
  * @updated 07.04.26 PHT
  */
 
+/*
 export function initSwitchTheme() {
     const section = document.querySelector('[data-section="case-study"]');
     if (!section) return;
@@ -18,6 +19,26 @@ export function initSwitchTheme() {
         scrollTrigger: {
             trigger: section,
             start: "bottom 70%",
+            toggleActions: "play none none reverse",
+        },
+    });
+}
+*/
+
+
+export function initSwitchTheme() {
+    const section = document.querySelector('[data-section="case-study"]');
+    if (!section) return;
+
+    gsap.to("body, .page-wrap", {
+        backgroundColor: "#212121",
+        color: "#ffffff",
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: section,
+            start: "bottom 70%",
+            markers: true,
             toggleActions: "play none none reverse",
         },
     });
