@@ -10,7 +10,7 @@ export function initSwitchTheme() {
     if (!section) return;
 
     gsap.to("body", {
-        backgroundColor: "#000000",
+        backgroundColor: "#212121",
         color: "#ffffff",
         duration: 1,
         ease: "power2.out",
