@@ -10,14 +10,13 @@ export function initSwitchTheme() {
     if (!section) return;
 
     gsap.to("body", {
-        css: { backgroundColor: "#212121 !important" },
+        backgroundColor: "#212121 !important",
         color: "#ffffff",
         duration: 1,
         ease: "power2.out",
         scrollTrigger: {
             trigger: section,
             start: "bottom 70%",
-            markers: true,
             toggleActions: "play none none reverse",
         },
     });
