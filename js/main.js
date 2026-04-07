@@ -14,6 +14,8 @@ import { initLanguageRedirect } from 'https://cdn.tonytony.ch/js/initLanguageRed
 import { InitSmoothScrollManager } from 'https://cdn.tonytony.ch/js/InitSmoothScrollManager.js?v=1.0.0';
 import { initNavigation } from 'https://cdn.tonytony.ch/js/initNavigation.js?v=1.0.0';
 import { initNavBarDisplay } from 'https://cdn.tonytony.ch/js/initNavBarDisplay.js?v=1.0.0';
+import { initLogoTyped } from 'https://cdn.tonytony.ch/js/initLogoTyped.js?v=1.0.0';
+
 // import { initVideoState } from 'https://cdn.tonytony.ch/js/initVideoState.js?v=1.0.0';
 import { initMarqueeDualHorizontal } from 'https://cdn.tonytony.ch/js/initMarqueeDualHorizontal.js?v=1.0.0';
 import { initMarqueeDualVertical } from 'https://cdn.tonytony.ch/js/initMarqueeDualVertical.js?v=1.0.0';
@@ -45,6 +47,7 @@ initLanguageRedirect();
 document.addEventListener("DOMContentLoaded", () => {
     initHideLoaderOnLoad();
     initPageTransitions();
+    initLogoTyped();
 
     // smooth scroll
     new InitSmoothScrollManager();
