@@ -5,30 +5,13 @@
  * @updated 07.04.26 PHT
  */
 
-/*
 export function initSwitchTheme() {
     const section = document.querySelector('[data-section="case-study"]');
     if (!section) return;
 
-    gsap.to("body", {
-        backgroundColor: "#212121 !important",
-        color: "#ffffff",
-        duration: 1,
-        ease: "power2.out",
-        markers: true,
-        scrollTrigger: {
-            trigger: section,
-            start: "bottom 70%",
-            toggleActions: "play none none reverse",
-        },
-    });
-}
-*/
-
-
-export function initSwitchTheme() {
-    const section = document.querySelector('[data-section="case-study"]');
-    if (!section) return;
+    const bodyStyles = getComputedStyle(document.body);
+    const originalBg = bodyStyles.backgroundColor;
+    const originalColor = bodyStyles.color;
 
     ScrollTrigger.create({
         trigger: section,
@@ -46,10 +29,10 @@ export function initSwitchTheme() {
         },
         onLeaveBack: () => {
             gsap.to("body", {
-                "--background": "",
-                "--dark": "",
-                color: "",
-                backgroundColor: "",
+                "--background": originalBg,
+                "--dark": originalColor,
+                color: originalColor,
+                backgroundColor: originalBg,
                 duration: 1,
                 ease: "power2.out",
             });
