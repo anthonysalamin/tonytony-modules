@@ -14,6 +14,7 @@ export function initSwitchTheme() {
         color: "#ffffff",
         duration: 1,
         ease: "power2.out",
+        markers: true,
         scrollTrigger: {
             trigger: section,
             start: "bottom 70%",
