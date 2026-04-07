@@ -20,7 +20,7 @@ export function initSwitchTheme() {
         onEnter: () => {
             gsap.to("body", {
                 "--background": "#212121",
-                "--dark": "#ffffff",
+                "--text": "#ffffff",
                 color: "#ffffff",
                 backgroundColor: "#212121",
                 duration: 1,
