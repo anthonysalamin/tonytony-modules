@@ -6,7 +6,7 @@
  */
 
 export function initSwitchTheme() {
-    const section = document.querySelector('[data-section="case-study"]');
+    const section = document.querySelector('[data-id="media"]');
     if (!section) return;
 
     const bodyStyles = getComputedStyle(document.body);
@@ -15,8 +15,8 @@ export function initSwitchTheme() {
 
     ScrollTrigger.create({
         trigger: section,
-        start: "bottom 70%",
-        markers: true,
+        start: "top 40%",
+        // markers: true,
         onEnter: () => {
             gsap.to("body", {
                 "--background": "#212121",

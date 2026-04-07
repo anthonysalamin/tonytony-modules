@@ -82,11 +82,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // fathom track event
     initFathomTrackEvents();
 
+    /*
     initScrollProgress({
         position: "left",
         breakpoint: 768,
         hideAtPercentage: 0.9
     });
+    */
 
     initCustomCursor();
     injectCurrentYear();
