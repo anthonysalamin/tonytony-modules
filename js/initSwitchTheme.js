@@ -30,16 +30,29 @@ export function initSwitchTheme() {
     const section = document.querySelector('[data-section="case-study"]');
     if (!section) return;
 
-    gsap.to("body, .page-wrap", {
-        backgroundColor: "#212121",
-        color: "#ffffff",
-        duration: 1,
-        ease: "power2.out",
-        scrollTrigger: {
-            trigger: section,
-            start: "bottom 70%",
-            markers: true,
-            toggleActions: "play none none reverse",
+    ScrollTrigger.create({
+        trigger: section,
+        start: "bottom 70%",
+        markers: true,
+        onEnter: () => {
+            gsap.to("body", {
+                "--background": "#212121",
+                "--dark": "#ffffff",
+                color: "#ffffff",
+                backgroundColor: "#212121",
+                duration: 1,
+                ease: "power2.out",
+            });
+        },
+        onLeaveBack: () => {
+            gsap.to("body", {
+                "--background": "",
+                "--dark": "",
+                color: "",
+                backgroundColor: "",
+                duration: 1,
+                ease: "power2.out",
+            });
         },
     });
 }
