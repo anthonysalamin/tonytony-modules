@@ -29,8 +29,8 @@ export function initSwitchTheme() {
         ease: "power2.out",
         scrollTrigger: {
             trigger: section,
-            start: "top 40%",
-            end: "bottom 80%",
+            start: "top 70%",
+            end: "bottom 70%",
             // markers: true,
             toggleActions: "play reverse play reverse",
         },
