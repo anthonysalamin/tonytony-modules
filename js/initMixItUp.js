@@ -1,298 +1,222 @@
 /**
  * PORTFOLIO | initMixItUp
- * @build 22.09.25 @updated 16:58 PHT
+ * 
  * Sets up portfolio filtering with MixItUp by converting Webflow content to CSS classes.
+ * 
+ * @build 08.04.26
+ * @updated 20:11 PHT
  */
 
-export function initMixItUp(production = false) {
-    setDataAttribute();
-    filterChecked();
-    featToClass();
-    categToClass();
-    titleToClass();
-    mixItUp(production);
-}
+// ── Selectors ──────────────────────────────────────────────────────────────────
+
+const SEL = {
+    controls: '[data-mixitup="controls"]',
+    container: '[data-mixitup="container"]',
+    search: '[data-mixitup="search"]',
+    status: '[data-mixitup="status"]',
+    item: '.mixitup__collection-item',
+    category: '.mixitup__category',
+    title: '.mixitup__title',
+    featuring: '.mixitup__featuring',
+    filter: '.filter',
+};
+
+// ── Helpers ────────────────────────────────────────────────────────────────────
 
 /**
- * Clean and normalize string for CSS class names
- * Removes accents, special characters, and converts to lowercase
+ * Normalize a string into a valid CSS class name.
+ * Strips diacritics via Unicode normalization, removes non-alphanumeric chars.
  */
-function cleanAndTransformString(str) {
-    const accentMap = {
-        ä: "a", Ä: "a",
-        à: "a", À: "a",
-        é: "e", É: "e",
-        è: "e", È: "e",
-        ö: "o", Ö: "o",
-        ü: "u", Ü: "u"
-    };
-
-    let cleanedString = str;
-    for (const accentChar in accentMap) {
-        const normalChar = accentMap[accentChar];
-        const accentRegex = new RegExp(accentChar, "g");
-        cleanedString = cleanedString.replace(accentRegex, normalChar);
-    }
-
-    return cleanedString
-        .replace(/[^a-zA-Z0-9-]/g, "")
+function toClassName(str) {
+    return str
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '') // strip combining diacritical marks
+        .replace(/[^a-zA-Z0-9-]/g, '')
         .toLowerCase();
 }
 
 /**
- * Set filter buttons with normalized data attributes
- * Converts button text content to CSS selector format
- */
-function setDataAttribute() {
-    const controls = document.querySelector(`[data-mixitup="controls"]`);
-    if (!controls) return;
-
-    const buttons = controls.querySelectorAll('[data-filter=""]');
-    Array.from(buttons).forEach((button) => {
-        const content = button.textContent;
-        const contentCleaned = cleanAndTransformString(content);
-        button.setAttribute("data-filter", `.${contentCleaned}`);
-    });
-}
-
-/**
- * Manage button state for filter controls
- * Handles active/checked state switching
- */
-function filterChecked() {
-    const controls = document.querySelector(`[data-mixitup="controls"]`);
-    if (!controls) return;
-
-    const buttons = document.getElementsByClassName("filter");
-    Array.from(buttons).forEach((button) => {
-        button.addEventListener("click", (event) => {
-            const target = event.currentTarget;
-            if (!target.classList.contains("checked")) {
-                // Remove checked from current active button
-                const currentChecked = controls.querySelector(".filter.checked");
-                if (currentChecked) {
-                    currentChecked.classList.remove("checked");
-                }
-                // Add checked to clicked button
-                target.classList.add("checked");
-            }
-        });
-    });
-}
-
-/**
- * Convert Webflow switch "featuring" into CSS combo class
- * Adds featuring status as a class to portfolio items
- */
-function featToClass() {
-    const mixes = document.querySelectorAll(".mixitup__collection-item");
-    Array.from(mixes).forEach((mix) => {
-        const featuringElement = mix.querySelector(".mixitup__featuring");
-        if (featuringElement && !featuringElement.classList.contains("w-condition-invisible")) {
-            const stringFeat = featuringElement.textContent;
-            const classNameFeat = stringFeat.replace(/\s+/g, "").toLowerCase();
-            mix.classList.add(classNameFeat);
-        }
-    });
-}
-
-/**
- * Convert Webflow text field "category" into CSS combo class
- * Adds category names as classes to portfolio items
- */
-function categToClass() {
-    const mixes = document.getElementsByClassName("mixitup__collection-item");
-    Array.from(mixes).forEach((mix) => {
-        const categories = mix.querySelectorAll(".mixitup__category");
-        categories.forEach((category) => {
-            const classNameCateg = cleanAndTransformString(category.textContent);
-            mix.classList.add(classNameCateg);
-        });
-    });
-}
-
-/**
- * Convert Webflow text field "title" into CSS combo class
- * Adds title as a searchable class to portfolio items
- */
-function titleToClass() {
-    const mixes = document.getElementsByClassName("mixitup__collection-item");
-    Array.from(mixes).forEach((mix) => {
-        const titleElement = mix.querySelector(".mixitup__title");
-        if (titleElement) {
-            const stringTitle = titleElement.textContent;
-            const cleanTitle = stringTitle.split(" ").join("").toLowerCase().trim();
-            mix.classList.add(cleanTitle);
-        }
-    });
-}
-
-/**
- * Refresh ScrollTrigger with proper timing
- * Ensures DOM is fully settled before refresh
+ * Refresh ScrollTrigger after layout changes.
  */
 function refreshScrollTrigger() {
-    // Multiple approaches for maximum reliability
     requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-                if (typeof ScrollTrigger !== 'undefined') {
-                    ScrollTrigger.refresh();
-                }
-            });
-        });
-    });
-
-    // Backup timeout method for extra reliability
-    setTimeout(() => {
         if (typeof ScrollTrigger !== 'undefined') {
             ScrollTrigger.refresh();
         }
-    }, 100);
+    });
+}
+
+// ── DOM transforms ─────────────────────────────────────────────────────────────
+
+/**
+ * Set data-filter attributes on control buttons from their text content.
+ */
+function setDataAttributes(controls) {
+    if (!controls) return;
+
+    controls.querySelectorAll('[data-filter=""]').forEach((btn) => {
+        btn.setAttribute('data-filter', `.${toClassName(btn.textContent)}`);
+    });
 }
 
 /**
- * Handle successful mix completion
- * Updates status and refreshes ScrollTrigger
+ * Bind click handler that toggles the `.checked` class across filter buttons.
  */
-function handleMixEnd(mixer) {
-    const totalItems = document.querySelectorAll(".mixitup__collection-item").length;
-    const filteredItems = mixer.getState().totalShow;
-    const displayElement = document.querySelector('[data-mixitup="status"]');
+function bindFilterChecked(controls) {
+    if (!controls) return;
 
-    if (displayElement) {
-        displayElement.textContent = `${filteredItems} result${filteredItems > 1 ? "s" : ""}`;
-    }
+    controls.querySelectorAll(SEL.filter).forEach((btn) => {
+        btn.addEventListener('click', ({ currentTarget }) => {
+            if (currentTarget.classList.contains('checked')) return;
 
-    // Refresh ScrollTrigger after DOM is fully settled
-    refreshScrollTrigger();
+            controls.querySelector(`${SEL.filter}.checked`)?.classList.remove('checked');
+            currentTarget.classList.add('checked');
+        });
+    });
 }
 
 /**
- * Handle mix failure
- * Shows error message and resets to show all items
+ * Convert Webflow CMS fields into CSS classes on each portfolio item.
+ * Handles featuring state, categories, and title in a single pass.
  */
-function handleMixFail(mixer) {
-    const statusElement = document.querySelector('[data-mixitup="status"]');
-    if (statusElement) {
-        statusElement.textContent = "No matching item to display.";
-    }
+function applyItemClasses() {
+    document.querySelectorAll(SEL.item).forEach((item) => {
+        // Featuring
+        const feat = item.querySelector(SEL.featuring);
+        if (feat && !feat.classList.contains('w-condition-invisible')) {
+            item.classList.add(toClassName(feat.textContent));
+        }
 
-    // Reset to show all items after a brief delay
-    setTimeout(() => {
-        mixer.filter("*");
-        // Refresh ScrollTrigger after reset
-        setTimeout(() => {
-            refreshScrollTrigger();
-        }, 200);
-    }, 1000);
+        // Categories (multi-ref — can have several)
+        item.querySelectorAll(SEL.category).forEach((cat) => {
+            item.classList.add(toClassName(cat.textContent));
+        });
+
+        // Title
+        const title = item.querySelector(SEL.title);
+        if (title) {
+            item.classList.add(toClassName(title.textContent));
+        }
+    });
+}
+
+// ── MixItUp core ───────────────────────────────────────────────────────────────
+
+/**
+ * Update the status element with the current result count.
+ */
+function updateStatus(statusEl, mixer) {
+    if (!statusEl) return;
+
+    const count = mixer.getState().totalShow;
+    statusEl.textContent = `${count} result${count !== 1 ? 's' : ''}`;
 }
 
 /**
- * Filter items by search string
- * Handles both search and reset functionality
+ * Filter items by search string or fall back to the active filter button.
  */
-function filterByString(mixer, searchValue) {
+function filterBySearch(mixer, controls, searchValue) {
     if (searchValue) {
         mixer.filter(`[class*="${searchValue}"]`);
-    } else {
-        // Reset to featured items when search is cleared
-        const currentChecked = document.querySelector(".filter.checked");
-        if (currentChecked) {
-            currentChecked.classList.remove("checked");
-        }
-
-        const featuredButton = document.querySelector("[data-filter*='featuring']");
-        if (featuredButton) {
-            featuredButton.classList.add("checked");
-            mixer.filter(".featuring");
-        } else {
-            mixer.filter("*");
-        }
-    }
-
-    // Refresh ScrollTrigger after search filter
-    setTimeout(() => {
-        refreshScrollTrigger();
-    }, 500);
-}
-
-/**
- * Initialize MixItUp 3 with search module
- * Main initialization function
- */
-function mixItUp(production) {
-    const container = document.querySelector(`[data-mixitup="container"]`);
-    const inputSearch = document.querySelector(`[data-mixitup="search"]`);
-    const status = document.querySelector(`[data-mixitup="status"]`);
-
-    // Early return if required elements don't exist
-    if (!container) {
-        // console.warn("MixItUp: Container element not found");
         return;
     }
 
-    let keyupTimeout, searchValue;
+    // Reset: re-activate the "featuring" button or show all
+    controls?.querySelector(`${SEL.filter}.checked`)?.classList.remove('checked');
 
-    // Set initial status
-    if (!production && status) {
-        status.innerHTML = "Case studies";
+    const featBtn = controls?.querySelector('[data-filter*="featuring"]');
+    if (featBtn) {
+        featBtn.classList.add('checked');
+        mixer.filter('.featuring');
+    } else {
+        mixer.filter('*');
+    }
+}
+
+/**
+ * Bind live-search with debounce + Escape to clear.
+ */
+function bindSearch(inputEl, mixer, controls) {
+    if (!inputEl) return;
+
+    let timeout;
+
+    inputEl.addEventListener('keyup', () => {
+        const value = inputEl.value.trim().toLowerCase() || '';
+        clearTimeout(timeout);
+        timeout = setTimeout(() => filterBySearch(mixer, controls, value), 350);
+    });
+
+    inputEl.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            inputEl.value = '';
+            filterBySearch(mixer, controls, '');
+        }
+    });
+}
+
+// ── Public entry point ─────────────────────────────────────────────────────────
+
+/**
+ * Initialize the portfolio filtering system.
+ * @param {boolean} production — when false, sets initial status label.
+ * @returns {object|undefined} MixItUp mixer instance.
+ */
+export function initMixItUp(production = false) {
+    const container = document.querySelector(SEL.container);
+    if (!container) return;
+
+    const controls = document.querySelector(SEL.controls);
+    const inputSearch = document.querySelector(SEL.search);
+    const statusEl = document.querySelector(SEL.status);
+
+    // 1. Transform DOM
+    setDataAttributes(controls);
+    bindFilterChecked(controls);
+    applyItemClasses();
+
+    // 2. Initial status
+    if (!production && statusEl) {
+        statusEl.textContent = 'Case studies';
     }
 
-    // Initialize MixItUp with enhanced configuration
+    // 3. Init MixItUp
     const mixer = mixitup(container, {
         load: {
-            filter: ".featuring"
+            filter: '.featuring',
         },
         selectors: {
-            target: ".mixitup__collection-item"
+            target: SEL.item,
         },
         animation: {
             duration: 450,
             nudge: true,
             reverseOut: true,
-            effects: "fade scale(0.77) translateZ(-68px) stagger(6ms)"
+            effects: 'fade scale(0.77) translateZ(-68px) stagger(6ms)',
         },
         callbacks: {
             onMixStart: () => {
-                if (status) {
-                    status.textContent = "Searching...";
-                }
+                if (statusEl) statusEl.textContent = 'Searching...';
             },
-            onMixEnd: () => handleMixEnd(mixer),
-            onMixFail: () => handleMixFail(mixer)
-        }
+            onMixEnd: () => {
+                updateStatus(statusEl, mixer);
+                refreshScrollTrigger();
+            },
+            onMixFail: () => {
+                if (statusEl) statusEl.textContent = 'No matching item to display.';
+                setTimeout(() => {
+                    mixer.filter('*');
+                    refreshScrollTrigger();
+                }, 1000);
+            },
+        },
     });
 
-    // Set up live search functionality
-    if (inputSearch) {
-        inputSearch.addEventListener("keyup", () => {
-            searchValue = inputSearch.value.length < 1
-                ? ""
-                : inputSearch.value.toLowerCase().trim();
+    // 4. Search
+    bindSearch(inputSearch, mixer, controls);
 
-            // Clear previous timeout
-            clearTimeout(keyupTimeout);
+    // 5. Initial ScrollTrigger sync
+    refreshScrollTrigger();
 
-            // Debounce search to avoid excessive filtering
-            keyupTimeout = setTimeout(() => {
-                filterByString(mixer, searchValue);
-            }, 350);
-        });
-
-        // Clear search on escape key
-        inputSearch.addEventListener("keydown", (event) => {
-            if (event.key === "Escape") {
-                inputSearch.value = "";
-                filterByString(mixer, "");
-            }
-        });
-    }
-
-    // Initial ScrollTrigger refresh after setup
-    setTimeout(() => {
-        refreshScrollTrigger();
-    }, 100);
-
-    return mixer; // Return mixer instance for external access
+    return mixer;
 }
