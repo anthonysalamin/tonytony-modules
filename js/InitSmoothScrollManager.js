@@ -47,11 +47,7 @@ export class InitSmoothScrollManager {
         }
 
         this.lenis = new Lenis({
-            smooth: true,
-            duration: 1.75,
-            lerp: 0.1,
-            direction: "vertical",
-            gestureDirection: "vertical",
+            duration: 1.2,
             smoothTouch: false,
             infinite: false
         });
@@ -76,32 +72,14 @@ export class InitSmoothScrollManager {
     startAnimation() {
         if (!this.isAnimating) {
             this.isAnimating = true;
-
-            const animate = (time) => {
-                this.lenis.raf(time);
-                requestAnimationFrame(animate);
-            };
-
-            requestAnimationFrame(animate);
+            gsap.ticker.add((time) => {
+                this.lenis.raf(time * 1000);
+            });
+            gsap.ticker.lagSmoothing(0);
         }
     }
 
     setupScrollTrigger() {
-        ScrollTrigger.scrollerProxy(document.body, {
-            scrollTop: (value) => {
-                return arguments.length
-                    ? this.lenis.scrollTo(value, { immediate: true })
-                    : window.scrollY;
-            },
-            getBoundingClientRect: () => ({
-                top: 0,
-                left: 0,
-                width: window.innerWidth,
-                height: window.innerHeight
-            }),
-            pinType: document.body.style.transform ? "transform" : "fixed"
-        });
-
         this.lenis.on("scroll", ScrollTrigger.update);
     }
 
