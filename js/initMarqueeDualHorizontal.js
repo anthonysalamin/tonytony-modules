@@ -6,7 +6,7 @@
  */
 
 export function initMarqueeDualHorizontal() {
-  const vw = window.innerWidth;
+  const vw = document.documentElement.clientWidth;
   const offset = vw * 0.2;
 
   // Marquee UP — moves left
@@ -17,14 +17,13 @@ export function initMarqueeDualHorizontal() {
       el,
       { x: offset },
       {
-        x: vw - naturalLeft - el.scrollWidth,
+        x: vw - naturalLeft - el.scrollWidth - offset,
         ease: "none",
         scrollTrigger: {
           trigger: el,
           start: "top bottom",
           end: "bottom top",
           scrub: true,
-          markers: true,
           invalidateOnRefresh: true,
         },
       }
@@ -39,7 +38,7 @@ export function initMarqueeDualHorizontal() {
       el,
       { x: -(naturalLeft + el.scrollWidth - vw + offset) },
       {
-        x: -naturalLeft,
+        x: offset - naturalLeft,
         ease: "none",
         scrollTrigger: {
           trigger: el,
