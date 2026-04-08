@@ -21,8 +21,14 @@ export function initVideoHeader() {
         trigger: container,
         start: "top bottom",
         end: "bottom top",
-        onEnter: () => (isInView = true),
-        onEnterBack: () => (isInView = true),
+        onEnter: () => {
+            isInView = true;
+            videos.forEach((v) => v.play().catch(() => {}));
+        },
+        onEnterBack: () => {
+            isInView = true;
+            videos.forEach((v) => v.play().catch(() => {}));
+        },
         onLeave: () => {
             isInView = false;
             videos.forEach((v) => v.pause());
