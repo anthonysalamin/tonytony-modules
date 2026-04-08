@@ -15,17 +15,17 @@ export function initMarqueeDualVertical() {
     const ease = "none"; // "power2.out"
     if (!upward || !downward) return;
 
-    gsap.set(upward, { yPercent: 0 });
-    gsap.set(downward, { yPercent: 0 });
+    gsap.set(upward, { yPercent: 0, willChange: "transform" });
+    gsap.set(downward, { yPercent: 0, willChange: "transform" });
 
     ScrollTrigger.create({
         trigger: container,
         start: "top bottom",
         end: "bottom top",
-        scrub: true,
+        scrub: 0.5, // true
         markers: false,
         animation: gsap.timeline()
-            .to(upward, { yPercent: -delta, ease: ease }, 0)
-            .to(downward, { yPercent: delta, ease: ease }, 0),
+            .to(upward, { yPercent: -delta, ease: ease, force3D: true }, 0)
+            .to(downward, { yPercent: delta, ease: ease, force3D: true }, 0),
     });
 }
