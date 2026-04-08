@@ -11,6 +11,7 @@ export function initMarqueeDualHorizontal() {
 
   // Marquee UP — moves left
   document.querySelectorAll('[data-marquee="up"]').forEach((el) => {
+    gsap.set(el, { willChange: "transform" });
     const naturalLeft = el.getBoundingClientRect().left;
 
     gsap.fromTo(
@@ -23,7 +24,7 @@ export function initMarqueeDualHorizontal() {
           trigger: el,
           start: "top bottom",
           end: "bottom top",
-          scrub: 0.5, // true
+          scrub: 1, // true
           invalidateOnRefresh: true,
         },
       }
@@ -32,6 +33,7 @@ export function initMarqueeDualHorizontal() {
 
   // Marquee DOWN — moves right
   document.querySelectorAll('[data-marquee="down"]').forEach((el) => {
+    gsap.set(el, { willChange: "transform" });
     const naturalLeft = el.getBoundingClientRect().left;
 
     gsap.fromTo(
@@ -44,7 +46,7 @@ export function initMarqueeDualHorizontal() {
           trigger: el,
           start: "top bottom",
           end: "bottom top",
-          scrub: 0.5,
+          scrub: 1,
           invalidateOnRefresh: true,
         },
       }
