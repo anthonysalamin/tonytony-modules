@@ -22,7 +22,7 @@ export function initGraphicSVG() {
                 start: "top bottom",
                 end: "bottom 98%",
                 markers: false,
-                scrub: true,
+                scrub: 0.8,
             },
         });
 

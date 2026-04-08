@@ -9,7 +9,7 @@ const OPTIONS = {
     TRIGGER_SELECTOR: '[data-reveal="scrub-into-view"]',
     START: "top+=15px bottom",
     END: "top 95%",
-    SCRUB: true,
+    SCRUB: 0.8,
     MARKERS: false,
     OPACITY_FROM: 0,
     OPACITY_TO: 1

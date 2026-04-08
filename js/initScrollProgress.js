@@ -24,7 +24,7 @@ export function initScrollProgress({
         gsap.set(path, { strokeDasharray: length, strokeDashoffset: length });
         gsap.to(path, {
             strokeDashoffset: 0,
-            scrollTrigger: { trigger: document.body, start: "top top", end: "bottom bottom", scrub: true }
+            scrollTrigger: { trigger: document.body, start: "top top", end: "bottom bottom", scrub: 0.8 }
         });
 
         gsap.to(wrap, {

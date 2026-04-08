@@ -26,7 +26,7 @@ function initializeTextRevealAnimation(targetConfig, animationConfig, isProducti
                     trigger: element,
                     start: `${targetConfig.START.ELEMENT} ${targetConfig.START.VIEWPORT}`,
                     end: `bottom ${targetConfig.END.VIEWPORT}`,
-                    scrub: true,
+                    scrub: 0.8,
                     markers: !isProduction,
                     toggleActions: "play play reverse reverse"
                 }

@@ -43,7 +43,7 @@ function setupEffect(root) {
         scrollTrigger: {
             trigger: container,
             pin: true,
-            scrub: true,
+            scrub: 0.8,
             end: '+=' + distance
         }
     });

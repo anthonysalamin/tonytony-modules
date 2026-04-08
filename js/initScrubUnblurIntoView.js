@@ -11,7 +11,7 @@ const OPTIONS = {
     BLUR_END: "blur(0px)",
     START: "top bottom",
     END: "top 95%",
-    SCRUB: true,
+    SCRUB: 0.8,
     EASE: "none"
 };
 
