@@ -31,7 +31,7 @@ export function initSwitchThemeCaseStudies() {
         scrollTrigger: {
             trigger: section,
             start: "top center",
-            end: "bottom center",
+            end: "bottom 70%",
             toggleActions: "play reverse play reverse",
         },
     });
