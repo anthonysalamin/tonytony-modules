@@ -30,7 +30,7 @@ export function initSwitchThemeCaseStudies() {
         markers: true,
         scrollTrigger: {
             trigger: section,
-            start: "top bottom",
+            start: "top center",
             end: "bottom center",
             toggleActions: "play reverse play reverse",
         },
