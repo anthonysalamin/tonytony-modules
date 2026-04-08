@@ -6,8 +6,6 @@
  * @updated 08.04.26
  */
 
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 export function initMuxPlayback() {
   const players = document.querySelectorAll("mux-player[data-json]");
 
