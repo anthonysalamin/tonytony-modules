@@ -9,7 +9,7 @@ export function initVideoHeader() {
     const container = document.querySelector('[data-video="hero-container"]');
     if (!container) return;
 
-    const PAUSE_ON_SCROLL = true;
+    const PAUSE_ON_SCROLL = false;
 
     const videos = container.querySelectorAll('video[data-video="hero"]');
     const lenis = window.lenis__pageScroll;
