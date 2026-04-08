@@ -6,7 +6,8 @@
  */
 
 export function initMarqueeDualHorizontal() {
-  const offset = window.innerWidth * 0.2;
+  const vw = window.innerWidth;
+  const offset = vw * 0.2;
 
   // Marquee UP — moves left
   document.querySelectorAll('[data-marquee="up"]').forEach((el) => {
@@ -16,14 +17,13 @@ export function initMarqueeDualHorizontal() {
       el,
       { x: offset },
       {
-        x: -(naturalLeft + el.scrollWidth + offset),
+        x: vw - naturalLeft - el.scrollWidth,
         ease: "none",
         scrollTrigger: {
           trigger: el,
           start: "top bottom",
           end: "bottom top",
           scrub: true,
-          markers: true,
           invalidateOnRefresh: true,
         },
       }
@@ -36,9 +36,9 @@ export function initMarqueeDualHorizontal() {
 
     gsap.fromTo(
       el,
-      { x: -(naturalLeft + el.scrollWidth + offset) },
+      { x: -(naturalLeft + el.scrollWidth - vw + offset) },
       {
-        x: offset,
+        x: -naturalLeft,
         ease: "none",
         scrollTrigger: {
           trigger: el,
