@@ -13,6 +13,7 @@ export function initMarqueeDualVertical() {
     const downward = container.querySelector('[data-marquee="downward"]');
     const delta = 20;
     const ease = "none"; // "power2.out"
+    const scrub = 0.6;
     if (!upward || !downward) return;
 
     gsap.set(upward, { yPercent: 0, willChange: "transform" });
@@ -22,7 +23,7 @@ export function initMarqueeDualVertical() {
         trigger: container,
         start: "top bottom",
         end: "bottom top",
-        scrub: 0.3,
+        scrub: scrub,
         // markers: true,
         animation: gsap.timeline()
             .to(upward, { yPercent: -delta, ease: ease, force3D: true }, 0)

@@ -8,6 +8,7 @@
 export function initMarqueeDualHorizontal() {
   const vw = document.documentElement.clientWidth;
   const offset = vw * 0.2;
+  const scrub = 0.6;
 
   // Marquee UP — moves left
   document.querySelectorAll('[data-marquee="up"]').forEach((el) => {
@@ -24,7 +25,7 @@ export function initMarqueeDualHorizontal() {
           trigger: el,
           start: "top bottom",
           end: "bottom top",
-          scrub: 0.3, // true
+          scrub: scrub,
           // markers: true,
           invalidateOnRefresh: true,
         },
@@ -47,7 +48,8 @@ export function initMarqueeDualHorizontal() {
           trigger: el,
           start: "top bottom",
           end: "bottom top",
-          scrub: 0.3,
+          scrub: scrub,
+          // markers: true,
           invalidateOnRefresh: true,
         },
       }
