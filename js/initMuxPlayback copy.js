@@ -1,12 +1,9 @@
 /**
  * TONYTONY | initMuxPlayback
  * Parses data-json on mux-player elements to inject Playback_ID, poster URL, ratio, and description.
- * Autoplay on scroll via GSAP ScrollTrigger — plays while visible, pauses offscreen.
  * @build 04.04.26
- * @updated 08.04.26
+ * @updated 17:10 CET
  */
-
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export function initMuxPlayback() {
   const players = document.querySelectorAll("mux-player[data-json]");
@@ -39,27 +36,6 @@ export function initMuxPlayback() {
         if (legend?.getAttribute("data-mux") === "legend") {
           legend.remove();
         }
-      }
-
-      // ScrollTrigger autoplay
-      const initAutoplay = () => {
-        player.pause();
-
-        ScrollTrigger.create({
-          trigger: player,
-          start: "top bottom",
-          end: "bottom top",
-          onEnter: () => player.play(),
-          onEnterBack: () => player.play(),
-          onLeave: () => player.pause(),
-          onLeaveBack: () => player.pause(),
-        });
-      };
-
-      if (player.readyState >= 1) {
-        initAutoplay();
-      } else {
-        player.addEventListener("loadedmetadata", initAutoplay, { once: true });
       }
     } catch (e) {
       console.warn("initMuxPlayback: invalid JSON on element", player, e);
