@@ -44,7 +44,7 @@ function cleanAndTransformString(str) {
  * Converts button text content to CSS selector format
  */
 function setDataAttribute() {
-    const controls = document.getElementById("mixitup-controls");
+    const controls = document.querySelector(`[data-mixitup="controls"]`);
     if (!controls) return;
 
     const buttons = controls.querySelectorAll('[data-filter=""]');
@@ -60,7 +60,7 @@ function setDataAttribute() {
  * Handles active/checked state switching
  */
 function filterChecked() {
-    const controls = document.getElementById("mixitup-controls");
+    const controls = document.querySelector(`[data-mixitup="controls"]`);
     if (!controls) return;
 
     const buttons = document.getElementsByClassName("filter");
@@ -222,9 +222,9 @@ function filterByString(mixer, searchValue) {
  * Main initialization function
  */
 function mixItUp(production) {
-    const container = document.getElementById("mixitup-container");
-    const inputSearch = document.getElementById("mixitup-search");
-    const status = document.getElementById("status");
+    const container = document.querySelector(`[data-mixitup="container"]`);
+    const inputSearch = document.querySelector(`[data-mixitup="search"]`);
+    const status = document.querySelector(`[data-mixitup="status"]`);
 
     // Early return if required elements don't exist
     if (!container) {
