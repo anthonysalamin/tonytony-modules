@@ -1,24 +1,55 @@
 /**
  * UTILITY | initRevealTextClaim
- * @build 11.09.25 @updated 08.04.26 PHT
- * Reveals text and claims on scroll by fading characters from low opacity to full opacity, with staggered animation.
- * Uses opacity instead of color so characters inherit the current theme color from the cascade.
+ * @build 11.09.25 @updated 11:12 PHT
+ * Reveals text and claims on scroll by fading characters from low-opacity to full color, with staggered animation.
  */
+
+function convertToRgbaWithAlpha(colorString, alphaValue) {
+    const rgbaMatch = colorString.match(/rgba?\((\d+), (\d+), (\d+),? ?([\d\.]*)?\)/);
+
+    if (rgbaMatch) {
+        const [, redValue, greenValue, blueValue] = rgbaMatch;
+        return `rgba(${redValue}, ${greenValue}, ${blueValue}, ${alphaValue})`;
+    }
+
+    return colorString;
+}
+
+function getElementRealHeight(element) {
+    return element.offsetHeight;
+}
 
 function initializeTextRevealAnimation(targetConfig, animationConfig, isProduction) {
     const targetElements = document.querySelectorAll(targetConfig.SELECTOR);
 
     targetElements.forEach(element => {
+        // Split text into individual characters for animation
         const splitTextInstance = new SplitText(element, {
             type: "words,chars"
         });
 
-        gsap.set(splitTextInstance.chars, { opacity: 0.1 });
+        // Store original colors of each character
+        const originalCharacterColors = splitTextInstance.chars.map(char =>
+            window.getComputedStyle(char).color
+        );
 
+        // Set initial low-opacity state for all characters
+        splitTextInstance.chars.forEach((char, index) => {
+            const fadedColor = convertToRgbaWithAlpha(originalCharacterColors[index], 0.1);
+            gsap.set(char, {
+                color: fadedColor
+            });
+        });
+
+        // Create scroll-triggered animation to reveal characters
         gsap.fromTo(splitTextInstance.chars,
-            { opacity: 0.1 },
             {
-                opacity: 1,
+                // From: low opacity colors
+                color: (index) => convertToRgbaWithAlpha(originalCharacterColors[index], 0.1)
+            },
+            {
+                // To: original full opacity colors
+                color: (index) => originalCharacterColors[index],
                 duration: animationConfig.DURATION,
                 stagger: animationConfig.STAGGER,
                 ease: "none",
@@ -27,7 +58,7 @@ function initializeTextRevealAnimation(targetConfig, animationConfig, isProducti
                     start: `${targetConfig.START.ELEMENT} ${targetConfig.START.VIEWPORT}`,
                     end: `bottom ${targetConfig.END.VIEWPORT}`,
                     scrub: true,
-                    markers: !isProduction,
+                    markers: !isProduction, // Show markers only in development
                     toggleActions: "play play reverse reverse"
                 }
             }
