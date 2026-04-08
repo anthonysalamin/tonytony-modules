@@ -44,10 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // critical
     initHideLoaderOnLoad();
     new InitSmoothScrollManager();
-    initVideoHeader();
-    initLogoTyped();
     initNavBarDisplay();
     initNavigation();
+    initVideoHeader();
+    initLogoTyped();
 
     // marquees
     initMarqueeDualHorizontal();
