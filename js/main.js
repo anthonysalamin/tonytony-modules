@@ -36,6 +36,7 @@ import { initGraphicSVG } from 'https://cdn.tonytony.ch/js/initGraphicSVG.js?v=1
 import { initMuxPlayback } from 'https://cdn.tonytony.ch/js/initMuxPlayback.js?v=1.0.0';
 import { initSwitchTheme } from 'https://cdn.tonytony.ch/js/initSwitchTheme.js?v=1.0.0';
 import { initSwitchThemeCaseStudies } from 'https://cdn.tonytony.ch/js/initSwitchThemeCaseStudies.js?v=1.0.0';
+import { initSVGInjection } from 'https://cdn.tonytony.ch/js/initSVGInjection.js?v=1.0.0';
 
 // IIFEs
 initLanguageRedirect();
@@ -58,11 +59,12 @@ document.addEventListener("DOMContentLoaded", () => {
     initPageTransitions();
     initFAQModule();
     initDrawCheck();
-    
+
     // themes
     initSwitchTheme();
     initSwitchThemeCaseStudies();
-
+    initSVGInjection();
+    
     // video handling
     initMuxPlayback();
 
