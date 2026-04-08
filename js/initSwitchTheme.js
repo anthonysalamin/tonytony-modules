@@ -30,7 +30,7 @@ export function initSwitchTheme() {
         scrollTrigger: {
             trigger: section,
             start: "top 40%",
-            end: "bottom 60%",
+            end: "bottom 80%",
             // markers: true,
             toggleActions: "play reverse play reverse",
         },
