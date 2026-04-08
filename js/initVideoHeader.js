@@ -5,18 +5,17 @@
  */
 
 export function initVideoHeader() {
-    const videos = document.querySelectorAll('video[data-video="header"]');
+    const container = document.querySelector('[data-video="hero-container"]');
+    if (!container) return;
 
-    if (!videos.length) return;
+    const videos = container.querySelectorAll('video[data-video="hero"]');
 
-    videos.forEach((video) => {
-        ScrollTrigger.create({
-            trigger: video,
-            start: "top bottom",
-            end: "bottom 10%", // top
-            markers: true,
-            onLeave: () => video.pause(),
-            onEnterBack: () => video.play(),
-        });
+    ScrollTrigger.create({
+        trigger: container,
+        start: "top bottom",
+        end: "bottom 10%",
+        markers: true,
+        onLeave: () => videos.forEach((v) => v.pause()),
+        onEnterBack: () => videos.forEach((v) => v.play()),
     });
 }
