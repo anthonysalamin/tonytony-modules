@@ -13,7 +13,8 @@ export function initVideoHeader() {
         ScrollTrigger.create({
             trigger: video,
             start: "top bottom",
-            end: "bottom top",
+            end: "bottom 10%", // top
+            markers: true,
             onLeave: () => video.pause(),
             onEnterBack: () => video.play(),
         });
