@@ -158,7 +158,7 @@ function refreshScrollTrigger() {
 function handleMixEnd(mixer) {
     const totalItems = document.querySelectorAll(".mixitup__collection-item").length;
     const filteredItems = mixer.getState().totalShow;
-    const displayElement = document.querySelector("#status");
+    const displayElement = document.querySelector('[data-mixitup="status"]');
 
     if (displayElement) {
         displayElement.textContent = `${filteredItems} result${filteredItems > 1 ? "s" : ""}`;
