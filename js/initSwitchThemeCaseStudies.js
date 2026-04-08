@@ -8,7 +8,7 @@
  */
 
 export function initSwitchThemeCaseStudies() {
-    const section = document.querySelector('[data-section="case studies"]');
+    const section = document.querySelector('[data-section="case-studies"]');
     if (!section) return;
 
     const bodyStyles = getComputedStyle(document.body);
@@ -27,6 +27,7 @@ export function initSwitchThemeCaseStudies() {
         backgroundColor: "#212121",
         duration: 1,
         ease: "power2.out",
+        markers: true,
         scrollTrigger: {
             trigger: section,
             start: "top bottom",
