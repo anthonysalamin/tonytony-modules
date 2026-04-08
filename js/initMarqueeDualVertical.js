@@ -16,8 +16,8 @@ export function initMarqueeDualVertical() {
     const scrub = 0.6;
     if (!upward || !downward) return;
 
-    gsap.set(upward, { yPercent: 0, willChange: "transform" });
-    gsap.set(downward, { yPercent: 0, willChange: "transform" });
+    gsap.set(upward, { yPercent: 0 });
+    gsap.set(downward, { yPercent: 0 });
 
     ScrollTrigger.create({
         trigger: container,

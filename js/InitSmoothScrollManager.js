@@ -49,7 +49,9 @@ export class InitSmoothScrollManager {
         this.lenis = new Lenis({
             duration: 1.2,
             smoothTouch: false,
-            infinite: false
+            infinite: false,
+            wheelMultiplier: 0.8,   // reduce the jump size per wheel notch
+            touchMultiplier: 1.5,    // keep touch/trackpad responsive
         });
 
         window.pageScrollManager = this;
