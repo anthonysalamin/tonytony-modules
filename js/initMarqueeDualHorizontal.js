@@ -25,6 +25,7 @@ export function initMarqueeDualHorizontal() {
           start: "top bottom",
           end: "bottom top",
           scrub: 0.3, // true
+          // markers: true,
           invalidateOnRefresh: true,
         },
       }
