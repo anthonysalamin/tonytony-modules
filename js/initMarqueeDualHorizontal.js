@@ -2,7 +2,7 @@
  * TONYTONY | initMarqueeDualHorizontal
  * Scroll-driven dual marquee with opposing horizontal movement, 20vw offset padding, and ScrollTrigger scrub.
  * @build 22.03.26
- * @updated 27.03.26
+ * @updated 08.04.26
  */
 
 export function initMarqueeDualHorizontal() {
@@ -11,20 +11,20 @@ export function initMarqueeDualHorizontal() {
 
   // Marquee UP — moves left
   document.querySelectorAll('[data-marquee="up"]').forEach((el) => {
-    gsap.set(el, { willChange: "transform" });
     const naturalLeft = el.getBoundingClientRect().left;
 
     gsap.fromTo(
       el,
-      { x: offset },
+      { x: offset, willChange: "transform" },
       {
         x: vw - naturalLeft - el.scrollWidth - offset,
         ease: "none",
+        force3D: true,
         scrollTrigger: {
           trigger: el,
           start: "top bottom",
           end: "bottom top",
-          scrub: 1, // true
+          scrub: 1,
           invalidateOnRefresh: true,
         },
       }
@@ -33,15 +33,15 @@ export function initMarqueeDualHorizontal() {
 
   // Marquee DOWN — moves right
   document.querySelectorAll('[data-marquee="down"]').forEach((el) => {
-    gsap.set(el, { willChange: "transform" });
     const naturalLeft = el.getBoundingClientRect().left;
 
     gsap.fromTo(
       el,
-      { x: -(naturalLeft + el.scrollWidth - vw + offset) },
+      { x: -(naturalLeft + el.scrollWidth - vw + offset), willChange: "transform" },
       {
         x: offset - naturalLeft,
         ease: "none",
+        force3D: true,
         scrollTrigger: {
           trigger: el,
           start: "top bottom",
