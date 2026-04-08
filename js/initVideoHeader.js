@@ -9,6 +9,8 @@ export function initVideoHeader() {
     const container = document.querySelector('[data-video="hero-container"]');
     if (!container) return;
 
+    const PAUSE_ON_SCROLL = true;
+
     const videos = container.querySelectorAll('video[data-video="hero"]');
     const lenis = window.lenis__pageScroll;
 
@@ -32,7 +34,7 @@ export function initVideoHeader() {
     });
 
     // --- Pause during active scroll, resume on idle ---
-    if (!lenis) return;
+    if (!PAUSE_ON_SCROLL || !lenis) return;
 
     let scrollTimeout;
     let isPausedForScroll = false;
@@ -49,7 +51,7 @@ export function initVideoHeader() {
         scrollTimeout = setTimeout(() => {
             isPausedForScroll = false;
             if (isInView) {
-                videos.forEach((v) => v.play().catch(() => {}));
+                videos.forEach((v) => v.play().catch(() => { }));
             }
         }, 150);
     });
