@@ -23,7 +23,7 @@ export function initMarqueeDualHorizontal() {
           trigger: el,
           start: "top bottom",
           end: "bottom top",
-          scrub: true, // true
+          scrub: 0.5, // true
           invalidateOnRefresh: true,
         },
       }
@@ -44,7 +44,7 @@ export function initMarqueeDualHorizontal() {
           trigger: el,
           start: "top bottom",
           end: "bottom top",
-          scrub: true,
+          scrub: 0.5,
           invalidateOnRefresh: true,
         },
       }
