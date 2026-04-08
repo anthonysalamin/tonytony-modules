@@ -22,8 +22,8 @@ export function initMarqueeDualVertical() {
         trigger: container,
         start: "top bottom",
         end: "bottom top",
-        scrub: 1, // true
-        markers: false,
+        scrub: 0.3,
+        // markers: true,
         animation: gsap.timeline()
             .to(upward, { yPercent: -delta, ease: ease, force3D: true }, 0)
             .to(downward, { yPercent: delta, ease: ease, force3D: true }, 0),
