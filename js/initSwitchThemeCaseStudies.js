@@ -12,21 +12,23 @@ export function initSwitchThemeCaseStudies() {
     if (!section) return;
 
     const root = getComputedStyle(document.documentElement);
-    const lightBg = root.getPropertyValue('--light-theme--background').trim();
-    const lightText = root.getPropertyValue('--light-theme--text').trim();
-    const darkBg = root.getPropertyValue('--dark-theme--background').trim();
-    const darkText = root.getPropertyValue('--dark-theme--text').trim();
-
-    console.log(lightBg, lightText, darkBg, darkText);
+    const LIGHT_THEME_BACKGROUND = root.getPropertyValue('--light-theme--background').trim();
+    const LIGHT_THEME_TEXT = root.getPropertyValue('--light-theme--text').trim();
+    const LIGHT_THEME_LIGHT = root.getPropertyValue('--light-theme--light').trim();
+    const DARK_THEME_BACKGROUND = root.getPropertyValue('--dark-theme--background').trim();
+    const DARK_THEME_TEXT = root.getPropertyValue('--dark-theme--text').trim();
+    const DARK_THEME_LIGHT = root.getPropertyValue('--dark-theme--light').trim();
 
     gsap.set("body", {
-        "--light-theme--background": lightBg,
-        "--light-theme--text": lightText,
+        "--light-theme--background": LIGHT_THEME_BACKGROUND,
+        "--light-theme--text": LIGHT_THEME_TEXT,
+        "--light-theme--light": LIGHT_THEME_LIGHT,
     });
 
     gsap.to("body", {
-        "--light-theme--background": darkBg,
-        "--light-theme--text": darkText,
+        "--light-theme--background": DARK_THEME_BACKGROUND,
+        "--light-theme--text": DARK_THEME_TEXT,
+        "--light-theme--light": DARK_THEME_LIGHT,
         duration: 1,
         ease: "power2.out",
         scrollTrigger: {
