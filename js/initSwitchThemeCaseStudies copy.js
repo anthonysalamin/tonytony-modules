@@ -4,31 +4,30 @@
  * Toggles body background and text color on scroll using ScrollTrigger, reversing smoothly on scroll-up.
  * *
  * @build 07.04.26
- * @updated 09.04.26 PHT
+ * @updated 08.04.26 PHT
  */
 
 export function initSwitchThemeCaseStudies() {
     const section = document.querySelector('[data-section="case-studies"]');
     if (!section) return;
 
-    const root = getComputedStyle(document.documentElement);
-    const lightBg = root.getPropertyValue('--light-theme--background').trim();
-    const lightText = root.getPropertyValue('--light-theme--text').trim();
-    const darkBg = root.getPropertyValue('--dark-theme--background').trim();
-    const darkText = root.getPropertyValue('--dark-theme--text').trim();
+    const bodyStyles = getComputedStyle(document.body);
+    const originalBg = bodyStyles.backgroundColor;
+    const originalColor = bodyStyles.color;
 
     gsap.set("body", {
-        "--background": lightBg,
-        "--text": lightText,
+        "--background": originalBg,
+        "--text": originalColor,
     });
 
     gsap.to("body", {
-        "--background": darkBg,
-        "--text": darkText,
-        color: darkText,
-        backgroundColor: darkBg,
+        "--background": "#212121",
+        "--text": "#EDEDEE",
+        color: "#EDEDEE",
+        backgroundColor: "#212121",
         duration: 1,
         ease: "power2.out",
+        markers: true,
         scrollTrigger: {
             trigger: section,
             start: "top center",
