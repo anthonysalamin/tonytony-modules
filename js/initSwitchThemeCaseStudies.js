@@ -17,6 +17,8 @@ export function initSwitchThemeCaseStudies() {
     const darkBg = root.getPropertyValue('--dark-theme--background').trim();
     const darkText = root.getPropertyValue('--dark-theme--text').trim();
 
+    console.log(lightBg, lightText, darkBg, darkText);
+
     gsap.set("body", {
         "--background": lightBg,
         "--text": lightText,
