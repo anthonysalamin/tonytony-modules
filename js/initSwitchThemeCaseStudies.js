@@ -20,15 +20,13 @@ export function initSwitchThemeCaseStudies() {
     console.log(lightBg, lightText, darkBg, darkText);
 
     gsap.set("body", {
-        "--background": lightBg,
-        "--text": lightText,
+        "--light-theme--background": lightBg,
+        "--light-theme--text": lightText,
     });
 
     gsap.to("body", {
-        "--background": darkBg,
-        "--text": darkText,
-        color: darkText,
-        backgroundColor: darkBg,
+        "--light-theme--background": darkBg,
+        "--light-theme--text": darkText,
         duration: 1,
         ease: "power2.out",
         scrollTrigger: {
