@@ -73,7 +73,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (marqueeRoot) initMarqueeClients(marqueeRoot);
 
     // forms
-    initUdeslyRedirect();
+    initUdeslyRedirect(); // to kill on relaunch
+    initContactForm();
 
     // scrub reveal
     initScrubOpacityIntoView();
