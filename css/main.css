@@ -65,7 +65,7 @@ textarea:focus {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--light-theme--background);
+    background: transparent;
     border-radius: 10px;
 }
 
@@ -80,7 +80,7 @@ textarea:focus {
 
 html {
     scrollbar-width: thin;
-    scrollbar-color: var(--accent) var(--light-theme--background);
+    scrollbar-color: var(--accent) transparent;
     -ms-overflow-style: none;
 }
 
