@@ -1,7 +1,8 @@
 /**
- * TONYTONY | main modules // test
+ * TONYTONY | main modules
  * @build 22.09.25
  * @updated 16:39 PHT
+ * @author TONYTONY Sàrl
  */
 
 console.log(
