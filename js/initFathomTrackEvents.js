@@ -1,26 +1,25 @@
 /**
  * TONYTONY | initFathomTrackEvents
- * Track click and form submit events via Fathom using data attributes and form targeting.
+ * Track click and form submit events via Fathom using data attributes.
  * @build 26.03.26
  * @updated 18:02 CET
  */
 
 export function initFathomTrackEvents() {
-  window.addEventListener('load', () => {
-    // Button tracking
-    const btn = document.querySelector('[data-trackevent="btn-free-seo-audit"]');
-    if (btn) {
-      btn.addEventListener('click', () => {
-        fathom.trackEvent('home contact click');
-      });
-    }
+  // buttons
+  const trackClick = (selector, eventName) => {
+    const el = document.querySelector(selector);
+    if (el) el.addEventListener('click', () => fathom.trackEvent(eventName));
+  };
 
-    // Form tracking
-    const form = document.getElementById('contact-form');
-    if (form) {
-      form.addEventListener('submit', () => {
-        fathom.trackEvent('contact form submit');
-      });
-    }
-  });
+  // forms
+  const trackSubmit = (selector, eventName) => {
+    const el = document.querySelector(selector);
+    if (el) el.addEventListener('submit', () => fathom.trackEvent(eventName));
+  };
+
+  trackClick('[data-event="CTA navbar Get in touch"]', 'CTA navbar Get in touch clicked');
+  trackClick('[data-event="CTA navbar Book a call"]', 'CTA navbar Book a call clicked');
+  trackSubmit('[data-basin-form="true"]', 'contact form submitted');
+
 }

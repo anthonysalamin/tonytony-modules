@@ -37,6 +37,7 @@ import { initMuxPlayback } from 'https://cdn.tonytony.ch/js/initMuxPlayback.js?v
 import { initSwitchTheme } from 'https://cdn.tonytony.ch/js/initSwitchTheme.js?v=1.0.0';
 import { initSwitchThemeCaseStudies } from 'https://cdn.tonytony.ch/js/initSwitchThemeCaseStudies.js?v=1.0.0';
 import { initSVGInjection } from 'https://cdn.tonytony.ch/js/initSVGInjection.js?v=1.0.0';
+import { initContactForm } from 'https://cdn.tonytony.ch/js/initContactForm.js?v=1.0.0';
 
 // IIFEs
 initLanguageRedirect();
