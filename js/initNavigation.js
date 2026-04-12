@@ -12,6 +12,8 @@ export function initNavigation() {
     const menu = document.querySelector(`[data-menu="menu"]`);
     const links = document.querySelectorAll(`[data-menu="link"]`);
 
+    console.log(burger, svgElement, menu, links);
+
     if (!burger) return;
 
     function openMenu() {
