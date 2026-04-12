@@ -1,7 +1,9 @@
 /**
- * TONYTONY | main modules
- * @build 22.09.25
- * @updated 16:39 PHT
+ * TONYTONY | main
+ * Loads CDN module imports and initializes DOM-critical and font-dependent site behavior on DOMContentLoaded.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
  * @author TONYTONY Sàrl
  */
 

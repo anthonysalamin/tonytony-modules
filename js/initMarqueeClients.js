@@ -1,8 +1,10 @@
 /**
  * TONYTONY | initMarqueeClients
- * Infinite marquee with GSAP-driven drag interaction, random card rotation on press, and seamless loop via cloning.
- * @build 02.02.26
- * @updated 10.03.26
+ * Runs an infinite GSAP marquee on the given root with drag inertia, cloned loop segments, and press-tilt cards.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initMarqueeClients(root) {

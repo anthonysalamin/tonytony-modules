@@ -1,7 +1,10 @@
 /**
- * UTILITY | InitSmoothScrollManager
- * @build 11.09.25 @updated 21:42 PHT
- * Sets up and manages smooth scrolling with Lenis, keeps ScrollTrigger in sync, and refreshes on content or resize changes.
+ * TONYTONY | InitSmoothScrollManager
+ * Boots Lenis with dependency retries, wires ScrollTrigger updates, and refreshes scroll metrics on layout shifts.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export class InitSmoothScrollManager {

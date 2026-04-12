@@ -1,8 +1,10 @@
 /**
  * TONYTONY | initFathomTrackEvents
- * Track click and form submit events via Fathom using data attributes.
- * @build 26.03.26
- * @updated 18:02 CET
+ * Registers Fathom `trackEvent` calls for configured buttons and Basin form submissions when nodes exist.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initFathomTrackEvents() {

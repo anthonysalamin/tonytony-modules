@@ -1,8 +1,10 @@
 /**
  * TONYTONY | initVideoHeader
- * Pauses hero videos when offscreen (ScrollTrigger) and during active scroll (Lenis idle detection).
- * @build 08.04.26
- * @updated 08.04.26
+ * Pauses hero videos when their section leaves view and optionally when Lenis reports active scrolling.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initVideoHeader() {

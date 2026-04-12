@@ -1,11 +1,10 @@
 /**
  * TONYTONY | initLogoTyped
- * 
- * Collapses TONY—TONY → T—T when user scrolls past 10px,
- * expands back on scroll return. 400ms easeInOut animation.
- * 
- * @build 07.04.26 PHT
- * @updated 10:35 PHT
+ * Collapses the dual TONY wordmarks into the monogram after 10px of scroll and restores them when scrolling back up.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initLogoTyped() {

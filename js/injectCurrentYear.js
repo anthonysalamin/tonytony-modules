@@ -1,6 +1,10 @@
 /**
- * UTILITY | injectCurrentYear
- * @build 25.10.24 @updated 18:02 PHT
+ * TONYTONY | injectCurrentYear
+ * Writes the current calendar year into the first `[data-id="year"]` element when present.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function injectCurrentYear() {

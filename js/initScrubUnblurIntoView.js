@@ -1,7 +1,10 @@
-/** 
- * UTILITY | initScrubUnblurIntoView
- * @build 09.09.25 @updated 16:50 PHT
- * Unblurs elements as they scroll into view, reducing blur progressively until sharp.
+/**
+ * TONYTONY | initScrubUnblurIntoView
+ * Scrubs each `[data-blur="unblur-into-view"]` element from blurred to sharp as it enters the viewport.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 // 🥬 global OPTIONS object

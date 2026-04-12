@@ -1,10 +1,10 @@
 /**
- * PORTFOLIO | initMixItUp
- * 
- * Sets up portfolio filtering with MixItUp by converting Webflow content to CSS classes.
- * 
- * @build 08.04.26
- * @updated 20:11 PHT
+ * TONYTONY | initMixItUp
+ * Prepares portfolio DOM classes from CMS fields, boots MixItUp with callbacks, and wires live search plus status.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 // ── Selectors ──────────────────────────────────────────────────────────────────
@@ -24,8 +24,12 @@ const SEL = {
 // ── Helpers ────────────────────────────────────────────────────────────────────
 
 /**
- * Normalize a string into a valid CSS class name.
- * Strips diacritics via Unicode normalization, removes non-alphanumeric chars.
+ * TONYTONY | toClassName
+ * Normalizes arbitrary labels into lowercase alphanumeric class tokens by stripping diacritics and symbols.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 function toClassName(str) {
     return str
@@ -36,7 +40,12 @@ function toClassName(str) {
 }
 
 /**
- * Refresh ScrollTrigger after layout changes.
+ * TONYTONY | refreshScrollTrigger
+ * Schedules a ScrollTrigger refresh on the next frame whenever GSAP's plugin is available.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 function refreshScrollTrigger() {
     requestAnimationFrame(() => {
@@ -49,7 +58,12 @@ function refreshScrollTrigger() {
 // ── DOM transforms ─────────────────────────────────────────────────────────────
 
 /**
- * Set data-filter attributes on control buttons from their text content.
+ * TONYTONY | setDataAttributes
+ * Copies each empty `data-filter` button's text into a normalized `.class` selector MixItUp can consume.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 function setDataAttributes(controls) {
     if (!controls) return;
@@ -60,7 +74,12 @@ function setDataAttributes(controls) {
 }
 
 /**
- * Bind click handler that toggles the `.checked` class across filter buttons.
+ * TONYTONY | bindFilterChecked
+ * Ensures portfolio filter buttons behave like radio chips by moving `.checked` to the latest click target.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 function bindFilterChecked(controls) {
     if (!controls) return;
@@ -76,8 +95,12 @@ function bindFilterChecked(controls) {
 }
 
 /**
- * Convert Webflow CMS fields into CSS classes on each portfolio item.
- * Handles featuring state, categories, and title in a single pass.
+ * TONYTONY | applyItemClasses
+ * Adds derived filter classes to every `.mixitup__collection-item` from featuring flags, categories, and titles.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 function applyItemClasses() {
     document.querySelectorAll(SEL.item).forEach((item) => {
@@ -103,7 +126,12 @@ function applyItemClasses() {
 // ── MixItUp core ───────────────────────────────────────────────────────────────
 
 /**
- * Update the status element with the current result count.
+ * TONYTONY | updateStatus
+ * Prints a human-readable total of visible MixItUp targets into the optional status node.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 function updateStatus(statusEl, mixer) {
     if (!statusEl) return;
@@ -113,7 +141,12 @@ function updateStatus(statusEl, mixer) {
 }
 
 /**
- * Filter items by search string or fall back to the active filter button.
+ * TONYTONY | filterBySearch
+ * Applies substring class filters when searching or re-selects featuring/all states when the query clears.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 function filterBySearch(mixer, controls, searchValue) {
     if (searchValue) {
@@ -134,7 +167,12 @@ function filterBySearch(mixer, controls, searchValue) {
 }
 
 /**
- * Bind live-search with debounce + Escape to clear.
+ * TONYTONY | bindSearch
+ * Debounces portfolio search input keyups and clears filters instantly when Escape is pressed.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 function bindSearch(inputEl, mixer, controls) {
     if (!inputEl) return;
@@ -157,11 +195,6 @@ function bindSearch(inputEl, mixer, controls) {
 
 // ── Public entry point ─────────────────────────────────────────────────────────
 
-/**
- * Initialize the portfolio filtering system.
- * @param {boolean} production — when false, sets initial status label.
- * @returns {object|undefined} MixItUp mixer instance.
- */
 export function initMixItUp(production = false) {
     const container = document.querySelector(SEL.container);
     if (!container) return;

@@ -1,8 +1,10 @@
 /**
  * TONYTONY | initPageTransitions
- * Shows loading cover on transition link clicks.
- * @build    06.04.26
- * @updated  10:28 PHT
+ * Intercepts `[data-link="transition"]` anchors, fades the loading cover in, then navigates to the requested URL.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initPageTransitions() {

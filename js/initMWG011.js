@@ -1,4 +1,11 @@
-// mwg011Effect.js
+/**
+ * TONYTONY | initMwg011
+ * Pins `.mwg011` headlines and scrubs horizontal travel while each letter animates along the container timeline.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
+ */
 
 export function initMwg011() {
     const roots = document.querySelectorAll('.mwg011');

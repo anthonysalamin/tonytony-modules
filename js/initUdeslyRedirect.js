@@ -1,7 +1,10 @@
 /**
- * PORTFOLIO | initUdeslyRedirect
- * @build 10.01.204 @updated 16:23
- * Redirects all [data-basin-form="true"] forms to a success page once they’re submitted and hidden.
+ * TONYTONY | initUdeslyRedirect
+ * Observes Basin forms and sends the browser to the success URL once the submitted form node is hidden.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initUdeslyRedirect() {

@@ -1,9 +1,11 @@
 /**
- * PORTFOLIO | initNavigation
- * Toggles a mobile navigation menu with animated burger icon and disables/enables smooth scroll.
+ * TONYTONY | initNavigation
+ * Toggles the mobile navigation menu with an animated burger icon while pausing Lenis and native scroll.
+ *
  * @build 12.04.26
  * @updated 12.04.26 PHT
-*/
+ * @author TONYTONY Sàrl
+ */
 
 export function initNavigation() {
     let isOpen = false;

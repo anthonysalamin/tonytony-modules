@@ -1,6 +1,10 @@
 /**
  * TONYTONY | initSublineAnimation
- * @build 30.03.25 @updated 21:49 PHT
+ * Starts the English punchline typing sequence with optional blink styling on load.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initSublineAnimation() {

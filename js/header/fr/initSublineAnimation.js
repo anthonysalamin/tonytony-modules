@@ -1,6 +1,10 @@
 /**
  * TONYTONY | initSublineAnimation
- * @build 30.03.25 @updated 21:49 PHT
+ * Prepares French punchline typing options while keeping the runtime typing hook commented for this locale.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initSublineAnimation() {

@@ -1,7 +1,10 @@
 /**
- * UTILITY | initScrubOpacityIntoView
- * @build 25.08.25 @updated 15:31 PHT
- * Fades elements into view on scroll with a scrubbed opacity transition.
+ * TONYTONY | initScrubOpacityIntoView
+ * Fades each `[data-reveal="scrub-into-view"]` block in with opacity scrubbed across its ScrollTrigger range.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 // 🥬 options

@@ -1,8 +1,10 @@
 /**
  * TONYTONY | initCustomCursor
- * Custom GSAP-animated cursor with edge-aware positioning, drag state handling, and responsive cleanup.
- * @build 22.03.26
- * @updated 11:04 PHT
+ * Builds a GSAP-driven custom cursor for `[data-cursor]` targets with edge-aware offsets and responsive teardown.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initCustomCursor(OPTIONS_CURSOR = {

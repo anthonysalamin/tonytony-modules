@@ -1,6 +1,10 @@
 /**
- * PORTFOLIO | initLanguageRedirect
- * @build 05.02.24 @updated 11:17 CEST
+ * TONYTONY | initLanguageRedirect
+ * On DOM ready, runs production URL checks or dev redirects so visitors land on the correct locale path.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initLanguageRedirect() {

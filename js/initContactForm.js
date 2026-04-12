@@ -1,8 +1,10 @@
 /**
  * TONYTONY | initContactForm
- * Handles contact form submission state — disables the submit button, swaps its label to a waiting message, and reduces opacity to prevent duplicate submissions.
- * @build 09.04.26
- * @updated 11:04 PHT
+ * Disables the Basin contact submit control, swaps its label to the wait copy, and dims it to block duplicate posts.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initContactForm() {

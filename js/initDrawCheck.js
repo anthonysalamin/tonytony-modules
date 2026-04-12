@@ -1,6 +1,10 @@
 /**
- * PORTFOLIO | initDrawCheck
- * @build 02.02.2024 @updated 17:12 Hong Kong
+ * TONYTONY | initDrawCheck
+ * Loops a GSAP drawSVG timeline on `.svg-check` with a brief pause before each yoyo repeat.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initDrawCheck() {

@@ -1,8 +1,10 @@
 /**
  * TONYTONY | initNavBarDisplay
- * GSAP ScrollTrigger nav hide/show — slides nav up on scroll down (after 50vh), reverses on scroll up.
- * @build 23.03.26
- * @updated 00:00 PHT
+ * Uses ScrollTrigger velocity to slide `[data-id="nav"]` upward after scrolling down and restore it on upward motion.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initNavBarDisplay() {

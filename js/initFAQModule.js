@@ -1,6 +1,10 @@
 /**
- * PORTFOLIO | initFAQModule
- * @build 30.12.2023 @updated 14:11 CEST
+ * TONYTONY | initFAQModule
+ * Opens the first FAQ on a short delay and animates answer heights with GSAP on each question interaction.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initFAQModule() {

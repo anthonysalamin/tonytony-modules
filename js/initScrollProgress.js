@@ -1,6 +1,10 @@
 /**
- * UTILITY | initScrollProgress
- * @build 20.01.25 @updated 17:07 PHT
+ * TONYTONY | initScrollProgress
+ * Injects a fixed progress bar, syncs its width to scroll depth, and hides it near the bottom on wider viewports.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initScrollProgress({

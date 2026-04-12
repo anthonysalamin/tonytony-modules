@@ -1,7 +1,10 @@
 /**
- * UTILITY | initColorBarVisibility
- * @build 26.10.23 @updated 15:03 PHT
- * Fades a timeline progress bar in/out based on scroll position.
+ * TONYTONY | initColorBarVisibility
+ * Fades each `.section-timeline.timeline` progress bar in or out with GSAP as its section crosses the viewport.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initColorBarVisibility() {

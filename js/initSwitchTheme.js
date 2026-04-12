@@ -1,10 +1,10 @@
 /**
  * TONYTONY | initSwitchTheme
- * *
- * Toggles body background and text color on scroll using ScrollTrigger, reversing smoothly on scroll-up.
- * *
- * @build 07.04.26
- * @updated 09.04.26 PHT
+ * Tweaks body CSS variables between light and dark theme tokens while scrolling through the media section.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initSwitchTheme() {

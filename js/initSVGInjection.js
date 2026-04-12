@@ -1,10 +1,10 @@
 /**
  * TONYTONY | initSVGInjection
- * *
- * Injects inline SVG from data attributes and removes element background color.
- * *
- * @build 08.04.26
- * @updated 08.04.26 PHT
+ * Replaces each `[data-svg]` node's inner HTML with its SVG payload and clears the placeholder background.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initSVGInjection() {

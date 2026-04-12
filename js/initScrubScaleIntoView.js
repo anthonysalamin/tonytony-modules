@@ -1,7 +1,10 @@
 /**
- * UTILITY | scrub scale into view
- * @build 08.09.25 @updated 11:03 PHT
- * Scales elements from smaller to full size as they scroll into view.
+ * TONYTONY | initScrubScaleIntoView
+ * Scales each `[data-scale="scale-into-view"]` element from a reduced size to 1:1 with scrubbed ScrollTrigger motion.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 // 🥬 global OPTIONS object

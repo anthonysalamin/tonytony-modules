@@ -1,8 +1,10 @@
 /**
- * UTILITY | initRevealTextClaim
- * @build 11.09.25 @updated 08.04.26 PHT
- * Reveals text and claims on scroll by fading characters from low opacity to full opacity, with staggered animation.
- * Uses opacity instead of color so characters inherit the current theme color from the cascade.
+ * TONYTONY | initializeTextRevealAnimation
+ * Splits each matched element with SplitText and scrubs character opacity from dim to full across ScrollTrigger.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 function initializeTextRevealAnimation(targetConfig, animationConfig, isProduction) {
@@ -36,8 +38,12 @@ function initializeTextRevealAnimation(targetConfig, animationConfig, isProducti
 }
 
 /**
- * Main initialization function for text reveal animations
- * Sets up reveal animations for both regular text and claim elements
+ * TONYTONY | initRevealTextClaim
+ * Boots configured text and claim reveal targets when their selectors exist, delegating to the shared animator.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 export function initRevealTextClaim() {
     // Configuration object with all animation settings

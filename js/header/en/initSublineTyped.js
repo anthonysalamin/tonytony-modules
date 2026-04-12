@@ -1,8 +1,10 @@
 /**
  * TONYTONY | initSublineTyped
- * Typed.js cycling text with intentional typo correction on "Developer" for playful effect.
- * @build 26.03.26
- * @updated 16:19 PHT
+ * Runs Typed.js on the English subline slot, cycling SEO-style acronyms with tuned typing speeds.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initSublineTyped() {

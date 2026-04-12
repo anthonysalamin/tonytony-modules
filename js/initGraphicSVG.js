@@ -1,8 +1,10 @@
 /**
  * TONYTONY | initGraphicSVG
- * Scroll-triggered SVG circle draw animation with scrub, applied to all [data-graphic] elements.
- * @build 28.03.26
- * @updated 15:42 PHT
+ * Animates circle strokes on every `[data-graphic]` SVG with scrubbed drawSVG timelines tied to scroll.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initGraphicSVG() {

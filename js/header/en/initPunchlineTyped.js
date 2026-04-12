@@ -1,8 +1,10 @@
 /**
- * TONYTONY | initSublineAnimation
- * Typed.js cycling text with intentional typo correction on "Developer" for playful effect.
- * @build 26.03.26
- * @updated 16:19 PHT
+ * TONYTONY | initPunchlineTyped
+ * Runs Typed.js on the punchline element with deliberate typo beats for the Developer/Partner strings.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initPunchlineTyped() {

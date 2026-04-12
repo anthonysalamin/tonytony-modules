@@ -1,9 +1,10 @@
 /**
  * TONYTONY | initHideLoaderOnLoad
- * Fades out the full-page loading cover using GSAP on DOM load, then hides it.
- * Also handles bfcache (browser back/forward) to ensure the loader is dismissed.
- * @build    06.04.26
- * @updated  10:28 PHT
+ * Fades out the loading cover on load with GSAP and re-runs the hide when pages are restored from bfcache.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initHideLoaderOnLoad() {

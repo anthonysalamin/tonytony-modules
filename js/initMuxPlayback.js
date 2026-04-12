@@ -1,9 +1,10 @@
 /**
  * TONYTONY | initMuxPlayback
- * Parses data-json on mux-player elements to inject Playback_ID, poster URL, ratio, and description.
- * Autoplay on scroll via GSAP ScrollTrigger — plays while visible, pauses offscreen.
- * @build 04.04.26
- * @updated 08.04.26
+ * Hydrates each `mux-player[data-json]` from JSON and drives in-view autoplay with GSAP ScrollTrigger.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initMuxPlayback() {

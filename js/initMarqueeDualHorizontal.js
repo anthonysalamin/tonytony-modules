@@ -1,8 +1,10 @@
 /**
  * TONYTONY | initMarqueeDualHorizontal
- * Scroll-driven dual marquee with opposing horizontal movement, 20vw offset padding, and ScrollTrigger scrub.
- * @build 22.03.26
- * @updated 27.03.26
+ * Scrubs opposing horizontal marquee tracks with padded start positions so they drift across the viewport.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initMarqueeDualHorizontal() {

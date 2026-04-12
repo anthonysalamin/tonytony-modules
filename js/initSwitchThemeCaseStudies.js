@@ -1,10 +1,10 @@
 /**
  * TONYTONY | initSwitchThemeCaseStudies
- * *
- * Toggles body background and text color on scroll using ScrollTrigger, reversing smoothly on scroll-up.
- * *
- * @build 07.04.26
- * @updated 09.04.26 PHT
+ * Crossfades the shared body theme variables while scrolling through the `[data-section="case-studies"]` block.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initSwitchThemeCaseStudies() {

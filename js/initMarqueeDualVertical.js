@@ -1,8 +1,10 @@
 /**
  * TONYTONY | initMarqueeDualVertical
- * Dual vertical marquee with scroll-driven opposing Y translations
- * @build 30.03.26
- * @updated 30.03.26 PHT
+ * Drives opposing vertical marquee columns inside `[data-marquee="dual-container"]` with scroll-linked GSAP motion.
+ *
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+ * @author TONYTONY Sàrl
  */
 
 export function initMarqueeDualVertical() {
