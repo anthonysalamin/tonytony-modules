@@ -7,12 +7,12 @@
 export function initNavigation() {
     let isOpen = false;
 
-    const burger = document.querySelector(`[data-id="burger"]`);
-    if (!burger) return;
+    const burger = document.querySelector(`[data-id="burger-embed"]`);
+    const svgElement = document.querySelector(`[data-id="burger"]`);
+    const menu = document.querySelector(`[data-menu="menu"]`);
+    const links = document.querySelectorAll(`[data-menu="link"]`);
 
-    const menu = document.querySelector(`[data-id="menu"]`);
-    const links = document.querySelectorAll(`[data-id="navbar-link"]`);
-    const svgElement = document.querySelector(".burger-rotate");
+    if (!burger) return;
 
     function openMenu() {
         gsap.to(menu, { x: "0%", duration: 0.5 });
