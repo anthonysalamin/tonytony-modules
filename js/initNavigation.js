@@ -1,8 +1,9 @@
 /**
  * PORTFOLIO | initNavigation
- * @build 22.09.25 @updated 16:40 PHT
  * Toggles a mobile navigation menu with animated burger icon and disables/enables smooth scroll.
- */
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
+*/
 
 export function initNavigation() {
     let isOpen = false;
@@ -11,8 +12,6 @@ export function initNavigation() {
     const svgElement = document.querySelector(`[data-menu="burger"]`);
     const menu = document.querySelector(`[data-menu="menu"]`);
     const links = document.querySelectorAll(`[data-menu="link"]`);
-
-    console.log(burger, svgElement, menu, links);
 
     if (!burger) return;
 
@@ -41,8 +40,6 @@ export function initNavigation() {
 
     function handleMenuAndLinks() {
         burger.addEventListener("click", () => {
-
-            console.log("burger embed clicked");
             svgElement.classList.toggle("active");
 
             if (!isOpen) {
@@ -56,11 +53,10 @@ export function initNavigation() {
 
         links.forEach((navLink) => {
             navLink.addEventListener("click", () => {
+                if (!isOpen) return;
                 closeMenu();
-                // remove active state from burger icon
-                if (burger.classList.contains("active")) {
-                    burger.classList.remove("active");
-                }
+                svgElement?.classList.remove("active");
+                isOpen = false;
             });
         });
     }
