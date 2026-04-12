@@ -41,6 +41,8 @@ export function initNavigation() {
 
     function handleMenuAndLinks() {
         burger.addEventListener("click", () => {
+
+            console.log("burger embed clicked");
             svgElement.classList.toggle("active");
 
             if (!isOpen) {
