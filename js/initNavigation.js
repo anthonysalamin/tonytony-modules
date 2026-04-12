@@ -7,8 +7,8 @@
 export function initNavigation() {
     let isOpen = false;
 
-    const burger = document.querySelector(`[data-id="burger-embed"]`);
-    const svgElement = document.querySelector(`[data-id="burger"]`);
+    const burger = document.querySelector(`[data-menu="embed"]`);
+    const svgElement = document.querySelector(`[data-menu="burger"]`);
     const menu = document.querySelector(`[data-menu="menu"]`);
     const links = document.querySelectorAll(`[data-menu="link"]`);
 
