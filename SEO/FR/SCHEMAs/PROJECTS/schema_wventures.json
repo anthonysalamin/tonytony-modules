@@ -1,0 +1,120 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": "https://tonytony.ch/#website",
+            "url": "https://tonytony.ch/",
+            "name": "TONYTONY",
+            "publisher": {
+                "@id": "https://tonytony.ch/#business"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://tonytony.ch/fr/projects/wventures#webpage",
+            "url": "https://tonytony.ch/fr/projects/wventures",
+            "name": "TONYTONY | W Ventures — Étude de cas, refonte de site pour une société de capital-risque",
+            "description": "Refonte digitale complète pour W Ventures, un fonds de capital-risque berlinois. Interface sombre sur mesure, animations GSAP au scroll et architecture CMS évolutive par TONYTONY.",
+            "inLanguage": "fr",
+            "isPartOf": {
+                "@id": "https://tonytony.ch/#website"
+            },
+            "about": {
+                "@id": "https://tonytony.ch/fr/projects/wventures#project"
+            },
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Accueil",
+                        "item": "https://tonytony.ch/fr"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Portfolio",
+                        "item": "https://tonytony.ch/fr/portfolio"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "W Ventures",
+                        "item": "https://tonytony.ch/fr/projects/wventures"
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "ProfessionalService",
+            "@id": "https://tonytony.ch/#business",
+            "name": "TONYTONY",
+            "url": "https://tonytony.ch/",
+            "sameAs": [
+                "https://www.linkedin.com/company/tonytony"
+            ]
+        },
+        {
+            "@type": "Person",
+            "@id": "https://tonytony.ch/#person",
+            "name": "Anthony Salamin",
+            "jobTitle": "Senior Web Designer & Creative Developer",
+            "url": "https://tonytony.ch/",
+            "worksFor": {
+                "@id": "https://tonytony.ch/#business"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/in/anthonysalamin/"
+            ]
+        },
+        {
+            "@type": "CreativeWork",
+            "@id": "https://tonytony.ch/fr/projects/wventures#project",
+            "name": "W Ventures — Refonte digitale complète",
+            "url": "https://tonytony.ch/fr/projects/wventures",
+            "description": "Refonte digitale complète pour W Ventures, un fonds de capital-risque berlinois avec un portfolio comprenant Corgi, Klaviyo, Harmattan AI, Numeral et SmithRx. Interface sombre sur mesure avec animations GSAP au scroll, architecture entièrement pilotée par CMS et structure SEO-ready.",
+            "inLanguage": "fr",
+            "creator": {
+                "@id": "https://tonytony.ch/#person"
+            },
+            "keywords": [
+                "Web Design",
+                "Développement Web",
+                "Webflow",
+                "GSAP",
+                "Interface Sombre",
+                "CMS",
+                "Capital-Risque",
+                "SEO"
+            ],
+            "about": {
+                "@type": "Organization",
+                "name": "W Ventures GmbH",
+                "url": "https://wventures.de",
+                "description": "Fonds de capital-risque berlinois avec un portfolio de startups internationales de premier plan."
+            },
+            "audience": {
+                "@type": "Audience",
+                "audienceType": "Fonds de capital-risque, Startups, Investisseurs tech"
+            },
+            "review": {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Jochen M. Wilms",
+                    "jobTitle": "Tech Investor / Chairman",
+                    "worksFor": {
+                        "@type": "Organization",
+                        "name": "W Ventures GmbH"
+                    }
+                },
+                "reviewBody": "In every phase of my projects for leading international ventures, Anthony consistently exhibited a great level of creativity, professionalism, and technical skill - maintaining a proactive approach from initial concept to final delivery."
+            },
+            "provider": {
+                "@id": "https://tonytony.ch/#business"
+            }
+        }
+    ]
+}

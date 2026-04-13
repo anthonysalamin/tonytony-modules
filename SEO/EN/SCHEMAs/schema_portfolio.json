@@ -1,0 +1,186 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": "https://tonytony.ch/#website",
+            "url": "https://tonytony.ch/",
+            "name": "TONYTONY",
+            "publisher": {
+                "@id": "https://tonytony.ch/#business"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://tonytony.ch/portfolio#webpage",
+            "url": "https://tonytony.ch/portfolio",
+            "name": "TONYTONY | Portfolio",
+            "description": "Case studies and projects by Anthony Salamin — Webflow design & development for startups, agencies, and cultural institutions worldwide.",
+            "inLanguage": "en",
+            "isPartOf": {
+                "@id": "https://tonytony.ch/#website"
+            },
+            "about": {
+                "@id": "https://tonytony.ch/#business"
+            },
+            "mainEntity": {
+                "@id": "https://tonytony.ch/portfolio#list"
+            }
+        },
+        {
+            "@type": "ProfessionalService",
+            "@id": "https://tonytony.ch/#business",
+            "name": "TONYTONY",
+            "url": "https://tonytony.ch/",
+            "sameAs": [
+                "https://www.linkedin.com/company/tonytony"
+            ]
+        },
+        {
+            "@type": "Person",
+            "@id": "https://tonytony.ch/#person",
+            "name": "Anthony Salamin",
+            "jobTitle": "Senior Web Designer & Creative Developer",
+            "url": "https://tonytony.ch/",
+            "worksFor": {
+                "@id": "https://tonytony.ch/#business"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/in/anthonysalamin/"
+            ]
+        },
+        {
+            "@type": "CollectionPage",
+            "@id": "https://tonytony.ch/portfolio#list",
+            "name": "Portfolio — TONYTONY",
+            "url": "https://tonytony.ch/portfolio",
+            "author": {
+                "@id": "https://tonytony.ch/#person"
+            },
+            "hasPart": [
+                {
+                    "@type": "CreativeWork",
+                    "@id": "https://tonytony.ch/projects/hymn",
+                    "name": "Hymn Design SA — Web Relaunch",
+                    "description": "A web relaunch built to embody Hymn Design's branding ethos. Pixel-perfect Figma-to-Webflow build with GSAP animations and bilingual CMS.",
+                    "url": "https://tonytony.ch/projects/hymn",
+                    "creator": {
+                        "@id": "https://tonytony.ch/#person"
+                    },
+                    "keywords": [
+                        "Web Development",
+                        "Webflow",
+                        "GSAP",
+                        "Bilingual CMS"
+                    ],
+                    "about": {
+                        "@type": "Organization",
+                        "name": "Hymn Design SA"
+                    }
+                },
+                {
+                    "@type": "CreativeWork",
+                    "@id": "https://tonytony.ch/projects/wventures",
+                    "name": "W Ventures — Complete Digital Overhaul",
+                    "description": "Complete digital overhaul for W Ventures, a Berlin-based VC firm. Custom dark-theme UI, GSAP scroll animations, and fully CMS-driven architecture.",
+                    "url": "https://tonytony.ch/projects/wventures",
+                    "creator": {
+                        "@id": "https://tonytony.ch/#person"
+                    },
+                    "keywords": [
+                        "Web Design",
+                        "Web Development",
+                        "Webflow",
+                        "GSAP",
+                        "Dark Theme"
+                    ],
+                    "about": {
+                        "@type": "Organization",
+                        "name": "W Ventures GmbH"
+                    }
+                },
+                {
+                    "@type": "CreativeWork",
+                    "@id": "https://tonytony.ch/projects/maude",
+                    "name": "Maude von Giese — Digital Portfolio",
+                    "description": "From stage to screen — a digital portfolio for scenographer Maude von Giese. Scroll-driven 3D perspective landing page with layered parallax effects.",
+                    "url": "https://tonytony.ch/projects/maude",
+                    "creator": {
+                        "@id": "https://tonytony.ch/#person"
+                    },
+                    "keywords": [
+                        "Web Development",
+                        "Webflow",
+                        "GSAP",
+                        "Portfolio"
+                    ],
+                    "about": {
+                        "@type": "Person",
+                        "name": "Maude von Giese"
+                    }
+                },
+                {
+                    "@type": "CreativeWork",
+                    "@id": "https://tonytony.ch/projects/further",
+                    "name": "Further — Design Hotels Satellite Platform",
+                    "description": "A satellite editorial platform for Design Hotels experiential hospitality. Scalable CMS-driven architecture with API integrations.",
+                    "url": "https://tonytony.ch/projects/further",
+                    "creator": {
+                        "@id": "https://tonytony.ch/#person"
+                    },
+                    "keywords": [
+                        "Web Development",
+                        "Editorial Platform",
+                        "CMS",
+                        "API Integration"
+                    ],
+                    "about": {
+                        "@type": "Organization",
+                        "name": "Design Hotels GmbH"
+                    }
+                },
+                {
+                    "@type": "CreativeWork",
+                    "@id": "https://tonytony.ch/projects/moto",
+                    "name": "MoTo — Web Relaunch",
+                    "description": "Web relaunch for MoTo, a Munich-based project management firm. Mobile-first, CMS-driven with interactive map filtering.",
+                    "url": "https://tonytony.ch/projects/moto",
+                    "creator": {
+                        "@id": "https://tonytony.ch/#person"
+                    },
+                    "keywords": [
+                        "Web Design",
+                        "Web Development",
+                        "Webflow",
+                        "Mobile-First"
+                    ],
+                    "about": {
+                        "@type": "Organization",
+                        "name": "MoTo"
+                    }
+                },
+                {
+                    "@type": "CreativeWork",
+                    "@id": "https://tonytony.ch/projects/samuel-devantery",
+                    "name": "Samuel Devantéry — WordPress to Webflow Relaunch",
+                    "description": "From WordPress to Webflow — full migration with 74 301 redirects, 10+ portfolio categories, GSAP animations, and AEO-ready llms.txt.",
+                    "url": "https://tonytony.ch/projects/samuel-devantery",
+                    "creator": {
+                        "@id": "https://tonytony.ch/#person"
+                    },
+                    "keywords": [
+                        "Web Development",
+                        "SEO",
+                        "AEO",
+                        "Webflow",
+                        "WordPress Migration"
+                    ],
+                    "about": {
+                        "@type": "Person",
+                        "name": "Samuel Devantéry"
+                    }
+                }
+            ]
+        }
+    ]
+}

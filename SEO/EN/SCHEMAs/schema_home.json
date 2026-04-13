@@ -1,0 +1,242 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": "https://tonytony.ch/#website",
+            "url": "https://tonytony.ch/",
+            "name": "TONYTONY",
+            "description": "High-converting websites for startups and SMEs in Switzerland. SEO & AEO to rank on Google and get cited by AI.",
+            "inLanguage": "en",
+            "publisher": {
+                "@id": "https://tonytony.ch/#business"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://tonytony.ch/#webpage",
+            "url": "https://tonytony.ch/",
+            "name": "TONYTONY | Webflow Design & Development for Startups in Switzerland",
+            "description": "High-converting websites for startups and SMEs in Switzerland. SEO & AEO to rank on Google and get cited by AI. Scalable Webflow development, a free audit.",
+            "inLanguage": "en",
+            "isPartOf": {
+                "@id": "https://tonytony.ch/#website"
+            },
+            "about": {
+                "@id": "https://tonytony.ch/#business"
+            },
+            "mainEntity": {
+                "@id": "https://tonytony.ch/#faq"
+            }
+        },
+        {
+            "@type": "ProfessionalService",
+            "@id": "https://tonytony.ch/#business",
+            "name": "TONYTONY",
+            "alternateName": "Anthony Salamin",
+            "description": "Senior web designer & creative developer specializing in Webflow development, SEO/AEO, and brand identity for startups and SMEs in Switzerland.",
+            "url": "https://tonytony.ch/",
+            "email": "hey@tonytony.ch",
+            "founder": {
+                "@id": "https://tonytony.ch/#person"
+            },
+            "areaServed": [
+                {
+                    "@type": "Country",
+                    "name": "Switzerland"
+                },
+                {
+                    "@type": "Country",
+                    "name": "Germany"
+                },
+                {
+                    "@type": "Country",
+                    "name": "France"
+                },
+                {
+                    "@type": "AdministrativeArea",
+                    "name": "Worldwide"
+                }
+            ],
+            "serviceType": [
+                "Web Design",
+                "Web Development",
+                "Webflow Development",
+                "SEO",
+                "AEO",
+                "Brand Identity",
+                "Strategy"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "Valais",
+                "addressCountry": "CH"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/company/tonytony"
+            ],
+            "review": [
+                {
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Helge von Giese"
+                    },
+                    "reviewBody": "Anthony is an exceptionally universally gifted creative. In his exploration of various means, methods, and tools, he moves with admirable intuition."
+                },
+                {
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Jochen M. Wilms",
+                        "jobTitle": "Tech Investor / Chairman",
+                        "worksFor": {
+                            "@type": "Organization",
+                            "name": "W Ventures GmbH"
+                        }
+                    },
+                    "reviewBody": "In every phase of my projects for leading international ventures, Anthony consistently exhibited a great level of creativity, professionalism, and technical skill - maintaining a proactive approach from initial concept to final delivery."
+                },
+                {
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Milton Carvalho",
+                        "jobTitle": "Founder",
+                        "worksFor": {
+                            "@type": "Organization",
+                            "name": "Baobab Energy SA"
+                        }
+                    },
+                    "reviewBody": "I'm beyond impressed with the website Anthony built for my solar panel business! It's modern, professional, and already bringing in new leads."
+                },
+                {
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Alexandre Henriques",
+                        "jobTitle": "Founder | Creative Direction",
+                        "worksFor": {
+                            "@type": "Organization",
+                            "name": "Hymn Design SA"
+                        }
+                    },
+                    "reviewBody": "Anthony stands out for his exceptional responsiveness. For every request from our agency, he consistently found relevant and effective solutions."
+                },
+                {
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Dr. Donatela Bernardi",
+                        "jobTitle": "Director",
+                        "worksFor": {
+                            "@type": "Organization",
+                            "name": "Maison Rousseau & Litterature"
+                        }
+                    },
+                    "reviewBody": "Excellent work, thank you for your responsiveness - I'm really looking forward to collaborating on our new website."
+                },
+                {
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Alexandre Doublet",
+                        "jobTitle": "Artistic Director",
+                        "worksFor": {
+                            "@type": "Organization",
+                            "name": "cie ADVQ"
+                        }
+                    },
+                    "reviewBody": "Throughout the entire project, Anthony was responsive, collaborative, and dedicated to ensuring that every aspect of the website met and exceeded the expectations of the team."
+                },
+                {
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Camil Amos",
+                        "jobTitle": "Architecte MA HES",
+                        "worksFor": {
+                            "@type": "Organization",
+                            "name": "quatreaplus Sarl"
+                        }
+                    },
+                    "reviewBody": "Pleased with the outcome of the LP and its presentation. The typography layout is top notch and the images chosen adds the dynamic touch I was looking for."
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "@id": "https://tonytony.ch/#person",
+            "name": "Anthony Salamin",
+            "jobTitle": "Senior Web Designer & Creative Developer",
+            "url": "https://tonytony.ch/",
+            "email": "hey@tonytony.ch",
+            "image": "https://cdn.prod.website-files.com/6565594186e587567235d089/656589ff61a9123418596fa4_avatar.avif",
+            "worksFor": {
+                "@id": "https://tonytony.ch/#business"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "Valais",
+                "addressCountry": "CH"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/in/anthonysalamin/"
+            ]
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://tonytony.ch/#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Why choose TONYTONY?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "TONYTONY is Anthony Salamin — senior web designer & creative developer, 15+ years deep. Swiss-born, shaped by Berlin's startup scene and top agencies, now operating as a focused studio of one in Valais. Working with teams around the world."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you work with clients outside Switzerland?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. Based in Switzerland, working worldwide — remote-first, time zones permitting."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you handle SEO and AEO?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes — I cover technical audits, SEO, AEO (Answer Engine Optimization), keyword research, and content optimization. Everything needed to make your site visible and high-performing. AI summaries now dominate Google and are rising fast. SEO and AEO aren't separate anymore, just one smart investment."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is the timeline for a website?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Between 2 and 8 weeks, depending on the project's complexity."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is a multilingual website possible?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Absolutely — Webflow supports multilingual sites natively. French, German, English, Japanese, Chinese — no limits. You stay in control of your translations via the CMS."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you offer support?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Always — training to manage your site, technical support, and ongoing maintenance — I stay by your side long after launch."
+                    }
+                }
+            ]
+        }
+    ]
+}
