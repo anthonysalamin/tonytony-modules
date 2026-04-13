@@ -64,6 +64,7 @@ async function initApp() {
     // 1. CRITICAL / UI LAYER
     // =========================
 
+    // run("initLanguageRedirect", initLanguageRedirect);
     run("HideLoaderOnLoad", initHideLoaderOnLoad);
     run("SmoothScrollManager", () => new InitSmoothScrollManager());
     run("NavBarDisplay", initNavBarDisplay);
