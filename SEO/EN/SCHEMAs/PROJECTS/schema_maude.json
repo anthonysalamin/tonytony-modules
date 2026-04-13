@@ -1,0 +1,131 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": "https://tonytony.ch/#website",
+            "url": "https://tonytony.ch/",
+            "name": "TONYTONY",
+            "publisher": {
+                "@id": "https://tonytony.ch/#business"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://tonytony.ch/projects/maude#webpage",
+            "url": "https://tonytony.ch/projects/maude",
+            "name": "TONYTONY | Maude von Giese — Scenography Portfolio Case Study for a Set Designer",
+            "description": "Web development case study for Maude von Giese — immersive scroll-driven 3D portfolio built in Webflow with GSAP animations and parallax effects. UI design by Lydia Perrot.",
+            "inLanguage": "en",
+            "isPartOf": {
+                "@id": "https://tonytony.ch/#website"
+            },
+            "about": {
+                "@id": "https://tonytony.ch/projects/maude#project"
+            },
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://tonytony.ch/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Portfolio",
+                        "item": "https://tonytony.ch/portfolio"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Maude von Giese",
+                        "item": "https://tonytony.ch/projects/maude"
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "ProfessionalService",
+            "@id": "https://tonytony.ch/#business",
+            "name": "TONYTONY",
+            "url": "https://tonytony.ch/",
+            "sameAs": [
+                "https://www.linkedin.com/company/tonytony"
+            ]
+        },
+        {
+            "@type": "Person",
+            "@id": "https://tonytony.ch/#person",
+            "name": "Anthony Salamin",
+            "jobTitle": "Senior Web Designer & Creative Developer",
+            "url": "https://tonytony.ch/",
+            "worksFor": {
+                "@id": "https://tonytony.ch/#business"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/in/anthonysalamin/"
+            ]
+        },
+        {
+            "@type": "CreativeWork",
+            "@id": "https://tonytony.ch/projects/maude#project",
+            "name": "Maude von Giese — Scenography Portfolio",
+            "url": "https://tonytony.ch/projects/maude",
+            "description": "From stage to screen — an immersive digital portfolio for Zürich-based freelance scenographer Maude von Giese. Scroll-driven 3D perspective landing page, layered parallax effects, and fully CMS-driven architecture. UI design by Lydia Perrot, copywriting by Helge von Giese.",
+            "inLanguage": "en",
+            "creator": {
+                "@id": "https://tonytony.ch/#person"
+            },
+            "contributor": [
+                {
+                    "@type": "Person",
+                    "name": "Lydia Perrot",
+                    "jobTitle": "UI Designer",
+                    "url": "https://lydiaperrot.ch"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Helge von Giese",
+                    "jobTitle": "Copywriter"
+                }
+            ],
+            "keywords": [
+                "Web Development",
+                "Webflow",
+                "GSAP",
+                "3D Scroll Effect",
+                "Parallax",
+                "Portfolio",
+                "Scenography",
+                "Set Design",
+                "SEO"
+            ],
+            "about": {
+                "@type": "Person",
+                "name": "Maude von Giese",
+                "jobTitle": "Freelance Set Designer & Scenographer",
+                "url": "https://maudevongiese.ch",
+                "description": "Zürich-based freelance set designer and scenographer working across theater, opera, film, and cultural institutions in the German- and French-speaking world."
+            },
+            "audience": {
+                "@type": "Audience",
+                "audienceType": "Scenographers, Set Designers, Cultural Institutions, Theaters, Opera Houses"
+            },
+            "review": {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Maude von Giese",
+                    "jobTitle": "Independent Scenographer"
+                },
+                "reviewBody": "A rare designer-developer who truly gets spatial work. Anthony turned Lydia Perrot's vision into something immersive and alive — and made it easy for me to run on my own."
+            },
+            "provider": {
+                "@id": "https://tonytony.ch/#business"
+            }
+        }
+    ]
+}
