@@ -1,9 +1,9 @@
 /**
  * TONYTONY | main
- * Loads CDN module imports and initializes DOM-critical and font-dependent site behavior on DOMContentLoaded.
+ * Bootstraps feature modules on DOM ready, then font-dependent modules after fonts load.
  *
- * @build 12.04.26
- * @updated 12.04.26 PHT
+ * @build 13.04.26
+ * @updated 13.04.26 PHT
  * @author TONYTONY Sàrl
  */
 
@@ -12,89 +12,125 @@ console.log(
     "color: white; background: purple; padding: 2px 6px; border-radius: 3px;",
 );
 
-import { initHideLoaderOnLoad } from 'https://cdn.tonytony.ch/js/initHideLoaderOnLoad.js?v=1.0.0';
-import { initPageTransitions } from 'https://cdn.tonytony.ch/js/initPageTransitions.js?v=1.0.0';
+// ── CDN Imports ──────────────────────────────────────────────────────────────
+
+import { initHideLoaderOnLoad } from "https://cdn.tonytony.ch/js/initHideLoaderOnLoad.js?v=1.0.0";
+import { initPageTransitions } from "https://cdn.tonytony.ch/js/initPageTransitions.js?v=1.0.0";
 // import { initLanguageRedirect } from 'https://cdn.tonytony.ch/js/initLanguageRedirect.js?v=1.0.0';
-import { InitSmoothScrollManager } from 'https://cdn.tonytony.ch/js/InitSmoothScrollManager.js?v=1.0.0';
-import { initNavigation } from 'https://cdn.tonytony.ch/js/initNavigation.js?v=1.0.0';
-import { initNavBarDisplay } from 'https://cdn.tonytony.ch/js/initNavBarDisplay.js?v=1.0.0';
-import { initLogoTyped } from 'https://cdn.tonytony.ch/js/initLogoTyped.js?v=1.0.0';
-import { initVideoHeader } from 'https://cdn.tonytony.ch/js/initVideoHeader.js?v=1.0.0';
-import { initMarqueeDualHorizontal } from 'https://cdn.tonytony.ch/js/initMarqueeDualHorizontal.js?v=1.0.0';
-import { initMarqueeDualVertical } from 'https://cdn.tonytony.ch/js/initMarqueeDualVertical.js?v=1.0.0';
-import { initMixItUp } from 'https://cdn.tonytony.ch/js/initMixItUp.js?v=1.0.0';
-import { initFAQModule } from 'https://cdn.tonytony.ch/js/initFAQModule.js?v=1.0.0';
-import { initDrawCheck } from 'https://cdn.tonytony.ch/js/initDrawCheck.js?v=1.0.0';
-import { initRevealTextClaim } from 'https://cdn.tonytony.ch/js/initRevealTextClaim.js?v=1.0.0';
-import { initScrubOpacityIntoView } from 'https://cdn.tonytony.ch/js/initScrubOpacityIntoView.js?v=1.0.0';
-import { initScrubScaleIntoView } from 'https://cdn.tonytony.ch/js/initScrubScaleIntoView.js?v=1.0.0';
-import { initScrubUnblurIntoView } from 'https://cdn.tonytony.ch/js/initScrubUnblurIntoView.js?v=1.0.0';
-import { initCustomCursor } from 'https://cdn.tonytony.ch/js/initCustomCursor.js?v=1.0.0';
-import { injectCurrentYear } from 'https://cdn.tonytony.ch/js/injectCurrentYear.js?v=1.0.0';
-import { initMarqueeClients } from 'https://cdn.tonytony.ch/js/initMarqueeClients.js?v=1.0.0';
-import { initFathomTrackEvents } from 'https://cdn.tonytony.ch/js/initFathomTrackEvents.js?v=1.0.0';
-import { initMwg011 } from 'https://cdn.tonytony.ch/js/initMWG011.js?v=1.0.0';
-import { initGraphicSVG } from 'https://cdn.tonytony.ch/js/initGraphicSVG.js?v=1.0.0';
-import { initMuxPlayback } from 'https://cdn.tonytony.ch/js/initMuxPlayback.js?v=1.0.0';
-import { initSwitchTheme } from 'https://cdn.tonytony.ch/js/initSwitchTheme.js?v=1.0.0';
-import { initSwitchThemeCaseStudies } from 'https://cdn.tonytony.ch/js/initSwitchThemeCaseStudies.js?v=1.0.0';
-import { initSVGInjection } from 'https://cdn.tonytony.ch/js/initSVGInjection.js?v=1.0.0';
-import { initContactForm } from 'https://cdn.tonytony.ch/js/initContactForm.js?v=1.0.0';
+import { InitSmoothScrollManager } from "https://cdn.tonytony.ch/js/InitSmoothScrollManager.js?v=1.0.0";
+import { initNavigation } from "https://cdn.tonytony.ch/js/initNavigation.js?v=1.0.0";
+import { initNavBarDisplay } from "https://cdn.tonytony.ch/js/initNavBarDisplay.js?v=1.0.0";
+import { initLogoTyped } from "https://cdn.tonytony.ch/js/initLogoTyped.js?v=1.0.0";
+import { initVideoHeader } from "https://cdn.tonytony.ch/js/initVideoHeader.js?v=1.0.0";
+import { initMarqueeDualHorizontal } from "https://cdn.tonytony.ch/js/initMarqueeDualHorizontal.js?v=1.0.0";
+import { initMarqueeDualVertical } from "https://cdn.tonytony.ch/js/initMarqueeDualVertical.js?v=1.0.0";
+import { initMixItUp } from "https://cdn.tonytony.ch/js/initMixItUp.js?v=1.0.0";
+import { initFAQModule } from "https://cdn.tonytony.ch/js/initFAQModule.js?v=1.0.0";
+import { initDrawCheck } from "https://cdn.tonytony.ch/js/initDrawCheck.js?v=1.0.0";
+import { initRevealTextClaim } from "https://cdn.tonytony.ch/js/initRevealTextClaim.js?v=1.0.0";
+import { initScrubOpacityIntoView } from "https://cdn.tonytony.ch/js/initScrubOpacityIntoView.js?v=1.0.0";
+import { initScrubScaleIntoView } from "https://cdn.tonytony.ch/js/initScrubScaleIntoView.js?v=1.0.0";
+import { initScrubUnblurIntoView } from "https://cdn.tonytony.ch/js/initScrubUnblurIntoView.js?v=1.0.0";
+import { initCustomCursor } from "https://cdn.tonytony.ch/js/initCustomCursor.js?v=1.0.0";
+import { injectCurrentYear } from "https://cdn.tonytony.ch/js/injectCurrentYear.js?v=1.0.0";
+import { initMarqueeClients } from "https://cdn.tonytony.ch/js/initMarqueeClients.js?v=1.0.0";
+import { initFathomTrackEvents } from "https://cdn.tonytony.ch/js/initFathomTrackEvents.js?v=1.0.0";
+import { initMwg011 } from "https://cdn.tonytony.ch/js/initMWG011.js?v=1.0.0";
+import { initGraphicSVG } from "https://cdn.tonytony.ch/js/initGraphicSVG.js?v=1.0.0";
+import { initMuxPlayback } from "https://cdn.tonytony.ch/js/initMuxPlayback.js?v=1.0.0";
+import { initSwitchTheme } from "https://cdn.tonytony.ch/js/initSwitchTheme.js?v=1.0.0";
+import { initSwitchThemeCaseStudies } from "https://cdn.tonytony.ch/js/initSwitchThemeCaseStudies.js?v=1.0.0";
+import { initSVGInjection } from "https://cdn.tonytony.ch/js/initSVGInjection.js?v=1.0.0";
+import { initContactForm } from "https://cdn.tonytony.ch/js/initContactForm.js?v=1.0.0";
 
-// IIFEs
-//initLanguageRedirect();
+// ── Runner ───────────────────────────────────────────────────────────────────
 
-// on DOM loaded
-document.addEventListener("DOMContentLoaded", () => {
-    // critical
-    initHideLoaderOnLoad();
-    new InitSmoothScrollManager();
-    initNavBarDisplay();
-    initNavigation();
-    initVideoHeader();
-    initLogoTyped();
+/**
+ * Safely runs a module init, logging errors without breaking the chain.
+ * Accepts an optional guard selector — skips silently if element is missing.
+ */
+function run(label, fn, guardSelector) {
+    try {
+        if (guardSelector) {
+            const el = document.querySelector(guardSelector);
+            if (!el) return;
+            fn(el);
+        } else {
+            fn();
+        }
+    } catch (err) {
+        console.error(`❌ ${label} failed:`, err);
+    }
+}
 
+// ── Bootstrap ────────────────────────────────────────────────────────────────
+
+async function initApp() {
+
+    // =========================
+    // 1. CRITICAL / UI LAYER
+    // =========================
+    run("HideLoaderOnLoad", initHideLoaderOnLoad);
+    run("SmoothScrollManager", () => new InitSmoothScrollManager());
+    run("NavBarDisplay", initNavBarDisplay);
+    run("Navigation", initNavigation);
+    run("VideoHeader", initVideoHeader);
+    run("LogoTyped", initLogoTyped);
+
+    // =========================
+    // 2. DOM MODULES
+    // =========================
     // marquees
-    initMarqueeDualHorizontal();
-    initMarqueeDualVertical();
+    run("MarqueeDualHorizontal", initMarqueeDualHorizontal);
+    run("MarqueeDualVertical", initMarqueeDualVertical);
+    run("MarqueeClients", initMarqueeClients, '[data-mwg008="root"]');
 
-    initMixItUp();
-    initPageTransitions();
-    initFAQModule();
-    initDrawCheck();
+    // layout & interaction
+    run("MixItUp", initMixItUp);
+    run("PageTransitions", initPageTransitions);
+    run("FAQModule", initFAQModule);
+    run("DrawCheck", initDrawCheck);
 
     // themes
-    initSwitchTheme();
-    initSwitchThemeCaseStudies();
-    initSVGInjection();
-    
-    // video handling
-    initMuxPlayback();
+    run("SwitchTheme", initSwitchTheme);
+    run("SwitchThemeCaseStudies", initSwitchThemeCaseStudies);
+    run("SVGInjection", initSVGInjection);
 
-    // marquee clients
-    const marqueeRoot = document.querySelector('[data-mwg008="root"]');
-    if (marqueeRoot) initMarqueeClients(marqueeRoot);
+    // video
+    run("MuxPlayback", initMuxPlayback);
 
     // forms
-    initContactForm();
+    run("ContactForm", initContactForm);
 
-    // scrub reveal
-    initScrubOpacityIntoView();
-    initScrubScaleIntoView();
-    initScrubUnblurIntoView();
+    // scroll-driven reveals
+    run("ScrubOpacityIntoView", initScrubOpacityIntoView);
+    run("ScrubScaleIntoView", initScrubScaleIntoView);
+    run("ScrubUnblurIntoView", initScrubUnblurIntoView);
 
-    initCustomCursor();
-    injectCurrentYear();
-    initGraphicSVG();
-    initMwg011();
+    // utilities
+    run("CustomCursor", initCustomCursor);
+    run("InjectCurrentYear", injectCurrentYear);
+    run("GraphicSVG", initGraphicSVG);
+    run("MWG011", initMwg011);
 
-    initFathomTrackEvents();
+    // analytics
+    run("FathomTrackEvents", initFathomTrackEvents);
 
-    // font-dependent
-    document.fonts.ready.then(() => {
-        initRevealTextClaim();
-        console.log(`✅ Initialized all font-dependent modules`);
-    });
+    console.log("✅ DOM modules initialized");
 
-    console.log(`✅ Initialized all DOM-dependent modules`);
-});
+    // =========================
+    // 3. FONT-DEPENDENT LAYER
+    // =========================
+    await document.fonts.ready;
+
+    run("RevealTextClaim", initRevealTextClaim);
+
+    console.log("✅ Font-dependent modules initialized");
+
+    // =========================
+    // 4. DONE
+    // =========================
+    console.log("🚀 App fully initialized");
+}
+
+document.addEventListener("DOMContentLoaded", initApp);
