@@ -47,17 +47,10 @@ import { initContactForm } from "https://cdn.tonytony.ch/js/initContactForm.js?v
 
 /**
  * Safely runs a module init, logging errors without breaking the chain.
- * Accepts an optional guard selector — skips silently if element is missing.
  */
-function run(label, fn, guardSelector) {
+function run(label, fn) {
     try {
-        if (guardSelector) {
-            const el = document.querySelector(guardSelector);
-            if (!el) return;
-            fn(el);
-        } else {
-            fn();
-        }
+        fn();
     } catch (err) {
         console.error(`❌ ${label} failed:`, err);
     }
@@ -70,6 +63,7 @@ async function initApp() {
     // =========================
     // 1. CRITICAL / UI LAYER
     // =========================
+
     run("HideLoaderOnLoad", initHideLoaderOnLoad);
     run("SmoothScrollManager", () => new InitSmoothScrollManager());
     run("NavBarDisplay", initNavBarDisplay);
@@ -80,10 +74,11 @@ async function initApp() {
     // =========================
     // 2. DOM MODULES
     // =========================
+
     // marquees
     run("MarqueeDualHorizontal", initMarqueeDualHorizontal);
     run("MarqueeDualVertical", initMarqueeDualVertical);
-    run("MarqueeClients", initMarqueeClients, '[data-mwg008="root"]');
+    run("MarqueeClients", initMarqueeClients);
 
     // layout & interaction
     run("MixItUp", initMixItUp);
@@ -121,6 +116,7 @@ async function initApp() {
     // =========================
     // 3. FONT-DEPENDENT LAYER
     // =========================
+
     await document.fonts.ready;
 
     run("RevealTextClaim", initRevealTextClaim);

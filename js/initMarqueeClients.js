@@ -7,7 +7,10 @@
  * @author TONYTONY Sàrl
  */
 
-export function initMarqueeClients(root) {
+export function initMarqueeClients() {
+  const root = document.querySelector('[data-mwg008="root"]');
+  if (!root) return;
+
   function boot() {
     if (window.gsap && window.Observer) {
       initEffect();
@@ -19,8 +22,6 @@ export function initMarqueeClients(root) {
   boot();
 
   function initEffect() {
-    if (!root) return;
-
     let total = 0, xTo, itemValues = [];
 
     const content = root.querySelector('[data-mwg008="container"]');
