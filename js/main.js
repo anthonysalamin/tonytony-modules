@@ -14,7 +14,7 @@ console.log(
 
 import { initHideLoaderOnLoad } from 'https://cdn.tonytony.ch/js/initHideLoaderOnLoad.js?v=1.0.0';
 import { initPageTransitions } from 'https://cdn.tonytony.ch/js/initPageTransitions.js?v=1.0.0';
-import { initLanguageRedirect } from 'https://cdn.tonytony.ch/js/initLanguageRedirect.js?v=1.0.0';
+// import { initLanguageRedirect } from 'https://cdn.tonytony.ch/js/initLanguageRedirect.js?v=1.0.0';
 import { InitSmoothScrollManager } from 'https://cdn.tonytony.ch/js/InitSmoothScrollManager.js?v=1.0.0';
 import { initNavigation } from 'https://cdn.tonytony.ch/js/initNavigation.js?v=1.0.0';
 import { initNavBarDisplay } from 'https://cdn.tonytony.ch/js/initNavBarDisplay.js?v=1.0.0';
@@ -43,7 +43,7 @@ import { initSVGInjection } from 'https://cdn.tonytony.ch/js/initSVGInjection.js
 import { initContactForm } from 'https://cdn.tonytony.ch/js/initContactForm.js?v=1.0.0';
 
 // IIFEs
-initLanguageRedirect();
+//initLanguageRedirect();
 
 // on DOM loaded
 document.addEventListener("DOMContentLoaded", () => {
