@@ -1,6 +1,6 @@
 /**
- * TONYTONY | main
- * Bootstraps feature modules on DOM ready, then font-dependent modules after fonts load.
+ * TONYTONY | 🥭 main modules
+ * Bootstraps feature modules on DOM ready
  *
  * @build 13.04.26
  * @updated 13.04.26 PHT
