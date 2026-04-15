@@ -48,14 +48,11 @@ import { initContactForm } from "https://cdn.tonytony.ch/js/initContactForm.js?v
 
 // ── Runner ───────────────────────────────────────────────────────────────────
 
-/**
- * Safely runs a module init, logging errors without breaking the chain.
- */
 function run(label, functionToTun) {
     try {
         functionToTun();
     } catch (error) {
-        console.error(`Oopsie 👹 ${label} failed:`, error);
+        console.error(`Oopsi 👹 ${label} failed:`, error);
     }
 }
 
