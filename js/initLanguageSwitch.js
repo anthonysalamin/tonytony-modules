@@ -24,6 +24,7 @@ export function initLanguageSwitch() {
   
       el.addEventListener('click', (e) => {
         e.preventDefault();
+        sessionStorage.setItem('lang-redirected', '1');
         window.location.href = newPath;
       });
     });

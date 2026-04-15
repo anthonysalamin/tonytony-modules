@@ -1,71 +1,32 @@
 /**
  * TONYTONY | initLanguageRedirect
- * On DOM ready, runs production URL checks or dev redirects so visitors land on the correct locale path.
+ * On page load, redirects first-time visitors to their browser-preferred
+ * locale path. Stores choice in sessionStorage to avoid redirect loops
+ * and to respect manual language switches.
  *
- * @build 12.04.26
- * @updated 12.04.26 PHT
+ * @build 15.04.26
+ * @updated 15.04.26 PHT
  * @author TONYTONY Sàrl
  */
-
 export function initLanguageRedirect() {
-    const production = true;
-
-    const urls = { en: ``, fr: `fr`, de: `de` };
-
-    document.addEventListener("DOMContentLoaded", () => {
-        if (production) {
-            console.log("production");
-            performCheck(urls);
-        } else {
-            console.log("development");
-            redirectBasedOnLanguage(urls);
-        }
-    });
-
-    function performCheck(urls) {
-        const currentUrl = window.location.href;
-        const targetUrls = [
-            "https://anthonysalamin.webflow.io/",
-            "https://anthonysalamin.ch/"
-        ];
-
-        if (targetUrls.includes(currentUrl)) {
-            console.log("Current URL is equal to one of the target URLs.");
-            redirectBasedOnLanguage(urls);
-        } else {
-            console.log("Current URL is not equal to any of the target URLs.");
-            return;
-        }
+    const supported = ['fr', 'de'];
+    const prefixRegex = new RegExp(`^\\/(${supported.join('|')})(\/|$)`);
+    const path = window.location.pathname;
+  
+    // Don't redirect if user already has a language prefix in the URL
+    if (prefixRegex.test(path)) return;
+  
+    // Don't redirect if user has already been redirected or made a manual choice
+    if (sessionStorage.getItem('lang-redirected')) return;
+  
+    const browserLang = (navigator.language || '').slice(0, 2).toLowerCase();
+  
+    // Only redirect for supported non-default languages
+    if (!supported.includes(browserLang)) {
+      sessionStorage.setItem('lang-redirected', '1');
+      return;
     }
-
-    function getBrowserLanguage() {
-        return navigator.language || navigator.userLanguage;
-    }
-
-    function log(userLanguage, languageStatus) {
-        console.log(`language is ${userLanguage}`);
-    }
-
-    function getCurrentURL() {
-        return window.location.href;
-    }
-
-    function redirectBasedOnLanguage(urls) {
-        const currentURL = getCurrentURL();
-        console.log(currentURL);
-
-        const languageStatus = document.querySelector(`#language`);
-        const userLanguage = getBrowserLanguage();
-
-        if (userLanguage.startsWith("fr")) {
-            log(userLanguage, languageStatus);
-            window.location.href = `${currentURL}${urls.fr}`;
-        } else if (userLanguage.startsWith("de")) {
-            log(userLanguage, languageStatus);
-            window.location.href = `${currentURL}${urls.de}`;
-        } else {
-            log(userLanguage, languageStatus);
-            return;
-        }
-    }
-}
+  
+    sessionStorage.setItem('lang-redirected', '1');
+    window.location.replace(`/${browserLang}${path}`);
+  }
