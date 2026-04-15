@@ -71,7 +71,6 @@ export function initNavigation() {
         });
 
         isInitialized = true;
-        burger.dataset.mobileInit = "true";
     }
 
     // Only enable mobile navigation below 991px
@@ -81,13 +80,13 @@ export function initNavigation() {
 
     // Optional: re-check on resize to attach/detach events
     window.addEventListener("resize", () => {
-        if (window.innerWidth < 991 && !burger.dataset.mobileInit) {
+        if (window.innerWidth < 991 && !isInitialized) {
             handleMenuAndLinks();
-            burger.dataset.mobileInit = "true";
-        } else if (window.innerWidth >= 991 && burger.dataset.mobileInit) {
+        } else if (window.innerWidth >= 991 && isInitialized) {
             // Reset menu if resizing to desktop
-            closeMenu();
-            burger.dataset.mobileInit = "";
+            if (isOpen) closeMenu();
+            isOpen = false;
+            svgElement?.classList.remove("active");
             isInitialized = false;
         }
     });
