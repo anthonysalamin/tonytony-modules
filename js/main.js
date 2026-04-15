@@ -23,6 +23,7 @@ import { initLanguageSwitch } from 'https://cdn.tonytony.ch/js/initLanguageSwitc
 import { InitSmoothScrollManager } from "https://cdn.tonytony.ch/js/InitSmoothScrollManager.js?v=1.0.0";
 import { initNavigation } from "https://cdn.tonytony.ch/js/initNavigation.js?v=1.0.0";
 import { initNavBarDisplay } from "https://cdn.tonytony.ch/js/initNavBarDisplay.js?v=1.0.0";
+import { initLanguageSwitch } from 'https://cdn.tonytony.ch/js/initLanguageSwitch.js?v=1.0.0';
 import { initLogoTyped } from "https://cdn.tonytony.ch/js/initLogoTyped.js?v=1.0.0";
 import { initVideoHeader } from "https://cdn.tonytony.ch/js/initVideoHeader.js?v=1.0.0";
 import { initMarqueeDualHorizontal } from "https://cdn.tonytony.ch/js/initMarqueeDualHorizontal.js?v=1.0.0";
@@ -69,6 +70,7 @@ async function initApp() {
     run("SmoothScrollManager", () => new InitSmoothScrollManager());
     run("NavBarDisplay", initNavBarDisplay);
     run("Navigation", initNavigation);
+    run("LanguageRedirect", initLanguageRedirect);
     run("LanguageSwitch", initLanguageSwitch);
     run("VideoHeader", initVideoHeader);
     run("LogoTyped", initLogoTyped);
