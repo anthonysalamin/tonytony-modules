@@ -20,6 +20,7 @@ initLanguageRedirect();
 import { initHideLoaderOnLoad } from "https://cdn.tonytony.ch/js/initHideLoaderOnLoad.js?v=1.0.0";
 import { initPageTransitions } from "https://cdn.tonytony.ch/js/initPageTransitions.js?v=1.0.0";
 import { InitSmoothScrollManager } from "https://cdn.tonytony.ch/js/InitSmoothScrollManager.js?v=1.0.0";
+import { initSublineTyped } from 'https://cdn.tonytony.ch/js/initSublineTyped.js?v=1.0.0';
 import { initNavigation } from "https://cdn.tonytony.ch/js/initNavigation.js?v=1.0.0";
 import { initNavBarDisplay } from "https://cdn.tonytony.ch/js/initNavBarDisplay.js?v=1.0.0";
 import { initLanguageSwitch } from 'https://cdn.tonytony.ch/js/initLanguageSwitch.js?v=1.0.0';
@@ -68,7 +69,7 @@ async function initApp() {
     run("SmoothScrollManager", () => new InitSmoothScrollManager());
     run("NavBarDisplay", initNavBarDisplay);
     run("Navigation", initNavigation);
-    run("LanguageRedirect", initLanguageRedirect);
+    run("initSublineTyped", initSublineTyped);
     run("LanguageSwitch", initLanguageSwitch);
     run("VideoHeader", initVideoHeader);
     run("LogoTyped", initLogoTyped);
