@@ -12,16 +12,16 @@
         },
         {
             "@type": "WebPage",
-            "@id": "https://tonytony.ch/projects/hymn#webpage",
-            "url": "https://tonytony.ch/projects/hymn",
-            "name": "TONYTONY | Hymn Design — Website Relaunch Case Study for a Branding Agency",
-            "description": "Web development case study for Hymn Design SA — Figma-to-Webflow build with high-performance Vimeo integration, GSAP animations, and a fully bilingual CMS by TONYTONY.",
-            "inLanguage": "en",
+            "@id": "https://tonytony.ch/fr/projects/hymn#webpage",
+            "url": "https://tonytony.ch/fr/projects/hymn",
+            "name": "TONYTONY | Hymn Design — Étude de cas de refonte de site pour une agence de branding",
+            "description": "Étude de cas en développement web pour Hymn Design SA — intégration Figma vers Webflow avec intégration Vimeo haute performance, animations GSAP et CMS entièrement bilingue par TONYTONY.",
+            "inLanguage": "fr",
             "isPartOf": {
                 "@id": "https://tonytony.ch/#website"
             },
             "about": {
-                "@id": "https://tonytony.ch/projects/hymn#project"
+                "@id": "https://tonytony.ch/fr/projects/hymn#project"
             },
             "breadcrumb": {
                 "@type": "BreadcrumbList",
@@ -29,20 +29,20 @@
                     {
                         "@type": "ListItem",
                         "position": 1,
-                        "name": "Home",
+                        "name": "Accueil",
                         "item": "https://tonytony.ch/"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Portfolio",
-                        "item": "https://tonytony.ch/portfolio"
+                        "item": "https://tonytony.ch/fr/portfolio"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Hymn Design",
-                        "item": "https://tonytony.ch/projects/hymn"
+                        "item": "https://tonytony.ch/fr/projects/hymn"
                     }
                 ]
             }
@@ -71,22 +71,22 @@
         },
         {
             "@type": "CreativeWork",
-            "@id": "https://tonytony.ch/projects/hymn#project",
-            "name": "Hymn Design — Website Relaunch",
-            "url": "https://tonytony.ch/projects/hymn",
-            "description": "A web relaunch built to embody Hymn Design's branding ethos. Pixel-perfect Figma-to-Webflow build with high-performance lazy-loaded Vimeo integration, GSAP scroll animations, and a fully bilingual EN/FR CMS for a Lausanne and Zürich-based branding agency.",
-            "inLanguage": "en",
+            "@id": "https://tonytony.ch/fr/projects/hymn#project",
+            "name": "Hymn Design — Refonte du site web",
+            "url": "https://tonytony.ch/fr/projects/hymn",
+            "description": "Une refonte web conçue pour incarner l’identité de marque de Hymn Design. Intégration pixel-perfect de Figma vers Webflow avec intégration Vimeo en lazy loading haute performance, animations GSAP au scroll et CMS entièrement bilingue EN/FR pour une agence de branding basée à Lausanne et Zurich.",
+            "inLanguage": "fr",
             "creator": {
                 "@id": "https://tonytony.ch/#person"
             },
             "keywords": [
-                "Web Development",
+                "Développement web",
                 "Webflow",
                 "GSAP",
-                "Vimeo Integration",
-                "Bilingual CMS",
-                "Branding Agency",
-                "Motion Design",
+                "Intégration Vimeo",
+                "CMS bilingue",
+                "Agence de branding",
+                "Motion design",
                 "SEO",
                 "AEO"
             ],
@@ -94,24 +94,24 @@
                 "@type": "Organization",
                 "name": "Hymn Design SA",
                 "url": "https://hymn.design",
-                "description": "Independent branding and design agency with offices in Lausanne and Zürich, Switzerland."
+                "description": "Agence indépendante de branding et de design avec des bureaux à Lausanne et Zurich, Suisse."
             },
             "audience": {
                 "@type": "Audience",
-                "audienceType": "Branding Agencies, Design Studios, Creative Firms"
+                "audienceType": "Agences de branding, studios de design, entreprises créatives"
             },
             "review": {
                 "@type": "Review",
                 "author": {
                     "@type": "Person",
                     "name": "Alexandre Henriques",
-                    "jobTitle": "Founder | Creative Direction",
+                    "jobTitle": "Fondateur | Direction créative",
                     "worksFor": {
                         "@type": "Organization",
                         "name": "Hymn Design SA"
                     }
                 },
-                "reviewBody": "Anthony stands out for his exceptional responsiveness. For every request from our agency, he consistently found relevant and effective solutions. His feedback is always clear and well structured, making decision making much easier."
+                "reviewBody": "Anthony se distingue par sa réactivité exceptionnelle. Pour chaque demande de notre agence, il a toujours su proposer des solutions pertinentes et efficaces. Ses retours sont clairs et bien structurés, ce qui facilite grandement la prise de décision."
             },
             "provider": {
                 "@id": "https://tonytony.ch/#business"
