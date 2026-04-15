@@ -53,7 +53,7 @@ function run(label, functionToTun) {
     try {
         functionToTun();
     } catch (error) {
-        console.error(`Oopsi 👹 ${label} failed:`, error);
+        console.error(`Error: ${label} failed:`, error);
     }
 }
 
