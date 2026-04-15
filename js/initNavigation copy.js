@@ -9,7 +9,6 @@
 
 export function initNavigation() {
     let isOpen = false;
-    let isInitialized = false;
 
     const burger = document.querySelector(`[data-menu="embed"]`);
     const svgElement = document.querySelector(`[data-menu="burger"]`);
@@ -47,8 +46,6 @@ export function initNavigation() {
     }
 
     function handleMenuAndLinks() {
-        if (isInitialized) return;
-
         burger.addEventListener("click", () => {
             svgElement.classList.toggle("active");
 
@@ -69,9 +66,6 @@ export function initNavigation() {
                 isOpen = false;
             });
         });
-
-        isInitialized = true;
-        burger.dataset.mobileInit = "true";
     }
 
     // Only enable mobile navigation below 991px
@@ -88,7 +82,6 @@ export function initNavigation() {
             // Reset menu if resizing to desktop
             closeMenu();
             burger.dataset.mobileInit = "";
-            isInitialized = false;
         }
     });
 }
