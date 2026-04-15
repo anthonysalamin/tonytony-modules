@@ -25,6 +25,15 @@ export function initNavBarDisplay() {
     start: "top top",
     end: "max",
     onUpdate: (self) => {
+      const isMobileMenuOpen = document.documentElement.dataset.mobileMenuOpen === "true";
+      if (isMobileMenuOpen) {
+        if (isHidden) {
+          tl.reverse();
+          isHidden = false;
+        }
+        return;
+      }
+
       const currentScrollY = self.scroll();
       const direction = self.direction;
 

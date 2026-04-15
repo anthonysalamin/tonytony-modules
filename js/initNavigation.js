@@ -13,12 +13,16 @@ export function initNavigation() {
     const burger = document.querySelector(`[data-menu="embed"]`);
     const svgElement = document.querySelector(`[data-menu="burger"]`);
     const menu = document.querySelector(`[data-menu="menu"]`);
+    const nav = document.querySelector(`[data-id="nav"]`);
     const links = document.querySelectorAll(`[data-menu="link"]`);
 
     if (!burger) return;
 
     function openMenu() {
+        // Ensure the fixed nav is visible before opening the slide-out menu.
+        if (nav) gsap.set(nav, { yPercent: 0 });
         gsap.to(menu, { x: "0%", duration: 0.5 });
+        document.documentElement.dataset.mobileMenuOpen = "true";
 
         // dynamically grab Lenis instance
         const lenis = window.lenis__pageScroll;
@@ -31,6 +35,7 @@ export function initNavigation() {
 
     function closeMenu() {
         gsap.to(menu, { x: "100%", duration: 0.5 });
+        delete document.documentElement.dataset.mobileMenuOpen;
 
         const lenis = window.lenis__pageScroll;
         if (lenis) lenis.start(); // resume smooth scroll
