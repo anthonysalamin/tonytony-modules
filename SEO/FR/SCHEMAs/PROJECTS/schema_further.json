@@ -1,0 +1,131 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": "https://tonytony.ch/#website",
+            "url": "https://tonytony.ch/",
+            "name": "TONYTONY",
+            "publisher": {
+                "@id": "https://tonytony.ch/#business"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://tonytony.ch/fr/projects/further#webpage",
+            "url": "https://tonytony.ch/fr/projects/further",
+            "name": "TONYTONY | Further — Étude de cas, plateforme éditoriale & développement web",
+            "description": "Un développement Webflow pour une plateforme éditoriale évolutive pour Design Hotels — structurant un contenu à haut volume en modules flexibles, avec intégrations API et design premium maison.",
+            "inLanguage": "fr",
+            "isPartOf": {
+                "@id": "https://tonytony.ch/#website"
+            },
+            "about": {
+                "@id": "https://tonytony.ch/fr/projects/further#project"
+            },
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Accueil",
+                        "item": "https://tonytony.ch/fr"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Portfolio",
+                        "item": "https://tonytony.ch/fr/portfolio"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Further — Design Hotels",
+                        "item": "https://tonytony.ch/fr/projects/further"
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "ProfessionalService",
+            "@id": "https://tonytony.ch/#business",
+            "name": "TONYTONY",
+            "url": "https://tonytony.ch/",
+            "sameAs": [
+                "https://www.linkedin.com/company/tonytony"
+            ]
+        },
+        {
+            "@type": "Person",
+            "@id": "https://tonytony.ch/#person",
+            "name": "Anthony Salamin",
+            "jobTitle": "Senior Web Designer & Creative Developer",
+            "url": "https://tonytony.ch/",
+            "worksFor": {
+                "@id": "https://tonytony.ch/#business"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/in/anthonysalamin/"
+            ]
+        },
+        {
+            "@type": "CreativeWork",
+            "@id": "https://tonytony.ch/fr/projects/further#project",
+            "name": "Further — Plateforme éditoriale Design Hotels",
+            "url": "https://tonytony.ch/fr/projects/further",
+            "description": "Une plateforme éditoriale satellite pour l'hôtellerie expérientielle de Design Hotels. Conçue pour gérer un contenu à haut volume — articles, couvertures d'événements et récits de marque — via une architecture CMS évolutive avec modules réutilisables et intégrations API pour une diffusion cohérente sur tous les points de contact.",
+            "inLanguage": "fr",
+            "creator": {
+                "@id": "https://tonytony.ch/#person"
+            },
+            "contributor": [
+                {
+                    "@type": "Person",
+                    "name": "Johannes Schwark",
+                    "jobTitle": "Creative Director",
+                    "worksFor": {
+                        "@type": "Organization",
+                        "name": "Design Hotels GmbH"
+                    }
+                }
+            ],
+            "keywords": [
+                "Développement Web",
+                "Plateforme Éditoriale",
+                "CMS",
+                "Intégration API",
+                "Hôtellerie",
+                "Architecture de Contenu",
+                "Design Hotels",
+                "Plateforme Évolutive"
+            ],
+            "about": {
+                "@type": "Organization",
+                "name": "Design Hotels GmbH",
+                "url": "https://further-archive.netlify.app",
+                "description": "Design Hotels opère à l'intersection de l'hôtellerie et de la culture, produisant un contenu éditorial à haut volume issu d'événements et de collaborations à l'échelle mondiale."
+            },
+            "audience": {
+                "@type": "Audience",
+                "audienceType": "Marques hôtelières, Hôtels de luxe, Équipes éditoriales, Directeurs marketing"
+            },
+            "review": {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Johannes Schwark",
+                    "jobTitle": "Creative Director",
+                    "worksFor": {
+                        "@type": "Organization",
+                        "name": "Design Hotels GmbH"
+                    }
+                },
+                "reviewBody": "Anthony brought our editorial vision to life with precision and clarity — translating complex creative direction into a scalable, seamless platform."
+            },
+            "provider": {
+                "@id": "https://tonytony.ch/#business"
+            }
+        }
+    ]
+}
