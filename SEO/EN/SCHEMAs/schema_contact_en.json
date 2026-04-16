@@ -1,0 +1,68 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+  
+      {
+        "@type": "WebSite",
+        "@id": "https://tonytony.ch/#website",
+        "url": "https://tonytony.ch",
+        "name": "TONYTONY"
+      },
+  
+      {
+        "@type": "ContactPage",
+        "@id": "https://tonytony.ch/contact#webpage",
+        "url": "https://tonytony.ch/contact",
+        "name": "TONYTONY | Contact",
+        "description": "Get in touch with Anthony Salamin — book a free 15-min call or send a message about your web project, SEO audit, or brand identity.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://tonytony.ch/#website"
+        },
+        "about": {
+          "@id": "https://tonytony.ch/#professionalservice"
+        }
+      },
+  
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://tonytony.ch/#professionalservice",
+        "name": "TONYTONY",
+        "url": "https://tonytony.ch",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "hey@tonytony.ch",
+          "availableLanguage": ["en", "fr", "de"]
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "SEO Audit",
+            "description": "Technical SEO and AEO audit to improve search visibility and AI citation."
+          },
+          {
+            "@type": "Offer",
+            "name": "Web Design",
+            "description": "Modern, conversion-focused web design for startups and SMEs."
+          },
+          {
+            "@type": "Offer",
+            "name": "Web Development",
+            "description": "Scalable Webflow development with CMS, API integrations, and GSAP animations."
+          },
+          {
+            "@type": "Offer",
+            "name": "SEO/AEO",
+            "description": "Search engine and answer engine optimization to rank on Google and get cited by AI."
+          },
+          {
+            "@type": "Offer",
+            "name": "Corporate Identity",
+            "description": "Brand identity and design systems for startups and growing businesses."
+          }
+        ]
+      }
+  
+    ]
+  }

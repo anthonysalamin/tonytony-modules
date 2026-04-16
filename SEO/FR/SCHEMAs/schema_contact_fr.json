@@ -1,0 +1,68 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+  
+      {
+        "@type": "WebSite",
+        "@id": "https://tonytony.ch/#website",
+        "url": "https://tonytony.ch",
+        "name": "TONYTONY"
+      },
+  
+      {
+        "@type": "ContactPage",
+        "@id": "https://tonytony.ch/fr/contact#webpage",
+        "url": "https://tonytony.ch/fr/contact",
+        "name": "TONYTONY | Contact",
+        "description": "Contactez Anthony Salamin — réservez un appel gratuit de 15 min ou envoyez un message concernant votre projet web, audit SEO ou identité de marque.",
+        "inLanguage": "fr",
+        "isPartOf": {
+          "@id": "https://tonytony.ch/#website"
+        },
+        "about": {
+          "@id": "https://tonytony.ch/#professionalservice"
+        }
+      },
+  
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://tonytony.ch/#professionalservice",
+        "name": "TONYTONY",
+        "url": "https://tonytony.ch",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "hey@tonytony.ch",
+          "availableLanguage": ["en", "fr", "de"]
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Audit SEO",
+            "description": "Audit technique SEO et AEO pour améliorer la visibilité sur les moteurs de recherche et les citations de l'IA."
+          },
+          {
+            "@type": "Offer",
+            "name": "Web Design",
+            "description": "Web design moderne et axé sur la conversion pour les startups et les PME."
+          },
+          {
+            "@type": "Offer",
+            "name": "Développement Web",
+            "description": "Développement Webflow évolutif avec CMS, intégrations API et animations GSAP."
+          },
+          {
+            "@type": "Offer",
+            "name": "SEO/AEO",
+            "description": "Optimisation pour les moteurs de recherche et de réponses pour se classer sur Google et être cité par l'IA."
+          },
+          {
+            "@type": "Offer",
+            "name": "Identité Visuelle",
+            "description": "Identité de marque et systèmes de design pour les startups et les entreprises en croissance."
+          }
+        ]
+      }
+  
+    ]
+  }

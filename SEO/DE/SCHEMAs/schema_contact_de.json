@@ -1,0 +1,68 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "WebSite",
+      "@id": "https://tonytony.ch/#website",
+      "url": "https://tonytony.ch",
+      "name": "TONYTONY"
+    },
+
+    {
+      "@type": "ContactPage",
+      "@id": "https://tonytony.ch/de/contact#webpage",
+      "url": "https://tonytony.ch/de/contact",
+      "name": "TONYTONY | Kontakt",
+      "description": "Kontaktieren Sie Anthony Salamin — buchen Sie einen kostenlosen 15-Minuten-Call oder senden Sie eine Nachricht zu Ihrem Webprojekt, SEO-Audit oder Ihrer Markenidentität.",
+      "inLanguage": "de",
+      "isPartOf": {
+        "@id": "https://tonytony.ch/#website"
+      },
+      "about": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      }
+    },
+
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://tonytony.ch/#professionalservice",
+      "name": "TONYTONY",
+      "url": "https://tonytony.ch",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "hey@tonytony.ch",
+        "availableLanguage": ["en", "fr", "de"]
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "SEO-Audit",
+          "description": "Technisches SEO- und AEO-Audit zur Verbesserung der Sichtbarkeit in Suchmaschinen und KI-Zitierungen."
+        },
+        {
+          "@type": "Offer",
+          "name": "Webdesign",
+          "description": "Modernes, konversionsstarkes Webdesign für Startups und KMUs."
+        },
+        {
+          "@type": "Offer",
+          "name": "Webentwicklung",
+          "description": "Skalierbare Webflow-Entwicklung mit CMS, API-Integrationen und GSAP-Animationen."
+        },
+        {
+          "@type": "Offer",
+          "name": "SEO/AEO",
+          "description": "Suchmaschinen- und Antwortmaschinen-Optimierung für Google-Rankings und KI-Zitate."
+        },
+        {
+          "@type": "Offer",
+          "name": "Corporate Identity",
+          "description": "Markenidentität und Designsysteme für Startups und wachsende Unternehmen."
+        }
+      ]
+    }
+
+  ]
+}
