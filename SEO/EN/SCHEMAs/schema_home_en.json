@@ -1,0 +1,356 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "Organization",
+      "@id": "https://tonytony.ch/#organization",
+      "name": "TONYTONY",
+      "legalName": "TONYTONY Sàrl",
+      "url": "https://tonytony.ch",
+      "logo": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0a3868c76ecfdb1973ee5_logotype.png",
+      "image": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_en.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/company/tonytony"
+      ],
+      "founder": {
+        "@id": "https://tonytony.ch/#person"
+      }
+    },
+
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://tonytony.ch/#professionalservice",
+      "mainEntityOfPage": {
+        "@id": "https://tonytony.ch/#webpage"
+      },
+      "name": "TONYTONY",
+      "url": "https://tonytony.ch",
+      "email": "hey@tonytony.ch",
+      "priceRange": "$$$$",
+      "image": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_en.jpg",
+      "logo": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0a3868c76ecfdb1973ee5_logotype.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CH"
+      },
+      "serviceType": [
+        "Web Design",
+        "Webflow Development",
+        "SEO",
+        "AEO",
+        "Brand Identity",
+        "Strategy"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "hey@tonytony.ch",
+        "availableLanguage": ["en","fr","de"]
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Worldwide"
+        },
+        {
+          "@type": "Country",
+          "name": "Switzerland",
+          "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Suisse romande",
+          "sameAs": "https://en.wikipedia.org/wiki/Romandy"
+        },
+        {
+          "@type": "Place",
+          "name": "German-speaking Switzerland",
+          "alternateName": "Deutschschweiz",
+          "sameAs": "https://en.wikipedia.org/wiki/German-speaking_Switzerland"
+        },
+        {
+          "@type": "City",
+          "name": "Geneva",
+          "sameAs": "https://en.wikipedia.org/wiki/Geneva"
+        },
+        {
+          "@type": "City",
+          "name": "Lausanne",
+          "sameAs": "https://en.wikipedia.org/wiki/Lausanne"
+        },
+        {
+          "@type": "City",
+          "name": "Sion",
+          "sameAs": "https://en.wikipedia.org/wiki/Sion,_Switzerland"
+        },
+        {
+          "@type": "City",
+          "name": "Zurich",
+          "sameAs": "https://en.wikipedia.org/wiki/Z%C3%BCrich"
+        },
+        {
+          "@type": "City",
+          "name": "Bern",
+          "sameAs": "https://en.wikipedia.org/wiki/Bern"
+        },
+        {
+          "@type": "City",
+          "name": "Basel",
+          "sameAs": "https://en.wikipedia.org/wiki/Basel"
+        }
+      ],
+      "knowsLanguage": ["en","fr","de"],
+      "founder": {
+        "@id": "https://tonytony.ch/#person"
+      },
+      "aggregateRating": {
+        "@id": "https://tonytony.ch/#rating"
+      },
+      "review": [
+        { "@id": "https://tonytony.ch/#review-1" },
+        { "@id": "https://tonytony.ch/#review-2" },
+        { "@id": "https://tonytony.ch/#review-3" },
+        { "@id": "https://tonytony.ch/#review-4" },
+        { "@id": "https://tonytony.ch/#review-5" },
+        { "@id": "https://tonytony.ch/#review-6" },
+        { "@id": "https://tonytony.ch/#review-7" }
+      ]
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://tonytony.ch/#person",
+      "name": "Anthony Salamin",
+      "jobTitle": "Senior Web Designer & Creative Developer",
+      "url": "https://tonytony.ch",
+      "email": "hey@tonytony.ch",
+      "image": "https://cdn.prod.website-files.com/6565594186e587567235d089/656589ff61a9123418596fa4_avatar.avif",
+      "sameAs": [
+        "https://www.linkedin.com/in/anthonysalamin/"
+      ],
+      "worksFor": {
+        "@id": "https://tonytony.ch/#organization"
+      }
+    },
+
+    {
+      "@type": "AggregateRating",
+      "@id": "https://tonytony.ch/#rating",
+      "ratingValue": "5",
+      "bestRating": "5",
+      "ratingCount": "7"
+    },
+
+    {
+      "@type": "Review",
+      "@id": "https://tonytony.ch/#review-1",
+      "author": { 
+        "@type": "Person",
+        "name": "Helge von Giese" 
+      },
+      "reviewBody": "Anthony is an exceptionally universally gifted creative. In his exploration of various means, methods, and tools, he moves with admirable intuition.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "itemReviewed": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      }
+    },
+
+    {
+      "@type": "Review",
+      "@id": "https://tonytony.ch/#review-2",
+      "author": { 
+        "@type": "Person",
+        "name": "Jochen M. Wilms" 
+      },
+      "reviewBody": "In every phase of my projects for leading international ventures, Anthony consistently exhibited a great level of creativity, professionalism, and technical skill - maintaining a proactive approach from initial concept to final delivery. Working with Anthony has been a great pleasure, and I look forward to future collaborations.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "itemReviewed": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      }
+    },
+
+    {
+      "@type": "Review",
+      "@id": "https://tonytony.ch/#review-3",
+      "author": { 
+        "@type": "Person",
+        "name": "Alexandre Henriques" 
+      },
+      "reviewBody": "Anthony stands out for his exceptional responsiveness. For every request from our agency, he consistently found relevant and effective solutions. His feedback is always clear and well structured, making decision making much easier.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "itemReviewed": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      }
+    },
+
+    {
+      "@type": "Review",
+      "@id": "https://tonytony.ch/#review-4",
+      "author": { 
+        "@type": "Person",
+        "name": "Milton Carvalho" 
+      },
+      "reviewBody": "I’m beyond impressed with the website Anthony built for my solar panel business! It’s modern, professional, and already bringing in new leads. He made the whole process simple and stress-free — truly outstanding work!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "itemReviewed": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      }
+    },
+
+    {
+      "@type": "Review",
+      "@id": "https://tonytony.ch/#review-5",
+      "author": { 
+        "@type": "Person",
+        "name": "Dr. Donatela Bernardi" 
+      },
+      "reviewBody": "Excellent work, thank you for your responsiveness - I'm really looking forward to collaborating on our new website. We'll be in touch.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "itemReviewed": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      }
+    },
+
+    {
+      "@type": "Review",
+      "@id": "https://tonytony.ch/#review-6",
+      "author": { 
+        "@type": "Person",
+        "name": "Alexandre Doublet" 
+      },
+      "reviewBody": "Throughout the entire project, Anthony was responsive, collaborative, and dedicated to ensuring that every aspect of the website met and exceeded the expectations of the team.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "itemReviewed": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      }
+    },
+
+    {
+      "@type": "Review",
+      "@id": "https://tonytony.ch/#review-7",
+      "author": { 
+        "@type": "Person",
+        "name": "Camil Amos" 
+      },
+      "reviewBody": "Pleased with the outcome of the LP and its presentation. The typography layout is top notch and the images chosen adds the dynamic touch I was looking for.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "itemReviewed": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      }
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://tonytony.ch/#website",
+      "url": "https://tonytony.ch",
+      "name": "TONYTONY",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://tonytony.ch/#organization"
+      }
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://tonytony.ch/#webpage",
+      "url": "https://tonytony.ch",
+      "name": "TONYTONY | Webflow Design & Development for Startups and SMEs",
+      "description": "High-converting websites for startups and SMEs. SEO & AEO to rank on Google and be cited by AI.",
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      }
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://tonytony.ch/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why choose TONYTONY?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TONYTONY is Anthony Salamin — senior web designer & creative developer, 15+ years deep. Swiss-born, shaped by Berlin's startup scene and top agencies, now operating as a focused studio of one in Valais. Working with teams around the world."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with clients outside Switzerland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Based in Switzerland, working worldwide — remote-first, time zones permitting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle SEO and AEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — I cover technical audits, SEO, AEO (Answer Engine Optimization), keyword research, and content optimization. Everything needed to make your site visible and high-performing. AI summaries now dominate Google and are rising fast. SEO and AEO aren't separate anymore, just one smart investment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the timeline for a website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Between 2 and 8 weeks, depending on the project's complexity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a multilingual website possible?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely — Webflow supports multilingual sites natively. French, German, English, Japanese, Chinese — no limits. You stay in control of your translations via the CMS."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Always — training to manage your site, technical support, and ongoing maintenance — I stay by your side long after launch."
+          }
+        }
+      ]
+    }
+
+  ]
+}
