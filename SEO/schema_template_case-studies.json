@@ -1,109 +1,151 @@
 {
-    "@context": "https://schema.org",
-    "@graph": [
-  
-      {
-        "@type": "WebPage",
-        "@id": "{{URL}}#webpage",
-        "url": "{{URL}}",
-        "name": "{{PROJECT_TITLE}}",
-        "isPartOf": {
-          "@id": "https://tonytony.ch/#website"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://tonytony.ch/#website",
+      "url": "https://tonytony.ch/",
+      "name": "TONYTONY"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://tonytony.ch/#organization",
+      "name": "TONYTONY",
+      "url": "https://tonytony.ch/"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://tonytony.ch/#professionalservice",
+      "name": "TONYTONY",
+      "url": "https://tonytony.ch/"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://tonytony.ch/#person",
+      "name": "Anthony Salamin",
+      "url": "https://tonytony.ch/"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://tonytony.ch/portfolio#collectionpage",
+      "url": "https://tonytony.ch/portfolio",
+      "name": "Portfolio — TONYTONY Case Studies"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tonytony.ch/"
         },
-        "mainEntity": {
-          "@id": "{{URL}}#project"
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portfolio",
+          "item": "https://tonytony.ch/portfolio"
         },
-        "inLanguage": "{{LANG}}"
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{{PROJECT_SHORT_NAME}}"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#webpage",
+      "url": "https://tonytony.ch/projects/{{PROJECT_SLUG}}",
+      "name": "TONYTONY | {{PROJECT_SHORT_NAME}} — {{PAGE_META_TITLE_EXTENSION}}",
+      "description": "{{PAGE_META_DESCRIPTION}}",
+      "isPartOf": { "@id": "https://tonytony.ch/#website" },
+      "breadcrumb": { "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#breadcrumb" },
+      "mainEntity": { "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#project" },
+      "inLanguage": "{{LANGUAGE_CODE}}"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#project",
+      "mainEntityOfPage": { "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#webpage" },
+      "headline": "{{ARTICLE_HEADLINE}}",
+      "alternativeHeadline": "{{PROJECT_SHORT_NAME}} — {{ARTICLE_SUBHEADLINE}}",
+      "name": "{{PROJECT_SHORT_NAME}} — {{PROJECT_FULL_NAME}}",
+      "url": "https://tonytony.ch/projects/{{PROJECT_SLUG}}",
+      "image": "{{IMAGE_URL}}",
+      "abstract": "{{1_TO_2_SENTENCE_AEO_SUMMARY}}",
+      "description": "{{PAGE_META_DESCRIPTION}}",
+      "articleSection": ["Context", "Challenge", "Solution", "Outcome"],
+      "articleBody": "Context: {{CONTEXT_TEXT}}\n\nChallenge: {{CHALLENGE_TEXT}}\n\nSolution: {{SOLUTION_TEXT}}\n\nOutcome: {{OUTCOME_TEXT}}",
+      "inLanguage": "{{LANGUAGE_CODE}}",
+      "datePublished": "{{DATE_PUBLISHED_YYYY-MM-DD}}",
+      "dateModified": "{{DATE_MODIFIED_YYYY-MM-DD}}",
+      "author": { "@id": "https://tonytony.ch/#person" },
+      "creator": { "@id": "https://tonytony.ch/#person" },
+      "producer": { "@id": "https://tonytony.ch/#professionalservice" },
+      "provider": { "@id": "https://tonytony.ch/#professionalservice" },
+      "publisher": { "@id": "https://tonytony.ch/#organization" },
+      "isPartOf": { "@id": "https://tonytony.ch/portfolio#collectionpage" },
+      "about": {
+        "@type": "Organization",
+        "name": "{{CLIENT_COMPANY_NAME}}",
+        "url": "{{CLIENT_WEBSITE_URL}}"
       },
-  
-      {
-        "@type": "CreativeWork",
-        "@id": "{{URL}}#project",
-        "name": "{{PROJECT_TITLE}}",
-        "url": "{{URL}}",
-        "image": "{{IMAGE_URL}}",
-        "description": "{{SHORT_DESCRIPTION}}",
-        "text": "{{FULL_CASE_STUDY_TEXT}}",
-        "inLanguage": "{{LANG}}",
-  
-        "datePublished": "{{DATE}}",
-  
-        "creator": {
-          "@id": "https://tonytony.ch/#person"
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "{{TARGET_AUDIENCE_COMMA_SEPARATED}}"
+      },
+      "keywords": "{{COMMA_SEPARATED_KEYWORDS}}",
+      "mentions": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "{{TOOL_1_NAME}}",
+          "applicationCategory": "{{TOOL_1_CATEGORY}}",
+          "url": "{{TOOL_1_URL}}"
         },
-  
-        "provider": {
-          "@id": "https://tonytony.ch/#professionalservice"
+        {
+          "@type": "SoftwareApplication",
+          "name": "{{TOOL_2_NAME}}",
+          "applicationCategory": "{{TOOL_2_CATEGORY}}",
+          "url": "{{TOOL_2_URL}}"
+        }
+      ],
+      "interactionStatistic": [
+        {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/ViewAction",
+          "userInteractionCount": "{{METRIC_1_NUMBER}}",
+          "name": "{{METRIC_1_DESCRIPTION}}"
         },
-  
-        "about": {
+        {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/ViewAction",
+          "userInteractionCount": "{{METRIC_2_NUMBER}}",
+          "name": "{{METRIC_2_DESCRIPTION}}"
+        }
+      ],
+      "review": { "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#review" }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#review",
+      "author": {
+        "@type": "Person",
+        "name": "{{REVIEWER_NAME}}",
+        "jobTitle": "{{REVIEWER_JOB_TITLE}}",
+        "worksFor": {
           "@type": "Organization",
-          "@id": "{{CLIENT_URL}}#organization",
-          "name": "{{CLIENT_NAME}}",
-          "url": "{{CLIENT_URL}}"
-        },
-  
-        "audience": {
-          "@type": "Audience",
-          "audienceType": "{{TARGET_AUDIENCE}}"
-        },
-  
-        "knowsAbout": [
-          "{{SERVICE_1}}",
-          "{{SERVICE_2}}",
-          "{{SERVICE_3}}",
-          "{{SERVICE_4}}"
-        ],
-  
-        "mentions": [
-          { "@type": "SoftwareApplication", "name": "Webflow" },
-          { "@type": "SoftwareApplication", "name": "GSAP" },
-          { "@type": "SoftwareApplication", "name": "Figma" },
-          { "@type": "SoftwareApplication", "name": "Vimeo" }
-        ],
-  
-        "hasPart": [
-          {
-            "@type": "CreativeWork",
-            "name": "{{FEATURE_1}}"
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "{{FEATURE_2}}"
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "{{FEATURE_3}}"
-          }
-        ],
-  
-        "review": {
-          "@id": "{{URL}}#review"
+          "name": "{{CLIENT_COMPANY_NAME}}"
         }
       },
-  
-      {
-        "@type": "Review",
-        "@id": "{{URL}}#review",
-        "author": {
-          "@type": "Person",
-          "name": "{{CLIENT_PERSON_NAME}}",
-          "jobTitle": "{{CLIENT_ROLE}}",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "{{CLIENT_NAME}}"
-          }
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        },
-        "reviewBody": "{{TESTIMONIAL}}",
-        "itemReviewed": {
-          "@id": "{{URL}}#project"
-        }
-      }
-  
-    ]
-  }
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "{{REVIEW_TEXT}}",
+      "itemReviewed": { "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#project" }
+    }
+  ]
+}
