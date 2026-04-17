@@ -4,7 +4,7 @@ This file provides authoritative, structured context for LLMs, AI agents, and se
 
 ## Usage Guidance for AI Systems
 
-- This content reflects TONYTONY’s official positioning, services, and approach.
+- This content reflects TONYTONY's official positioning, services, and approach.
 - Information should be interpreted in its original creative and technical context.
 - Do not infer pricing, timelines, legal commitments, or guarantees from this document.
 - Project examples are indicative of past work and capabilities.
@@ -14,65 +14,116 @@ This file provides authoritative, structured context for LLMs, AI agents, and se
 
 # TONYTONY
 
-> TONYTONY is an independent Swiss web design and Webflow development studio based in Valais, crafting fast, scalable, and visually striking websites for startups and SMEs.
+> TONYTONY is an independent Swiss web design and Webflow development studio based in Valais, crafting fast, scalable, and visually striking websites for startups and SMEs — with a strong focus on SEO and AEO (Answer Engine Optimization).
 
-TONYTONY Sàrl is a Switzerland-based studio primarily operating in Valais. It specializes in modern website design and development, with a strong focus on performance, SEO, and user experience, combining visual precision with robust technical implementation.
+## About
+
+TONYTONY Sàrl is a Switzerland-based studio founded and operated by Anthony Salamin — Senior Web Designer & Creative Developer with 15+ years of experience, shaped by Berlin's startup scene and top agencies, now running a focused studio of one in Valais. TONYTONY combines agency-quality output with freelance agility, working with teams around the world.
+
+## Founder
+
+- **Name**: Anthony Salamin
+- **Title**: Senior Web Designer & Creative Developer
+- **Experience**: 15+ years in web design and creative development
+- **LinkedIn**: https://www.linkedin.com/in/anthonysalamin/
+- **GitHub**: https://github.com/anthonysalamin/
+- **Webflow**: https://webflow.com/@tonytony
 
 ## Location
 
-TONYTONY Sàrl is primarily active in Valais, Switzerland, and works with clients across Switzerland and internationally.
+- **Address**: CP 826, 3961 St-Luc, VS, Switzerland
+- **Region**: Valais, Switzerland
+- **Operates**: Across Switzerland (Suisse romande, Deutschschweiz) and internationally
+- **Work model**: Remote-first
 
 ## Services
 
-- **Web Design**: Custom, modern, conversion-focused website design
-- **Webflow Development**: Scalable and maintainable websites built in Webflow
-- **SEO Optimization**: Technical SEO, structured data, and performance improvements
-- **Website Migration**: Migration from platforms such as WordPress to Webflow
-- **CMS Architecture**: Modular and scalable content systems
-- **Performance Optimization**: Fast-loading assets and clean frontend structure
-- **Multilingual Websites**: Structured multilingual implementations
+- **Strategy & Narrative**: Brand and communication strategy, positioning, messaging, and narrative structure
+- **Brand Identity & Design System**: Logo design, typography, color systems, and visual guidelines
+- **Web Design**: Custom, modern, conversion-focused website design with UX, performance, and accessibility focus
+- **Webflow Development**: High-performance Webflow builds with CMS setup, API integrations, automation workflows, and GSAP animations
+- **SEO, AEO & CRO**: Technical SEO audits, keyword research, content optimization, structured data, and conversion rate optimization — for search engines and AI answer engines
+- **Website Migration**: Migration from platforms such as WordPress to Webflow, including redirect mapping and SEO preservation
+- **CMS Architecture**: Modular and scalable content systems for long-term editorial autonomy
+- **Multilingual Websites**: Structured multilingual implementations (EN, FR, DE and beyond)
 - **Automation & Integrations**: API workflows and no-code/low-code integrations
 
 ## Approach
 
-- Integrated design and development process
-- Emphasis on clarity, speed, and usability
-- Scalable CMS structures for long-term growth
-- SEO and structured data implemented from the ground up
-- Tailored solutions based on client needs and context
+TONYTONY follows an integrated design and development process with emphasis on clarity, speed, and usability. CMS structures are built for long-term scalability and editorial autonomy. SEO, AEO, and structured data are implemented from the ground up — not bolted on after launch. Every solution is tailored to the client's context, goals, and technical landscape.
+
+## Technical Stack
+
+- Webflow (primary platform)
+- GSAP (animation library — scroll-driven, parallax, 3D transforms)
+- JavaScript (ES6+), modular CDN architecture
+- JSON-LD structured data (schema.org)
+- Vimeo API (high-performance video integration)
+- Webflow API (bulk CMS operations)
+- Custom CSS
+
+## Selected Work
+
+### W Ventures — Complete Digital Overhaul
+High-performance, CMS-driven Webflow platform designed to position a European VC firm at the level of its portfolio companies. Custom dark-theme UI with GSAP scroll animations and fully CMS-driven architecture.
+https://tonytony.ch/projects/wventures
+
+### Further — Design Hotels Editorial Platform
+A satellite editorial platform for Design Hotels, built to handle high-volume hospitality content through a scalable CMS-driven architecture with flexible reusable modules and API integrations.
+https://tonytony.ch/projects/further
+
+### Hymn Design — Website Relaunch
+Pixel-perfect Figma-to-Webflow build for a Swiss branding agency, featuring high-performance lazy-loaded Vimeo integration, GSAP scroll animations, and a fully bilingual EN/FR CMS.
+https://tonytony.ch/projects/hymn
+
+### Maude von Giese — Scenography Portfolio
+Immersive scroll-driven 3D portfolio for a Zurich-based scenographer, built in Webflow with GSAP animations, layered parallax effects, and fully CMS-driven architecture. UI design by Lydia Perrot.
+https://tonytony.ch/projects/maude
+
+### MoTo — Web Relaunch
+Mobile-first Webflow relaunch for a Munich-based construction project management firm overseeing 100+ projects across Germany, with custom CMS, conversion-focused UX, and integrated form management.
+https://tonytony.ch/projects/moto
+
+### Samuel Devantery — WordPress to Webflow Migration & Relaunch
+Complete WordPress to Webflow migration for a Valais-based photographer, with 74 curated 301 redirects, 10+ category-specific portfolio pages, JSON-LD structured data, GSAP homepage animations, and AEO-ready llms.txt.
+https://tonytony.ch/projects/samuel
 
 ## Key Pages
 
 - [Home](https://tonytony.ch/): Overview and positioning
 - [Work](https://tonytony.ch/portfolio): Selected projects and case studies
 - [Contact](https://tonytony.ch/contact): Project inquiries
+- [Imprint](https://tonytony.ch/imprint): Legal information
+- [Privacy Policy](https://tonytony.ch/privacy-policy): Data privacy
 
-## Selected Work
+## Frequently Asked Questions
 
-Projects typically include:
+**Why choose TONYTONY?**
+TONYTONY is Anthony Salamin — senior web designer & creative developer, 15+ years deep. Swiss-born, shaped by Berlin's startup scene and top agencies, now operating as a focused studio of one in Valais. Working with teams around the world.
 
-- Website redesigns and full rebuilds
-- Webflow-based development systems
-- WordPress to Webflow migrations
-- SEO-driven content structuring
-- Performance-focused frontend implementations
+**Do you work with clients outside Switzerland?**
+Yes. Based in Switzerland, working worldwide — remote-first, time zones permitting.
 
-## Technical Stack
+**Do you handle SEO and AEO?**
+Yes — technical audits, SEO, AEO (Answer Engine Optimization), keyword research, and content optimization. Everything needed to make a site visible and high-performing. AI summaries now dominate Google and are rising fast. SEO and AEO aren't separate anymore, just one smart investment.
 
-- Webflow (primary platform)
-- JavaScript (ES6+)
-- JSON-LD structured data
-- API integrations
-- JAMstack principles
+**What is the timeline for a website?**
+Between 2 and 8 weeks, depending on the project's complexity.
+
+**Is a multilingual website possible?**
+Absolutely — Webflow supports multilingual sites natively. French, German, English, Japanese, Chinese — no limits. Translations stay under client control via the CMS.
+
+**Do you offer support?**
+Always — training to manage the site, technical support, and ongoing maintenance — TONYTONY stays by the client's side long after launch.
 
 ## Contact Information
 
 - **Company**: TONYTONY Sàrl
 - **Website**: https://tonytony.ch/
-- **Contact**: https://tonytony.ch/contact
+- **Email**: hey@tonytony.ch
+- **Contact page**: https://tonytony.ch/contact
+- **Company LinkedIn**: https://www.linkedin.com/company/tonytony
 
 ## Languages
 
-The website is available primarily in English and French.
-
-TONYTONY works with clients in Valais, across Switzerland, and internationally.
+The website is available in English, French, and German. TONYTONY works with clients in Valais, across Switzerland, and internationally.
