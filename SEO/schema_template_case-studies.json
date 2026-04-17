@@ -1,0 +1,109 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+  
+      {
+        "@type": "WebPage",
+        "@id": "{{URL}}#webpage",
+        "url": "{{URL}}",
+        "name": "{{PROJECT_TITLE}}",
+        "isPartOf": {
+          "@id": "https://tonytony.ch/#website"
+        },
+        "mainEntity": {
+          "@id": "{{URL}}#project"
+        },
+        "inLanguage": "{{LANG}}"
+      },
+  
+      {
+        "@type": "CreativeWork",
+        "@id": "{{URL}}#project",
+        "name": "{{PROJECT_TITLE}}",
+        "url": "{{URL}}",
+        "image": "{{IMAGE_URL}}",
+        "description": "{{SHORT_DESCRIPTION}}",
+        "text": "{{FULL_CASE_STUDY_TEXT}}",
+        "inLanguage": "{{LANG}}",
+  
+        "datePublished": "{{DATE}}",
+  
+        "creator": {
+          "@id": "https://tonytony.ch/#person"
+        },
+  
+        "provider": {
+          "@id": "https://tonytony.ch/#professionalservice"
+        },
+  
+        "about": {
+          "@type": "Organization",
+          "@id": "{{CLIENT_URL}}#organization",
+          "name": "{{CLIENT_NAME}}",
+          "url": "{{CLIENT_URL}}"
+        },
+  
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "{{TARGET_AUDIENCE}}"
+        },
+  
+        "knowsAbout": [
+          "{{SERVICE_1}}",
+          "{{SERVICE_2}}",
+          "{{SERVICE_3}}",
+          "{{SERVICE_4}}"
+        ],
+  
+        "mentions": [
+          { "@type": "SoftwareApplication", "name": "Webflow" },
+          { "@type": "SoftwareApplication", "name": "GSAP" },
+          { "@type": "SoftwareApplication", "name": "Figma" },
+          { "@type": "SoftwareApplication", "name": "Vimeo" }
+        ],
+  
+        "hasPart": [
+          {
+            "@type": "CreativeWork",
+            "name": "{{FEATURE_1}}"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "{{FEATURE_2}}"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "{{FEATURE_3}}"
+          }
+        ],
+  
+        "review": {
+          "@id": "{{URL}}#review"
+        }
+      },
+  
+      {
+        "@type": "Review",
+        "@id": "{{URL}}#review",
+        "author": {
+          "@type": "Person",
+          "name": "{{CLIENT_PERSON_NAME}}",
+          "jobTitle": "{{CLIENT_ROLE}}",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "{{CLIENT_NAME}}"
+          }
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "reviewBody": "{{TESTIMONIAL}}",
+        "itemReviewed": {
+          "@id": "{{URL}}#project"
+        }
+      }
+  
+    ]
+  }

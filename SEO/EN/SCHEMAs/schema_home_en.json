@@ -1,7 +1,6 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-
     {
       "@type": "Organization",
       "@id": "https://tonytony.ch/#organization",
@@ -17,7 +16,6 @@
         "@id": "https://tonytony.ch/#person"
       }
     },
-
     {
       "@type": "ProfessionalService",
       "@id": "https://tonytony.ch/#professionalservice",
@@ -42,15 +40,34 @@
         "Brand Identity",
         "Strategy"
       ],
+      "knowsAbout": [
+        "Webflow Development",
+        "GSAP Animation",
+        "Technical SEO",
+        "AEO",
+        "CMS Architecture",
+        "UX/UI Design",
+        "Performance Optimization"
+      ],
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer support",
         "email": "hey@tonytony.ch",
-        "availableLanguage": ["en","fr","de"]
+        "availableLanguage": [
+          "en",
+          "fr",
+          "de"
+        ]
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
         "opens": "09:00",
         "closes": "18:00"
       },
@@ -74,39 +91,13 @@
           "name": "German-speaking Switzerland",
           "alternateName": "Deutschschweiz",
           "sameAs": "https://en.wikipedia.org/wiki/German-speaking_Switzerland"
-        },
-        {
-          "@type": "City",
-          "name": "Geneva",
-          "sameAs": "https://en.wikipedia.org/wiki/Geneva"
-        },
-        {
-          "@type": "City",
-          "name": "Lausanne",
-          "sameAs": "https://en.wikipedia.org/wiki/Lausanne"
-        },
-        {
-          "@type": "City",
-          "name": "Sion",
-          "sameAs": "https://en.wikipedia.org/wiki/Sion,_Switzerland"
-        },
-        {
-          "@type": "City",
-          "name": "Zurich",
-          "sameAs": "https://en.wikipedia.org/wiki/Z%C3%BCrich"
-        },
-        {
-          "@type": "City",
-          "name": "Bern",
-          "sameAs": "https://en.wikipedia.org/wiki/Bern"
-        },
-        {
-          "@type": "City",
-          "name": "Basel",
-          "sameAs": "https://en.wikipedia.org/wiki/Basel"
         }
       ],
-      "knowsLanguage": ["en","fr","de"],
+      "knowsLanguage": [
+        "en",
+        "fr",
+        "de"
+      ],
       "founder": {
         "@id": "https://tonytony.ch/#person"
       },
@@ -114,16 +105,29 @@
         "@id": "https://tonytony.ch/#rating"
       },
       "review": [
-        { "@id": "https://tonytony.ch/#review-1" },
-        { "@id": "https://tonytony.ch/#review-2" },
-        { "@id": "https://tonytony.ch/#review-3" },
-        { "@id": "https://tonytony.ch/#review-4" },
-        { "@id": "https://tonytony.ch/#review-5" },
-        { "@id": "https://tonytony.ch/#review-6" },
-        { "@id": "https://tonytony.ch/#review-7" }
+        {
+          "@id": "https://tonytony.ch/#review-1"
+        },
+        {
+          "@id": "https://tonytony.ch/#review-2"
+        },
+        {
+          "@id": "https://tonytony.ch/#review-3"
+        },
+        {
+          "@id": "https://tonytony.ch/#review-4"
+        },
+        {
+          "@id": "https://tonytony.ch/#review-5"
+        },
+        {
+          "@id": "https://tonytony.ch/#review-6"
+        },
+        {
+          "@id": "https://tonytony.ch/#review-7"
+        }
       ]
     },
-
     {
       "@type": "Person",
       "@id": "https://tonytony.ch/#person",
@@ -139,7 +143,6 @@
         "@id": "https://tonytony.ch/#organization"
       }
     },
-
     {
       "@type": "AggregateRating",
       "@id": "https://tonytony.ch/#rating",
@@ -147,13 +150,12 @@
       "bestRating": "5",
       "ratingCount": "7"
     },
-
     {
       "@type": "Review",
       "@id": "https://tonytony.ch/#review-1",
-      "author": { 
+      "author": {
         "@type": "Person",
-        "name": "Helge von Giese" 
+        "name": "Helge von Giese"
       },
       "reviewBody": "Anthony is an exceptionally universally gifted creative. In his exploration of various means, methods, and tools, he moves with admirable intuition.",
       "reviewRating": {
@@ -165,13 +167,12 @@
         "@id": "https://tonytony.ch/#professionalservice"
       }
     },
-
     {
       "@type": "Review",
       "@id": "https://tonytony.ch/#review-2",
-      "author": { 
+      "author": {
         "@type": "Person",
-        "name": "Jochen M. Wilms" 
+        "name": "Jochen M. Wilms"
       },
       "reviewBody": "In every phase of my projects for leading international ventures, Anthony consistently exhibited a great level of creativity, professionalism, and technical skill - maintaining a proactive approach from initial concept to final delivery. Working with Anthony has been a great pleasure, and I look forward to future collaborations.",
       "reviewRating": {
@@ -183,13 +184,12 @@
         "@id": "https://tonytony.ch/#professionalservice"
       }
     },
-
     {
       "@type": "Review",
       "@id": "https://tonytony.ch/#review-3",
-      "author": { 
+      "author": {
         "@type": "Person",
-        "name": "Alexandre Henriques" 
+        "name": "Alexandre Henriques"
       },
       "reviewBody": "Anthony stands out for his exceptional responsiveness. For every request from our agency, he consistently found relevant and effective solutions. His feedback is always clear and well structured, making decision making much easier.",
       "reviewRating": {
@@ -201,13 +201,12 @@
         "@id": "https://tonytony.ch/#professionalservice"
       }
     },
-
     {
       "@type": "Review",
       "@id": "https://tonytony.ch/#review-4",
-      "author": { 
+      "author": {
         "@type": "Person",
-        "name": "Milton Carvalho" 
+        "name": "Milton Carvalho"
       },
       "reviewBody": "I’m beyond impressed with the website Anthony built for my solar panel business! It’s modern, professional, and already bringing in new leads. He made the whole process simple and stress-free — truly outstanding work!",
       "reviewRating": {
@@ -219,13 +218,12 @@
         "@id": "https://tonytony.ch/#professionalservice"
       }
     },
-
     {
       "@type": "Review",
       "@id": "https://tonytony.ch/#review-5",
-      "author": { 
+      "author": {
         "@type": "Person",
-        "name": "Dr. Donatela Bernardi" 
+        "name": "Dr. Donatela Bernardi"
       },
       "reviewBody": "Excellent work, thank you for your responsiveness - I'm really looking forward to collaborating on our new website. We'll be in touch.",
       "reviewRating": {
@@ -237,13 +235,12 @@
         "@id": "https://tonytony.ch/#professionalservice"
       }
     },
-
     {
       "@type": "Review",
       "@id": "https://tonytony.ch/#review-6",
-      "author": { 
+      "author": {
         "@type": "Person",
-        "name": "Alexandre Doublet" 
+        "name": "Alexandre Doublet"
       },
       "reviewBody": "Throughout the entire project, Anthony was responsive, collaborative, and dedicated to ensuring that every aspect of the website met and exceeded the expectations of the team.",
       "reviewRating": {
@@ -255,13 +252,12 @@
         "@id": "https://tonytony.ch/#professionalservice"
       }
     },
-
     {
       "@type": "Review",
       "@id": "https://tonytony.ch/#review-7",
-      "author": { 
+      "author": {
         "@type": "Person",
-        "name": "Camil Amos" 
+        "name": "Camil Amos"
       },
       "reviewBody": "Pleased with the outcome of the LP and its presentation. The typography layout is top notch and the images chosen adds the dynamic touch I was looking for.",
       "reviewRating": {
@@ -273,7 +269,6 @@
         "@id": "https://tonytony.ch/#professionalservice"
       }
     },
-
     {
       "@type": "WebSite",
       "@id": "https://tonytony.ch/#website",
@@ -284,7 +279,6 @@
         "@id": "https://tonytony.ch/#organization"
       }
     },
-
     {
       "@type": "WebPage",
       "@id": "https://tonytony.ch/#webpage",
@@ -296,7 +290,6 @@
         "@id": "https://tonytony.ch/#professionalservice"
       }
     },
-
     {
       "@type": "FAQPage",
       "@id": "https://tonytony.ch/#faq",
@@ -351,6 +344,5 @@
         }
       ]
     }
-
   ]
 }
