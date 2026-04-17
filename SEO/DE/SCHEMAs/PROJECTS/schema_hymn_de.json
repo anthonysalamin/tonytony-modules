@@ -1,0 +1,149 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://tonytony.ch/#website",
+      "url": "https://tonytony.ch/",
+      "name": "TONYTONY"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://tonytony.ch/#organization",
+      "name": "TONYTONY",
+      "url": "https://tonytony.ch/"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://tonytony.ch/#professionalservice",
+      "name": "TONYTONY",
+      "url": "https://tonytony.ch/"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://tonytony.ch/#person",
+      "name": "Anthony Salamin",
+      "url": "https://tonytony.ch/"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://tonytony.ch/de/portfolio#collectionpage",
+      "url": "https://tonytony.ch/de/portfolio",
+      "name": "Portfolio — TONYTONY Fallstudien"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tonytony.ch/de/projects/hymn#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://tonytony.ch/de"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portfolio",
+          "item": "https://tonytony.ch/de/portfolio"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Hymn Design"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://tonytony.ch/de/projects/hymn#webpage",
+      "url": "https://tonytony.ch/de/projects/hymn",
+      "name": "TONYTONY | Hymn Design — Website-Relaunch",
+      "description": "Website-Relaunch für Hymn Design. Pixelgenaue Figma-zu-Webflow-Umsetzung mit hochperformanter Vimeo-Integration via Lazy Loading, GSAP-Scroll-Animationen und zweisprachigem EN/FR-CMS für eine Branding-Agentur aus Lausanne und Zürich.",
+      "isPartOf": { "@id": "https://tonytony.ch/#website" },
+      "breadcrumb": { "@id": "https://tonytony.ch/de/projects/hymn#breadcrumb" },
+      "mainEntity": { "@id": "https://tonytony.ch/de/projects/hymn#project" },
+      "inLanguage": "de"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://tonytony.ch/de/projects/hymn#project",
+      "mainEntityOfPage": { "@id": "https://tonytony.ch/de/projects/hymn#webpage" },
+      "headline": "Website-Relaunch für Hymn Design, Branding-Agentur aus Lausanne und Zürich",
+      "alternativeHeadline": "Hymn Design — Website-Relaunch",
+      "name": "Hymn Design — Website-Relaunch",
+      "url": "https://tonytony.ch/de/projects/hymn",
+      "image": "https://cdn.prod.website-files.com/657840207424d689b5f9b7d8/69d8626e2d6869523cbfab11_hymn_thumbnail-v3.avif",
+      "abstract": "Pixelgenaue Figma-zu-Webflow-Umsetzung für eine Schweizer Branding-Agentur mit hochperformanter Vimeo-Integration via Lazy Loading, GSAP-Scroll-Animationen und zweisprachigem EN/FR-CMS.",
+      "description": "Website-Relaunch für Hymn Design. Pixelgenaue Figma-zu-Webflow-Umsetzung mit hochperformanter Vimeo-Integration via Lazy Loading, GSAP-Scroll-Animationen und zweisprachigem EN/FR-CMS für eine Branding-Agentur aus Lausanne und Zürich.",
+      "articleSection": ["Kontext", "Herausforderung", "Lösung", "Ergebnis"],
+      "articleBody": "Kontext: Hymn ist eine unabhängige Branding- und Designagentur mit Büros in Lausanne und Zürich. Ihre bestehende Website spiegelte nicht mehr das Kaliber ihrer Arbeit wider — es fehlte an Performance, Interaktivität und der technischen Grundlage, die man von einer erstklassigen Schweizer Designagentur erwartet, und sie war nicht darauf ausgelegt, mit dem Wachstum des Teams und Portfolios zu skalieren.\n\nHerausforderung: Das Designteam von Hymn hatte eine klare Vision in Figma, aber keinen Entwickler für die Umsetzung. Als Studio mit Wurzeln im Motion Design ist ihr Portfolio von Natur aus videoreich — jede Projektpräsentation basiert auf eingebettetem Video, um die feinen Details ihrer Arbeit zu vermitteln. Dieses Content-Volumen über eine zweisprachige Website zu liefern, ohne die Performance zu beeinträchtigen, war die zentrale Herausforderung.\n\nLösung: Ausgehend von Hymns Figma-Designs wurde das Frontend in Webflow mit Fokus auf Video-Performance und redaktionelle Autonomie gebaut. Oberhalb des Folds wurden Vimeo-Plus-Wiedergabe-URLs in native HTML5-Video-Elemente injiziert für sofortiges Autoplay, während unterhalb des Folds die Vimeo-API verzögerte, nutzerseitig ausgelöste Wiedergabe übernahm. In Kombination mit GSAP-Animationen und einem zweisprachigen CMS bleibt die Seite schnell und vollständig verwaltbar.\n\nErgebnis: Elegante, animationsreiche Portfolio-Website, die den kreativen Standards der Agentur entspricht. Hochperformante Vimeo-Integration mit Lazy Loading für nahtloses Autoplay und Wiedergabe. Vollständig zweisprachige Website (EN/FR) über Webflows natives, flexibles CMS verwaltet. Scroll-gesteuerte GSAP-Animationen für immersive Projektpräsentationen mit dezenter, intelligenter Reveal-on-Scroll-Navigation. SEO/AEO-bereite Architektur mit Unterstützung für strukturierte Daten.",
+      "inLanguage": "de",
+      "datePublished": "2024-06-05",
+      "dateModified": "2026-04-21",
+      "author": { "@id": "https://tonytony.ch/#person" },
+      "creator": { "@id": "https://tonytony.ch/#person" },
+      "producer": { "@id": "https://tonytony.ch/#professionalservice" },
+      "provider": { "@id": "https://tonytony.ch/#professionalservice" },
+      "publisher": { "@id": "https://tonytony.ch/#organization" },
+      "isPartOf": { "@id": "https://tonytony.ch/de/portfolio#collectionpage" },
+      "about": {
+        "@type": "Organization",
+        "name": "Hymn Design SA",
+        "url": "https://hymn.design"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Branding-Agenturen, Designstudios, Kreativagenturen"
+      },
+      "keywords": "Webentwicklung, Webflow, GSAP, Vimeo-Integration, Zweisprachiges CMS, Branding-Agentur, Motion Design, SEO, AEO",
+      "mentions": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Webflow",
+          "applicationCategory": "WebApplication",
+          "url": "https://webflow.com"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "GSAP",
+          "applicationCategory": "DeveloperApplication",
+          "url": "https://gsap.com"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Vimeo",
+          "applicationCategory": "MultimediaApplication",
+          "url": "https://vimeo.com"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Figma",
+          "applicationCategory": "DesignApplication",
+          "url": "https://figma.com"
+        }
+      ],
+      "review": { "@id": "https://tonytony.ch/de/projects/hymn#review" }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://tonytony.ch/de/projects/hymn#review",
+      "author": {
+        "@type": "Person",
+        "name": "Alexandre Henriques",
+        "jobTitle": "Founder | Creative Direction",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Hymn Design SA"
+        }
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Anthony stands out for his exceptional responsiveness. For every request from our agency, he consistently found relevant and effective solutions. His feedback is always clear and well structured, making decision making much easier.",
+      "itemReviewed": { "@id": "https://tonytony.ch/de/projects/hymn#project" }
+    }
+  ]
+}

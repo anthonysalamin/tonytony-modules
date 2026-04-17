@@ -1,133 +1,131 @@
 {
-    "@context": "https://schema.org",
-    "@graph": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://tonytony.ch/#website",
+      "url": "https://tonytony.ch/",
+      "name": "TONYTONY"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://tonytony.ch/#organization",
+      "name": "TONYTONY",
+      "url": "https://tonytony.ch/"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://tonytony.ch/#professionalservice",
+      "name": "TONYTONY",
+      "url": "https://tonytony.ch/"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://tonytony.ch/#person",
+      "name": "Anthony Salamin",
+      "url": "https://tonytony.ch/"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://tonytony.ch/fr/portfolio#collectionpage",
+      "url": "https://tonytony.ch/fr/portfolio",
+      "name": "Portfolio — Études de cas TONYTONY"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tonytony.ch/fr/projects/moto#breadcrumb",
+      "itemListElement": [
         {
-            "@type": "WebSite",
-            "@id": "https://tonytony.ch/#website",
-            "url": "https://tonytony.ch/",
-            "name": "TONYTONY",
-            "publisher": {
-                "@id": "https://tonytony.ch/#business"
-            }
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://tonytony.ch/fr"
         },
         {
-            "@type": "WebPage",
-            "@id": "https://tonytony.ch/fr/projects/moto#webpage",
-            "url": "https://tonytony.ch/fr/projects/moto",
-            "name": "TONYTONY | MoTo — Étude de cas, refonte web pour un cabinet de gestion de projet à Munich",
-            "description": "Un site web moderne et mobile-first pour MoTo. CMS sur mesure, carte de projets interactive et UX évolutive pensée pour une croissance sur le long terme.",
-            "inLanguage": "fr",
-            "isPartOf": {
-                "@id": "https://tonytony.ch/#website"
-            },
-            "about": {
-                "@id": "https://tonytony.ch/fr/projects/moto#project"
-            },
-            "breadcrumb": {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Accueil",
-                        "item": "https://tonytony.ch/fr"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Portfolio",
-                        "item": "https://tonytony.ch/fr/portfolio"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "MoTo",
-                        "item": "https://tonytony.ch/fr/projects/moto"
-                    }
-                ]
-            }
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portfolio",
+          "item": "https://tonytony.ch/fr/portfolio"
         },
         {
-            "@type": "ProfessionalService",
-            "@id": "https://tonytony.ch/#business",
-            "name": "TONYTONY",
-            "url": "https://tonytony.ch/",
-            "sameAs": [
-                "https://www.linkedin.com/company/tonytony"
-            ]
-        },
-        {
-            "@type": "Person",
-            "@id": "https://tonytony.ch/#person",
-            "name": "Anthony Salamin",
-            "jobTitle": "Senior Web Designer & Creative Developer",
-            "url": "https://tonytony.ch/",
-            "worksFor": {
-                "@id": "https://tonytony.ch/#business"
-            },
-            "sameAs": [
-                "https://www.linkedin.com/in/anthonysalamin/"
-            ]
-        },
-        {
-            "@type": "CreativeWork",
-            "@id": "https://tonytony.ch/fr/projects/moto#project",
-            "name": "MoTo — Refonte web",
-            "url": "https://tonytony.ch/fr/projects/moto",
-            "description": "Refonte web complète pour MoTo GmbH, cabinet munichois de gestion de projet en construction supervisant plus de 100 chantiers à travers l'Allemagne. Développement Webflow mobile-first entièrement responsive, avec CMS sur mesure, UX orientée conversion inspirée de leur identité pentagone bleu, et gestion de formulaires intégrée. 102 projets migrés, chargement 3x plus rapide, 58% de complétion d'événements en plus.",
-            "inLanguage": "fr",
-            "creator": {
-                "@id": "https://tonytony.ch/#person"
-            },
-            "contributor": [
-                {
-                    "@type": "Person",
-                    "name": "Tom Blechschmidt",
-                    "jobTitle": "Project Manager"
-                },
-                {
-                    "@type": "Organization",
-                    "name": "CherryCherry UG",
-                    "jobTitle": "Content"
-                }
-            ],
-            "keywords": [
-                "Web Design",
-                "Développement Web",
-                "Webflow",
-                "Mobile-First",
-                "CMS",
-                "Construction",
-                "Gestion de Projet",
-                "Munich",
-                "Design Responsive"
-            ],
-            "about": {
-                "@type": "Organization",
-                "name": "Moto GmbH",
-                "url": "https://moto-pm.de",
-                "description": "Cabinet munichois de gestion de projet en construction supervisant plus de 100 chantiers à travers l'Allemagne."
-            },
-            "audience": {
-                "@type": "Audience",
-                "audienceType": "Entreprises de construction, Cabinets de gestion de projet, Bureaux d'ingénierie"
-            },
-            "review": {
-                "@type": "Review",
-                "author": {
-                    "@type": "Person",
-                    "name": "Stefan Handke",
-                    "jobTitle": "Managing Director",
-                    "worksFor": {
-                        "@type": "Organization",
-                        "name": "Moto GmbH"
-                    }
-                },
-                "reviewBody": "We didn't just get a new website — we got a recruitment tool. One of our open positions was filled directly through the site, which was a first for us. The whole process was smooth, even when the DNS situation made things complicated."
-            },
-            "provider": {
-                "@id": "https://tonytony.ch/#business"
-            }
+          "@type": "ListItem",
+          "position": 3,
+          "name": "MoTo"
         }
-    ]
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://tonytony.ch/fr/projects/moto#webpage",
+      "url": "https://tonytony.ch/fr/projects/moto",
+      "name": "TONYTONY | MoTo — Relance web pour une entreprise de gestion de projets munichoise",
+      "description": "Relance web complète pour MoTo GmbH, entreprise munichoise de gestion de projets de construction. Build Webflow mobile-first avec CMS personnalisé, UX orientée conversion et gestion de formulaires intégrée.",
+      "isPartOf": { "@id": "https://tonytony.ch/#website" },
+      "breadcrumb": { "@id": "https://tonytony.ch/fr/projects/moto#breadcrumb" },
+      "mainEntity": { "@id": "https://tonytony.ch/fr/projects/moto#project" },
+      "inLanguage": "fr"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://tonytony.ch/fr/projects/moto#project",
+      "mainEntityOfPage": { "@id": "https://tonytony.ch/fr/projects/moto#webpage" },
+      "headline": "Relance web complète pour MoTo GmbH, entreprise munichoise de gestion de projets de construction",
+      "alternativeHeadline": "MoTo — Relance web",
+      "name": "MoTo — Relance web",
+      "url": "https://tonytony.ch/fr/projects/moto",
+      "image": "https://cdn.prod.website-files.com/657840207424d689b5f9b7d8/69db08bbd9b1b177e1f0d464_moto_thumbnail-v1.avif",
+      "abstract": "Relance Webflow mobile-first pour une entreprise munichoise de gestion de projets de construction supervisant plus de 100 projets à travers l'Allemagne, avec CMS personnalisé, UX orientée conversion et gestion de formulaires intégrée.",
+      "description": "Relance web complète pour MoTo GmbH, entreprise munichoise de gestion de projets de construction. Build Webflow mobile-first avec CMS personnalisé, UX orientée conversion et gestion de formulaires intégrée.",
+      "articleSection": ["Contexte", "Défi", "Solution", "Résultat"],
+      "articleBody": "Contexte : MoTo est un acteur majeur de la gestion de projets de construction, supervisant plus de 100 projets à travers l'Allemagne, avec un focus particulier sur Munich. Leur site web, datant des années 90, ne disposait pas de CMS, n'était pas responsive et n'avait pas de gestion de formulaires appropriée — laissant l'équipe marketing sans les outils nécessaires pour gérer ou développer le site efficacement.\n\nDéfi : L'équipe n'avait pas de développeur en interne, et le domaine existant était bloqué chez un ancien registraire DNS — transformant ce qui aurait dû être une configuration simple en un processus long et complexe. Ajoutez à cela des délais serrés, et le projet exigeait une solution livrable rapidement et gérable de manière autonome par une équipe marketing non technique.\n\nSolution : Pour MoTo, un site mobile-first a été développé pour être clair, rapide et facile à gérer. Un CMS flexible a été mis en place pour donner un contrôle total à l'équipe marketing, leur permettant de créer et de faire évoluer de nouvelles sections de manière autonome. L'UX reste ciblée et pratique, tandis que le design s'inspire de leur pentagone bleu — un clin d'œil visuel à leur identité et à leur premier projet à Neubiberg.\n\nRésultat : Site web mobile-first, entièrement responsive sur tous les appareils. CMS personnalisé permettant la création et l'évolution autonome du contenu. UX propre et orientée conversion avec navigation intuitive. Système de gestion de formulaires intégré et fiable. Design visuel aligné avec l'identité de marque.",
+      "inLanguage": "fr",
+      "datePublished": "2024-06-09",
+      "dateModified": "2026-04-25",
+      "author": { "@id": "https://tonytony.ch/#person" },
+      "creator": { "@id": "https://tonytony.ch/#person" },
+      "producer": { "@id": "https://tonytony.ch/#professionalservice" },
+      "provider": { "@id": "https://tonytony.ch/#professionalservice" },
+      "publisher": { "@id": "https://tonytony.ch/#organization" },
+      "isPartOf": { "@id": "https://tonytony.ch/fr/portfolio#collectionpage" },
+      "about": {
+        "@type": "Organization",
+        "name": "Moto GmbH",
+        "url": "https://moto-pm.de"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Entreprises de construction, Sociétés de gestion de projets, Bureaux d'ingénierie"
+      },
+      "keywords": "Web design, Développement web, Webflow, Mobile-first, CMS, Construction, Gestion de projets, Munich, Design responsive",
+      "mentions": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Webflow",
+          "applicationCategory": "WebApplication",
+          "url": "https://webflow.com"
+        }
+      ],
+      "review": { "@id": "https://tonytony.ch/fr/projects/moto#review" }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://tonytony.ch/fr/projects/moto#review",
+      "author": {
+        "@type": "Person",
+        "name": "Stefan Handke",
+        "jobTitle": "Managing Director",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Moto GmbH"
+        }
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "We didn't just get a new website — we got a recruitment tool. One of our open positions was filled directly through the site, which was a first for us. The whole process was smooth, even when the DNS situation made things complicated.",
+      "itemReviewed": { "@id": "https://tonytony.ch/fr/projects/moto#project" }
+    }
+  ]
 }

@@ -1,123 +1,139 @@
 {
-    "@context": "https://schema.org",
-    "@graph": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://tonytony.ch/#website",
+      "url": "https://tonytony.ch/",
+      "name": "TONYTONY"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://tonytony.ch/#organization",
+      "name": "TONYTONY",
+      "url": "https://tonytony.ch/"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://tonytony.ch/#professionalservice",
+      "name": "TONYTONY",
+      "url": "https://tonytony.ch/"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://tonytony.ch/#person",
+      "name": "Anthony Salamin",
+      "url": "https://tonytony.ch/"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://tonytony.ch/fr/portfolio#collectionpage",
+      "url": "https://tonytony.ch/fr/portfolio",
+      "name": "Portfolio — Études de cas TONYTONY"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tonytony.ch/fr/projects/samuel#breadcrumb",
+      "itemListElement": [
         {
-            "@type": "WebSite",
-            "@id": "https://tonytony.ch/#website",
-            "url": "https://tonytony.ch/",
-            "name": "TONYTONY",
-            "publisher": {
-                "@id": "https://tonytony.ch/#business"
-            }
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://tonytony.ch/fr"
         },
         {
-            "@type": "WebPage",
-            "@id": "https://tonytony.ch/fr/projects/samuel#webpage",
-            "url": "https://tonytony.ch/fr/projects/samuel",
-            "name": "TONYTONY | Samuel Devantéry — Migration WordPress vers Webflow & refonte du site",
-            "description": "De WordPress à Webflow — une migration complète pour le photographe valaisan Samuel Devantéry, avec redirections propres, données structurées optimisées pour la recherche et optimisation AEO.",
-            "inLanguage": "fr",
-            "isPartOf": {
-                "@id": "https://tonytony.ch/#website"
-            },
-            "about": {
-                "@id": "https://tonytony.ch/fr/projects/samuel#project"
-            },
-            "breadcrumb": {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Accueil",
-                        "item": "https://tonytony.ch/fr"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Portfolio",
-                        "item": "https://tonytony.ch/fr/portfolio"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Samuel Devantéry",
-                        "item": "https://tonytony.ch/fr/projects/samuel"
-                    }
-                ]
-            }
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portfolio",
+          "item": "https://tonytony.ch/fr/portfolio"
         },
         {
-            "@type": "ProfessionalService",
-            "@id": "https://tonytony.ch/#business",
-            "name": "TONYTONY",
-            "url": "https://tonytony.ch/",
-            "sameAs": [
-                "https://www.linkedin.com/company/tonytony"
-            ]
-        },
-        {
-            "@type": "Person",
-            "@id": "https://tonytony.ch/#person",
-            "name": "Anthony Salamin",
-            "jobTitle": "Senior Web Designer & Creative Developer",
-            "url": "https://tonytony.ch/",
-            "worksFor": {
-                "@id": "https://tonytony.ch/#business"
-            },
-            "sameAs": [
-                "https://www.linkedin.com/in/anthonysalamin/"
-            ]
-        },
-        {
-            "@type": "CreativeWork",
-            "@id": "https://tonytony.ch/fr/projects/samuel#project",
-            "name": "Samuel Devantéry — Migration WordPress vers Webflow & refonte du site",
-            "url": "https://tonytony.ch/fr/projects/samuel",
-            "description": "Migration et refonte complètes de WordPress vers Webflow pour Samuel Devantéry (aussi orthographié Devanthéry), photographe et vidéaste professionnel basé à Sierre, en Valais. 74 redirections 301 soigneusement configurées, plus de 10 pages portfolio par catégorie avec textes SEO en français et données structurées JSON-LD, animations GSAP en page d'accueil, opérations CMS en masse via l'API Webflow, et llms.txt optimisé pour l'AEO. L'audit SEO a permis de faire passer le site d'une base de 6/10 à une architecture prête pour la production.",
-            "inLanguage": "fr",
-            "creator": {
-                "@id": "https://tonytony.ch/#person"
-            },
-            "keywords": [
-                "Développement Web",
-                "Web Design",
-                "SEO",
-                "AEO",
-                "Webflow",
-                "Migration WordPress",
-                "GSAP",
-                "Portfolio Photographe",
-                "Valais",
-                "Sierre",
-                "JSON-LD",
-                "llms.txt"
-            ],
-            "about": {
-                "@type": "Person",
-                "name": "Samuel Devantéry",
-                "alternateName": "Samuel Devanthéry",
-                "jobTitle": "Photographe & Réalisateur",
-                "url": "https://samueldevantery.com",
-                "description": "Photographe et vidéaste professionnel basé à Sierre, en Valais, spécialisé en photographie d'architecture, de portrait, de concert, culinaire, produit et événementielle."
-            },
-            "audience": {
-                "@type": "Audience",
-                "audienceType": "Photographes, Vidéastes, Professionnels créatifs, Entreprises locales en Valais"
-            },
-            "review": {
-                "@type": "Review",
-                "author": {
-                    "@type": "Person",
-                    "name": "Samuel Devantéry",
-                    "jobTitle": "Photographer & Film Maker",
-                    "url": "https://samueldevantery.com"
-                },
-                "reviewBody": "Anthony took over the entire rebuild of my site, from WordPress to Webflow. He handled everything — the CMS, the animations, the SEO, the redirects — and explained things clearly when I had questions."
-            },
-            "provider": {
-                "@id": "https://tonytony.ch/#business"
-            }
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Samuel Devantéry"
         }
-    ]
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://tonytony.ch/fr/projects/samuel#webpage",
+      "url": "https://tonytony.ch/fr/projects/samuel",
+      "name": "TONYTONY | Samuel Devantéry — Migration WordPress vers Webflow & relance",
+      "description": "Migration complète de WordPress vers Webflow et relance pour Samuel Devantéry, photographe valaisan. 74 redirections 301, 10+ catégories portfolio, graphe JSON-LD, animations GSAP et llms.txt prêt pour l'AEO.",
+      "isPartOf": { "@id": "https://tonytony.ch/#website" },
+      "breadcrumb": { "@id": "https://tonytony.ch/fr/projects/samuel#breadcrumb" },
+      "mainEntity": { "@id": "https://tonytony.ch/fr/projects/samuel#project" },
+      "inLanguage": "fr"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://tonytony.ch/fr/projects/samuel#project",
+      "mainEntityOfPage": { "@id": "https://tonytony.ch/fr/projects/samuel#webpage" },
+      "headline": "Migration complète de WordPress vers Webflow et relance pour Samuel Devantéry, photographe valaisan",
+      "alternativeHeadline": "Samuel Devantéry — Migration WordPress vers Webflow & relance",
+      "name": "Samuel Devantéry — Migration WordPress vers Webflow & relance",
+      "url": "https://tonytony.ch/fr/projects/samuel",
+      "image": "https://cdn.prod.website-files.com/657840207424d689b5f9b7d8/69da1359532df3e5b96a3470_M_Mockups_007_thumbnail.avif",
+      "abstract": "Migration complète de WordPress vers Webflow pour un photographe valaisan, avec 74 redirections 301 curées, 10+ pages portfolio par catégorie, données structurées JSON-LD, animations GSAP en page d'accueil et llms.txt prêt pour l'AEO.",
+      "description": "Migration complète de WordPress vers Webflow et relance pour Samuel Devantéry, photographe valaisan. 74 redirections 301, 10+ catégories portfolio, graphe JSON-LD, animations GSAP et llms.txt prêt pour l'AEO.",
+      "articleSection": ["Contexte", "Défi", "Solution", "Résultat"],
+      "articleBody": "Contexte : Samuel Devantéry est un photographe et vidéaste professionnel basé à Sierre, au service de clients à travers le Valais avec des prestations couvrant la photographie d'architecture, de portrait, de concert, culinaire, de produit et événementielle. Son site WordPress existant l'avait servi pendant des années mais avait vieilli — il ne reflétait plus la qualité de sa production visuelle, manquait de performance moderne et n'était pas structuré pour concurrencer en recherche locale sur des requêtes à forte intention comme « photographe Valais » ou « studio photo Sierre ».\n\nDéfi : Le site nécessitait une migration complète de WordPress vers Webflow sans perdre de positionnement. Des dizaines d'URLs historiques — articles de blog, anciennes pages boutique, archives de tags — nécessitaient toutes des redirections propres. Le CMS devait supporter 10+ catégories de photographie, chacune avec son propre portfolio, ses métadonnées et ses données structurées. Difficulté supplémentaire : le nom de Samuel est fréquemment mal orthographié (« Devanthéry »), la stratégie SEO devait donc capturer les deux variantes.\n\nSolution : Le site a été reconstruit dans Webflow avec un CMS modulaire couvrant toutes les catégories de photographie. Chaque page de service a reçu des balises meta en français sur mesure et des données structurées JSON-LD liées à un graphe de schéma unifié. Un CSV de 74 redirections a géré la migration WordPress. Les opérations CMS en masse — textes alternatifs, légendes, corrections de coquilles — ont été exécutées via l'API Webflow sur des centaines d'éléments. Des animations GSAP personnalisées animent la page d'accueil : une mosaïque à défilement infini avec panoramique au pointeur et une révélation séquencée du texte bio. Un fichier llms.txt a été ajouté pour la préparation à l'AEO.\n\nRésultat : Migration complète WordPress-vers-Webflow avec 74 redirections 301 curées préservant le capital SEO. 10+ pages portfolio par catégorie avec balises meta sur mesure, données structurées et texte SEO en français. Graphe de connaissances JSON-LD unifié (Person/Organization, WebSite, WebPage, CollectionPage, BlogPosting). Page d'accueil animée GSAP : mosaïque à défilement infini, panoramique au pointeur et révélation séquencée du texte bio. Opérations CMS en masse sur 50+ éléments — textes alternatifs diversifiés, légendes formatées, corrections de coquilles — via l'API Webflow. llms.txt prêt pour l'AEO et audit SEO faisant passer le site d'une base de 6/10 à une architecture prête pour la production.",
+      "inLanguage": "fr",
+      "datePublished": "2024-06-11",
+      "dateModified": "2026-04-27",
+      "author": { "@id": "https://tonytony.ch/#person" },
+      "creator": { "@id": "https://tonytony.ch/#person" },
+      "producer": { "@id": "https://tonytony.ch/#professionalservice" },
+      "provider": { "@id": "https://tonytony.ch/#professionalservice" },
+      "publisher": { "@id": "https://tonytony.ch/#organization" },
+      "isPartOf": { "@id": "https://tonytony.ch/fr/portfolio#collectionpage" },
+      "about": {
+        "@type": "Person",
+        "name": "Samuel Devantéry",
+        "alternateName": "Samuel Devanthéry",
+        "jobTitle": "Photographe & Vidéaste",
+        "url": "https://samueldevantery.com"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Photographes, Vidéastes, Professionnels créatifs, Entreprises locales en Valais"
+      },
+      "keywords": "Développement web, Web design, SEO, AEO, Webflow, Migration WordPress, GSAP, Portfolio photographe, Valais, Sierre, JSON-LD, llms.txt",
+      "mentions": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Webflow",
+          "applicationCategory": "WebApplication",
+          "url": "https://webflow.com"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "GSAP",
+          "applicationCategory": "DeveloperApplication",
+          "url": "https://gsap.com"
+        }
+      ],
+      "review": { "@id": "https://tonytony.ch/fr/projects/samuel#review" }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://tonytony.ch/fr/projects/samuel#review",
+      "author": {
+        "@type": "Person",
+        "name": "Samuel Devantéry",
+        "jobTitle": "Photographe & Vidéaste",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Samuel Devantéry Photography"
+        }
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Anthony took over the entire rebuild of my site, from WordPress to Webflow. He handled everything — the CMS, the animations, the SEO, the redirects — and explained things clearly when I had questions.",
+      "itemReviewed": { "@id": "https://tonytony.ch/fr/projects/samuel#project" }
+    }
+  ]
 }
