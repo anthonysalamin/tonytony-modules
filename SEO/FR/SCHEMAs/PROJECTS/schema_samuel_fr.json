@@ -137,29 +137,7 @@
           "applicationCategory": "DeveloperApplication",
           "url": "https://gsap.com"
         }
-      ],
-      "review": {
-        "@id": "https://tonytony.ch/fr/projects/samuel#review"
-      }
-    },
-    {
-      "@type": "Review",
-      "@id": "https://tonytony.ch/fr/projects/samuel#review",
-      "author": {
-        "@type": "Person",
-        "name": "Samuel Devantéry",
-        "jobTitle": "Photographe & Vidéaste",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Samuel Devantéry Photography"
-        }
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "reviewBody": "Anthony took over the entire rebuild of my site, from WordPress to Webflow. He handled everything — the CMS, the animations, the SEO, the redirects — and explained things clearly when I had questions."
+      ]
     }
   ]
 }

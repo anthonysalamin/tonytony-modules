@@ -155,29 +155,7 @@
           "userInteractionCount": 13100,
           "name": "Total pageviews"
         }
-      ],
-      "review": {
-        "@id": "https://tonytony.ch/projects/wventures#review"
-      }
-    },
-    {
-      "@type": "Review",
-      "@id": "https://tonytony.ch/projects/wventures#review",
-      "author": {
-        "@type": "Person",
-        "name": "Jochen M. Wilms",
-        "jobTitle": "Tech Investor / Chairman",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "W Ventures GmbH"
-        }
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "reviewBody": "In every phase of my projects for leading international ventures, Anthony consistently exhibited a great level of creativity, professionalism, and technical skill - maintaining a proactive approach from initial concept to final delivery."
+      ]
     }
   ]
 }

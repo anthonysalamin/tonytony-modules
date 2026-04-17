@@ -121,29 +121,7 @@
         "@type": "Audience",
         "audienceType": "Marques hôtelières, Hôtels de luxe, Équipes éditoriales, Directeurs marketing"
       },
-      "keywords": "Développement web, Plateforme éditoriale, CMS, Intégration API, Hôtellerie, Architecture de contenu, Design Hotels, Plateforme évolutive",
-      "review": {
-        "@id": "https://tonytony.ch/fr/projects/further#review"
-      }
-    },
-    {
-      "@type": "Review",
-      "@id": "https://tonytony.ch/fr/projects/further#review",
-      "author": {
-        "@type": "Person",
-        "name": "Johannes Schwark",
-        "jobTitle": "Creative Director",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Design Hotels GmbH"
-        }
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "reviewBody": "Anthony brought our editorial vision to life with precision and clarity — translating complex creative direction into a scalable, seamless platform."
+      "keywords": "Développement web, Plateforme éditoriale, CMS, Intégration API, Hôtellerie, Architecture de contenu, Design Hotels, Plateforme évolutive"
     }
   ]
 }

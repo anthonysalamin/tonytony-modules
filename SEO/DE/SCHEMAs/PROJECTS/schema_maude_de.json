@@ -142,25 +142,7 @@
           "applicationCategory": "DesignApplication",
           "url": "https://figma.com"
         }
-      ],
-      "review": {
-        "@id": "https://tonytony.ch/de/projects/maude#review"
-      }
-    },
-    {
-      "@type": "Review",
-      "@id": "https://tonytony.ch/de/projects/maude#review",
-      "author": {
-        "@type": "Person",
-        "name": "Maude von Giese",
-        "jobTitle": "Freischaffende Szenografin"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "reviewBody": "A rare designer-developer who truly gets spatial work. Anthony turned Lydia Perrot's vision into something immersive and alive — and made it easy for me to run on my own."
+      ]
     }
   ]
 }

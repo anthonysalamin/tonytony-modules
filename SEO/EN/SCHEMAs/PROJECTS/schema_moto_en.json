@@ -129,29 +129,7 @@
           "applicationCategory": "WebApplication",
           "url": "https://webflow.com"
         }
-      ],
-      "review": {
-        "@id": "https://tonytony.ch/projects/moto#review"
-      }
-    },
-    {
-      "@type": "Review",
-      "@id": "https://tonytony.ch/projects/moto#review",
-      "author": {
-        "@type": "Person",
-        "name": "Stefan Handke",
-        "jobTitle": "Managing Director",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Moto GmbH"
-        }
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "reviewBody": "We didn't just get a new website — we got a recruitment tool. One of our open positions was filled directly through the site, which was a first for us. The whole process was smooth, even when the DNS situation made things complicated."
+      ]
     }
   ]
 }

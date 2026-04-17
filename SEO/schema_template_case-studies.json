@@ -149,29 +149,7 @@
           "userInteractionCount": "{{METRIC_2_NUMBER}}",
           "name": "{{METRIC_2_DESCRIPTION}}"
         }
-      ],
-      "review": {
-        "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#review"
-      }
-    },
-    {
-      "@type": "Review",
-      "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#review",
-      "author": {
-        "@type": "Person",
-        "name": "{{REVIEWER_NAME}}",
-        "jobTitle": "{{REVIEWER_JOB_TITLE}}",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "{{CLIENT_COMPANY_NAME}}"
-        }
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "reviewBody": "{{REVIEW_TEXT}}"
+      ]
     }
   ]
 }

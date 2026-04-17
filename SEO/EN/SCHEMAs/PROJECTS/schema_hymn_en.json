@@ -147,29 +147,7 @@
           "applicationCategory": "DesignApplication",
           "url": "https://figma.com"
         }
-      ],
-      "review": {
-        "@id": "https://tonytony.ch/projects/hymn#review"
-      }
-    },
-    {
-      "@type": "Review",
-      "@id": "https://tonytony.ch/projects/hymn#review",
-      "author": {
-        "@type": "Person",
-        "name": "Alexandre Henriques",
-        "jobTitle": "Founder | Creative Direction",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Hymn Design SA"
-        }
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "reviewBody": "Anthony stands out for his exceptional responsiveness. For every request from our agency, he consistently found relevant and effective solutions. His feedback is always clear and well structured, making decision making much easier."
+      ]
     }
   ]
 }
