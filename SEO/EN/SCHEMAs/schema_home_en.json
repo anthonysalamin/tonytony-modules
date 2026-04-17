@@ -15,6 +15,9 @@
       ],
       "founder": {
         "@id": "https://tonytony.ch/#person"
+      },
+      "employee": {
+        "@id": "https://tonytony.ch/#person"
       }
     },
     {
@@ -31,6 +34,10 @@
       "logo": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0a3868c76ecfdb1973ee5_logotype.png",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "CP 826",
+        "postalCode": "3961",
+        "addressLocality": "St-Luc",
+        "addressRegion": "VS",
         "addressCountry": "CH"
       },
       "serviceType": [
@@ -41,6 +48,82 @@
         "Brand Identity",
         "Strategy"
       ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "TONYTONY Services",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Strategy",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Strategy & Narrative",
+                  "description": "Brand and communication strategy definition, including positioning, messaging, and narrative structure."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Branding",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Brand Identity & Design System",
+                  "description": "Brand identity systems including logo design, typography, color systems, and visual guidelines."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "SEO / AEO / CRO",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "SEO, AEO & CRO",
+                  "description": "Technical SEO audits, keyword research, content optimization, and conversion rate optimization for search engines and AI answer engines."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Web Design",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Web Design",
+                  "description": "Conversion-focused website design focused on UX, performance, accessibility, and user journey optimization."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Web Development",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Webflow Development",
+                  "description": "High-performance Webflow development with CMS setup, API integrations, automation workflows, and GSAP animations."
+                }
+              }
+            ]
+          }
+        ]
+      },
       "knowsAbout": [
         "Webflow Development",
         "GSAP Animation",
@@ -138,7 +221,9 @@
       "email": "hey@tonytony.ch",
       "image": "https://cdn.prod.website-files.com/6565594186e587567235d089/656589ff61a9123418596fa4_avatar.avif",
       "sameAs": [
-        "https://www.linkedin.com/in/anthonysalamin/"
+        "https://www.linkedin.com/in/anthonysalamin/",
+        "https://github.com/anthonysalamin/",
+        "https://webflow.com/@tonytony"
       ],
       "worksFor": {
         "@id": "https://tonytony.ch/#organization"
