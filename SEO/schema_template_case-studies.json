@@ -60,15 +60,23 @@
       "url": "https://tonytony.ch/projects/{{PROJECT_SLUG}}",
       "name": "TONYTONY | {{PROJECT_SHORT_NAME}} — {{PAGE_META_TITLE_EXTENSION}}",
       "description": "{{PAGE_META_DESCRIPTION}}",
-      "isPartOf": { "@id": "https://tonytony.ch/#website" },
-      "breadcrumb": { "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#breadcrumb" },
-      "mainEntity": { "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#project" },
+      "isPartOf": {
+        "@id": "https://tonytony.ch/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#project"
+      },
       "inLanguage": "{{LANGUAGE_CODE}}"
     },
     {
       "@type": "Article",
       "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#project",
-      "mainEntityOfPage": { "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#webpage" },
+      "mainEntityOfPage": {
+        "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#webpage"
+      },
       "headline": "{{ARTICLE_HEADLINE}}",
       "alternativeHeadline": "{{PROJECT_SHORT_NAME}} — {{ARTICLE_SUBHEADLINE}}",
       "name": "{{PROJECT_SHORT_NAME}} — {{PROJECT_FULL_NAME}}",
@@ -76,17 +84,34 @@
       "image": "{{IMAGE_URL}}",
       "abstract": "{{1_TO_2_SENTENCE_AEO_SUMMARY}}",
       "description": "{{PAGE_META_DESCRIPTION}}",
-      "articleSection": ["Context", "Challenge", "Solution", "Outcome"],
+      "articleSection": [
+        "Context",
+        "Challenge",
+        "Solution",
+        "Outcome"
+      ],
       "articleBody": "Context: {{CONTEXT_TEXT}}\n\nChallenge: {{CHALLENGE_TEXT}}\n\nSolution: {{SOLUTION_TEXT}}\n\nOutcome: {{OUTCOME_TEXT}}",
       "inLanguage": "{{LANGUAGE_CODE}}",
       "datePublished": "{{DATE_PUBLISHED_YYYY-MM-DD}}",
       "dateModified": "{{DATE_MODIFIED_YYYY-MM-DD}}",
-      "author": { "@id": "https://tonytony.ch/#person" },
-      "creator": { "@id": "https://tonytony.ch/#person" },
-      "producer": { "@id": "https://tonytony.ch/#professionalservice" },
-      "provider": { "@id": "https://tonytony.ch/#professionalservice" },
-      "publisher": { "@id": "https://tonytony.ch/#organization" },
-      "isPartOf": { "@id": "https://tonytony.ch/portfolio#collectionpage" },
+      "author": {
+        "@id": "https://tonytony.ch/#person"
+      },
+      "creator": {
+        "@id": "https://tonytony.ch/#person"
+      },
+      "producer": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      },
+      "provider": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      },
+      "publisher": {
+        "@id": "https://tonytony.ch/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://tonytony.ch/portfolio#collectionpage"
+      },
       "about": {
         "@type": "Organization",
         "name": "{{CLIENT_COMPANY_NAME}}",
@@ -125,7 +150,9 @@
           "name": "{{METRIC_2_DESCRIPTION}}"
         }
       ],
-      "review": { "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#review" }
+      "review": {
+        "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#review"
+      }
     },
     {
       "@type": "Review",
@@ -144,8 +171,7 @@
         "ratingValue": "5",
         "bestRating": "5"
       },
-      "reviewBody": "{{REVIEW_TEXT}}",
-      "itemReviewed": { "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#project" }
+      "reviewBody": "{{REVIEW_TEXT}}"
     }
   ]
 }

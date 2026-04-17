@@ -60,15 +60,23 @@
       "url": "https://tonytony.ch/projects/hymn",
       "name": "TONYTONY | Hymn Design — Website Relaunch",
       "description": "A web relaunch built to embody Hymn Design's branding ethos. Pixel-perfect Figma-to-Webflow build with high-performance lazy-loaded Vimeo integration, GSAP scroll animations, and a fully bilingual EN/FR CMS for a Lausanne and Zurich-based branding agency.",
-      "isPartOf": { "@id": "https://tonytony.ch/#website" },
-      "breadcrumb": { "@id": "https://tonytony.ch/projects/hymn#breadcrumb" },
-      "mainEntity": { "@id": "https://tonytony.ch/projects/hymn#project" },
+      "isPartOf": {
+        "@id": "https://tonytony.ch/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://tonytony.ch/projects/hymn#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://tonytony.ch/projects/hymn#project"
+      },
       "inLanguage": "en"
     },
     {
       "@type": "Article",
       "@id": "https://tonytony.ch/projects/hymn#project",
-      "mainEntityOfPage": { "@id": "https://tonytony.ch/projects/hymn#webpage" },
+      "mainEntityOfPage": {
+        "@id": "https://tonytony.ch/projects/hymn#webpage"
+      },
       "headline": "Web relaunch for Hymn Design, a Lausanne and Zurich-based branding agency",
       "alternativeHeadline": "Hymn Design — Website Relaunch",
       "name": "Hymn Design — Website Relaunch",
@@ -76,17 +84,34 @@
       "image": "https://cdn.prod.website-files.com/657840207424d689b5f9b7d8/69d8626e2d6869523cbfab11_hymn_thumbnail-v3.avif",
       "abstract": "Pixel-perfect Figma-to-Webflow build for a Swiss branding agency, featuring high-performance lazy-loaded Vimeo integration, GSAP scroll animations, and a fully bilingual EN/FR CMS.",
       "description": "A web relaunch built to embody Hymn Design's branding ethos. Pixel-perfect Figma-to-Webflow build with high-performance lazy-loaded Vimeo integration, GSAP scroll animations, and a fully bilingual EN/FR CMS for a Lausanne and Zurich-based branding agency.",
-      "articleSection": ["Context", "Challenge", "Solution", "Outcome"],
+      "articleSection": [
+        "Context",
+        "Challenge",
+        "Solution",
+        "Outcome"
+      ],
       "articleBody": "Context: Hymn is an independent branding and design agency with offices in Lausanne and Zurich. Their existing website no longer reflected the caliber of their output — it lacked the performance, interactivity, and technical foundation expected from a top-tier Swiss design agency, and wasn't set up to scale as the team and portfolio grew.\n\nChallenge: Hymn's design team had a sharp vision ready in Figma, but no developer to execute it. As a studio rooted in motion design, their portfolio is inherently video-heavy — every showcase relies on embedded video to communicate the refined details of their work. Delivering that volume of content across a bilingual site without sacrificing performance was the core challenge.\n\nSolution: Working from Hymn's Figma designs, the front-end was built in Webflow with a focus on video performance and editorial autonomy. Above the fold, Vimeo Plus playback URLs were injected into native HTML5 video for instant autoplay, while below the fold, the Vimeo API handled deferred, user-triggered playback. Paired with GSAP animations and a bilingual CMS, the site stays fast and fully manageable.\n\nOutcome: Polished, animation-rich portfolio site reflecting the agency's creative standards. High-performance lazy-loaded Vimeo integration for seamless autoplay and playback. Fully bilingual site (EN/FR) managed through Webflow's native, flexible CMS. Scroll-driven GSAP animations for immersive project showcases alongside discreet, clever reveal-on-scroll navigation. SEO/AEO-ready architecture with structured data support for future updates.",
       "inLanguage": "en",
       "datePublished": "2024-06-05",
       "dateModified": "2026-04-21",
-      "author": { "@id": "https://tonytony.ch/#person" },
-      "creator": { "@id": "https://tonytony.ch/#person" },
-      "producer": { "@id": "https://tonytony.ch/#professionalservice" },
-      "provider": { "@id": "https://tonytony.ch/#professionalservice" },
-      "publisher": { "@id": "https://tonytony.ch/#organization" },
-      "isPartOf": { "@id": "https://tonytony.ch/portfolio#collectionpage" },
+      "author": {
+        "@id": "https://tonytony.ch/#person"
+      },
+      "creator": {
+        "@id": "https://tonytony.ch/#person"
+      },
+      "producer": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      },
+      "provider": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      },
+      "publisher": {
+        "@id": "https://tonytony.ch/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://tonytony.ch/portfolio#collectionpage"
+      },
       "about": {
         "@type": "Organization",
         "name": "Hymn Design SA",
@@ -123,7 +148,9 @@
           "url": "https://figma.com"
         }
       ],
-      "review": { "@id": "https://tonytony.ch/projects/hymn#review" }
+      "review": {
+        "@id": "https://tonytony.ch/projects/hymn#review"
+      }
     },
     {
       "@type": "Review",
@@ -142,8 +169,7 @@
         "ratingValue": "5",
         "bestRating": "5"
       },
-      "reviewBody": "Anthony stands out for his exceptional responsiveness. For every request from our agency, he consistently found relevant and effective solutions. His feedback is always clear and well structured, making decision making much easier.",
-      "itemReviewed": { "@id": "https://tonytony.ch/projects/hymn#project" }
+      "reviewBody": "Anthony stands out for his exceptional responsiveness. For every request from our agency, he consistently found relevant and effective solutions. His feedback is always clear and well structured, making decision making much easier."
     }
   ]
 }

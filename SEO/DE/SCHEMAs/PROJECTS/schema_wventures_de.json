@@ -60,15 +60,23 @@
       "url": "https://tonytony.ch/de/projects/wventures",
       "name": "TONYTONY | W Ventures — Website-Relaunch für eine VC-Gesellschaft",
       "description": "Komplette digitale Neugestaltung für W Ventures, eine Berliner Risikokapitalgesellschaft. Massgeschneiderte Dark-Theme-UI, GSAP-Scroll-Animationen und vollständig CMS-gesteuerte Webflow-Architektur.",
-      "isPartOf": { "@id": "https://tonytony.ch/#website" },
-      "breadcrumb": { "@id": "https://tonytony.ch/de/projects/wventures#breadcrumb" },
-      "mainEntity": { "@id": "https://tonytony.ch/de/projects/wventures#project" },
+      "isPartOf": {
+        "@id": "https://tonytony.ch/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://tonytony.ch/de/projects/wventures#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://tonytony.ch/de/projects/wventures#project"
+      },
       "inLanguage": "de"
     },
     {
       "@type": "Article",
       "@id": "https://tonytony.ch/de/projects/wventures#project",
-      "mainEntityOfPage": { "@id": "https://tonytony.ch/de/projects/wventures#webpage" },
+      "mainEntityOfPage": {
+        "@id": "https://tonytony.ch/de/projects/wventures#webpage"
+      },
       "headline": "Komplette digitale Neugestaltung für W Ventures, eine Berliner Risikokapitalgesellschaft",
       "alternativeHeadline": "W Ventures — Website-Relaunch für VC-Gesellschaft",
       "name": "W Ventures — Komplette digitale Neugestaltung",
@@ -76,17 +84,34 @@
       "image": "https://cdn.prod.website-files.com/657840207424d689b5f9b7d8/69db044967348ab96e853217_wventures_thumbnail-v5.avif",
       "abstract": "Hochperformante, CMS-gesteuerte Webflow-Plattform, entwickelt um eine europäische VC-Gesellschaft auf dem Niveau ihrer Portfoliounternehmen zu positionieren.",
       "description": "Komplette digitale Neugestaltung für W Ventures, eine Berliner Risikokapitalgesellschaft mit einem Portfolio das Corgi, Klaviyo, Harmattan AI, Numeral und SmithRx umfasst. Massgeschneiderte Dark-Theme-UI mit GSAP-Scroll-Animationen, vollständig CMS-gesteuerte Architektur und SEO-optimierte Struktur.",
-      "articleSection": ["Kontext", "Herausforderung", "Lösung", "Ergebnis"],
+      "articleSection": [
+        "Kontext",
+        "Herausforderung",
+        "Lösung",
+        "Ergebnis"
+      ],
       "articleBody": "Kontext: W Ventures ist eine Berliner Risikokapitalgesellschaft mit einem Portfolio namhafter Unternehmen — Corgi, Klaviyo, Harmattan AI, Numeral und SmithRx, um nur einige zu nennen. Die bestehende Website war in die Jahre gekommen — visuell veraltet, strukturell unflexibel und entsprach nicht mehr dem Ansehen der Unternehmen, die sie unterstützen. Eine komplette digitale Neugestaltung war nötig, die sich glaubwürdig neben dem Kaliber ihrer Investitionen behaupten kann.\n\nHerausforderung: Anders als eine typische VC-Website aus Text und Logos brauchte W Ventures ein Design, das Autorität mit Zugänglichkeit ausbalanciert — seriös genug für institutionelle Glaubwürdigkeit, dynamisch genug um Gründer anzuziehen. UX/UI musste Vertrauen und Vision gleichzeitig kommunizieren, während ein CMS-gesteuertes Backend unverzichtbar war, damit das Team Portfoliounternehmen, Neuigkeiten und Teaminhalt eigenständig aktualisieren kann.\n\nLösung: Ich übernahm sowohl das UX/UI-Design als auch die komplette Webflow-Entwicklung und schuf eine Oberfläche, die klare redaktionelle Layouts mit gezielter Bewegung verbindet. GSAP-gesteuerte Scroll-Animationen und ein massgeschneidertes Dark-Theme-Erlebnis verleihen der Seite eine markante Präsenz, während die gesamte Inhaltsebene — Portfoliounternehmen, Team-Biografien, Neuigkeiten — über das Webflow-CMS für vollständige redaktionelle Autonomie läuft. Semantische Überschriftenstruktur und Performance-Optimierung sichern solide technische SEO-Grundlagen.\n\nErgebnis: Eine mutige, neu gestaltete digitale Identität, die W Ventures als glaubwürdige, moderne europäische VC-Gesellschaft positioniert. Massgeschneiderte Dark-Theme-UI mit Scroll-gesteuerten GSAP-Animationen, die die zukunftsorientierte Marke des Fonds verstärken. Vollständig CMS-gesteuerte Architektur — Portfolio, Team und Neuigkeiten ohne Entwicklerunterstützung bearbeitbar. UX/UI von TONYTONY durchgängig entworfen und entwickelt, vom Wireframe bis zur Produktion. SEO-optimierte Struktur mit sauberer Dokumenthierarchie und Grundlagen für strukturierte Daten.",
       "inLanguage": "de",
       "datePublished": "2024-06-01",
       "dateModified": "2026-04-17",
-      "author": { "@id": "https://tonytony.ch/#person" },
-      "creator": { "@id": "https://tonytony.ch/#person" },
-      "producer": { "@id": "https://tonytony.ch/#professionalservice" },
-      "provider": { "@id": "https://tonytony.ch/#professionalservice" },
-      "publisher": { "@id": "https://tonytony.ch/#organization" },
-      "isPartOf": { "@id": "https://tonytony.ch/de/portfolio#collectionpage" },
+      "author": {
+        "@id": "https://tonytony.ch/#person"
+      },
+      "creator": {
+        "@id": "https://tonytony.ch/#person"
+      },
+      "producer": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      },
+      "provider": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      },
+      "publisher": {
+        "@id": "https://tonytony.ch/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://tonytony.ch/de/portfolio#collectionpage"
+      },
       "about": {
         "@type": "Organization",
         "name": "W Ventures GmbH",
@@ -131,7 +156,9 @@
           "name": "Seitenaufrufe gesamt"
         }
       ],
-      "review": { "@id": "https://tonytony.ch/de/projects/wventures#review" }
+      "review": {
+        "@id": "https://tonytony.ch/de/projects/wventures#review"
+      }
     },
     {
       "@type": "Review",
@@ -150,8 +177,7 @@
         "ratingValue": "5",
         "bestRating": "5"
       },
-      "reviewBody": "In every phase of my projects for leading international ventures, Anthony consistently exhibited a great level of creativity, professionalism, and technical skill - maintaining a proactive approach from initial concept to final delivery.",
-      "itemReviewed": { "@id": "https://tonytony.ch/de/projects/wventures#project" }
+      "reviewBody": "In every phase of my projects for leading international ventures, Anthony consistently exhibited a great level of creativity, professionalism, and technical skill - maintaining a proactive approach from initial concept to final delivery."
     }
   ]
 }
