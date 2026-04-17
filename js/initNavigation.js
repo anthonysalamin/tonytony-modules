@@ -22,7 +22,7 @@ export function initNavigation() {
     function openMenu() {
         // Ensure the fixed nav is visible before opening the slide-out menu.
         if (nav) gsap.set(nav, { yPercent: 0 });
-        gsap.to(menu, { x: "0%", duration: 0.5 });
+        gsap.to(menu, { x: "0vw", duration: 0.5 });
         document.documentElement.dataset.mobileMenuOpen = "true";
 
         // dynamically grab Lenis instance
@@ -35,7 +35,7 @@ export function initNavigation() {
     }
 
     function closeMenu() {
-        gsap.to(menu, { x: "100%", duration: 0.5 });
+        gsap.to(menu, { x: "100vw", duration: 0.5 });
         delete document.documentElement.dataset.mobileMenuOpen;
 
         const lenis = window.lenis__pageScroll;
