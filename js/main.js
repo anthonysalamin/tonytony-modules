@@ -1,6 +1,6 @@
 /**
- * TONYTONY | 🥭 main modules
- * Bootstraps feature modules on DOM ready
+ * TONYTONY | 🥭 main 
+ * Handles orchestration of UI, interactions, and global behaviors on DOM ready.
  *
  * @build 13.04.26
  * @updated 13.04.26 PHT
