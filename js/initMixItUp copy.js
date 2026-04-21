@@ -21,6 +21,26 @@ const SEL = {
     filter: '.filter',
 };
 
+// ── Localization ───────────────────────────────────────────────────────────────
+
+const LOCALIZATION = {
+    fr: {
+        title: "Une sélection de mes derniers travaux",
+        errors: "Aucun élément ne correspond à votre recherche.",
+        search: "Recherche en cours...",
+    },
+    de: {
+        title: "Eine Auswahl meiner letzten Arbeiten",
+        errors: "Keine Übereinstimmung gefunden",
+        search: "Suche läuft...",
+    },
+    en: {
+        title: "A selection of my latest works",
+        errors: "No matching item to display.",
+        search: "Searching...",
+    },
+}
+
 // ── Helpers ────────────────────────────────────────────────────────────────────
 
 /**
