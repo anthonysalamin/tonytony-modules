@@ -28,16 +28,22 @@ const LOCALIZATION = {
         title: "Une sélection de mes derniers travaux",
         errors: "Aucun élément ne correspond à votre recherche.",
         search: "Recherche en cours...",
+        result: "résultat",
+        results: "résultats",
     },
     de: {
         title: "Eine Auswahl meiner letzten Arbeiten",
         errors: "Keine Übereinstimmung gefunden",
         search: "Suche läuft...",
+        result: "Ergebnis",
+        results: "Ergebnisse",
     },
     en: {
         title: "A selection of my latest works",
         errors: "No matching item to display.",
         search: "Searching...",
+        result: "result",
+        results: "results",
     },
 };
 
@@ -165,17 +171,18 @@ function applyItemClasses() {
 
 /**
  * TONYTONY | updateStatus
- * Prints a human-readable total of visible MixItUp targets into the optional status node.
+ * Prints a localized, pluralized total of visible MixItUp targets into the optional status node.
  *
  * @build 12.04.26
- * @updated 12.04.26 PHT
+ * @updated 21.04.26 PHT
  * @author TONYTONY Sàrl
  */
-function updateStatus(statusEl, mixer) {
+function updateStatus(statusEl, mixer, t) {
     if (!statusEl) return;
 
     const count = mixer.getState().totalShow;
-    statusEl.textContent = `${count} result${count !== 1 ? 's' : ''}`;
+    const label = count === 1 ? t.result : t.results;
+    statusEl.textContent = `${count} ${label}`;
 }
 
 /**
@@ -276,7 +283,7 @@ export function initMixItUp(production = false) {
                 if (statusEl) statusEl.textContent = t.search;
             },
             onMixEnd: () => {
-                updateStatus(statusEl, mixer);
+                updateStatus(statusEl, mixer, t);
                 refreshScrollTrigger();
             },
             onMixFail: () => {
