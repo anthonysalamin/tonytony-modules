@@ -3,7 +3,7 @@
  * Prepares portfolio DOM classes from CMS fields, boots MixItUp with callbacks, and wires live search plus status.
  *
  * @build 12.04.26
- * @updated 21.04.26 PHT
+ * @updated 12.04.26 PHT
  * @author TONYTONY Sàrl
  */
 
@@ -20,41 +20,6 @@ const SEL = {
     featuring: '.mixitup__featuring',
     filter: '.filter',
 };
-
-// ── Localization ───────────────────────────────────────────────────────────────
-
-const LOCALIZATION = {
-    fr: {
-        title: "Une sélection de mes derniers travaux",
-        errors: "Aucun élément ne correspond à votre recherche.",
-        search: "Recherche en cours...",
-    },
-    de: {
-        title: "Eine Auswahl meiner letzten Arbeiten",
-        errors: "Keine Übereinstimmung gefunden",
-        search: "Suche läuft...",
-    },
-    en: {
-        title: "A selection of my latest works",
-        errors: "No matching item to display.",
-        search: "Searching...",
-    },
-};
-
-/**
- * TONYTONY | getLocale
- * Detects active locale from the URL path — `/fr` → fr, `/de` → de, default en.
- *
- * @build 21.04.26
- * @updated 21.04.26 PHT
- * @author TONYTONY Sàrl
- */
-function getLocale() {
-    const path = window.location.pathname;
-    if (/^\/fr(\/|$)/.test(path)) return 'fr';
-    if (/^\/de(\/|$)/.test(path)) return 'de';
-    return 'en';
-}
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
 
@@ -101,10 +66,7 @@ function refreshScrollTrigger() {
  * @author TONYTONY Sàrl
  */
 function setDataAttributes(controls) {
-    if (!controls) {
-        console.warn('initMixItUp: no [data-mixitup="controls"] found, skipping setDataAttributes');
-        return;
-    }
+    if (!controls) return;
 
     controls.querySelectorAll('[data-filter=""]').forEach((btn) => {
         btn.setAttribute('data-filter', `.${toClassName(btn.textContent)}`);
@@ -235,17 +197,11 @@ function bindSearch(inputEl, mixer, controls) {
 
 export function initMixItUp(production = false) {
     const container = document.querySelector(SEL.container);
-    if (!container) {
-        console.warn('initMixItUp: no [data-mixitup="container"] found, skipping');
-        return;
-    }
+    if (!container) return;
 
     const controls = document.querySelector(SEL.controls);
     const inputSearch = document.querySelector(SEL.search);
     const statusEl = document.querySelector(SEL.status);
-
-    const locale = getLocale();
-    const t = LOCALIZATION[locale];
 
     // 1. Transform DOM
     setDataAttributes(controls);
@@ -254,7 +210,7 @@ export function initMixItUp(production = false) {
 
     // 2. Initial status
     if (!production && statusEl) {
-        statusEl.textContent = t.title;
+        statusEl.textContent = 'Case studies';
     }
 
     // 3. Init MixItUp
@@ -273,14 +229,14 @@ export function initMixItUp(production = false) {
         },
         callbacks: {
             onMixStart: () => {
-                if (statusEl) statusEl.textContent = t.search;
+                if (statusEl) statusEl.textContent = 'Searching...';
             },
             onMixEnd: () => {
                 updateStatus(statusEl, mixer);
                 refreshScrollTrigger();
             },
             onMixFail: () => {
-                if (statusEl) statusEl.textContent = t.errors;
+                if (statusEl) statusEl.textContent = 'No matching item to display.';
                 setTimeout(() => {
                     mixer.filter('*');
                     refreshScrollTrigger();
