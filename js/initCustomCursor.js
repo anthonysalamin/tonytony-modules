@@ -102,7 +102,7 @@ function _initCursor(e) {
         background: e.COLOR.BACKGROUND,
         color: e.COLOR.TEXT,
         pointerEvents: "none",
-        zIndex: "9999",
+        zIndex: "9998",
         opacity: "0",
         left: "-9999px",
         top: "-9999px",
