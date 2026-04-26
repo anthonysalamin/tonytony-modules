@@ -136,7 +136,7 @@ async function initApp() {
     // =========================
     // 4. DONE
     // =========================
-    console.log("🚀 App fully initialized");
+    console.log("✅ App fully initialized");
 }
 
 document.addEventListener("DOMContentLoaded", initApp);
