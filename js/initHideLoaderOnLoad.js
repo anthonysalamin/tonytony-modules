@@ -1,6 +1,6 @@
 /**
  * TONYTONY | initHideLoaderOnLoad
- * Fades out the loading cover on load with GSAP. Polls briefly for GSAP if not yet available, throws if it never arrives.
+ * Fades out the loading cover on load with GSAP. Polls briefly for GSAP if not yet available, throws if it never arrives. Re-runs on bfcache restore.
  *
  * @build 12.04.26
  * @updated 29.04.26 PHT
@@ -15,6 +15,10 @@ export function initHideLoaderOnLoad() {
     }
 
     const animateHide = () => {
+        // Reset state in case we're hiding again after bfcache restore
+        cover.style.display = 'flex';
+        cover.style.opacity = '1';
+
         gsap.to(cover, {
             opacity: 0,
             delay: 0.15,
@@ -26,22 +30,29 @@ export function initHideLoaderOnLoad() {
         });
     };
 
-    if (window.gsap) {
-        animateHide();
-        return;
-    }
-
-    // Poll for GSAP — try every 100ms for up to 1.5s, then throw.
-    let attempts = 0;
-    const maxAttempts = 15;
-    const intervalId = setInterval(() => {
-        attempts++;
+    const hideCover = () => {
         if (window.gsap) {
-            clearInterval(intervalId);
             animateHide();
-        } else if (attempts >= maxAttempts) {
-            clearInterval(intervalId);
-            throw new Error('initHideLoaderOnLoad: GSAP not available after 1.5s');
+            return;
         }
-    }, 100);
+
+        let attempts = 0;
+        const maxAttempts = 15;
+        const intervalId = setInterval(() => {
+            attempts++;
+            if (window.gsap) {
+                clearInterval(intervalId);
+                animateHide();
+            } else if (attempts >= maxAttempts) {
+                clearInterval(intervalId);
+                throw new Error('initHideLoaderOnLoad: GSAP not available after 1.5s');
+            }
+        }, 100);
+    };
+
+    hideCover();
+
+    window.addEventListener('pageshow', (e) => {
+        if (e.persisted) hideCover();
+    });
 }
