@@ -253,6 +253,8 @@ export function initMixItUp(production = false) {
 
     const locale = getLocale();
     const t = LOCALIZATION[locale];
+    const isPortfolioPage = /\/portfolio(\/|$)/.test(window.location.pathname);
+    const initialFilter = isPortfolioPage ? '*' : '.featuring';
 
     // 1. Transform DOM
     setDataAttributes(controls);
@@ -267,7 +269,7 @@ export function initMixItUp(production = false) {
     // 3. Init MixItUp
     const mixer = mixitup(container, {
         load: {
-            filter: '.featuring',
+            filter: initialFilter,
         },
         selectors: {
             target: SEL.item,
