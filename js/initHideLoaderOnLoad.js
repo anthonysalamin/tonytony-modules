@@ -52,6 +52,7 @@ export function initHideLoaderOnLoad() {
 
     hideCover();
 
+    // make sure it runs again on bfcache restore
     window.addEventListener('pageshow', (e) => {
         if (e.persisted) hideCover();
     });
