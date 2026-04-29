@@ -9,17 +9,37 @@
 
 export function initHideLoaderOnLoad() {
     const cover = document.querySelector('[data-element="loading-cover"]');
-    if (!cover || !window.gsap) return;
+    if (!cover) return;
+
+    let forceHideTimerId = null;
+
+    const hideImmediately = () => {
+        if (forceHideTimerId) {
+            clearTimeout(forceHideTimerId);
+            forceHideTimerId = null;
+        }
+
+        cover.style.opacity = '0';
+        cover.style.display = 'none';
+    };
 
     const hideCover = () => {
+        if (forceHideTimerId) clearTimeout(forceHideTimerId);
+
+        // Fail-safe: never leave the loading cover stuck on screen.
+        forceHideTimerId = setTimeout(hideImmediately, 2500);
+
+        if (!window.gsap) {
+            hideImmediately();
+            return;
+        }
+
         gsap.to(cover, {
             opacity: 0,
             delay: 0.15,
             duration: 0.75,
             ease: 'power2.out',
-            onComplete: () => {
-                cover.style.display = 'none';
-            },
+            onComplete: hideImmediately,
         });
     };
 
