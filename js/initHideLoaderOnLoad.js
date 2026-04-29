@@ -21,8 +21,8 @@ export function initHideLoaderOnLoad() {
 
         gsap.to(cover, {
             opacity: 0,
-            delay: 0.15,
-            duration: 0.75,
+            delay: 0.05,
+            duration: 0.55,
             ease: 'power2.out',
             onComplete: () => {
                 cover.style.display = 'none';
