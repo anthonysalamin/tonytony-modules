@@ -3,28 +3,28 @@
     xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
     <url>
-        <loc>https://tonytony.ch</loc>
+        <loc>https://tonytony.ch/</loc>
         <lastmod>2026-04-25</lastmod>
-        <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/" />
         <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr" />
         <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/" />
     </url>
     <url>
         <loc>https://tonytony.ch/fr</loc>
         <lastmod>2026-04-25</lastmod>
-        <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/" />
         <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr" />
         <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/" />
     </url>
     <url>
         <loc>https://tonytony.ch/de</loc>
         <lastmod>2026-04-25</lastmod>
-        <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/" />
         <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr" />
         <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/" />
     </url>
 
     <url>
@@ -400,56 +400,6 @@
         <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/projects/samuel" />
         <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/projects/samuel" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/projects/samuel" />
-    </url>
-
-    <url>
-        <loc>https://tonytony.ch/imprint</loc>
-        <lastmod>2026-04-21</lastmod>
-        <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/imprint" />
-        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/imprint" />
-        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/imprint" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/imprint" />
-    </url>
-    <url>
-        <loc>https://tonytony.ch/fr/imprint</loc>
-        <lastmod>2026-04-21</lastmod>
-        <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/imprint" />
-        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/imprint" />
-        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/imprint" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/imprint" />
-    </url>
-    <url>
-        <loc>https://tonytony.ch/de/imprint</loc>
-        <lastmod>2026-04-21</lastmod>
-        <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/imprint" />
-        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/imprint" />
-        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/imprint" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/imprint" />
-    </url>
-
-    <url>
-        <loc>https://tonytony.ch/privacy-policy</loc>
-        <lastmod>2026-04-23</lastmod>
-        <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/privacy-policy" />
-        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/privacy-policy" />
-        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/privacy-policy" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/privacy-policy" />
-    </url>
-    <url>
-        <loc>https://tonytony.ch/fr/privacy-policy</loc>
-        <lastmod>2026-04-23</lastmod>
-        <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/privacy-policy" />
-        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/privacy-policy" />
-        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/privacy-policy" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/privacy-policy" />
-    </url>
-    <url>
-        <loc>https://tonytony.ch/de/privacy-policy</loc>
-        <lastmod>2026-04-23</lastmod>
-        <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/privacy-policy" />
-        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/privacy-policy" />
-        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/privacy-policy" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/privacy-policy" />
     </url>
 
 </urlset>
