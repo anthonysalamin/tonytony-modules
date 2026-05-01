@@ -14,6 +14,7 @@ const ENV = {
 };
 */
 
+// test
 console.log("%c🥭 Deploying main modules", "color: white; background: #2d6a4f; padding: 2px 6px; border-radius: 3px;");
 
 // ── CDN Imports ──────────────────────────────────────────────────────────────
