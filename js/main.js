@@ -14,15 +14,12 @@ const ENV = {
 };
 */
 
-console.log(
-    "%c🥭 Deploying main modules",
-    "color: white; background: #2d6a4f; padding: 2px 6px; border-radius: 3px;",
-);
+console.log("%c🥭 Deploying main modules", "color: white; background: #2d6a4f; padding: 2px 6px; border-radius: 3px;");
 
 // ── CDN Imports ──────────────────────────────────────────────────────────────
 
 import { initLanguageRedirect } from 'https://cdn.tonytony.ch/js/initLanguageRedirect.js?v=1.0.0';
-initLanguageRedirect(); 
+initLanguageRedirect();
 
 import { initHideLoaderOnLoad } from "https://cdn.tonytony.ch/js/initHideLoaderOnLoad.js?v=1.0.0";
 import { initPageTransitions } from "https://cdn.tonytony.ch/js/initPageTransitions.js?v=1.0.0";
