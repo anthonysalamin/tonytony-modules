@@ -50,7 +50,7 @@ import { initSwitchTheme } from "https://cdn.tonytony.ch/js/initSwitchTheme.js?v
 import { initSwitchThemeCaseStudies } from "https://cdn.tonytony.ch/js/initSwitchThemeCaseStudies.js?v=1.0.0";
 import { initSVGInjection } from "https://cdn.tonytony.ch/js/initSVGInjection.js?v=1.0.0";
 import { initContactForm } from "https://cdn.tonytony.ch/js/initContactForm.js?v=1.0.0";
-
+import { initWebflowBadge } from "https://cdn.tonytony.ch/js/initWebflowBadge.js?v=1.0.0";
 // ── Runner ───────────────────────────────────────────────────────────────────
 
 function run(label, functionToTun) {
@@ -114,7 +114,7 @@ async function initApp() {
     run("InjectCurrentYear", injectCurrentYear);
     run("GraphicSVG", initGraphicSVG);
     run("MWG011", initMwg011);
-
+    run("WebflowBadge", initWebflowBadge);
     // analytics
     run("FathomTrackEvents", initFathomTrackEvents);
 
