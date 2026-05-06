@@ -11,7 +11,7 @@ export function initWebflowBadge() {
     const OPTIONS = {
         badge: document.querySelector('[data-id="webflow-badge"]'),
         duration: 0.3,
-        delay: 0.2,
+        delay: 0.4,
         ease: "power2.out"
     };
 
