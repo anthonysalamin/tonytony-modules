@@ -3,7 +3,7 @@
  * Moves the Webflow badge out on scroll down and restores it on scroll up using GSAP
  *
  * @build 2026-05-06
- * @updated 2026-05-07 PHT
+ * @updated 2026-05-06 PHT
  * @author TONYTONY Sàrl
  */
 
@@ -11,8 +11,8 @@ export function initWebflowBadge() {
     const OPTIONS = {
         badge: document.querySelector('[data-id="webflow-badge"]'),
         duration: 0.3,
-        ease: "power2.out",
-        scrollThreshold: 100
+        delay: 0.4,
+        ease: "power2.out"
     };
 
     if (!OPTIONS.badge) {
@@ -21,7 +21,6 @@ export function initWebflowBadge() {
     }
 
     let lastScrollY = window.scrollY;
-    let accumulatedScroll = 0;
     let isHidden = false;
 
     function getOffsetX() {
@@ -34,46 +33,37 @@ export function initWebflowBadge() {
 
     function hideBadge() {
         if (isHidden) return;
-
         isHidden = true;
 
         gsap.to(OPTIONS.badge, {
-            x: getOffsetX(),
+            x: getOffsetX(), // 👈 dynamic distance
             opacity: 0,
             duration: OPTIONS.duration,
+            delay: OPTIONS.delay,
             ease: OPTIONS.ease
         });
     }
 
     function showBadge() {
         if (!isHidden) return;
-
         isHidden = false;
 
         gsap.to(OPTIONS.badge, {
             x: 0,
             opacity: 1,
             duration: OPTIONS.duration,
+            delay: OPTIONS.delay,
             ease: OPTIONS.ease
         });
     }
 
     function onScroll() {
         const currentScrollY = window.scrollY;
-        const delta = currentScrollY - lastScrollY;
 
-        accumulatedScroll += delta;
-
-        // 👇 Trigger only after scrolling enough downward
-        if (accumulatedScroll >= OPTIONS.scrollThreshold) {
+        if (currentScrollY > lastScrollY) {
             hideBadge();
-            accumulatedScroll = 0;
-        }
-
-        // 👇 Trigger only after scrolling enough upward
-        if (accumulatedScroll <= -OPTIONS.scrollThreshold) {
+        } else {
             showBadge();
-            accumulatedScroll = 0;
         }
 
         lastScrollY = currentScrollY;
