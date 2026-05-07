@@ -41,7 +41,7 @@ export function initWebflowBadge() {
             x: getOffsetX(),
             opacity: 0,
             duration: OPTIONS.duration,
-            ease: OPTIONS.ease
+            ease: "back.in(1.7)"
         });
     }
 
