@@ -12,6 +12,7 @@ export function initWebflowBadge() {
         badge: document.querySelector('[data-id="webflow-badge"]'),
         duration: 0.3,
         ease: "power2.out",
+        easeBack: "back.in(1.7)",
         scrollThreshold: 100
     };
 
@@ -39,9 +40,9 @@ export function initWebflowBadge() {
 
         gsap.to(OPTIONS.badge, {
             x: getOffsetX(),
-            opacity: 0,
+            // opacity: 0,
             duration: OPTIONS.duration,
-            ease: "back.in(1.7)"
+            ease: OPTIONS.easeBack
         });
     }
 
@@ -52,7 +53,7 @@ export function initWebflowBadge() {
 
         gsap.to(OPTIONS.badge, {
             x: 0,
-            opacity: 1,
+            // opacity: 1,
             duration: OPTIONS.duration,
             ease: OPTIONS.ease
         });
