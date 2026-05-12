@@ -2,8 +2,8 @@
  * TONYTONY | 🥭 initWebflowBadge
  * Moves the Webflow badge out on scroll down and restores it on scroll up using GSAP after a certain scroll threshold.
  *
- * @build 2026-05-06
- * @updated 2026-05-07 PHT
+ * @build 2026-05-12
+ * @updated 11:10 PHT
  * @author TONYTONY Sàrl
  */
 
@@ -65,13 +65,13 @@ export function initWebflowBadge() {
 
         accumulatedScroll += delta;
 
-        // 👇 Trigger only after scrolling enough downward
+        // Trigger only after scrolling enough downward
         if (accumulatedScroll >= OPTIONS.scrollThreshold) {
             hideBadge();
             accumulatedScroll = 0;
         }
 
-        // 👇 Trigger only after scrolling enough upward
+        // Trigger only after scrolling enough upward
         if (accumulatedScroll <= -OPTIONS.scrollThreshold) {
             showBadge();
             accumulatedScroll = 0;
