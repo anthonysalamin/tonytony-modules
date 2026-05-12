@@ -1,6 +1,6 @@
 /**
  * TONYTONY | 🥭 initWebflowBadge
- * Moves the Webflow badge out on scroll down and restores it on scroll up using GSAP
+ * Moves the Webflow badge out on scroll down and restores it on scroll up using GSAP after a certain scroll threshold.
  *
  * @build 2026-05-06
  * @updated 2026-05-07 PHT
