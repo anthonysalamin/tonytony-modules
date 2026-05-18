@@ -1,0 +1,190 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://tonytony.ch/services/seo-aeo-cro#webpage",
+      "url": "https://tonytony.ch/services/seo-aeo-cro",
+      "name": "SEO, AEO & CRO Services in Switzerland | TONYTONY",
+      "description": "Technical SEO, Answer Engine Optimization (AEO) and Conversion Rate Optimization for Swiss startups and SMEs. Get found on Google. Get cited by AI.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://tonytony.ch/#website"
+      },
+      "about": {
+        "@id": "https://tonytony.ch/services/seo-aeo-cro#service"
+      },
+      "breadcrumb": {
+        "@id": "https://tonytony.ch/services/seo-aeo-cro#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_en.jpg"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tonytony.ch/services/seo-aeo-cro#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tonytony.ch/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://tonytony.ch/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SEO, AEO & CRO",
+          "item": "https://tonytony.ch/services/seo-aeo-cro"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://tonytony.ch/services/seo-aeo-cro#service",
+      "name": "SEO, AEO & CRO",
+      "url": "https://tonytony.ch/services/seo-aeo-cro",
+      "serviceType": "Search Engine Optimization",
+      "description": "Integrated SEO, Answer Engine Optimization (AEO) and Conversion Rate Optimization for Swiss startups and SMEs. Technical SEO foundations, Schema.org structured data, entity mapping, AI citation optimisation for ChatGPT, Perplexity, Claude, Gemini and Google AI Overviews, and conversion rate optimisation through heatmaps, funnel analysis and A/B testing.",
+      "category": [
+        "Search Engine Optimization",
+        "Answer Engine Optimization",
+        "Conversion Rate Optimization",
+        "Technical SEO",
+        "Structured Data Engineering",
+        "Entity SEO"
+      ],
+      "provider": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Switzerland",
+          "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Suisse romande",
+          "sameAs": "https://en.wikipedia.org/wiki/Romandy"
+        },
+        {
+          "@type": "Place",
+          "name": "German-speaking Switzerland",
+          "alternateName": "Deutschschweiz",
+          "sameAs": "https://en.wikipedia.org/wiki/German-speaking_Switzerland"
+        },
+        {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Startups and SMEs"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Search Engine Optimization",
+          "sameAs": "https://en.wikipedia.org/wiki/Search_engine_optimization"
+        },
+        {
+          "@type": "Thing",
+          "name": "Answer Engine Optimization",
+          "sameAs": "https://en.wikipedia.org/wiki/Answer_engine_optimization"
+        },
+        {
+          "@type": "Thing",
+          "name": "Conversion Rate Optimization",
+          "sameAs": "https://en.wikipedia.org/wiki/Conversion_rate_optimization"
+        },
+        {
+          "@type": "Thing",
+          "name": "Schema.org",
+          "sameAs": "https://en.wikipedia.org/wiki/Schema.org"
+        },
+        {
+          "@type": "Thing",
+          "name": "Core Web Vitals",
+          "sameAs": "https://en.wikipedia.org/wiki/Core_Web_Vitals"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "SEO, AEO & CRO Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Technical SEO foundations",
+              "description": "Core Web Vitals optimisation (LCP, CLS, INP), clean indexing, logical internal linking, canonical tags, robust XML sitemaps, and hreflang implementation for multilingual Swiss sites. Built for Google, Bing, and AI crawlers."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Conversion Rate Optimization (CRO)",
+              "description": "User behaviour analysis through heatmaps, session recordings, and funnel drop-off audits — combined with structured A/B testing on CTAs, hero sections, form flows, and pricing pages. Every hypothesis measured, every iteration tracked."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Answer Engine Optimization (AEO)",
+              "description": "Content structured with Q&A patterns, entity-rich passages, authoritative schema and semantic depth so ChatGPT, Perplexity, Claude, Gemini and Google AI Overviews confidently surface your brand in AI-generated answers."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Schema & Structured Data Engineering",
+              "description": "Advanced Schema.org @graph implementation with entity relationships, Organization and Person nodes, Service and Product schemas, FAQPage, BreadcrumbList, and review markup. Entity mapping for Google's Knowledge Graph and AI systems."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tonytony.ch/services/seo-aeo-cro#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between SEO and AEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO (Search Engine Optimization) optimises your site to rank on traditional search engines like Google and Bing — using keywords, backlinks, and technical signals. AEO (Answer Engine Optimization) optimises your content to be cited by AI answer engines like ChatGPT, Perplexity, Claude, Gemini and Google AI Overviews. SEO earns clicks from search results. AEO earns mentions inside AI-generated answers. In 2026, both matter — and they share the same technical foundation: structured data, clear entity signals, and authoritative content."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long until I see SEO results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Technical SEO improvements (Core Web Vitals, indexing, schema) show up within 2 to 6 weeks once Google re-crawls. Ranking improvements for competitive keywords typically take 3 to 6 months of consistent content and technical work. AEO results are faster — AI systems update their training and retrieval pipelines more frequently, so well-structured content can start being cited within weeks. Swiss markets tend to be less saturated than English-speaking ones, which helps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I measure AEO performance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — though it's still a young discipline. Tools like Otterly, Profound, and Peec AI track brand mentions across ChatGPT, Perplexity, Claude, and Gemini. You can also monitor referral traffic from AI platforms in GA4, track branded search volume growth (a downstream AEO signal), and audit specific queries manually. I set up measurement frameworks at the start of every engagement so we know what's moving — and what isn't."
+          }
+        }
+      ]
+    }
+  ]
+}
