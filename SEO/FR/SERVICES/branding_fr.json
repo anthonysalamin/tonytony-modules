@@ -17,6 +17,9 @@
       "breadcrumb": {
         "@id": "https://tonytony.ch/fr/services/branding#breadcrumb"
       },
+      "hasPart": {
+        "@id": "https://tonytony.ch/fr/services/branding#faq"
+      },
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_fr.jpg"
@@ -51,14 +54,13 @@
       "@id": "https://tonytony.ch/fr/services/branding#service",
       "name": "Identité de Marque",
       "url": "https://tonytony.ch/fr/services/branding",
-      "serviceType": "Brand Identity Design",
-      "description": "Systèmes d'identité de marque pour startups et PME suisses — logotype, wordmark, hiérarchie typographique, systèmes de couleurs, logique d'espacement, iconographie, direction photographique et guidelines d'utilisation livrés sous forme de brand book opérationnel. Fondé sur la stratégie, conçu pour évoluer.",
+      "serviceType": "Design d'Identité de Marque",
+      "description": "Systèmes d'identité de marque pour startups et PME suisses — logotype, typographie, couleur et règles d'utilisation. Des fondations évolutives conçues pour durer.",
       "category": [
         "Identité de Marque",
         "Design de Marque",
         "Identité Visuelle",
         "Design de Logo",
-        "Systèmes de Marque",
         "Design Systems"
       ],
       "provider": {
@@ -67,23 +69,17 @@
       "areaServed": [
         {
           "@type": "Country",
-          "name": "Suisse",
+          "name": "Switzerland",
           "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
         },
         {
           "@type": "AdministrativeArea",
           "name": "Suisse romande",
-          "sameAs": "https://en.wikipedia.org/wiki/Romandy"
+          "sameAs": "https://fr.wikipedia.org/wiki/Suisse_romande"
         },
         {
           "@type": "Place",
-          "name": "Suisse alémanique",
-          "alternateName": "Deutschschweiz",
-          "sameAs": "https://en.wikipedia.org/wiki/German-speaking_Switzerland"
-        },
-        {
-          "@type": "Place",
-          "name": "International"
+          "name": "Worldwide"
         }
       ],
       "audience": {
@@ -94,72 +90,24 @@
         {
           "@type": "Thing",
           "name": "Marque",
-          "sameAs": "https://en.wikipedia.org/wiki/Brand"
-        },
-        {
-          "@type": "Thing",
-          "name": "Identité d'entreprise",
-          "sameAs": "https://en.wikipedia.org/wiki/Corporate_identity"
+          "sameAs": "https://fr.wikipedia.org/wiki/Marque"
         },
         {
           "@type": "Thing",
           "name": "Identité visuelle",
-          "sameAs": "https://en.wikipedia.org/wiki/Corporate_identity"
+          "sameAs": "https://fr.wikipedia.org/wiki/Identit%C3%A9_visuelle"
         },
         {
           "@type": "Thing",
           "name": "Logo",
-          "sameAs": "https://en.wikipedia.org/wiki/Logo"
+          "sameAs": "https://fr.wikipedia.org/wiki/Logo"
         },
         {
           "@type": "Thing",
           "name": "Typographie",
-          "sameAs": "https://en.wikipedia.org/wiki/Typography"
-        },
-        {
-          "@type": "Thing",
-          "name": "Design System",
-          "sameAs": "https://en.wikipedia.org/wiki/Design_system"
+          "sameAs": "https://fr.wikipedia.org/wiki/Typographie"
         }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Services d'Identité de Marque",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Systèmes d'identité visuelle",
-              "description": "Systèmes d'identité complets avec logotype, wordmark, hiérarchie typographique, palette de couleurs avec ratios de contraste accessibles, règles d'espacement, logique de grille, iconographie et direction photographique. Livré sous forme de brand book opérationnel avec des guidelines d'utilisation claires et des assets téléchargeables."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Positionnement par le design",
-              "description": "Choix de couleurs, personnalité typographique, rythme de composition et ton visuel calibrés pour renforcer le positionnement de marque. Décisions de design ancrées dans la stratégie — pour que le langage visuel communique qui vous êtes avant même qu'un seul mot soit lu."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Fondations de marque évolutives",
-              "description": "Systèmes de marque construits sur des règles, des tokens et des composants — design tokens réutilisables pour la couleur et la typographie, déclinaisons de logo flexibles, principes de mise en page qui résistent aux nouveaux formats, et conventions de nommage claires. Conçus pour évoluer proprement sans rebranding coûteux."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Cohérence du design sur tous les points de contact",
-              "description": "Une expérience de marque cohérente sur le site web, le pitch deck, les contenus sociaux, les templates de newsletter, les supports print, la signalétique, les visuels d'événements et les objets promotionnels. Des templates prêts à l'emploi et des bibliothèques d'assets permettent aux équipes de rester on-brand partout."
-            }
-          }
-        ]
-      }
+      ]
     },
     {
       "@type": "FAQPage",
@@ -170,7 +118,7 @@
           "name": "Concevez-vous des logos dans le cadre d'un projet de site web, ou uniquement séparément ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Les deux. La plupart des projets de sites web nécessitent au moins un travail de marque — un rafraîchissement du logo, un système de couleurs affiné, une typographie mise à jour — et je le gère dans le périmètre du projet lorsque c'est proportionné. Pour les systèmes d'identité de marque complets avec une exploration logo approfondie, des brand books et des guidelines multi-touchpoints, c'est une mission dédiée. Dans tous les cas, votre site et votre marque forment un système cohérent, et non deux livrables déconnectés assemblés à la va-vite au moment du lancement."
+            "text": "Les deux. La plupart des projets de site web nécessitent au moins un certain travail sur la marque — un rafraîchissement du logo, un système de couleurs affiné, une typographie mise à jour — et je gère cela dans le cadre du projet lorsque c'est proportionnel. Pour des systèmes d'identité de marque complets avec une exploration approfondie du logo, des brand books et des guidelines multi-points de contact, il s'agit d'un engagement dédié. Dans tous les cas, votre site web et votre marque finissent par former un système cohérent, pas deux livrables déconnectés assemblés au lancement."
           }
         },
         {

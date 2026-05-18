@@ -17,6 +17,9 @@
       "breadcrumb": {
         "@id": "https://tonytony.ch/fr/services/strategy#breadcrumb"
       },
+      "hasPart": {
+        "@id": "https://tonytony.ch/fr/services/strategy#faq"
+      },
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_fr.jpg"
@@ -51,14 +54,12 @@
       "@id": "https://tonytony.ch/fr/services/strategy#service",
       "name": "Stratégie Web",
       "url": "https://tonytony.ch/fr/services/strategy",
-      "serviceType": "Web Strategy & Positioning",
-      "description": "Sprints de stratégie web, positionnement et messaging pour startups et PME suisses. Définition de l'audience, positionnement concurrentiel, affûtage de la proposition de valeur, architecture de messaging et logique de conversion — la fondation stratégique sur laquelle votre designer, développeur, copywriter et équipe marketing peuvent tous s'appuyer.",
+      "serviceType": "Stratégie et Positionnement Web",
+      "description": "Stratégie web, positionnement et messaging pour startups et PME suisses. Affinez votre audience, votre offre et votre narrative avant de commencer le design et le développement.",
       "category": [
         "Stratégie Web",
-        "Stratégie de Marque",
-        "Stratégie de Positionnement",
-        "Stratégie de Messaging",
-        "Stratégie Marketing",
+        "Positionnement",
+        "Messaging",
         "Stratégie Digitale"
       ],
       "provider": {
@@ -67,23 +68,17 @@
       "areaServed": [
         {
           "@type": "Country",
-          "name": "Suisse",
+          "name": "Switzerland",
           "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
         },
         {
           "@type": "AdministrativeArea",
           "name": "Suisse romande",
-          "sameAs": "https://en.wikipedia.org/wiki/Romandy"
+          "sameAs": "https://fr.wikipedia.org/wiki/Suisse_romande"
         },
         {
           "@type": "Place",
-          "name": "Suisse alémanique",
-          "alternateName": "Deutschschweiz",
-          "sameAs": "https://en.wikipedia.org/wiki/German-speaking_Switzerland"
-        },
-        {
-          "@type": "Place",
-          "name": "International"
+          "name": "Worldwide"
         }
       ],
       "audience": {
@@ -94,67 +89,19 @@
         {
           "@type": "Thing",
           "name": "Positionnement",
-          "sameAs": "https://en.wikipedia.org/wiki/Positioning_(marketing)"
-        },
-        {
-          "@type": "Thing",
-          "name": "Proposition de valeur",
-          "sameAs": "https://en.wikipedia.org/wiki/Value_proposition"
+          "sameAs": "https://fr.wikipedia.org/wiki/Positionnement"
         },
         {
           "@type": "Thing",
           "name": "Stratégie de marque",
-          "sameAs": "https://en.wikipedia.org/wiki/Brand_management"
+          "sameAs": "https://fr.wikipedia.org/wiki/Management_de_la_marque"
         },
         {
           "@type": "Thing",
-          "name": "Audience cible",
-          "sameAs": "https://en.wikipedia.org/wiki/Target_audience"
-        },
-        {
-          "@type": "Thing",
-          "name": "Communication marketing",
-          "sameAs": "https://en.wikipedia.org/wiki/Marketing_communications"
+          "name": "Ciblage (marketing)",
+          "sameAs": "https://fr.wikipedia.org/wiki/Ciblage"
         }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Services de Stratégie Web",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Audience & positionnement",
-              "description": "Définition du profil client idéal, cartographie des points de douleur, audit du paysage concurrentiel et positionnement affûté qui rend votre offre immédiatement compréhensible — et incontestablement la vôtre."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Clarté de l'offre",
-              "description": "Mise à l'épreuve de la proposition de valeur, élimination du jargon, structuration des bénéfices autour des résultats concrets — pour distiller services ou produits en quelque chose que les prospects comprennent immédiatement en une phrase, un scroll, un coup d'œil."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Narrative & messaging",
-              "description": "Framework de messaging couvrant le message central, les preuves, le ton éditorial et les formulations clés — structuré pour tenir sur le site web, le pitch deck, les appels commerciaux, les contenus sociaux et les conversations avec les investisseurs."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Réflexion conversion dès le départ",
-              "description": "Structure des pages, logique des CTAs, gestion des objections, cartographie du funnel et signaux de confiance planifiés avant qu'une seule maquette n'existe — pour que le site se lance comme un outil de vente opérationnel, et non comme une brochure en attente d'optimisation."
-            }
-          }
-        ]
-      }
+      ]
     },
     {
       "@type": "FAQPage",
@@ -165,7 +112,7 @@
           "name": "Ai-je besoin d'un strategy sprint si je connais déjà mon audience ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Parfois oui, parfois non. Si vous pouvez noter en 30 minutes votre profil client idéal, vos 3 principales propositions de valeur, vos objections clés et votre messaging central — vous n'avez probablement pas besoin d'un sprint complet, juste d'un design et d'un build. Si cet exercice vous semble difficile, votre site web reflétera ce manque de clarté quelle que soit la qualité du design. Une courte session stratégique s'autofinance généralement rien qu'en cycles de révisions évités."
+            "text": "Parfois oui, parfois non. Si vous pouvez écrire votre profil de client idéal, vos 3 principales propositions de valeur, vos objections clés et votre message central en 30 minutes — vous n'avez probablement pas besoin d'un sprint complet, juste d'un design et d'un développement. Si cet exercice vous semble difficile, votre site web reflétera ce manque de clarté, quelle que soit la qualité de son design. Une courte session stratégique est généralement rentabilisée par la seule réduction des cycles de révision."
           }
         },
         {

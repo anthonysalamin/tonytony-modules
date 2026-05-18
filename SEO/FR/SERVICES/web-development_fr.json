@@ -17,6 +17,9 @@
       "breadcrumb": {
         "@id": "https://tonytony.ch/fr/services/web-development#breadcrumb"
       },
+      "hasPart": {
+        "@id": "https://tonytony.ch/fr/services/web-development#faq"
+      },
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_fr.jpg"
@@ -51,8 +54,8 @@
       "@id": "https://tonytony.ch/fr/services/web-development#service",
       "name": "Développement Webflow",
       "url": "https://tonytony.ch/fr/services/web-development",
-      "serviceType": "Webflow Development",
-      "description": "Développement Webflow de niveau production pour startups et PME suisses. Code sémantique propre, architecture CMS évolutive, Core Web Vitals au vert, animations GSAP, configurations multilingues (EN/FR/DE) et intégrations CRM, Stripe, n8n et APIs personnalisées.",
+      "serviceType": "Développement Webflow",
+      "description": "Développement Webflow pour startups et PME suisses — builds Webflow Expert avec code propre, architecture CMS, animations GSAP et configurations multilingues.",
       "category": [
         "Développement Webflow",
         "Développement Web",
@@ -66,75 +69,40 @@
       "areaServed": [
         {
           "@type": "Country",
-          "name": "Suisse",
+          "name": "Switzerland",
           "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
         },
         {
           "@type": "AdministrativeArea",
           "name": "Suisse romande",
-          "sameAs": "https://en.wikipedia.org/wiki/Romandy"
+          "sameAs": "https://fr.wikipedia.org/wiki/Suisse_romande"
         },
         {
           "@type": "Place",
-          "name": "Suisse alémanique",
-          "alternateName": "Deutschschweiz",
-          "sameAs": "https://en.wikipedia.org/wiki/German-speaking_Switzerland"
-        },
-        {
-          "@type": "Place",
-          "name": "International"
+          "name": "Worldwide"
         }
       ],
       "audience": {
         "@type": "BusinessAudience",
         "audienceType": "Startups et PME"
       },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Services de Développement Webflow",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Développement Webflow",
-              "description": "Builds Webflow de niveau production avec HTML sémantique propre, collections CMS évolutives et architecture maintenable — conçus pour que les équipes puissent éditer, étendre et passer le relais sans regrets."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Builds orientés performance",
-              "description": "Conçus pour des Core Web Vitals au vert (LCP, CLS, INP) grâce à l'optimisation des assets, un lazy-loading intelligent et une gestion rigoureuse des scripts tiers. Rapide sous trafic réel, pas seulement en conditions de laboratoire."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Interactions avancées (GSAP)",
-              "description": "Motion intentionnel avec GSAP — animations pilotées par le scroll, micro-interactions et séquences hero chorégraphiées. Développé avec le support de prefers-reduced-motion et la performance en tête."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Architecture CMS multilingue",
-              "description": "Configurations Webflow multilingues natives — français, allemand, anglais et au-delà — avec hreflang approprié, URLs localisées et collections CMS structurées pour des workflows de traduction sans friction."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Intégrations API",
-              "description": "Connectez Webflow au reste de votre stack — HubSpot, Pipedrive, Airtable, Stripe, automations n8n, scénarios Make et APIs personnalisées — pour que votre site fonctionne comme une composante à part entière de votre système métier."
-            }
-          }
-        ]
-      }
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Développement web",
+          "sameAs": "https://fr.wikipedia.org/wiki/Programmation_web"
+        },
+        {
+          "@type": "Thing",
+          "name": "Système de gestion de contenu",
+          "sameAs": "https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu"
+        },
+        {
+          "@type": "Thing",
+          "name": "Interface de programmation",
+          "sameAs": "https://fr.wikipedia.org/wiki/Interface_de_programmation"
+        }
+      ]
     },
     {
       "@type": "FAQPage",
@@ -145,12 +113,12 @@
           "name": "Webflow vs WordPress — lequel est le meilleur pour une PME suisse en 2026 ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Pour la plupart des startups et PME suisses, Webflow l'emporte. Pas de vulnérabilités liées aux plugins, pas de correctifs de sécurité mensuels, pas de discussions sur 'qui maintient le serveur ?'. Webflow gère nativement l'hébergement, le SSL, le CDN et les sauvegardes — tout en offrant à votre équipe un CMS visuel qu'elle utilisera vraiment. WordPress reste pertinent pour l'e-commerce avancé ou les applications personnalisées complexes. Pour les sites marketing, sites produits, portfolios et pages de génération de leads — Webflow est plus rapide à livrer, moins coûteux à maintenir et bien plus sécurisé sur le long terme."
+            "text": "Pour la plupart des startups et PME suisses, Webflow est gagnant. Pas de vulnérabilités liées aux plugins, pas de correctifs de sécurité mensuels, pas de conversations sur 'qui s'occupe de la maintenance du serveur ?'. Webflow gère l'hébergement, le SSL, le CDN et les sauvegardes nativement — tout en offrant à votre équipe un CMS visuel qu'elle utilisera réellement. WordPress a toujours du sens pour le e-commerce lourd ou les applications sur mesure complexes. Mais pour les sites marketing, les sites produits, les portfolios et les landing pages de génération de leads — Webflow est plus rapide à déployer, moins cher à maintenir et bien plus sécurisé à long terme."
           }
         },
         {
           "@type": "Question",
-          "name": "Puis-je modifier et mettre à jour le site moi-même après le lancement ?",
+          "name": "Puis-je éditer et mettre à jour le site moi-même après le lancement ?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Oui — c'est tout l'intérêt. Le CMS de Webflow est conçu pour les non-développeurs : modifier le texte, changer les images, publier des articles de blog, mettre à jour les membres de l'équipe, lancer de nouvelles études de cas. Je structure chaque build avec des collections claires, des noms de champs sensés et des permissions réservées aux éditeurs, pour que votre équipe puisse publier des mises à jour sans risquer de casser les mises en page. Vous recevez également un walkthrough Loom couvrant les workflows exacts pour votre site."

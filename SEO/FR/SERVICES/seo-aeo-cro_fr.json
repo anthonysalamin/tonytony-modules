@@ -1,0 +1,138 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://tonytony.ch/fr/services/seo-aeo-cro#webpage",
+      "url": "https://tonytony.ch/fr/services/seo-aeo-cro",
+      "name": "Services SEO, AEO & CRO en Suisse | TONYTONY",
+      "description": "SEO technique, Answer Engine Optimization (AEO) et optimisation du taux de conversion pour startups et PME suisses. Soyez trouvé sur Google. Soyez cité par les IA.",
+      "inLanguage": "fr-CH",
+      "isPartOf": {
+        "@id": "https://tonytony.ch/#website"
+      },
+      "about": {
+        "@id": "https://tonytony.ch/fr/services/seo-aeo-cro#service"
+      },
+      "breadcrumb": {
+        "@id": "https://tonytony.ch/fr/services/seo-aeo-cro#breadcrumb"
+      },
+      "hasPart": {
+        "@id": "https://tonytony.ch/fr/services/seo-aeo-cro#faq"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_fr.jpg"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tonytony.ch/fr/services/seo-aeo-cro#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://tonytony.ch/fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://tonytony.ch/fr/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SEO, AEO & CRO",
+          "item": "https://tonytony.ch/fr/services/seo-aeo-cro"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://tonytony.ch/fr/services/seo-aeo-cro#service",
+      "name": "SEO, AEO & CRO",
+      "url": "https://tonytony.ch/fr/services/seo-aeo-cro",
+      "serviceType": "Optimisation pour les Moteurs de Recherche",
+      "description": "SEO technique, Answer Engine Optimization (AEO) et optimisation du taux de conversion pour startups et PME suisses. Soyez trouvé sur Google. Soyez cité par les IA.",
+      "category": [
+        "SEO",
+        "AEO",
+        "CRO",
+        "SEO Technique",
+        "Données Structurées"
+      ],
+      "provider": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Switzerland",
+          "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Suisse romande",
+          "sameAs": "https://fr.wikipedia.org/wiki/Suisse_romande"
+        },
+        {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Startups et PME"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Optimisation pour les moteurs de recherche",
+          "sameAs": "https://fr.wikipedia.org/wiki/Optimisation_pour_les_moteurs_de_recherche"
+        },
+        {
+          "@type": "Thing",
+          "name": "Taux de conversion",
+          "sameAs": "https://fr.wikipedia.org/wiki/Taux_de_conversion"
+        },
+        {
+          "@type": "Thing",
+          "name": "Schema.org",
+          "sameAs": "https://en.wikipedia.org/wiki/Schema.org"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tonytony.ch/fr/services/seo-aeo-cro#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quelle est la différence entre SEO et AEO ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le SEO (Search Engine Optimization) optimise votre site pour qu'il soit bien classé sur les moteurs de recherche traditionnels comme Google et Bing — en utilisant des mots-clés, des backlinks et des signaux techniques. L'AEO (Answer Engine Optimization) optimise votre contenu pour qu'il soit cité par les moteurs de réponse IA comme ChatGPT, Perplexity, Claude, Gemini et Google AI Overviews. Le SEO gagne des clics depuis les résultats de recherche. L'AEO gagne des mentions à l'intérieur des réponses générées par l'IA. En 2026, les deux comptent — et ils partagent la même fondation technique : des données structurées, des signaux d'entités clairs et un contenu faisant autorité."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de temps avant de voir des résultats SEO ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les améliorations SEO techniques (Core Web Vitals, indexation, schema) apparaissent dans les 2 à 6 semaines une fois que Google a recrawlé. Les améliorations de positionnement sur des mots-clés concurrentiels prennent généralement 3 à 6 mois de travail technique et éditorial constant. Les résultats AEO sont plus rapides — les systèmes IA mettent à jour leurs pipelines d'entraînement et de récupération plus fréquemment, ce qui permet à un contenu bien structuré d'être cité en quelques semaines. Les marchés suisses sont généralement moins saturés que les marchés anglophones, ce qui joue en votre faveur."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on mesurer les performances AEO ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui — bien que ce soit encore une discipline jeune. Des outils comme Otterly, Profound et Peec AI suivent les mentions de marque sur ChatGPT, Perplexity, Claude et Gemini. Vous pouvez également surveiller le trafic de référence provenant des plateformes IA dans GA4, suivre la croissance du volume de recherche de marque (un signal AEO indirect) et auditer manuellement des requêtes spécifiques. Je mets en place des frameworks de mesure dès le début de chaque mission pour savoir ce qui progresse — et ce qui ne progresse pas."
+          }
+        }
+      ]
+    }
+  ]
+}
