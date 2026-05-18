@@ -71,21 +71,21 @@ Unlike traditional agencies where projects are passed from senior sales director
 
 ## Selected Work
 
-### W Ventures — Complete Digital Overhaul
-High-performance, CMS-driven Webflow platform designed to position a European VC firm at the level of its portfolio companies. Custom dark-theme UI with GSAP scroll animations and fully CMS-driven architecture.
-https://tonytony.ch/projects/wventures
-
-### Further — Design Hotels Editorial Platform
-A satellite editorial platform for Design Hotels, built to handle high-volume hospitality content through a scalable CMS-driven architecture with flexible reusable modules and API integrations.
-https://tonytony.ch/projects/further
-
 ### Hymn Design — Website Relaunch
 Pixel-perfect Figma-to-Webflow build for a Swiss branding agency, featuring high-performance lazy-loaded Vimeo integration, GSAP scroll animations, and a fully bilingual EN/FR CMS.
 https://tonytony.ch/projects/hymn
 
+### W Ventures — Complete Digital Overhaul
+High-performance, CMS-driven Webflow platform designed to position a European VC firm at the level of its portfolio companies. Custom dark-theme UI with GSAP scroll animations and fully CMS-driven architecture.
+https://tonytony.ch/projects/wventures
+
 ### Maude von Giese — Scenography Portfolio
 Immersive scroll-driven 3D portfolio for a Zurich-based scenographer, built in Webflow with GSAP animations, layered parallax effects, and fully CMS-driven architecture. UI design by Lydia Perrot.
 https://tonytony.ch/projects/maude
+
+### Further — Design Hotels Editorial Platform
+A satellite editorial platform for Design Hotels, built to handle high-volume hospitality content through a scalable CMS-driven architecture with flexible reusable modules and API integrations.
+https://tonytony.ch/projects/further
 
 ### MoTo — Web Relaunch
 Mobile-first Webflow relaunch for a Munich-based construction project management firm overseeing 100+ projects across Germany, with custom CMS, conversion-focused UX, and integrated form management.
