@@ -1,0 +1,148 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://tonytony.ch/de/services/web-design#webpage",
+      "url": "https://tonytony.ch/de/services/web-design",
+      "name": "Webdesign in der Schweiz | TONYTONY",
+      "description": "Konversionsorientiertes Webdesign für Schweizer Startups und KMU. Hochwertige, minimalistische Interfaces mit UX-Flow, Barrierefreiheit und Mobile-First-Logik.",
+      "inLanguage": "de-CH",
+      "isPartOf": {
+        "@id": "https://tonytony.ch/#website"
+      },
+      "about": {
+        "@id": "https://tonytony.ch/de/services/web-design#service"
+      },
+      "breadcrumb": {
+        "@id": "https://tonytony.ch/de/services/web-design#breadcrumb"
+      },
+      "hasPart": {
+        "@id": "https://tonytony.ch/de/services/web-design#faq"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_en.jpg"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tonytony.ch/de/services/web-design#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://tonytony.ch/de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Leistungen",
+          "item": "https://tonytony.ch/de/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Webdesign",
+          "item": "https://tonytony.ch/de/services/web-design"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://tonytony.ch/de/services/web-design#service",
+      "name": "Webdesign",
+      "url": "https://tonytony.ch/de/services/web-design",
+      "serviceType": "Webdesign",
+      "description": "Konversionsorientiertes Webdesign für Schweizer Startups und KMU. Hochwertige, minimalistische Interfaces mit UX-Flow, Barrierefreiheit und Mobile-First-Logik.",
+      "category": [
+        "Webdesign",
+        "UX Design",
+        "UI Design",
+        "Konversionsorientiertes Design"
+      ],
+      "provider": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Switzerland",
+          "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Suisse romande",
+          "sameAs": "https://de.wikipedia.org/wiki/Romandie"
+        },
+        {
+          "@type": "Place",
+          "name": "German-speaking Switzerland",
+          "alternateName": "Deutschschweiz",
+          "sameAs": "https://de.wikipedia.org/wiki/Deutschschweiz"
+        },
+        {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Startups und KMU"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Webdesign",
+          "sameAs": "https://de.wikipedia.org/wiki/Webdesign"
+        },
+        {
+          "@type": "Thing",
+          "name": "User Experience",
+          "sameAs": "https://de.wikipedia.org/wiki/User_Experience"
+        },
+        {
+          "@type": "Thing",
+          "name": "Benutzerschnittstelle",
+          "sameAs": "https://de.wikipedia.org/wiki/Benutzerschnittstelle"
+        },
+        {
+          "@type": "Thing",
+          "name": "Barrierefreies Internet",
+          "sameAs": "https://de.wikipedia.org/wiki/Barrierefreies_Internet"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tonytony.ch/de/services/web-design#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was ist der Unterschied zwischen Webdesign und Webentwicklung?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Webdesign ist die visuelle und erlebnisorientierte Ebene — Layout, Typografie, Hierarchie, UX-Flow, Konversionslogik. Webentwicklung ist die technische Umsetzung, die das Ganze in Webflow zum Leben erweckt: sauberer Code, CMS-Struktur und Performance-Optimierung. Ich übernehme beides durchgehend, sodass die Reibung bei der Übergabe, die viele Projekte scheitern lässt, schlicht nicht entsteht."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Gestaltest du von Grund auf oder arbeitest du mit bestehenden Markenrichtlinien?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Beides. Wenn du ein etabliertes Markensystem hast, übertrage ich es aufs Web, ohne seine Logik zu brechen — mit Respekt für Typografie, Farbpalette und Tonalität. Wenn nicht, kann ich die visuelle Identität zuerst entwerfen oder mit deinem bestehenden Designer zusammenarbeiten. So oder so fühlt sich die fertige Website kohärent an — nicht zusammengeflickt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Funktioniert das Design auf Mobilgeräten und ist es barrierefrei?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja — Mobile-First und WCAG-konform von Anfang an, nicht als Nachgedanke. Jedes Layout wird zuerst für Touch gestaltet, mit angemessenen Tap-Targets, lesbaren Kontrasten, semantischer Struktur und Tastaturnavigation. Deine Website sieht auf einem iPhone scharf aus und bleibt nutzbar für Besucher, die auf assistive Technologien angewiesen sind."
+          }
+        }
+      ]
+    }
+  ]
+}

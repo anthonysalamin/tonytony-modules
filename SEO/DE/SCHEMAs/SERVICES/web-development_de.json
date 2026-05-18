@@ -1,0 +1,144 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://tonytony.ch/de/services/web-development#webpage",
+      "url": "https://tonytony.ch/de/services/web-development",
+      "name": "Webflow-Entwicklung in der Schweiz | TONYTONY",
+      "description": "Webflow-Entwicklung für Schweizer Startups und KMU — Webflow Expert mit sauberem Code, CMS-Architektur, GSAP-Animationen und mehrsprachigen Setups.",
+      "inLanguage": "de-CH",
+      "isPartOf": {
+        "@id": "https://tonytony.ch/#website"
+      },
+      "about": {
+        "@id": "https://tonytony.ch/de/services/web-development#service"
+      },
+      "breadcrumb": {
+        "@id": "https://tonytony.ch/de/services/web-development#breadcrumb"
+      },
+      "hasPart": {
+        "@id": "https://tonytony.ch/de/services/web-development#faq"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_en.jpg"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tonytony.ch/de/services/web-development#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://tonytony.ch/de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Leistungen",
+          "item": "https://tonytony.ch/de/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Web-Entwicklung",
+          "item": "https://tonytony.ch/de/services/web-development"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://tonytony.ch/de/services/web-development#service",
+      "name": "Webflow-Entwicklung",
+      "url": "https://tonytony.ch/de/services/web-development",
+      "serviceType": "Webflow-Entwicklung",
+      "description": "Webflow-Entwicklung für Schweizer Startups und KMU — Webflow Expert mit sauberem Code, CMS-Architektur, GSAP-Animationen und mehrsprachigen Setups.",
+      "category": [
+        "Webflow-Entwicklung",
+        "Web-Entwicklung",
+        "CMS Architektur",
+        "Performance-Optimierung",
+        "API Integration"
+      ],
+      "provider": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Switzerland",
+          "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Suisse romande",
+          "sameAs": "https://de.wikipedia.org/wiki/Romandie"
+        },
+        {
+          "@type": "Place",
+          "name": "German-speaking Switzerland",
+          "alternateName": "Deutschschweiz",
+          "sameAs": "https://de.wikipedia.org/wiki/Deutschschweiz"
+        },
+        {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Startups und KMU"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Webentwicklung",
+          "sameAs": "https://de.wikipedia.org/wiki/Webentwicklung"
+        },
+        {
+          "@type": "Thing",
+          "name": "Content-Management-System",
+          "sameAs": "https://de.wikipedia.org/wiki/Content-Management-System"
+        },
+        {
+          "@type": "Thing",
+          "name": "Programmierschnittstelle",
+          "sameAs": "https://de.wikipedia.org/wiki/Programmierschnittstelle"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tonytony.ch/de/services/web-development#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Webflow vs WordPress — was ist 2026 besser für ein Schweizer KMU?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Für die meisten Schweizer Startups und KMU gewinnt Webflow. Keine Plugin-Schwachstellen, keine monatlichen Sicherheits-Patches, keine Diskussionen darüber, 'wer den Server wartet'. Webflow übernimmt Hosting, SSL, CDN und Backups nativ — und bietet deinem Team ein visuelles CMS, das sie auch wirklich nutzen werden. WordPress macht immer noch Sinn für schweres E-Commerce oder komplexe Custom Apps. Für Marketing-Sites, Produktseiten, Portfolios und Lead-Gen-Seiten ist Webflow schneller im Launch, günstiger im Unterhalt und langfristig weitaus sicherer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kann ich die Website nach dem Launch selbst bearbeiten und aktualisieren?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja — genau darum geht es. Webflows CMS ist für Nicht-Entwickler konzipiert: Texte bearbeiten, Bilder austauschen, Blogbeiträge veröffentlichen, Teammitglieder aktualisieren, neue Case Studies launchen. Ich strukturiere jeden Build mit klaren Kollektionen, sinnvollen Feldnamen und Editor-Berechtigungen — damit dein Team Updates veröffentlichen kann, ohne Angst zu haben, Layouts zu beschädigen. Dazu gibt es ein kurzes Loom-Walkthrough mit den genauen Workflows für deine Website."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Integrierst du KI-Features, Chatbots oder Automationen in Webflow-Websites?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja — und das ist eine der am schnellsten wachsenden Anfragen im Jahr 2026. Typische Setups umfassen KI-gestützte Suche, Chat-Assistenten auf Basis von OpenAI oder Claude, Lead-Qualifizierungs-Bots, n8n- oder Make-Automationen, die bei Formular-Einreichungen ausgelöst werden, sowie automatisch generierte CMS-Inhalte aus freigegebenen Quellen. Sauber umgesetzt — mit Rate-Limits, Fallbacks und markensicheren Leitplanken — sodass die KI-Ebene deinem Geschäft tatsächlich hilft, statt zur nächsten Sache zu werden, die man babysitten muss."
+          }
+        }
+      ]
+    }
+  ]
+}

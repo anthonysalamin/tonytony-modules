@@ -1,0 +1,144 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://tonytony.ch/de/services/seo-aeo-cro#webpage",
+      "url": "https://tonytony.ch/de/services/seo-aeo-cro",
+      "name": "SEO, AEO & CRO Leistungen in der Schweiz | TONYTONY",
+      "description": "Technisches SEO, Answer Engine Optimization (AEO) und Conversion Rate Optimization für Schweizer Startups und KMU. Auf Google gefunden. Von KI zitiert.",
+      "inLanguage": "de-CH",
+      "isPartOf": {
+        "@id": "https://tonytony.ch/#website"
+      },
+      "about": {
+        "@id": "https://tonytony.ch/de/services/seo-aeo-cro#service"
+      },
+      "breadcrumb": {
+        "@id": "https://tonytony.ch/de/services/seo-aeo-cro#breadcrumb"
+      },
+      "hasPart": {
+        "@id": "https://tonytony.ch/de/services/seo-aeo-cro#faq"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_en.jpg"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tonytony.ch/de/services/seo-aeo-cro#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://tonytony.ch/de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Leistungen",
+          "item": "https://tonytony.ch/de/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SEO, AEO & CRO",
+          "item": "https://tonytony.ch/de/services/seo-aeo-cro"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://tonytony.ch/de/services/seo-aeo-cro#service",
+      "name": "SEO, AEO & CRO",
+      "url": "https://tonytony.ch/de/services/seo-aeo-cro",
+      "serviceType": "Suchmaschinenoptimierung",
+      "description": "Technisches SEO, Answer Engine Optimization (AEO) und Conversion Rate Optimization für Schweizer Startups und KMU. Auf Google gefunden. Von KI zitiert.",
+      "category": [
+        "SEO",
+        "AEO",
+        "CRO",
+        "Technisches SEO",
+        "Strukturierte Daten"
+      ],
+      "provider": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Switzerland",
+          "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Suisse romande",
+          "sameAs": "https://de.wikipedia.org/wiki/Romandie"
+        },
+        {
+          "@type": "Place",
+          "name": "German-speaking Switzerland",
+          "alternateName": "Deutschschweiz",
+          "sameAs": "https://de.wikipedia.org/wiki/Deutschschweiz"
+        },
+        {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Startups und KMU"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Suchmaschinenoptimierung",
+          "sameAs": "https://de.wikipedia.org/wiki/Suchmaschinenoptimierung"
+        },
+        {
+          "@type": "Thing",
+          "name": "Konversionsrate",
+          "sameAs": "https://de.wikipedia.org/wiki/Konversionsrate"
+        },
+        {
+          "@type": "Thing",
+          "name": "Schema.org",
+          "sameAs": "https://de.wikipedia.org/wiki/Schema.org"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tonytony.ch/de/services/seo-aeo-cro#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was ist der Unterschied zwischen SEO und AEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO (Search Engine Optimization) optimiert deine Website für das Ranking in klassischen Suchmaschinen wie Google und Bing — mittels Keywords, Backlinks und technischer Signale. AEO (Answer Engine Optimization) optimiert deine Inhalte so, dass sie von KI-Antwortmaschinen wie ChatGPT, Perplexity, Claude, Gemini und Google AI Overviews zitiert werden. SEO gewinnt Klicks aus Suchergebnissen. AEO gewinnt Erwähnungen in KI-generierten Antworten. Im Jahr 2026 ist beides wichtig — und beide teilen dieselbe technische Grundlage: strukturierte Daten, klare Entitätssignale und maßgebliche Inhalte."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie lange dauert es, bis ich SEO-Ergebnisse sehe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Technische SEO-Verbesserungen (Core Web Vitals, Indexierung, Schema) zeigen sich innerhalb von 2 bis 6 Wochen, sobald Google neu crawlt. Ranking-Verbesserungen für kompetitive Keywords benötigen typischerweise 3 bis 6 Monate konsequente Content- und Technikarbeit. AEO-Ergebnisse kommen schneller — KI-Systeme aktualisieren ihre Trainings- und Retrieval-Pipelines häufiger, sodass gut strukturierte Inhalte bereits innerhalb von Wochen zitiert werden können. Schweizer Märkte sind tendenziell weniger gesättigt als der englischsprachige Raum, was hilft."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kann ich AEO-Performance messen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja — auch wenn es noch eine junge Disziplin ist. Tools wie Otterly, Profound und Peec AI tracken Markenerwähnungen in ChatGPT, Perplexity, Claude und Gemini. Zusätzlich kannst du Referral-Traffic von KI-Plattformen in GA4 beobachten, das Wachstum des Branded-Search-Volumens verfolgen (ein nachgelagertes AEO-Signal) und spezifische Anfragen manuell auditieren. Ich richte zu Beginn jedes Engagements Messframeworks ein, damit wir wissen, was sich bewegt — und was nicht."
+          }
+        }
+      ]
+    }
+  ]
+}

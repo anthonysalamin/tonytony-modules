@@ -1,0 +1,143 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://tonytony.ch/de/services/strategy#webpage",
+      "url": "https://tonytony.ch/de/services/strategy",
+      "name": "Web-Strategie & Positionierung in der Schweiz | TONYTONY",
+      "description": "Web-Strategie, Positionierung und Messaging für Schweizer Startups und KMU. Schärfe Zielgruppe, Angebot und Narrativ — bevor Design und Entwicklung beginnen.",
+      "inLanguage": "de-CH",
+      "isPartOf": {
+        "@id": "https://tonytony.ch/#website"
+      },
+      "about": {
+        "@id": "https://tonytony.ch/de/services/strategy#service"
+      },
+      "breadcrumb": {
+        "@id": "https://tonytony.ch/de/services/strategy#breadcrumb"
+      },
+      "hasPart": {
+        "@id": "https://tonytony.ch/de/services/strategy#faq"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_en.jpg"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tonytony.ch/de/services/strategy#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://tonytony.ch/de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Leistungen",
+          "item": "https://tonytony.ch/de/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Strategie",
+          "item": "https://tonytony.ch/de/services/strategy"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://tonytony.ch/de/services/strategy#service",
+      "name": "Web-Strategie",
+      "url": "https://tonytony.ch/de/services/strategy",
+      "serviceType": "Web-Strategie & Positionierung",
+      "description": "Web-Strategie, Positionierung und Messaging für Schweizer Startups und KMU. Schärfe Zielgruppe, Angebot und Narrativ — bevor Design und Entwicklung beginnen.",
+      "category": [
+        "Web-Strategie",
+        "Positionierung",
+        "Messaging",
+        "Digitale Strategie"
+      ],
+      "provider": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Switzerland",
+          "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Suisse romande",
+          "sameAs": "https://de.wikipedia.org/wiki/Romandie"
+        },
+        {
+          "@type": "Place",
+          "name": "German-speaking Switzerland",
+          "alternateName": "Deutschschweiz",
+          "sameAs": "https://de.wikipedia.org/wiki/Deutschschweiz"
+        },
+        {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Startups und KMU"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Positionierung",
+          "sameAs": "https://de.wikipedia.org/wiki/Positionierung_(Marketing)"
+        },
+        {
+          "@type": "Thing",
+          "name": "Markenführung",
+          "sameAs": "https://de.wikipedia.org/wiki/Markenf%C3%BChrung"
+        },
+        {
+          "@type": "Thing",
+          "name": "Zielgruppe",
+          "sameAs": "https://de.wikipedia.org/wiki/Zielgruppe"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tonytony.ch/de/services/strategy#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Brauche ich einen Strategie-Sprint, wenn ich meine Zielgruppe schon kenne?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Manchmal ja, manchmal nein. Wenn du dein ideales Kundenprofil, deine Top 3 Wertversprechen, deine wichtigsten Einwände und deine Kernbotschaft in 30 Minuten aufschreiben kannst — brauchst du wahrscheinlich keinen kompletten Sprint, sondern nur Design und Entwicklung. Fällt dir diese Übung schwer, wird deine Website diesen Mangel an Klarheit widerspiegeln, egal wie gut sie gestaltet ist. Eine kurze Strategie-Session amortisiert sich meist allein durch reduzierte Revisionsschleifen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was ist das Ergebnis eines Strategie-Sprints — ein Dokument, ein Deck, ein Workshop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ein strukturiertes strategisches Brief, das Zielgruppendefinition, Positionierungsstatement, Messaging-Framework, Wertversprechen, Einwandkarte und eine Seitenstrukturempfehlung abdeckt. Als strukturiertes Google Doc geliefert, das Ihr Team tatsächlich nachschlagen und aktualisieren kann — kein statisches PDF, das innerhalb einer Woche veraltet. Plus eine Arbeitssitzung zur Abstimmung der Stakeholder, bevor das Design beginnt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie lange dauert ein Strategie-Sprint, und kann er parallel zum Design laufen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typischerweise 1 bis 2 Wochen, abhängig vom Umfang und der Verfügbarkeit der Stakeholder. Bei engen Timelines kann die Strategie-Phase mit frühem Design-Exploration überlappen — aber der Kern von Positionierung und Messaging-Framework muss fixiert sein, bevor detailliertes Design beginnt. Sonst dekorierst du nur Annahmen. Strategie-First spart langfristig Zeit, weil es die 'lasst uns die Hero-Sektion nochmal neu machen'-Schleife spät im Projekt verhindert."
+          }
+        }
+      ]
+    }
+  ]
+}

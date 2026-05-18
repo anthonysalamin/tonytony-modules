@@ -1,0 +1,149 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://tonytony.ch/de/services/branding#webpage",
+      "url": "https://tonytony.ch/de/services/branding",
+      "name": "Markenidentität & Branding in der Schweiz | TONYTONY",
+      "description": "Markenidentitätssysteme für Schweizer Startups und KMU — Logotype, Typografie, Farbsystem und Anwendungsrichtlinien. Skalierbare Grundlagen, die Bestand haben.",
+      "inLanguage": "de-CH",
+      "isPartOf": {
+        "@id": "https://tonytony.ch/#website"
+      },
+      "about": {
+        "@id": "https://tonytony.ch/de/services/branding#service"
+      },
+      "breadcrumb": {
+        "@id": "https://tonytony.ch/de/services/branding#breadcrumb"
+      },
+      "hasPart": {
+        "@id": "https://tonytony.ch/de/services/branding#faq"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_en.jpg"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tonytony.ch/de/services/branding#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://tonytony.ch/de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Leistungen",
+          "item": "https://tonytony.ch/de/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Branding",
+          "item": "https://tonytony.ch/de/services/branding"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://tonytony.ch/de/services/branding#service",
+      "name": "Markenidentität",
+      "url": "https://tonytony.ch/de/services/branding",
+      "serviceType": "Markenidentität & Branding",
+      "description": "Markenidentitätssysteme für Schweizer Startups und KMU — Logotype, Typografie, Farbsystem und Anwendungsrichtlinien. Skalierbare Grundlagen, die Bestand haben.",
+      "category": [
+        "Markenidentität",
+        "Brand Design",
+        "Visuelle Identität",
+        "Logo Design",
+        "Design Systems"
+      ],
+      "provider": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Switzerland",
+          "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Suisse romande",
+          "sameAs": "https://de.wikipedia.org/wiki/Romandie"
+        },
+        {
+          "@type": "Place",
+          "name": "German-speaking Switzerland",
+          "alternateName": "Deutschschweiz",
+          "sameAs": "https://de.wikipedia.org/wiki/Deutschschweiz"
+        },
+        {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Startups und KMU"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Marke",
+          "sameAs": "https://de.wikipedia.org/wiki/Marke_(Marketing)"
+        },
+        {
+          "@type": "Thing",
+          "name": "Corporate Design",
+          "sameAs": "https://de.wikipedia.org/wiki/Corporate_Design"
+        },
+        {
+          "@type": "Thing",
+          "name": "Logo",
+          "sameAs": "https://de.wikipedia.org/wiki/Logo_(Zeichen)"
+        },
+        {
+          "@type": "Thing",
+          "name": "Typografie",
+          "sameAs": "https://de.wikipedia.org/wiki/Typografie"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tonytony.ch/de/services/branding#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Gestaltest du Logos im Rahmen eines Website-Projekts oder nur separat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Beides. Die meisten Website-Projekte erfordern zumindest etwas Markenarbeit — ein Logo-Refresh, ein verfeinertes Farbsystem, aktualisierte Typografie — und das übernehme ich im Rahmen des Projekts, wenn es proportional passt. Für vollständige Markenidentitätssysteme mit umfassender Logo-Entwicklung, Brand Books und Multi-Touchpoint-Richtlinien ist es ein eigenes Projekt. So oder so: Deine Website und deine Marke bilden am Ende ein kohärentes System und nicht zwei getrennte Ergebnisse, die beim Launch zusammengeflickt werden."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was ist der Unterschied zwischen einem Logo und einer Markenidentität?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ein Logo ist ein einzelnes Asset. Eine Markenidentität ist das System drumherum — Logotype, Typografie-Hierarchie, Farbpalette, Spacing-Regeln, Ikonografie, Bildsprache, Tone of Voice und Anwendungsrichtlinien. Ein Logo allein sagt dir, wie eine Marke heisst. Eine Identität sagt dir, wofür sie steht, wie sie sich verhält und warum sie im Gedächtnis bleibt. Deshalb können zwei Marken mit ähnlichen Logos im Markt völlig unterschiedlich wirken."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kannst du eine bestehende Marke auffrischen, ohne einen kompletten Rebrand zu machen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja — und oft ist das der klügere Schritt. Ein vollständiger Rebrand setzt Markenwert zurück und kann bestehende Kunden verwirren. Ein Brand Refresh hingegen entwickelt weiter, was bereits funktioniert: modernisierte Logotype, aktualisierte Typografie, verfeinerte Farbpalette, straffere Richtlinien. Ich auditiere, was bleibt, was geschärft wird und was geht. Das Ergebnis ist eine Marke, die aktuell wirkt, ohne den Wiedererkennungswert zu verlieren, den du aufgebaut hast — zu einem Bruchteil der Kosten und Dauer eines Neuanfangs."
+          }
+        }
+      ]
+    }
+  ]
+}
