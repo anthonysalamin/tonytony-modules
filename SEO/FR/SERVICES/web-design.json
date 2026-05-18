@@ -1,0 +1,161 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://tonytony.ch/fr/services/web-design#webpage",
+      "url": "https://tonytony.ch/fr/services/web-design",
+      "name": "Design Web en Suisse | TONYTONY",
+      "description": "Design web orienté conversion pour startups et PME suisses. Interfaces premium et minimalistes avec UX, accessibilité et logique mobile-first intégrées.",
+      "inLanguage": "fr-CH",
+      "isPartOf": {
+        "@id": "https://tonytony.ch/#website"
+      },
+      "about": {
+        "@id": "https://tonytony.ch/fr/services/web-design#service"
+      },
+      "breadcrumb": {
+        "@id": "https://tonytony.ch/fr/services/web-design#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_fr.jpg"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tonytony.ch/fr/services/web-design#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://tonytony.ch/fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://tonytony.ch/fr/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Design Web",
+          "item": "https://tonytony.ch/fr/services/web-design"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://tonytony.ch/fr/services/web-design#service",
+      "name": "Design Web",
+      "url": "https://tonytony.ch/fr/services/web-design",
+      "serviceType": "Web Design",
+      "description": "Design web orienté conversion pour startups et PME suisses — landing pages, sites marketing, sites produits et portfolios. Interfaces premium et minimalistes avec une typographie soignée, une logique UX, le mobile-first et l'accessibilité WCAG intégrés dès le départ.",
+      "category": [
+        "Design Web",
+        "Design UX",
+        "Design UI",
+        "Design orienté conversion"
+      ],
+      "provider": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Suisse",
+          "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Suisse romande",
+          "sameAs": "https://en.wikipedia.org/wiki/Romandy"
+        },
+        {
+          "@type": "Place",
+          "name": "Suisse alémanique",
+          "alternateName": "Deutschschweiz",
+          "sameAs": "https://en.wikipedia.org/wiki/German-speaking_Switzerland"
+        },
+        {
+          "@type": "Place",
+          "name": "International"
+        }
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Startups et PME"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services de Design Web",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "UI orientée conversion",
+              "description": "Un design UI qui réduit les frictions et guide les utilisateurs vers l'action — placement des CTAs, ratios de contraste et zones de tap validés contre des comportements utilisateurs réels."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Optimisation du flux UX",
+              "description": "Cartographie complète du parcours utilisateur de l'atterrissage à la conversion — audits de points de sortie, refonte de la logique de navigation et restructuration des pages autour des moments de décision."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Interfaces modernes et minimalistes",
+              "description": "Les principes du design suisse rencontrent le craft web contemporain — espaces blancs généreux, associations typographiques affirmées, systèmes de couleurs disciplinés et motion subtil."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Structure prête pour le marketing",
+              "description": "Sections modulaires, composants réutilisables et champs CMS propres, prêts pour les landing pages et les tests A/B. Conçu pour que les équipes marketing livrent plus vite sans dépendre des développeurs."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tonytony.ch/fr/services/web-design#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quelle est la différence entre le design web et le développement web ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le design web est la couche visuelle et expérientielle — mise en page, typographie, hiérarchie, flux UX, logique de conversion. Le développement web est la construction technique qui lui donne vie dans Webflow avec un code propre, une structure CMS et une optimisation des performances. Je couvre les deux de bout en bout, ce qui élimine les frictions de passation qui font généralement échouer les projets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Concevez-vous from scratch ou travaillez-vous avec des chartes graphiques existantes ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les deux. Si vous disposez d'un système de marque établi, je l'étends au web sans en briser la logique — en respectant votre typographie, votre palette de couleurs et votre ton. Si ce n'est pas le cas, je peux concevoir l'identité visuelle en amont ou collaborer avec votre designer. Dans tous les cas, le site final est cohérent, pas rafistolé."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le design sera-t-il adapté au mobile et accessible ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui — mobile-first et conforme WCAG par défaut, pas en guise d'ajout tardif. Chaque mise en page est conçue pour le tactile avant le desktop, avec des zones de tap adaptées, un contraste lisible, une structure sémantique et une navigation au clavier. Votre site est impeccable sur l'écran d'un utilisateur iPhone et reste utilisable pour les visiteurs qui dépendent de technologies d'assistance."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://tonytony.ch/fr/services/branding#webpage",
+      "url": "https://tonytony.ch/fr/services/branding",
+      "name": "Design d'Identité de Marque en Suisse | TONYTONY",
+      "description": "Systèmes d'identité de marque pour startups et PME suisses — logotype, typographie, couleur et règles d'utilisation. Des fondations évolutives conçues pour durer.",
+      "inLanguage": "fr-CH",
+      "isPartOf": {
+        "@id": "https://tonytony.ch/#website"
+      },
+      "about": {
+        "@id": "https://tonytony.ch/fr/services/branding#service"
+      },
+      "breadcrumb": {
+        "@id": "https://tonytony.ch/fr/services/branding#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_fr.jpg"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tonytony.ch/fr/services/branding#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://tonytony.ch/fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://tonytony.ch/fr/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Branding",
+          "item": "https://tonytony.ch/fr/services/branding"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://tonytony.ch/fr/services/branding#service",
+      "name": "Identité de Marque",
+      "url": "https://tonytony.ch/fr/services/branding",
+      "serviceType": "Brand Identity Design",
+      "description": "Systèmes d'identité de marque pour startups et PME suisses — logotype, wordmark, hiérarchie typographique, systèmes de couleurs, logique d'espacement, iconographie, direction photographique et guidelines d'utilisation livrés sous forme de brand book opérationnel. Fondé sur la stratégie, conçu pour évoluer.",
+      "category": [
+        "Identité de Marque",
+        "Design de Marque",
+        "Identité Visuelle",
+        "Design de Logo",
+        "Systèmes de Marque",
+        "Design Systems"
+      ],
+      "provider": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Suisse",
+          "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Suisse romande",
+          "sameAs": "https://en.wikipedia.org/wiki/Romandy"
+        },
+        {
+          "@type": "Place",
+          "name": "Suisse alémanique",
+          "alternateName": "Deutschschweiz",
+          "sameAs": "https://en.wikipedia.org/wiki/German-speaking_Switzerland"
+        },
+        {
+          "@type": "Place",
+          "name": "International"
+        }
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Startups et PME"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Marque",
+          "sameAs": "https://en.wikipedia.org/wiki/Brand"
+        },
+        {
+          "@type": "Thing",
+          "name": "Identité d'entreprise",
+          "sameAs": "https://en.wikipedia.org/wiki/Corporate_identity"
+        },
+        {
+          "@type": "Thing",
+          "name": "Identité visuelle",
+          "sameAs": "https://en.wikipedia.org/wiki/Corporate_identity"
+        },
+        {
+          "@type": "Thing",
+          "name": "Logo",
+          "sameAs": "https://en.wikipedia.org/wiki/Logo"
+        },
+        {
+          "@type": "Thing",
+          "name": "Typographie",
+          "sameAs": "https://en.wikipedia.org/wiki/Typography"
+        },
+        {
+          "@type": "Thing",
+          "name": "Design System",
+          "sameAs": "https://en.wikipedia.org/wiki/Design_system"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services d'Identité de Marque",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Systèmes d'identité visuelle",
+              "description": "Systèmes d'identité complets avec logotype, wordmark, hiérarchie typographique, palette de couleurs avec ratios de contraste accessibles, règles d'espacement, logique de grille, iconographie et direction photographique. Livré sous forme de brand book opérationnel avec des guidelines d'utilisation claires et des assets téléchargeables."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Positionnement par le design",
+              "description": "Choix de couleurs, personnalité typographique, rythme de composition et ton visuel calibrés pour renforcer le positionnement de marque. Décisions de design ancrées dans la stratégie — pour que le langage visuel communique qui vous êtes avant même qu'un seul mot soit lu."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fondations de marque évolutives",
+              "description": "Systèmes de marque construits sur des règles, des tokens et des composants — design tokens réutilisables pour la couleur et la typographie, déclinaisons de logo flexibles, principes de mise en page qui résistent aux nouveaux formats, et conventions de nommage claires. Conçus pour évoluer proprement sans rebranding coûteux."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cohérence du design sur tous les points de contact",
+              "description": "Une expérience de marque cohérente sur le site web, le pitch deck, les contenus sociaux, les templates de newsletter, les supports print, la signalétique, les visuels d'événements et les objets promotionnels. Des templates prêts à l'emploi et des bibliothèques d'assets permettent aux équipes de rester on-brand partout."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tonytony.ch/fr/services/branding#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Concevez-vous des logos dans le cadre d'un projet de site web, ou uniquement séparément ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les deux. La plupart des projets de sites web nécessitent au moins un travail de marque — un rafraîchissement du logo, un système de couleurs affiné, une typographie mise à jour — et je le gère dans le périmètre du projet lorsque c'est proportionné. Pour les systèmes d'identité de marque complets avec une exploration logo approfondie, des brand books et des guidelines multi-touchpoints, c'est une mission dédiée. Dans tous les cas, votre site et votre marque forment un système cohérent, et non deux livrables déconnectés assemblés à la va-vite au moment du lancement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle est la différence entre un logo et une identité de marque ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un logo est un seul asset. Une identité de marque est le système qui l'entoure — logotype, hiérarchie typographique, palette de couleurs, règles d'espacement, iconographie, direction photographique, ton éditorial et guidelines d'utilisation. Un logo seul indique comment s'appelle une marque. Une identité dit ce qu'elle représente, comment elle se comporte et pourquoi elle est mémorable. C'est pourquoi deux marques avec des logos similaires peuvent donner des impressions totalement différentes sur le marché."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pouvez-vous rafraîchir une marque existante sans faire un rebranding complet ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui — et c'est souvent le choix le plus judicieux. Un rebranding complet remet à zéro le capital de marque et peut dérouter les clients existants. Un brand refresh fait évoluer ce qui fonctionne déjà : logotype modernisé, typographie mise à jour, palette de couleurs affinée, guidelines resserrées. J'audite ce qu'il faut conserver, ce qu'il faut affûter, ce qu'il faut abandonner. Le résultat est une marque qui paraît actuelle sans perdre la reconnaissance que vous avez construite — pour une fraction du coût et du délai d'un projet from scratch."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://tonytony.ch/fr/services/strategy#webpage",
+      "url": "https://tonytony.ch/fr/services/strategy",
+      "name": "Stratégie Web & Positionnement en Suisse | TONYTONY",
+      "description": "Stratégie web, positionnement et messaging pour startups et PME suisses. Affinez votre audience, votre offre et votre narrative avant de commencer le design et le développement.",
+      "inLanguage": "fr-CH",
+      "isPartOf": {
+        "@id": "https://tonytony.ch/#website"
+      },
+      "about": {
+        "@id": "https://tonytony.ch/fr/services/strategy#service"
+      },
+      "breadcrumb": {
+        "@id": "https://tonytony.ch/fr/services/strategy#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_fr.jpg"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tonytony.ch/fr/services/strategy#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://tonytony.ch/fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://tonytony.ch/fr/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Stratégie",
+          "item": "https://tonytony.ch/fr/services/strategy"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://tonytony.ch/fr/services/strategy#service",
+      "name": "Stratégie Web",
+      "url": "https://tonytony.ch/fr/services/strategy",
+      "serviceType": "Web Strategy & Positioning",
+      "description": "Sprints de stratégie web, positionnement et messaging pour startups et PME suisses. Définition de l'audience, positionnement concurrentiel, affûtage de la proposition de valeur, architecture de messaging et logique de conversion — la fondation stratégique sur laquelle votre designer, développeur, copywriter et équipe marketing peuvent tous s'appuyer.",
+      "category": [
+        "Stratégie Web",
+        "Stratégie de Marque",
+        "Stratégie de Positionnement",
+        "Stratégie de Messaging",
+        "Stratégie Marketing",
+        "Stratégie Digitale"
+      ],
+      "provider": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Suisse",
+          "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Suisse romande",
+          "sameAs": "https://en.wikipedia.org/wiki/Romandy"
+        },
+        {
+          "@type": "Place",
+          "name": "Suisse alémanique",
+          "alternateName": "Deutschschweiz",
+          "sameAs": "https://en.wikipedia.org/wiki/German-speaking_Switzerland"
+        },
+        {
+          "@type": "Place",
+          "name": "International"
+        }
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Startups et PME"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Positionnement",
+          "sameAs": "https://en.wikipedia.org/wiki/Positioning_(marketing)"
+        },
+        {
+          "@type": "Thing",
+          "name": "Proposition de valeur",
+          "sameAs": "https://en.wikipedia.org/wiki/Value_proposition"
+        },
+        {
+          "@type": "Thing",
+          "name": "Stratégie de marque",
+          "sameAs": "https://en.wikipedia.org/wiki/Brand_management"
+        },
+        {
+          "@type": "Thing",
+          "name": "Audience cible",
+          "sameAs": "https://en.wikipedia.org/wiki/Target_audience"
+        },
+        {
+          "@type": "Thing",
+          "name": "Communication marketing",
+          "sameAs": "https://en.wikipedia.org/wiki/Marketing_communications"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services de Stratégie Web",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Audience & positionnement",
+              "description": "Définition du profil client idéal, cartographie des points de douleur, audit du paysage concurrentiel et positionnement affûté qui rend votre offre immédiatement compréhensible — et incontestablement la vôtre."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Clarté de l'offre",
+              "description": "Mise à l'épreuve de la proposition de valeur, élimination du jargon, structuration des bénéfices autour des résultats concrets — pour distiller services ou produits en quelque chose que les prospects comprennent immédiatement en une phrase, un scroll, un coup d'œil."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Narrative & messaging",
+              "description": "Framework de messaging couvrant le message central, les preuves, le ton éditorial et les formulations clés — structuré pour tenir sur le site web, le pitch deck, les appels commerciaux, les contenus sociaux et les conversations avec les investisseurs."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Réflexion conversion dès le départ",
+              "description": "Structure des pages, logique des CTAs, gestion des objections, cartographie du funnel et signaux de confiance planifiés avant qu'une seule maquette n'existe — pour que le site se lance comme un outil de vente opérationnel, et non comme une brochure en attente d'optimisation."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tonytony.ch/fr/services/strategy#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Ai-je besoin d'un strategy sprint si je connais déjà mon audience ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parfois oui, parfois non. Si vous pouvez noter en 30 minutes votre profil client idéal, vos 3 principales propositions de valeur, vos objections clés et votre messaging central — vous n'avez probablement pas besoin d'un sprint complet, juste d'un design et d'un build. Si cet exercice vous semble difficile, votre site web reflétera ce manque de clarté quelle que soit la qualité du design. Une courte session stratégique s'autofinance généralement rien qu'en cycles de révisions évités."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quel est le résultat d'un strategy sprint — un document, un deck, un workshop ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un brief stratégique opérationnel couvrant la définition de l'audience, le statement de positionnement, le framework de messaging, les propositions de valeur, la carte des objections et une recommandation de structure de site. Livré sous forme d'un Google Doc structuré que votre équipe peut vraiment consulter et mettre à jour, pas un PDF statique qui devient obsolète en une semaine. Plus une session de travail pour aligner les parties prenantes avant que le design ne commence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de temps dure un strategy sprint, et peut-il se dérouler en parallèle du design ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En général 1 à 2 semaines, selon la portée du projet et la disponibilité des parties prenantes. Pour les délais serrés, la phase stratégique peut chevaucher une exploration design préliminaire — mais le positionnement central et le framework de messaging doivent être verrouillés avant que le design détaillé ne commence. Sinon, on ne fait que décorer des hypothèses. La stratégie en premier économise du temps sur le long terme en évitant la boucle 'refaisons la section hero' en fin de projet."
+          }
+        }
+      ]
+    }
+  ]
+}

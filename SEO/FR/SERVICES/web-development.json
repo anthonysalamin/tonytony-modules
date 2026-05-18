@@ -1,0 +1,170 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://tonytony.ch/fr/services/web-development#webpage",
+      "url": "https://tonytony.ch/fr/services/web-development",
+      "name": "Développement Webflow en Suisse | TONYTONY",
+      "description": "Développement Webflow pour startups et PME suisses — builds Webflow Expert avec code propre, architecture CMS, animations GSAP et configurations multilingues.",
+      "inLanguage": "fr-CH",
+      "isPartOf": {
+        "@id": "https://tonytony.ch/#website"
+      },
+      "about": {
+        "@id": "https://tonytony.ch/fr/services/web-development#service"
+      },
+      "breadcrumb": {
+        "@id": "https://tonytony.ch/fr/services/web-development#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_fr.jpg"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tonytony.ch/fr/services/web-development#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://tonytony.ch/fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://tonytony.ch/fr/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Développement Web",
+          "item": "https://tonytony.ch/fr/services/web-development"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://tonytony.ch/fr/services/web-development#service",
+      "name": "Développement Webflow",
+      "url": "https://tonytony.ch/fr/services/web-development",
+      "serviceType": "Webflow Development",
+      "description": "Développement Webflow de niveau production pour startups et PME suisses. Code sémantique propre, architecture CMS évolutive, Core Web Vitals au vert, animations GSAP, configurations multilingues (EN/FR/DE) et intégrations CRM, Stripe, n8n et APIs personnalisées.",
+      "category": [
+        "Développement Webflow",
+        "Développement Web",
+        "Architecture CMS",
+        "Optimisation des performances",
+        "Intégration API"
+      ],
+      "provider": {
+        "@id": "https://tonytony.ch/#professionalservice"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Suisse",
+          "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Suisse romande",
+          "sameAs": "https://en.wikipedia.org/wiki/Romandy"
+        },
+        {
+          "@type": "Place",
+          "name": "Suisse alémanique",
+          "alternateName": "Deutschschweiz",
+          "sameAs": "https://en.wikipedia.org/wiki/German-speaking_Switzerland"
+        },
+        {
+          "@type": "Place",
+          "name": "International"
+        }
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Startups et PME"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services de Développement Webflow",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Développement Webflow",
+              "description": "Builds Webflow de niveau production avec HTML sémantique propre, collections CMS évolutives et architecture maintenable — conçus pour que les équipes puissent éditer, étendre et passer le relais sans regrets."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Builds orientés performance",
+              "description": "Conçus pour des Core Web Vitals au vert (LCP, CLS, INP) grâce à l'optimisation des assets, un lazy-loading intelligent et une gestion rigoureuse des scripts tiers. Rapide sous trafic réel, pas seulement en conditions de laboratoire."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Interactions avancées (GSAP)",
+              "description": "Motion intentionnel avec GSAP — animations pilotées par le scroll, micro-interactions et séquences hero chorégraphiées. Développé avec le support de prefers-reduced-motion et la performance en tête."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Architecture CMS multilingue",
+              "description": "Configurations Webflow multilingues natives — français, allemand, anglais et au-delà — avec hreflang approprié, URLs localisées et collections CMS structurées pour des workflows de traduction sans friction."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Intégrations API",
+              "description": "Connectez Webflow au reste de votre stack — HubSpot, Pipedrive, Airtable, Stripe, automations n8n, scénarios Make et APIs personnalisées — pour que votre site fonctionne comme une composante à part entière de votre système métier."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tonytony.ch/fr/services/web-development#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Webflow vs WordPress — lequel est le meilleur pour une PME suisse en 2026 ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pour la plupart des startups et PME suisses, Webflow l'emporte. Pas de vulnérabilités liées aux plugins, pas de correctifs de sécurité mensuels, pas de discussions sur 'qui maintient le serveur ?'. Webflow gère nativement l'hébergement, le SSL, le CDN et les sauvegardes — tout en offrant à votre équipe un CMS visuel qu'elle utilisera vraiment. WordPress reste pertinent pour l'e-commerce avancé ou les applications personnalisées complexes. Pour les sites marketing, sites produits, portfolios et pages de génération de leads — Webflow est plus rapide à livrer, moins coûteux à maintenir et bien plus sécurisé sur le long terme."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Puis-je modifier et mettre à jour le site moi-même après le lancement ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui — c'est tout l'intérêt. Le CMS de Webflow est conçu pour les non-développeurs : modifier le texte, changer les images, publier des articles de blog, mettre à jour les membres de l'équipe, lancer de nouvelles études de cas. Je structure chaque build avec des collections claires, des noms de champs sensés et des permissions réservées aux éditeurs, pour que votre équipe puisse publier des mises à jour sans risquer de casser les mises en page. Vous recevez également un walkthrough Loom couvrant les workflows exacts pour votre site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Intégrez-vous des fonctionnalités IA, des chatbots ou des automations dans les sites Webflow ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui — et c'est l'une des demandes qui connaît la plus forte croissance en 2026. Les configurations courantes incluent la recherche alimentée par IA, des assistants de chat basés sur OpenAI ou Claude, des bots de qualification de leads, des automations n8n ou Make déclenchées par des soumissions de formulaires, et du contenu CMS auto-généré depuis des sources validées. Développé correctement — avec des rate limits, des fallbacks et des garde-fous conformes à votre marque — pour que la couche IA aide réellement votre activité plutôt que de devenir la prochaine chose à surveiller."
+          }
+        }
+      ]
+    }
+  ]
+}
