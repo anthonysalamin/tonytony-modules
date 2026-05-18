@@ -17,6 +17,9 @@
       "breadcrumb": {
         "@id": "https://tonytony.ch/services/seo-aeo-cro#breadcrumb"
       },
+      "hasPart": {
+        "@id": "https://tonytony.ch/services/seo-aeo-cro#faq"
+      },
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_en.jpg"

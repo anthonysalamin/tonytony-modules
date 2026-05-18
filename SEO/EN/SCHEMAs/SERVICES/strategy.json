@@ -1,190 +1,193 @@
 {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebPage",
-      "@id": "https://tonytony.ch/services/strategy#webpage",
-      "url": "https://tonytony.ch/services/strategy",
-      "name": "Web Strategy & Positioning in Switzerland | TONYTONY",
-      "description": "Web strategy, positioning and messaging for Swiss startups and SMEs. Sharpen your audience, offer, and narrative before design and development begin.",
-      "inLanguage": "en",
-      "isPartOf": {
-        "@id": "https://tonytony.ch/#website"
-      },
-      "about": {
-        "@id": "https://tonytony.ch/services/strategy#service"
-      },
-      "breadcrumb": {
-        "@id": "https://tonytony.ch/services/strategy#breadcrumb"
-      },
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_en.jpg"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://tonytony.ch/services/strategy#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://tonytony.ch/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://tonytony.ch/services/strategy#webpage",
+        "url": "https://tonytony.ch/services/strategy",
+        "name": "Web Strategy & Positioning in Switzerland | TONYTONY",
+        "description": "Web strategy, positioning and messaging for Swiss startups and SMEs. Sharpen your audience, offer, and narrative before design and development begin.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://tonytony.ch/#website"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Services",
-          "item": "https://tonytony.ch/services"
+        "about": {
+          "@id": "https://tonytony.ch/services/strategy#service"
         },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Strategy",
-          "item": "https://tonytony.ch/services/strategy"
+        "breadcrumb": {
+          "@id": "https://tonytony.ch/services/strategy#breadcrumb"
+        },
+        "hasPart": {
+          "@id": "https://tonytony.ch/services/strategy#faq"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_en.jpg"
         }
-      ]
-    },
-    {
-      "@type": "Service",
-      "@id": "https://tonytony.ch/services/strategy#service",
-      "name": "Web Strategy",
-      "url": "https://tonytony.ch/services/strategy",
-      "serviceType": "Web Strategy & Positioning",
-      "description": "Web strategy, positioning and messaging sprints for Swiss startups and SMEs. Audience definition, competitive positioning, value proposition sharpening, messaging architecture, and conversion logic — the strategic foundation your designer, developer, copywriter and marketing team can all build from.",
-      "category": [
-        "Web Strategy",
-        "Brand Strategy",
-        "Positioning Strategy",
-        "Messaging Strategy",
-        "Marketing Strategy",
-        "Digital Strategy"
-      ],
-      "provider": {
-        "@id": "https://tonytony.ch/#professionalservice"
       },
-      "areaServed": [
-        {
-          "@type": "Country",
-          "name": "Switzerland",
-          "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Suisse romande",
-          "sameAs": "https://en.wikipedia.org/wiki/Romandy"
-        },
-        {
-          "@type": "Place",
-          "name": "German-speaking Switzerland",
-          "alternateName": "Deutschschweiz",
-          "sameAs": "https://en.wikipedia.org/wiki/German-speaking_Switzerland"
-        },
-        {
-          "@type": "Place",
-          "name": "Worldwide"
-        }
-      ],
-      "audience": {
-        "@type": "BusinessAudience",
-        "audienceType": "Startups and SMEs"
-      },
-      "about": [
-        {
-          "@type": "Thing",
-          "name": "Positioning",
-          "sameAs": "https://en.wikipedia.org/wiki/Positioning_(marketing)"
-        },
-        {
-          "@type": "Thing",
-          "name": "Value Proposition",
-          "sameAs": "https://en.wikipedia.org/wiki/Value_proposition"
-        },
-        {
-          "@type": "Thing",
-          "name": "Brand Strategy",
-          "sameAs": "https://en.wikipedia.org/wiki/Brand_management"
-        },
-        {
-          "@type": "Thing",
-          "name": "Target Audience",
-          "sameAs": "https://en.wikipedia.org/wiki/Target_audience"
-        },
-        {
-          "@type": "Thing",
-          "name": "Marketing Communications",
-          "sameAs": "https://en.wikipedia.org/wiki/Marketing_communications"
-        }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Web Strategy Services",
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://tonytony.ch/services/strategy#breadcrumb",
         "itemListElement": [
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Audience & positioning",
-              "description": "Ideal client profile definition, pain point mapping, competitive landscape auditing, and sharp positioning that makes your offer instantly understandable — and unmistakably yours."
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://tonytony.ch/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://tonytony.ch/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Strategy",
+            "item": "https://tonytony.ch/services/strategy"
+          }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://tonytony.ch/services/strategy#service",
+        "name": "Web Strategy",
+        "url": "https://tonytony.ch/services/strategy",
+        "serviceType": "Web Strategy & Positioning",
+        "description": "Web strategy, positioning and messaging sprints for Swiss startups and SMEs. Audience definition, competitive positioning, value proposition sharpening, messaging architecture, and conversion logic — the strategic foundation your designer, developer, copywriter and marketing team can all build from.",
+        "category": [
+          "Web Strategy",
+          "Brand Strategy",
+          "Positioning Strategy",
+          "Messaging Strategy",
+          "Marketing Strategy",
+          "Digital Strategy"
+        ],
+        "provider": {
+          "@id": "https://tonytony.ch/#professionalservice"
+        },
+        "areaServed": [
+          {
+            "@type": "Country",
+            "name": "Switzerland",
+            "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Suisse romande",
+            "sameAs": "https://en.wikipedia.org/wiki/Romandy"
+          },
+          {
+            "@type": "Place",
+            "name": "German-speaking Switzerland",
+            "alternateName": "Deutschschweiz",
+            "sameAs": "https://en.wikipedia.org/wiki/German-speaking_Switzerland"
+          },
+          {
+            "@type": "Place",
+            "name": "Worldwide"
+          }
+        ],
+        "audience": {
+          "@type": "BusinessAudience",
+          "audienceType": "Startups and SMEs"
+        },
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "Positioning",
+            "sameAs": "https://en.wikipedia.org/wiki/Positioning_(marketing)"
+          },
+          {
+            "@type": "Thing",
+            "name": "Value Proposition",
+            "sameAs": "https://en.wikipedia.org/wiki/Value_proposition"
+          },
+          {
+            "@type": "Thing",
+            "name": "Brand Strategy",
+            "sameAs": "https://en.wikipedia.org/wiki/Brand_management"
+          },
+          {
+            "@type": "Thing",
+            "name": "Target Audience",
+            "sameAs": "https://en.wikipedia.org/wiki/Target_audience"
+          },
+          {
+            "@type": "Thing",
+            "name": "Marketing Communications",
+            "sameAs": "https://en.wikipedia.org/wiki/Marketing_communications"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Web Strategy Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Audience & positioning",
+                "description": "Ideal client profile definition, pain point mapping, competitive landscape auditing, and sharp positioning that makes your offer instantly understandable — and unmistakably yours."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Offer clarity",
+                "description": "Value proposition pressure-testing, jargon elimination, benefit structuring around outcomes — distilling services or products into something prospects immediately understand in one sentence, one scroll, one scan."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Narrative & messaging",
+                "description": "Messaging framework covering core message, proof points, tone of voice, and key phrases — structured to hold across website, pitch deck, sales calls, social content, and investor conversations."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Conversion thinking from the start",
+                "description": "Page structure, CTA logic, objection handling, funnel mapping, and trust signals planned before a single mockup exists — so the website launches as a working sales asset, not a brochure waiting to be optimised."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://tonytony.ch/services/strategy#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I need a strategy sprint if I already know my audience?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sometimes yes, sometimes no. If you can write down your ideal client profile, your top 3 value props, your key objections, and your core messaging in 30 minutes — you probably don't need a full sprint, just a design and build. If that exercise feels hard, your website will reflect that lack of clarity no matter how well it's designed. A short strategy session usually pays for itself in reduced revision cycles alone."
             }
           },
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Offer clarity",
-              "description": "Value proposition pressure-testing, jargon elimination, benefit structuring around outcomes — distilling services or products into something prospects immediately understand in one sentence, one scroll, one scan."
+            "@type": "Question",
+            "name": "What is the output of a strategy sprint — a document, a deck, a workshop?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A structured operational strategic brief covering audience definition, positioning statement, messaging framework, value propositions, objection map, and a site structure recommendation. Delivered as a structured Google Doc your team can actually reference and update — not a static PDF that goes stale in a week. Plus a working session to align stakeholders before design begins."
             }
           },
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Narrative & messaging",
-              "description": "Messaging framework covering core message, proof points, tone of voice, and key phrases — structured to hold across website, pitch deck, sales calls, social content, and investor conversations."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Conversion thinking from the start",
-              "description": "Page structure, CTA logic, objection handling, funnel mapping, and trust signals planned before a single mockup exists — so the website launches as a working sales asset, not a brochure waiting to be optimised."
+            "@type": "Question",
+            "name": "How long does a strategy sprint take, and can it run in parallel with design?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Typically 1 to 2 weeks, depending on scope and stakeholder availability. For tight timelines, the strategy phase can overlap with early design exploration — but the core positioning and messaging framework has to be locked before detailed design begins. Otherwise you're just decorating assumptions. Strategy-first saves time in the long run by preventing the 'let's redo the hero section' loop late in the project."
             }
           }
         ]
       }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://tonytony.ch/services/strategy#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Do I need a strategy sprint if I already know my audience?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sometimes yes, sometimes no. If you can write down your ideal client profile, your top 3 value props, your key objections, and your core messaging in 30 minutes — you probably don't need a full sprint, just a design and build. If that exercise feels hard, your website will reflect that lack of clarity no matter how well it's designed. A short strategy session usually pays for itself in reduced revision cycles alone."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the output of a strategy sprint — a document, a deck, a workshop?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A structured operational strategic brief covering audience definition, positioning statement, messaging framework, value propositions, objection map, and a site structure recommendation. Delivered as a structured Google Doc your team can actually reference and update — not a static PDF that goes stale in a week. Plus a working session to align stakeholders before design begins."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does a strategy sprint take, and can it run in parallel with design?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Typically 1 to 2 weeks, depending on scope and stakeholder availability. For tight timelines, the strategy phase can overlap with early design exploration — but the core positioning and messaging framework has to be locked before detailed design begins. Otherwise you're just decorating assumptions. Strategy-first saves time in the long run by preventing the 'let's redo the hero section' loop late in the project."
-          }
-        }
-      ]
-    }
-  ]
-}
+    ]
+  }

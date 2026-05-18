@@ -1,195 +1,198 @@
 {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebPage",
-      "@id": "https://tonytony.ch/services/branding#webpage",
-      "url": "https://tonytony.ch/services/branding",
-      "name": "Brand Identity Design in Switzerland | TONYTONY",
-      "description": "Brand identity systems for Swiss startups and SMEs — logotype, typography, colour, and usage rules. Scalable foundations built to last.",
-      "inLanguage": "en",
-      "isPartOf": {
-        "@id": "https://tonytony.ch/#website"
-      },
-      "about": {
-        "@id": "https://tonytony.ch/services/branding#service"
-      },
-      "breadcrumb": {
-        "@id": "https://tonytony.ch/services/branding#breadcrumb"
-      },
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_en.jpg"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://tonytony.ch/services/branding#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://tonytony.ch/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://tonytony.ch/services/branding#webpage",
+        "url": "https://tonytony.ch/services/branding",
+        "name": "Brand Identity Design in Switzerland | TONYTONY",
+        "description": "Brand identity systems for Swiss startups and SMEs — logotype, typography, colour, and usage rules. Scalable foundations built to last.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://tonytony.ch/#website"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Services",
-          "item": "https://tonytony.ch/services"
+        "about": {
+          "@id": "https://tonytony.ch/services/branding#service"
         },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Branding",
-          "item": "https://tonytony.ch/services/branding"
+        "breadcrumb": {
+          "@id": "https://tonytony.ch/services/branding#breadcrumb"
+        },
+        "hasPart": {
+          "@id": "https://tonytony.ch/services/branding#faq"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_en.jpg"
         }
-      ]
-    },
-    {
-      "@type": "Service",
-      "@id": "https://tonytony.ch/services/branding#service",
-      "name": "Brand Identity",
-      "url": "https://tonytony.ch/services/branding",
-      "serviceType": "Brand Identity Design",
-      "description": "Brand identity systems for Swiss startups and SMEs — logotype, wordmark, typography hierarchy, colour systems, spacing logic, iconography, photographic direction, and usage guidelines delivered as a working brand book. Built on strategy, designed to scale.",
-      "category": [
-        "Brand Identity",
-        "Brand Design",
-        "Visual Identity",
-        "Logo Design",
-        "Brand Systems",
-        "Design Systems"
-      ],
-      "provider": {
-        "@id": "https://tonytony.ch/#professionalservice"
       },
-      "areaServed": [
-        {
-          "@type": "Country",
-          "name": "Switzerland",
-          "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Suisse romande",
-          "sameAs": "https://en.wikipedia.org/wiki/Romandy"
-        },
-        {
-          "@type": "Place",
-          "name": "German-speaking Switzerland",
-          "alternateName": "Deutschschweiz",
-          "sameAs": "https://en.wikipedia.org/wiki/German-speaking_Switzerland"
-        },
-        {
-          "@type": "Place",
-          "name": "Worldwide"
-        }
-      ],
-      "audience": {
-        "@type": "BusinessAudience",
-        "audienceType": "Startups and SMEs"
-      },
-      "about": [
-        {
-          "@type": "Thing",
-          "name": "Brand",
-          "sameAs": "https://en.wikipedia.org/wiki/Brand"
-        },
-        {
-          "@type": "Thing",
-          "name": "Corporate Identity",
-          "sameAs": "https://en.wikipedia.org/wiki/Corporate_identity"
-        },
-        {
-          "@type": "Thing",
-          "name": "Visual Identity",
-          "sameAs": "https://en.wikipedia.org/wiki/Corporate_identity"
-        },
-        {
-          "@type": "Thing",
-          "name": "Logo",
-          "sameAs": "https://en.wikipedia.org/wiki/Logo"
-        },
-        {
-          "@type": "Thing",
-          "name": "Typography",
-          "sameAs": "https://en.wikipedia.org/wiki/Typography"
-        },
-        {
-          "@type": "Thing",
-          "name": "Design System",
-          "sameAs": "https://en.wikipedia.org/wiki/Design_system"
-        }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Brand Identity Services",
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://tonytony.ch/services/branding#breadcrumb",
         "itemListElement": [
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Visual identity systems",
-              "description": "Complete identity systems with logotype, wordmark, typographic hierarchy, colour palette with accessible contrast ratios, spacing rules, grid logic, iconography, and photographic direction. Delivered as a working brand book with clear usage guidelines and downloadable assets."
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://tonytony.ch/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://tonytony.ch/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Branding",
+            "item": "https://tonytony.ch/services/branding"
+          }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://tonytony.ch/services/branding#service",
+        "name": "Brand Identity",
+        "url": "https://tonytony.ch/services/branding",
+        "serviceType": "Brand Identity Design",
+        "description": "Brand identity systems for Swiss startups and SMEs — logotype, wordmark, typography hierarchy, colour systems, spacing logic, iconography, photographic direction, and usage guidelines delivered as a working brand book. Built on strategy, designed to scale.",
+        "category": [
+          "Brand Identity",
+          "Brand Design",
+          "Visual Identity",
+          "Logo Design",
+          "Brand Systems",
+          "Design Systems"
+        ],
+        "provider": {
+          "@id": "https://tonytony.ch/#professionalservice"
+        },
+        "areaServed": [
+          {
+            "@type": "Country",
+            "name": "Switzerland",
+            "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Suisse romande",
+            "sameAs": "https://en.wikipedia.org/wiki/Romandy"
+          },
+          {
+            "@type": "Place",
+            "name": "German-speaking Switzerland",
+            "alternateName": "Deutschschweiz",
+            "sameAs": "https://en.wikipedia.org/wiki/German-speaking_Switzerland"
+          },
+          {
+            "@type": "Place",
+            "name": "Worldwide"
+          }
+        ],
+        "audience": {
+          "@type": "BusinessAudience",
+          "audienceType": "Startups and SMEs"
+        },
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "Brand",
+            "sameAs": "https://en.wikipedia.org/wiki/Brand"
+          },
+          {
+            "@type": "Thing",
+            "name": "Corporate Identity",
+            "sameAs": "https://en.wikipedia.org/wiki/Corporate_identity"
+          },
+          {
+            "@type": "Thing",
+            "name": "Visual Identity",
+            "sameAs": "https://en.wikipedia.org/wiki/Corporate_identity"
+          },
+          {
+            "@type": "Thing",
+            "name": "Logo",
+            "sameAs": "https://en.wikipedia.org/wiki/Logo"
+          },
+          {
+            "@type": "Thing",
+            "name": "Typography",
+            "sameAs": "https://en.wikipedia.org/wiki/Typography"
+          },
+          {
+            "@type": "Thing",
+            "name": "Design System",
+            "sameAs": "https://en.wikipedia.org/wiki/Design_system"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Brand Identity Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Visual identity systems",
+                "description": "Complete identity systems with logotype, wordmark, typographic hierarchy, colour palette with accessible contrast ratios, spacing rules, grid logic, iconography, and photographic direction. Delivered as a working brand book with clear usage guidelines and downloadable assets."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Positioning through design",
+                "description": "Colour choices, type personality, composition rhythm, and visual tone calibrated to reinforce brand positioning. Design decisions grounded in strategy — so the visual language communicates who you are before a single word is read."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Scalable brand foundations",
+                "description": "Brand systems built on rules, tokens, and components — reusable design tokens for colour and type, flexible logo lockups, layout principles that survive new formats, and clear naming conventions. Built to evolve cleanly without costly rebrands."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Design consistency across touchpoints",
+                "description": "A coherent brand experience across website, pitch deck, social content, newsletter templates, print collateral, signage, event graphics, and merchandise. Ready-to-use templates and asset libraries keep teams on-brand everywhere."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://tonytony.ch/services/branding#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you design logos as part of a website project, or only separately?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Both. Most website projects need at least some brand work — a logo refresh, a refined colour system, updated typography — and I handle that in-scope when it's proportional to the project. For full brand identity systems with extensive logo exploration, brand books, and multi-touchpoint guidelines, it's a dedicated engagement. Either way, your website and your brand end up as one cohesive system, not two disconnected deliverables stitched together at launch."
             }
           },
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Positioning through design",
-              "description": "Colour choices, type personality, composition rhythm, and visual tone calibrated to reinforce brand positioning. Design decisions grounded in strategy — so the visual language communicates who you are before a single word is read."
+            "@type": "Question",
+            "name": "What is the difference between a logo and a brand identity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A logo is one asset. A brand identity is the system around it — logotype, typography hierarchy, colour palette, spacing rules, iconography, photography direction, tone of voice, and usage guidelines. A logo alone tells you what a brand is called. An identity tells you what it stands for, how it behaves, and why it's memorable. That's why two brands with similar logos can feel completely different in the market."
             }
           },
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Scalable brand foundations",
-              "description": "Brand systems built on rules, tokens, and components — reusable design tokens for colour and type, flexible logo lockups, layout principles that survive new formats, and clear naming conventions. Built to evolve cleanly without costly rebrands."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Design consistency across touchpoints",
-              "description": "A coherent brand experience across website, pitch deck, social content, newsletter templates, print collateral, signage, event graphics, and merchandise. Ready-to-use templates and asset libraries keep teams on-brand everywhere."
+            "@type": "Question",
+            "name": "Can you refresh an existing brand without doing a full rebrand?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — and often that's the smarter move. A full rebrand resets brand equity and can confuse existing clients. A brand refresh evolves what's already working: modernised logotype, updated typography, refined colour palette, tighter guidelines. I audit what to keep, what to sharpen, what to retire. The result is a brand that feels current without losing the recognition you've built — at a fraction of the cost and timeline of starting from scratch."
             }
           }
         ]
       }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://tonytony.ch/services/branding#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Do you design logos as part of a website project, or only separately?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Both. Most website projects need at least some brand work — a logo refresh, a refined colour system, updated typography — and I handle that in-scope when it's proportional to the project. For full brand identity systems with extensive logo exploration, brand books, and multi-touchpoint guidelines, it's a dedicated engagement. Either way, your website and your brand end up as one cohesive system, not two disconnected deliverables stitched together at launch."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the difference between a logo and a brand identity?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A logo is one asset. A brand identity is the system around it — logotype, typography hierarchy, colour palette, spacing rules, iconography, photography direction, tone of voice, and usage guidelines. A logo alone tells you what a brand is called. An identity tells you what it stands for, how it behaves, and why it's memorable. That's why two brands with similar logos can feel completely different in the market."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you refresh an existing brand without doing a full rebrand?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes — and often that's the smarter move. A full rebrand resets brand equity and can confuse existing clients. A brand refresh evolves what's already working: modernised logotype, updated typography, refined colour palette, tighter guidelines. I audit what to keep, what to sharpen, what to retire. The result is a brand that feels current without losing the recognition you've built — at a fraction of the cost and timeline of starting from scratch."
-          }
-        }
-      ]
-    }
-  ]
-}
+    ]
+  }
