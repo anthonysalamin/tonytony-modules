@@ -93,9 +93,16 @@ mux-player::part(poster) {
     transform: scale(1.1);
 }
 
-/* ==========================================================================
-   🥭 Progressive Nav Blur
-   ========================================================================== */
+/**
+ * TONYTONY | 🥭 Progressive Nav Blur
+ * Desktop: stacked progressive blur (sharp at bottom → blurred at top)
+ * Mobile: solid background, no blur
+ *
+ * @build 20.05.26
+ * @updated 20.05.26 PHT
+ * @author TONYTONY Sàrl
+ */
+
 .nav {
     position: fixed;
     top: 0;
@@ -104,19 +111,30 @@ mux-player::part(poster) {
     background: transparent;
 }
 
-.nav::before,
-.nav::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    /* same fade for both layers */
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.95) 60%, rgba(0, 0, 0, 0) 100%);
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.95) 60%, rgba(0, 0, 0, 0) 90%);
+/* Mobile / tablet: solid background, no blur */
+@media (max-width: 991px) {
+    .nav {
+        background: var(--light-theme--background);
+    }
 }
 
-/* blur layer */
-.nav::before {
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+/* Desktop: progressive blur */
+@media (min-width: 992px) {
+
+    .nav::before,
+    .nav::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        /* same fade for both layers */
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.95) 60%, rgba(0, 0, 0, 0) 100%);
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.95) 60%, rgba(0, 0, 0, 0) 90%);
+    }
+
+    /* blur layer */
+    .nav::before {
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+    }
 }
