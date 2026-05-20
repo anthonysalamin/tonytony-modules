@@ -48,7 +48,7 @@ import { initGraphicSVG } from "https://cdn.tonytony.ch/js/initGraphicSVG.js?v=1
 import { initMuxPlayback } from "https://cdn.tonytony.ch/js/initMuxPlayback.js?v=1.0.0";
 import { initSwitchTheme } from "https://cdn.tonytony.ch/js/initSwitchTheme.js?v=1.0.0";
 import { initSwitchThemeCaseStudies } from "https://cdn.tonytony.ch/js/initSwitchThemeCaseStudies.js?v=1.0.0";
-import { initSVGInjection } from "https://cdn.tonytony.ch/js/initSVGInjection.js?v=1.0.0";
+// import { initSVGInjection } from "https://cdn.tonytony.ch/js/initSVGInjection.js?v=1.0.0";
 import { initContactForm } from "https://cdn.tonytony.ch/js/initContactForm.js?v=1.0.0";
 import { initWebflowBadge } from "https://cdn.tonytony.ch/js/initWebflowBadge.js?v=1.0.0";
 // ── Runner ───────────────────────────────────────────────────────────────────
@@ -96,7 +96,7 @@ async function initApp() {
     // themes
     run("SwitchTheme", initSwitchTheme);
     run("SwitchThemeCaseStudies", initSwitchThemeCaseStudies);
-    run("SVGInjection", initSVGInjection);
+    // run("SVGInjection", initSVGInjection);
 
     // video
     run("MuxPlayback", initMuxPlayback);
