@@ -1,10 +1,9 @@
 /**
  * TONYTONY | initCustomCursor
  * Builds a GSAP-driven custom cursor for `[data-cursor]` targets with edge-aware offsets and responsive teardown.
- * Fades out when the pointer leaves the viewport and back in on re-entry.
  *
  * @build 12.04.26
- * @updated 21.05.26 PHT
+ * @updated 12.04.26 PHT
  * @author TONYTONY Sàrl
  */
 
@@ -28,7 +27,7 @@ export function initCustomCursor(OPTIONS_CURSOR = {
 }
 
 function checkTargets(e) {
-    return !!e.TARGETS.length || (console.warn("initCustomCursor: no [data-cursor] found, skipping"), !1);
+    return !!e.TARGETS.length || (console.log("Skipping custom cursor - No targets found."), !1);
 }
 
 function handleResize(e, t) {
@@ -57,8 +56,6 @@ function cleanupCursor(e) {
         document.removeEventListener("mousemove", n.mouseMoveHandler);
         document.removeEventListener("mousedown", n.mouseDownHandler);
         document.removeEventListener("mouseup", n.mouseUpHandler);
-        document.documentElement.removeEventListener("mouseleave", n.mouseLeaveHandler);
-        document.documentElement.removeEventListener("mouseenter", n.mouseEnterHandler);
     }
     t?.parentNode && t.parentNode.removeChild(t);
 }
@@ -113,7 +110,6 @@ function _initCursor(e) {
     document.body.appendChild(t);
 
     let currentTarget = null;
-    let isOutsideViewport = false;
 
     const mouseMoveHandler = (ev) => {
         const { offsetX, offsetY } = getCursorOffset(ev.clientX, ev.clientY, e);
@@ -132,9 +128,7 @@ function _initCursor(e) {
             const isDrag = cursorText.toLowerCase() === "drag";
 
             t.innerHTML = `<span style="margin: 0; padding: 0; font-size: ${e.FONT_SIZE}; font-weight: 500; letter-spacing: 0.2px; text-align: center; line-height: 1;"><b>${cursorText}</b></span>`;
-            if (!isOutsideViewport) {
-                gsap.to(t, { opacity: 1, duration: 0.3, ease: "power2.out" });
-            }
+            gsap.to(t, { opacity: 1, duration: 0.3, ease: "power2.out" });
 
             if (isDrag) target.style.cursor = "grab";
 
@@ -159,27 +153,13 @@ function _initCursor(e) {
         }
     };
 
-    const mouseLeaveHandler = () => {
-        isOutsideViewport = true;
-        gsap.to(t, { opacity: 0, duration: 0.3, ease: "power2.out" });
-    };
-
-    const mouseEnterHandler = () => {
-        isOutsideViewport = false;
-        if (currentTarget) {
-            gsap.to(t, { opacity: 1, duration: 0.3, ease: "power2.out" });
-        }
-    };
-
     document.addEventListener("mousemove", mouseMoveHandler);
     document.addEventListener("mousedown", mouseDownHandler);
     document.addEventListener("mouseup", mouseUpHandler);
-    document.documentElement.addEventListener("mouseleave", mouseLeaveHandler);
-    document.documentElement.addEventListener("mouseenter", mouseEnterHandler);
 
     return {
         cursor: t,
-        eventListeners: { mouseMoveHandler, mouseDownHandler, mouseUpHandler, mouseLeaveHandler, mouseEnterHandler },
+        eventListeners: { mouseMoveHandler, mouseDownHandler, mouseUpHandler },
         targets: e.TARGETS
     };
 }
