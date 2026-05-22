@@ -11,9 +11,14 @@
             "isPartOf": {
                 "@id": "https://tonytony.ch/#website"
             },
-            "about": {
-                "@id": "https://tonytony.ch/#organization"
-            },
+            "about": [
+                {
+                    "@id": "https://tonytony.ch/#organization"
+                },
+                {
+                    "@id": "https://tonytony.ch/#person"
+                }
+            ],
             "breadcrumb": {
                 "@id": "https://tonytony.ch/de/imprint/#breadcrumb"
             }
@@ -52,6 +57,19 @@
                 "addressLocality": "St-Luc",
                 "addressRegion": "VS",
                 "addressCountry": "CH"
+            },
+            "founder": {
+                "@id": "https://tonytony.ch/#person"
+            }
+        },
+        {
+            "@type": "Person",
+            "@id": "https://tonytony.ch/#person",
+            "name": "Anthony Salamin",
+            "jobTitle": "Senior Web Designer & Creative Developer",
+            "url": "https://tonytony.ch",
+            "worksFor": {
+                "@id": "https://tonytony.ch/#organization"
             }
         },
         {

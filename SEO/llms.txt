@@ -35,7 +35,7 @@ TONYTONY Sàrl is a Switzerland-based studio founded and operated by Anthony Sal
 
 ## Location
 
-- **Address**: CP 826, 3961 St-Luc, VS, Switzerland
+- **Address**: Chemin de la Mounta 24, 3961 St-Luc, VS, Switzerland
 - **Region**: Valais, Switzerland
 - **Operates**: Across Switzerland (Suisse romande, Deutschschweiz) and internationally
 - **Work model**: Remote-first
