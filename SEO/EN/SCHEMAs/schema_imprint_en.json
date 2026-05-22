@@ -1,0 +1,64 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "@id": "https://tonytony.ch/imprint/#webpage",
+            "url": "https://tonytony.ch/imprint",
+            "name": "Imprint | TONYTONY",
+            "inLanguage": "en",
+            "description": "Legal information and imprint for TONYTONY Sàrl, a Swiss-based web design and Webflow development studio.",
+            "isPartOf": {
+                "@id": "https://tonytony.ch/#website"
+            },
+            "about": {
+                "@id": "https://tonytony.ch/#organization"
+            },
+            "breadcrumb": {
+                "@id": "https://tonytony.ch/imprint/#breadcrumb"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://tonytony.ch/imprint/#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://tonytony.ch/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Imprint",
+                    "item": "https://tonytony.ch/imprint"
+                }
+            ]
+        },
+        {
+            "@type": "Organization",
+            "@id": "https://tonytony.ch/#organization",
+            "name": "TONYTONY",
+            "legalName": "TONYTONY Sàrl",
+            "url": "https://tonytony.ch",
+            "email": "hey@tonytony.ch",
+            "description": "Swiss-based web design, Webflow development, SEO and branding for startups and SMEs.",
+            "logo": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0a3868c76ecfdb1973ee5_logotype.png",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Chemin de la Mounta 24",
+                "postalCode": "3961",
+                "addressLocality": "St-Luc",
+                "addressRegion": "VS",
+                "addressCountry": "CH"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://tonytony.ch/#website",
+            "url": "https://tonytony.ch",
+            "name": "TONYTONY"
+        }
+    ]
+}

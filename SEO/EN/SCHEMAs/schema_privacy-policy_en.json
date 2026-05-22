@@ -1,0 +1,57 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "@id": "https://tonytony.ch/privacy-policy/#webpage",
+            "url": "https://tonytony.ch/privacy-policy",
+            "name": "Privacy Policy | TONYTONY",
+            "inLanguage": "en",
+            "description": "Learn how TONYTONY collects, uses and protects your personal data. Privacy policy for our web design, Webflow and SEO services.",
+            "dateModified": "2026-04-12",
+            "isPartOf": {
+                "@id": "https://tonytony.ch/#website"
+            },
+            "publisher": {
+                "@id": "https://tonytony.ch/#organization"
+            },
+            "mainEntity": {
+                "@type": "Article",
+                "@id": "https://tonytony.ch/privacy-policy/#policy",
+                "headline": "Privacy Policy",
+                "dateModified": "2026-04-12",
+                "inLanguage": "en",
+                "author": {
+                    "@id": "https://tonytony.ch/#organization"
+                },
+                "publisher": {
+                    "@id": "https://tonytony.ch/#organization"
+                },
+                "about": "Data protection and privacy practices of TONYTONY Sàrl",
+                "text": "This privacy policy explains how TONYTONY Sàrl collects, processes, and protects personal data when you use our website tonytony.ch. It is based on the Swiss Federal Act on Data Protection (FADP/nDSG), in force since 1 September 2023, and, where applicable, the EU General Data Protection Regulation (GDPR)."
+            }
+        },
+        {
+            "@type": "Organization",
+            "@id": "https://tonytony.ch/#organization",
+            "name": "TONYTONY Sàrl",
+            "url": "https://tonytony.ch",
+            "email": "legal@tonytony.ch",
+            "logo": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0a3868c76ecfdb1973ee5_logotype.png",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Chemin de la Mounta 24",
+                "postalCode": "3961",
+                "addressLocality": "St-Luc",
+                "addressRegion": "VS",
+                "addressCountry": "CH"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://tonytony.ch/#website",
+            "url": "https://tonytony.ch",
+            "name": "TONYTONY"
+        }
+    ]
+}
