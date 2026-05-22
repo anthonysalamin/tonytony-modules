@@ -6,32 +6,58 @@
             "@id": "https://tonytony.ch/de/privacy-policy/#webpage",
             "url": "https://tonytony.ch/de/privacy-policy",
             "name": "Datenschutzerklärung | TONYTONY",
-            "inLanguage": "de-CH",
+            "inLanguage": "de",
             "description": "Erfahren Sie, wie TONYTONY Ihre personenbezogenen Daten erfasst, nutzt und schützt. Datenschutzerklärung für unsere Webdesign-, Webflow- und SEO-Dienstleistungen.",
             "dateModified": "2026-04-12",
             "isPartOf": {
                 "@id": "https://tonytony.ch/#website"
             },
-            "breadcrumb": {
-                "@id": "https://tonytony.ch/de/privacy-policy/#breadcrumb"
-            },
             "publisher": {
                 "@id": "https://tonytony.ch/#organization"
+            },
+            "breadcrumb": {
+                "@id": "https://tonytony.ch/de/privacy-policy/#breadcrumb"
             },
             "mainEntity": {
                 "@type": "Article",
                 "@id": "https://tonytony.ch/de/privacy-policy/#policy",
                 "headline": "Datenschutzerklärung",
                 "dateModified": "2026-04-12",
-                "inLanguage": "de-CH",
+                "inLanguage": "de",
+                "isPartOf": {
+                    "@id": "https://tonytony.ch/de/privacy-policy/#webpage"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://tonytony.ch/de/privacy-policy/#webpage"
+                },
                 "author": {
                     "@id": "https://tonytony.ch/#organization"
                 },
                 "publisher": {
                     "@id": "https://tonytony.ch/#organization"
                 },
-                "about": "Datenschutzpraktiken von TONYTONY Sàrl",
-                "text": "Diese Datenschutzerklärung erklärt, wie TONYTONY Sàrl personenbezogene Daten erhebt, verarbeitet und schützt, wenn Sie unsere Website tonytony.ch nutzen. Sie basiert auf dem neuen Schweizer Datenschutzgesetz (nDSG), das seit dem 1. September 2023 in Kraft ist, und, wo anwendbar, auf der EU-Datenschutz-Grundverordnung (DSGVO)."
+                "about": "Datenschutz und Datenschutzpraktiken der TONYTONY Sàrl",
+                "text": "Diese Datenschutzerklärung erläutert, wie TONYTONY Sàrl beim Besuch unserer Website tonytony.ch personenbezogene Daten erhebt, verarbeitet und schützt. Sie basiert auf dem revidierten Schweizer Bundesgesetz über den Datenschutz (nDSG), das seit dem 1. September 2023 in Kraft ist, und gegebenenfalls auf der EU-Datenschutz-Grundverordnung (DSGVO).",
+                "mentions": [
+                    {
+                        "@type": "Legislation",
+                        "name": "Bundesgesetz über den Datenschutz",
+                        "alternateName": "nDSG",
+                        "sameAs": [
+                            "https://de.wikipedia.org/wiki/Bundesgesetz_%C3%BCber_den_Datenschutz",
+                            "https://en.wikipedia.org/wiki/Federal_Act_on_Data_Protection_(Switzerland)"
+                        ]
+                    },
+                    {
+                        "@type": "Legislation",
+                        "name": "Datenschutz-Grundverordnung",
+                        "alternateName": "DSGVO",
+                        "sameAs": [
+                            "https://de.wikipedia.org/wiki/Datenschutz-Grundverordnung",
+                            "https://en.wikipedia.org/wiki/General_Data_Protection_Regulation"
+                        ]
+                    }
+                ]
             }
         },
         {
@@ -57,16 +83,22 @@
             "@id": "https://tonytony.ch/#organization",
             "name": "TONYTONY Sàrl",
             "url": "https://tonytony.ch",
-            "email": "legal@tonytony.ch",
-            "logo": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0a3868c76ecfdb1973ee5_logotype.png",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Chemin de la Mounta 24",
-                "postalCode": "3961",
-                "addressLocality": "St-Luc",
-                "addressRegion": "VS",
-                "addressCountry": "CH"
+            "contactPoint": {
+                "@id": "https://tonytony.ch/#legal-contact"
             }
+        },
+        {
+            "@type": "ContactPoint",
+            "@id": "https://tonytony.ch/#legal-contact",
+            "contactType": "legal",
+            "name": "Datenschutz- und Rechtskontakt",
+            "email": "legal@tonytony.ch",
+            "availableLanguage": [
+                "en",
+                "fr",
+                "de"
+            ],
+            "areaServed": "CH"
         },
         {
             "@type": "WebSite",

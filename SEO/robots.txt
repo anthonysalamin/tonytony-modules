@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /modules/
+Sitemap: https://tonytony.ch/sitemap.xml

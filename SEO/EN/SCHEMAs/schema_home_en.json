@@ -133,16 +133,29 @@
         "UX/UI Design",
         "Performance Optimization"
       ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer support",
-        "email": "hey@tonytony.ch",
-        "availableLanguage": [
-          "en",
-          "fr",
-          "de"
-        ]
-      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "hey@tonytony.ch",
+          "availableLanguage": [
+            "en",
+            "fr",
+            "de"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "@id": "https://tonytony.ch/#legal-contact",
+          "contactType": "legal",
+          "email": "legal@tonytony.ch",
+          "availableLanguage": [
+            "en",
+            "fr",
+            "de"
+          ]
+        }
+      ],
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [

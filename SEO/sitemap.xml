@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
     <url>
         <loc>https://tonytony.ch/</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-05-22</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/" />
         <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr" />
         <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de" />
@@ -12,7 +12,7 @@
     </url>
     <url>
         <loc>https://tonytony.ch/fr</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-05-22</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/" />
         <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr" />
         <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de" />
@@ -20,7 +20,7 @@
     </url>
     <url>
         <loc>https://tonytony.ch/de</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-05-22</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/" />
         <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr" />
         <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de" />
@@ -83,8 +83,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/services/strategy" />
         <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/services/strategy" />
         <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/services/strategy" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/services/strategy" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/services/strategy" />
     </url>
     <url>
         <loc>https://tonytony.ch/fr/services/strategy</loc>
@@ -92,8 +91,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/services/strategy" />
         <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/services/strategy" />
         <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/services/strategy" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/services/strategy" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/services/strategy" />
     </url>
     <url>
         <loc>https://tonytony.ch/de/services/strategy</loc>
@@ -101,113 +99,82 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/services/strategy" />
         <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/services/strategy" />
         <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/services/strategy" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/services/strategy" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/services/strategy" />
     </url>
 
     <url>
         <loc>https://tonytony.ch/services/web-design</loc>
         <lastmod>2026-04-22</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/services/web-design" />
-        <xhtml:link rel="alternate" hreflang="fr-CH"
-            href="https://tonytony.ch/fr/services/web-design" />
-        <xhtml:link rel="alternate" hreflang="de-CH"
-            href="https://tonytony.ch/de/services/web-design" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/services/web-design" />
+        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/services/web-design" />
+        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/services/web-design" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/services/web-design" />
     </url>
     <url>
         <loc>https://tonytony.ch/fr/services/web-design</loc>
         <lastmod>2026-04-22</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/services/web-design" />
-        <xhtml:link rel="alternate" hreflang="fr-CH"
-            href="https://tonytony.ch/fr/services/web-design" />
-        <xhtml:link rel="alternate" hreflang="de-CH"
-            href="https://tonytony.ch/de/services/web-design" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/services/web-design" />
+        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/services/web-design" />
+        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/services/web-design" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/services/web-design" />
     </url>
     <url>
         <loc>https://tonytony.ch/de/services/web-design</loc>
         <lastmod>2026-04-22</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/services/web-design" />
-        <xhtml:link rel="alternate" hreflang="fr-CH"
-            href="https://tonytony.ch/fr/services/web-design" />
-        <xhtml:link rel="alternate" hreflang="de-CH"
-            href="https://tonytony.ch/de/services/web-design" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/services/web-design" />
+        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/services/web-design" />
+        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/services/web-design" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/services/web-design" />
     </url>
 
     <url>
         <loc>https://tonytony.ch/services/web-development</loc>
         <lastmod>2026-04-22</lastmod>
-        <xhtml:link rel="alternate" hreflang="en"
-            href="https://tonytony.ch/services/web-development" />
-        <xhtml:link rel="alternate" hreflang="fr-CH"
-            href="https://tonytony.ch/fr/services/web-development" />
-        <xhtml:link rel="alternate" hreflang="de-CH"
-            href="https://tonytony.ch/de/services/web-development" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/services/web-development" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/services/web-development" />
+        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/services/web-development" />
+        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/services/web-development" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/services/web-development" />
     </url>
     <url>
         <loc>https://tonytony.ch/fr/services/web-development</loc>
         <lastmod>2026-04-22</lastmod>
-        <xhtml:link rel="alternate" hreflang="en"
-            href="https://tonytony.ch/services/web-development" />
-        <xhtml:link rel="alternate" hreflang="fr-CH"
-            href="https://tonytony.ch/fr/services/web-development" />
-        <xhtml:link rel="alternate" hreflang="de-CH"
-            href="https://tonytony.ch/de/services/web-development" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/services/web-development" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/services/web-development" />
+        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/services/web-development" />
+        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/services/web-development" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/services/web-development" />
     </url>
     <url>
         <loc>https://tonytony.ch/de/services/web-development</loc>
         <lastmod>2026-04-22</lastmod>
-        <xhtml:link rel="alternate" hreflang="en"
-            href="https://tonytony.ch/services/web-development" />
-        <xhtml:link rel="alternate" hreflang="fr-CH"
-            href="https://tonytony.ch/fr/services/web-development" />
-        <xhtml:link rel="alternate" hreflang="de-CH"
-            href="https://tonytony.ch/de/services/web-development" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/services/web-development" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/services/web-development" />
+        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/services/web-development" />
+        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/services/web-development" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/services/web-development" />
     </url>
 
     <url>
         <loc>https://tonytony.ch/services/seo-aeo-cro</loc>
         <lastmod>2026-04-23</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/services/seo-aeo-cro" />
-        <xhtml:link rel="alternate" hreflang="fr-CH"
-            href="https://tonytony.ch/fr/services/seo-aeo-cro" />
-        <xhtml:link rel="alternate" hreflang="de-CH"
-            href="https://tonytony.ch/de/services/seo-aeo-cro" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/services/seo-aeo-cro" />
+        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/services/seo-aeo-cro" />
+        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/services/seo-aeo-cro" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/services/seo-aeo-cro" />
     </url>
     <url>
         <loc>https://tonytony.ch/fr/services/seo-aeo-cro</loc>
         <lastmod>2026-04-23</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/services/seo-aeo-cro" />
-        <xhtml:link rel="alternate" hreflang="fr-CH"
-            href="https://tonytony.ch/fr/services/seo-aeo-cro" />
-        <xhtml:link rel="alternate" hreflang="de-CH"
-            href="https://tonytony.ch/de/services/seo-aeo-cro" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/services/seo-aeo-cro" />
+        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/services/seo-aeo-cro" />
+        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/services/seo-aeo-cro" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/services/seo-aeo-cro" />
     </url>
     <url>
         <loc>https://tonytony.ch/de/services/seo-aeo-cro</loc>
         <lastmod>2026-04-23</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/services/seo-aeo-cro" />
-        <xhtml:link rel="alternate" hreflang="fr-CH"
-            href="https://tonytony.ch/fr/services/seo-aeo-cro" />
-        <xhtml:link rel="alternate" hreflang="de-CH"
-            href="https://tonytony.ch/de/services/seo-aeo-cro" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/services/seo-aeo-cro" />
+        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/services/seo-aeo-cro" />
+        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/services/seo-aeo-cro" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/services/seo-aeo-cro" />
     </url>
 
     <url>
@@ -216,8 +183,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/services/branding" />
         <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/services/branding" />
         <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/services/branding" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/services/branding" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/services/branding" />
     </url>
     <url>
         <loc>https://tonytony.ch/fr/services/branding</loc>
@@ -225,8 +191,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/services/branding" />
         <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/services/branding" />
         <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/services/branding" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/services/branding" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/services/branding" />
     </url>
     <url>
         <loc>https://tonytony.ch/de/services/branding</loc>
@@ -234,8 +199,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/services/branding" />
         <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/services/branding" />
         <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/services/branding" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/services/branding" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/services/branding" />
     </url>
 
     <url>
@@ -367,34 +331,25 @@
         <loc>https://tonytony.ch/projects/wventures</loc>
         <lastmod>2026-04-20</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/projects/wventures" />
-        <xhtml:link rel="alternate" hreflang="fr-CH"
-            href="https://tonytony.ch/fr/projects/wventures" />
-        <xhtml:link rel="alternate" hreflang="de-CH"
-            href="https://tonytony.ch/de/projects/wventures" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/projects/wventures" />
+        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/projects/wventures" />
+        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/projects/wventures" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/projects/wventures" />
     </url>
     <url>
         <loc>https://tonytony.ch/fr/projects/wventures</loc>
         <lastmod>2026-04-20</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/projects/wventures" />
-        <xhtml:link rel="alternate" hreflang="fr-CH"
-            href="https://tonytony.ch/fr/projects/wventures" />
-        <xhtml:link rel="alternate" hreflang="de-CH"
-            href="https://tonytony.ch/de/projects/wventures" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/projects/wventures" />
+        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/projects/wventures" />
+        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/projects/wventures" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/projects/wventures" />
     </url>
     <url>
         <loc>https://tonytony.ch/de/projects/wventures</loc>
         <lastmod>2026-04-20</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://tonytony.ch/projects/wventures" />
-        <xhtml:link rel="alternate" hreflang="fr-CH"
-            href="https://tonytony.ch/fr/projects/wventures" />
-        <xhtml:link rel="alternate" hreflang="de-CH"
-            href="https://tonytony.ch/de/projects/wventures" />
-        <xhtml:link rel="alternate" hreflang="x-default"
-            href="https://tonytony.ch/projects/wventures" />
+        <xhtml:link rel="alternate" hreflang="fr-CH" href="https://tonytony.ch/fr/projects/wventures" />
+        <xhtml:link rel="alternate" hreflang="de-CH" href="https://tonytony.ch/de/projects/wventures" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://tonytony.ch/projects/wventures" />
     </url>
 
     <url>
