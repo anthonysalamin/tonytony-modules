@@ -40,14 +40,6 @@
         "addressRegion": "VS",
         "addressCountry": "CH"
       },
-      "serviceType": [
-        "Web Design",
-        "Webflow Development",
-        "SEO",
-        "AEO",
-        "Brand Identity",
-        "Strategy"
-      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "TONYTONY Services",
