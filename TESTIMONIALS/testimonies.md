@@ -47,4 +47,4 @@ Architecte MA HES | quatreaplus Sàrl
 
 > “Pleased with the outcome of the LP and its presentation. The typography layout is top notch and the images chosen adds the dynamic touch I was looking for.”
 
----
+--- 
