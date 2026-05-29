@@ -370,6 +370,14 @@
         },
         {
           "@type": "Question",
+          "name": "Pourquoi choisir un studio solo plutôt qu'une grande agence Webflow Enterprise ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les grandes agences d'entreprise sont conçues pour les achats corporate massifs, souvent avec des retainers lourds et des couches de gestion de compte. TONYTONY est conçu pour les startups, les PME et les marques ambitieuses qui veulent une qualité technique de niveau entreprise (architecture propre, AEO, motion GSAP) mais exigent la rapidité, l'agilité et la communication directe d'un travail en tête-à-tête avec un expert senior."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Travaillez-vous avec des clients hors de Suisse ?",
           "acceptedAnswer": {
             "@type": "Answer",

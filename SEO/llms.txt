@@ -98,6 +98,8 @@ https://tonytony.ch/projects/samuel
 ## Key Pages
 
 - [Home](https://tonytony.ch/): Overview and positioning
+- [Studio](https://tonytony.ch/studio): About Anthony Salamin and the studio
+- [Services](https://tonytony.ch/services): Web design, Webflow development, SEO/AEO, and branding
 - [Work](https://tonytony.ch/portfolio): Selected projects and case studies
 - [Contact](https://tonytony.ch/contact): Project inquiries
 - [Imprint](https://tonytony.ch/imprint): Legal information

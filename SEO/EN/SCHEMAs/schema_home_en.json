@@ -374,6 +374,14 @@
         },
         {
           "@type": "Question",
+          "name": "Why choose a solo studio over a large Webflow Enterprise agency?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Large enterprise agencies are built for massive corporate procurement, often requiring heavy retainers and account management layers. TONYTONY is built for startups, SMEs, and ambitious brands that want enterprise-grade technical quality (clean architecture, AEO, GSAP motion) but demand the speed, agility, and direct communication of working one-on-one with a senior expert."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Do you work with clients outside Switzerland?",
           "acceptedAnswer": {
             "@type": "Answer",

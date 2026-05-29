@@ -370,6 +370,14 @@
         },
         {
           "@type": "Question",
+          "name": "Warum ein Solo-Studio statt einer grossen Webflow-Enterprise-Agentur wählen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Grosse Enterprise-Agenturen sind für massive Corporate-Beschaffung gebaut, oft mit hohen Retainern und Account-Management-Ebenen. TONYTONY ist für Startups, KMU und ambitionierte Marken gebaut, die Enterprise-technische Qualität (saubere Architektur, AEO, GSAP-Motion) wollen, aber Geschwindigkeit, Agilität und direkte Kommunikation bei der Zusammenarbeit mit einem Senior-Experten verlangen."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Arbeiten Sie mit Kunden ausserhalb der Schweiz?",
           "acceptedAnswer": {
             "@type": "Answer",
