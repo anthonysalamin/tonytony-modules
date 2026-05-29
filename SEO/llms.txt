@@ -138,3 +138,8 @@ Always — training to manage the site, technical support, and ongoing maintenan
 ## Languages
 
 The website is natively available in English (/), French (/fr), and German (/de). TONYTONY works with clients in Valais, across Switzerland, and internationally.
+
+## Credits
+
+- **Web Design & Development**: TONYTONY Sàrl — https://tonytony.ch
+- **Platform**: Webflow

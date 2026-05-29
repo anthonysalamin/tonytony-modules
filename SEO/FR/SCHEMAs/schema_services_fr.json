@@ -1,0 +1,233 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://tonytony.ch/fr/services#webpage",
+      "url": "https://tonytony.ch/fr/services",
+      "name": "Web Design, Développement Webflow, SEO & Branding en Suisse | TONYTONY",
+      "description": "Web design, développement Webflow, SEO/AEO, branding et stratégie pour startups et PME suisses. Qualité agence, agilité freelance.",
+      "inLanguage": "fr",
+      "isPartOf": {
+        "@id": "https://tonytony.ch/#website"
+      },
+      "about": {
+        "@id": "https://tonytony.ch/fr/#professionalservice"
+      },
+      "breadcrumb": {
+        "@id": "https://tonytony.ch/fr/services#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_en.jpg"
+      },
+      "mainEntity": {
+        "@id": "https://tonytony.ch/fr/services#servicelist"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tonytony.ch/fr/services#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://tonytony.ch/fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://tonytony.ch/fr/services"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://tonytony.ch/fr/services#servicelist",
+      "name": "Services TONYTONY",
+      "description": "Stratégie, web design, développement Webflow, SEO/AEO/CRO et identité de marque pour startups et PME suisses.",
+      "numberOfItems": 5,
+      "itemListOrder": "https://schema.org/ItemListOrderAscending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Service",
+            "@id": "https://tonytony.ch/fr/services/strategy#service",
+            "name": "Stratégie Web",
+            "url": "https://tonytony.ch/fr/services/strategy",
+            "description": "Stratégie web, positionnement et sprints de messaging pour startups et PME suisses.",
+            "provider": {
+              "@id": "https://tonytony.ch/fr/#professionalservice"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Service",
+            "@id": "https://tonytony.ch/fr/services/web-design#service",
+            "name": "Web Design",
+            "url": "https://tonytony.ch/fr/services/web-design",
+            "description": "Web design orienté conversion pour startups et PME suisses — landing pages, sites marketing, sites produit et portfolios.",
+            "provider": {
+              "@id": "https://tonytony.ch/fr/#professionalservice"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Service",
+            "@id": "https://tonytony.ch/fr/services/web-development#service",
+            "name": "Développement Webflow",
+            "url": "https://tonytony.ch/fr/services/web-development",
+            "description": "Développement Webflow de qualité production — code propre, architecture CMS, animations GSAP et configurations multilingues.",
+            "provider": {
+              "@id": "https://tonytony.ch/fr/#professionalservice"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Service",
+            "@id": "https://tonytony.ch/fr/services/seo-aeo-cro#service",
+            "name": "SEO, AEO & CRO",
+            "url": "https://tonytony.ch/fr/services/seo-aeo-cro",
+            "description": "SEO, Answer Engine Optimization et optimisation du taux de conversion intégrés pour startups et PME suisses.",
+            "provider": {
+              "@id": "https://tonytony.ch/fr/#professionalservice"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Service",
+            "@id": "https://tonytony.ch/fr/services/branding#service",
+            "name": "Identité de Marque",
+            "url": "https://tonytony.ch/fr/services/branding",
+            "description": "Systèmes d'identité visuelle pour startups et PME suisses — logotype, typographie, logique couleur et règles d'usage.",
+            "provider": {
+              "@id": "https://tonytony.ch/fr/#professionalservice"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://tonytony.ch/fr/#professionalservice",
+      "name": "TONYTONY",
+      "url": "https://tonytony.ch/fr",
+      "logo": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_en.jpg",
+      "description": "Studio suisse de web design, développement Webflow, SEO/AEO et branding. Qualité agence, agilité freelance.",
+      "founder": {
+        "@type": "Person",
+        "name": "Anthony Salamin",
+        "url": "https://www.linkedin.com/in/anthonysalamin/"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Suisse"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "DACH"
+        }
+      ],
+      "knowsLanguage": [
+        "en",
+        "fr",
+        "de"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services TONYTONY",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://tonytony.ch/fr/services/strategy#service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://tonytony.ch/fr/services/web-design#service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://tonytony.ch/fr/services/web-development#service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://tonytony.ch/fr/services/seo-aeo-cro#service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://tonytony.ch/fr/services/branding#service"
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/anthonysalamin/",
+        "https://www.linkedin.com/company/tonytony"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tonytony.ch/fr/services#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien de temps prend la création d'un site Webflow ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Entre 2 et 8 semaines, selon le périmètre. Un one-pager ciblé se situe en bas de la fourchette ; un site CMS multilingue avec animations sur mesure se situe en haut. Chaque projet fait l'objet d'un devis précis après un appel de cadrage de 15 minutes — pas de template, pas d'approximation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pouvez-vous migrer mon site WordPress (ou autre) vers Webflow ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui — WordPress, Squarespace, Wix, stacks sur mesure. Je gère l'intégralité de la migration : contenu, acquis SEO (redirections, métadonnées, schema), restructuration CMS et configuration multilingue si nécessaire. Vos positions restent intactes, votre site devient plus rapide, et vous arrêtez de vous battre avec les plugins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que comprend concrètement votre service SEO / AEO ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO technique (Core Web Vitals, indexation, maillage interne), ingénierie de données structurées (Schema.org @graph, entity mapping), optimisation AEO pour que les moteurs IA comme ChatGPT et Perplexity vous citent, stratégie de mots-clés et optimisation on-page. Intégré au site dès le premier jour — pas greffé après coup."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Créez-vous des identités de marque from scratch, ou uniquement des sites web ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les deux. Systèmes d'identité visuelle complets — logo, typographie, logique couleur, règles d'usage — conçus pour fonctionner sur le web, le print, les pitch decks et les réseaux sociaux. Ou bien je pars de votre marque existante et je l'étends au web sans la casser. Plus gros logo ≠ meilleure marque."
+          }
+        }
+      ]
+    }
+  ]
+}

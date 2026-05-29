@@ -1,0 +1,100 @@
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://tonytony.ch/#organization",
+        "name": "TONYTONY",
+        "legalName": "TONYTONY Sàrl",
+        "url": "https://tonytony.ch",
+        "description": "Swiss-based web design and Webflow development studio specializing in high-performance, brand-driven digital experiences for startups and SMEs, with a strong focus on SEO and AEO.",
+        "logo": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0a3868c76ecfdb1973ee5_logotype.png",
+        "image": "https://cdn.prod.website-files.com/6565594186e587567235d089/69e0927056e65e732d3d8f80_opengraph_en.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "CP 826",
+          "postalCode": "3961",
+          "addressLocality": "St-Luc",
+          "addressRegion": "VS",
+          "addressCountry": "CH"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/tonytony"
+        ],
+        "founder": {
+          "@id": "https://tonytony.ch/#person"
+        },
+        "employee": {
+          "@id": "https://tonytony.ch/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://tonytony.ch/#person",
+        "name": "Anthony Salamin",
+        "jobTitle": "Senior Web Designer & Creative Developer",
+        "url": "https://tonytony.ch/studio",
+        "email": "hey@tonytony.ch",
+        "image": "https://cdn.prod.website-files.com/6565594186e587567235d089/656589ff61a9123418596fa4_avatar.avif",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "St-Luc",
+          "addressRegion": "VS",
+          "addressCountry": "CH"
+        },
+        "knowsLanguage": [
+          "en",
+          "fr",
+          "de"
+        ],
+        "knowsAbout": [
+          "Web Design",
+          "Webflow Development",
+          "GSAP Animation",
+          "Technical SEO",
+          "AEO",
+          "CRO",
+          "CMS Architecture",
+          "UX/UI Design",
+          "Performance Optimization",
+          "Brand Identity",
+          "Brand Strategy"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/anthonysalamin/",
+          "https://github.com/anthonysalamin/",
+          "https://webflow.com/@tonytony"
+        ],
+        "worksFor": {
+          "@id": "https://tonytony.ch/#organization"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://tonytony.ch/#website",
+        "url": "https://tonytony.ch",
+        "name": "TONYTONY",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://tonytony.ch/#organization"
+        }
+      },
+      {
+        "@type": "AboutPage",
+        "@id": "https://tonytony.ch/studio#webpage",
+        "url": "https://tonytony.ch/studio",
+        "name": "Studio | TONYTONY",
+        "description": "Get to know Anthony Salamin, the Senior Web Designer & Creative Developer behind TONYTONY. A focused studio based in Valais, Switzerland.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://tonytony.ch/#website"
+        },
+        "about": {
+          "@id": "https://tonytony.ch/#person"
+        },
+        "mainEntity": {
+          "@id": "https://tonytony.ch/#person"
+        }
+      }
+    ]
+  }
