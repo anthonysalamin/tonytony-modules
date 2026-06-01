@@ -11,15 +11,23 @@ export function initFathomTrackEvents() {
   // buttons
   const trackClick = (selector, eventName) => {
     const el = document.querySelector(selector);
-    if (el) el.addEventListener('click', () => fathom.trackEvent(eventName));
-    console.log('trackClick', selector, eventName);
+    if (el) {
+      el.addEventListener('click', () => {
+        console.log('trackClick', selector, eventName);
+        fathom.trackEvent(eventName);
+      });
+    }
   };
 
   // forms
   const trackSubmit = (selector, eventName) => {
     const el = document.querySelector(selector);
-    if (el) el.addEventListener('submit', () => fathom.trackEvent(eventName));
-    console.log('trackClick', selector, eventName);
+    if (el) {
+      el.addEventListener('submit', () => {
+        console.log('trackSubmit', selector, eventName);
+        fathom.trackEvent(eventName);
+      });
+    }
   };
 
   trackClick('[data-event="CTA navbar Get in touch"]', 'CTA navbar Get in touch clicked');
