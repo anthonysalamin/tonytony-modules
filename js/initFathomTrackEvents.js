@@ -12,12 +12,14 @@ export function initFathomTrackEvents() {
   const trackClick = (selector, eventName) => {
     const el = document.querySelector(selector);
     if (el) el.addEventListener('click', () => fathom.trackEvent(eventName));
+    console.log('trackClick', selector, eventName);
   };
 
   // forms
   const trackSubmit = (selector, eventName) => {
     const el = document.querySelector(selector);
     if (el) el.addEventListener('submit', () => fathom.trackEvent(eventName));
+    console.log('trackClick', selector, eventName);
   };
 
   trackClick('[data-event="CTA navbar Get in touch"]', 'CTA navbar Get in touch clicked');
