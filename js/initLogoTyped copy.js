@@ -1,19 +1,20 @@
 /**
  * TONYTONY | initLogoTyped
- * Collapses the logo wordmark from TONY_TONY into the TNT monogram after 10px of scroll and restores it when scrolling back up.
+ * Collapses the dual TONY wordmarks into the monogram after 10px of scroll and restores them when scrolling back up.
  *
- * @build 21.06.26
- * @updated 21.06.26 PHT
+ * @build 12.04.26
+ * @updated 12.04.26 PHT
  * @author TONYTONY Sàrl
  */
 
 export function initLogoTyped() {
-    const el = document.querySelector("[data-typed='logo']");
-    if (!el) return;
+    const p1 = document.querySelector('[data-id="1st TONY"]');
+    const p2 = document.querySelector('[data-id="2nd TONY"]');
 
-    const collapseFrames = ['TONY_TONY', 'TNY_TNY', 'TN_TN', 'TNT'];
-    const expandFrames = ['TNT', 'TN_TN', 'TNY_TNY', 'TONY_TONY'];
+    if (!p1 || !p2) return;
 
+    const full = 'TONY';
+    const steps = full.length - 1;
     let state = 'expanded';
     let animating = false;
 
@@ -25,19 +26,21 @@ export function initLogoTyped() {
         if (animating) return;
         animating = true;
 
-        const frames = direction === 'collapse' ? collapseFrames : expandFrames;
         const duration = 400;
         const start = performance.now();
-        let lastIndex = 0;
+        const fromLen = direction === 'collapse' ? full.length : 1;
+        const toLen = direction === 'collapse' ? 1 : full.length;
+        let lastRenderedLen = fromLen;
 
         function frame(now) {
             const t = Math.min(1, (now - start) / duration);
             const eased = easeInOut(t);
-            const index = Math.round(eased * (frames.length - 1));
+            const len = Math.round(fromLen + (toLen - fromLen) * eased);
 
-            if (index !== lastIndex) {
-                el.textContent = frames[index];
-                lastIndex = index;
+            if (len !== lastRenderedLen) {
+                p1.textContent = full.slice(0, len);
+                p2.textContent = full.slice(full.length - len);
+                lastRenderedLen = len;
             }
 
             if (t < 1) {
