@@ -1,6 +1,6 @@
 /**
  * TONYTONY | initLogoTyped
- * Collapses the logo wordmark from TONY_TONY into the TNT monogram after 10px of scroll and restores it when scrolling back up.
+ * Collapses the logo wordmark from TONYTONY into the TNT monogram after 10px of scroll and restores it when scrolling back up.
  *
  * @build 21.06.26
  * @updated 21.06.26 PHT
@@ -11,8 +11,8 @@ export function initLogoTyped() {
     const el = document.querySelector("[data-typed='logo']");
     if (!el) return;
 
-    const collapseFrames = ['TONY_TONY', 'TNY_TNY', 'TN_TN', 'TNT'];
-    const expandFrames = ['TNT', 'TN_TN', 'TNY_TNY', 'TONY_TONY'];
+    const collapseFrames = ['TONYTONY', 'TNYTNY', 'TNTN', 'TNT'];
+    const expandFrames = ['TNT', 'TNTN', 'TNYTNY', 'TONYTONY'];
 
     let state = 'expanded';
     let animating = false;
