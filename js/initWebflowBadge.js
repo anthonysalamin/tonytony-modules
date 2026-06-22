@@ -5,6 +5,7 @@
  * @build 2026-05-12
  * @updated 11:10 PHT
  * @author TONYTONY Sàrl
+ * @dependencies GSAP
  */
 
 export function initWebflowBadge() {

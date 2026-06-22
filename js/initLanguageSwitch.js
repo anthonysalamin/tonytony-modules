@@ -6,6 +6,7 @@
  * @build 15.04.26
  * @updated 15.04.26 PHT
  * @author TONYTONY Sàrl
+ * @dependencies None (native browser APIs)
  */
 export function initLanguageSwitch() {
     const supported = ['fr', 'de'];

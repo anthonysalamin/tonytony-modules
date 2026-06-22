@@ -5,6 +5,7 @@
  * @build 21.06.26
  * @updated 21.06.26 PHT
  * @author TONYTONY Sàrl
+ * @dependencies None (native browser APIs)
  */
 
 export function initLogoTyped() {

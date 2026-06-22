@@ -6,6 +6,7 @@
  * @build 12.04.26
  * @updated 21.05.26 PHT
  * @author TONYTONY Sàrl
+ * @dependencies GSAP
  */
 
 export function initCustomCursor(OPTIONS_CURSOR = {

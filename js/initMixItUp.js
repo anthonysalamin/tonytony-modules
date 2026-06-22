@@ -5,6 +5,7 @@
  * @build 12.04.26
  * @updated 21.04.26 PHT
  * @author TONYTONY Sàrl
+ * @dependencies MixItUp, GSAP (ScrollTrigger)
  */
 
 // ── Selectors ──────────────────────────────────────────────────────────────────

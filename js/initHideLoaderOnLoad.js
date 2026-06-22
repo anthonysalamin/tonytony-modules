@@ -5,6 +5,7 @@
  * @build 12.04.26
  * @updated 29.04.26 PHT
  * @author TONYTONY Sàrl
+ * @dependencies GSAP
  */
 
 export function initHideLoaderOnLoad() {

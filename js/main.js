@@ -5,6 +5,7 @@
  * @build 13.04.26
  * @updated 13.04.26 PHT
  * @author TONYTONY Sàrl
+ * @dependencies All init* modules imported from cdn.tonytony.ch; global libraries loaded separately (GSAP + plugins, Lenis, Typed.js, MixItUp, Mux Player, Fathom)
  */
 
 /*

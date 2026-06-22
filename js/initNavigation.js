@@ -5,6 +5,7 @@
  * @build 12.04.26
  * @updated 12.04.26 PHT
  * @author TONYTONY Sàrl
+ * @dependencies GSAP, Lenis (via window.lenis__pageScroll)
  */
 
 export function initNavigation() {
