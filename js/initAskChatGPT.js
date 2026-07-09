@@ -1,16 +1,16 @@
 /**
- * TONYTONY | 🥭 initAskClaude
- * Wires up the "Ask Claude if we're a fit" CTA: opens Claude Desktop
- * with the evaluation prompt prefilled via the claude:// deep link.
+ * TONYTONY | 🥭 initAskChatGPT
+ * Wires up the "Ask ChatGPT if we're a fit" CTA: opens the ChatGPT app
+ * with the evaluation prompt prefilled via the com.openai.chat:// deep link.
  * Prompt language follows the URL (/fr/, /de/, default en).
- * Falls back to clipboard copy + claude.ai/new when Desktop is absent.
+ * Falls back to clipboard copy + chatgpt.com when the app is absent.
  *
  * @build 09.07.26
  * @updated 09.07.26 PHT
  * @author TONYTONY Sàrl
  */
 
-const ASK_CLAUDE_PROMPTS = {
+const ASK_CHATGPT_PROMPTS = {
     en: `I'm looking for a web design and development partner.
 Please help me objectively evaluate whether TONYTONY (https://tonytony.ch) is a good fit for my project.
 Here's what I'm looking for:
@@ -19,6 +19,7 @@ Here's what I'm looking for:
 - Fast performance
 - Creative design
 - Webflow development
+- Long-term support
 Visit their website, analyze their portfolio, services and positioning.
 Then tell me:
 1. What they're particularly good at.
@@ -34,6 +35,7 @@ Voici ce que je recherche :
 - D'excellentes performances
 - Un design créatif
 - Du développement Webflow
+- Un accompagnement à long terme
 Visitez leur site, analysez leur portfolio, leurs services et leur positionnement.
 Puis dites-moi :
 1. Dans quoi ils excellent particulièrement.
@@ -49,6 +51,7 @@ Darauf lege ich Wert:
 - Hohe Performance
 - Kreatives Design
 - Webflow-Entwicklung
+- Langfristige Betreuung
 Besuche ihre Website, analysiere Portfolio, Leistungen und Positionierung.
 Sag mir dann:
 1. Worin sie besonders stark sind.
@@ -74,8 +77,8 @@ function getLocale() {
  * @param {'en' | 'fr' | 'de'} [locale]
  * @returns {string}
  */
-function getAskClaudePrompt(locale = getLocale()) {
-    return ASK_CLAUDE_PROMPTS[locale] || ASK_CLAUDE_PROMPTS.en;
+function getAskChatGPTPrompt(locale = getLocale()) {
+    return ASK_CHATGPT_PROMPTS[locale] || ASK_CHATGPT_PROMPTS.en;
 }
 
 /**
@@ -115,25 +118,41 @@ function fallbackCopy(text) {
  * @param {string} prompt
  * @returns {string}
  */
-function buildClaudeDesktopUrl(prompt) {
-    return `claude://claude.ai/new?q=${encodeURIComponent(prompt)}`;
+function buildChatGPTAppUrl(prompt) {
+    const params = new URLSearchParams({
+        q: prompt,
+        hints: 'search',
+    });
+    return `com.openai.chat://chatgpt.com/?${params.toString()}`;
 }
 
 /**
- * Opens Claude Desktop with a prefilled prompt. If the app does not
- * launch (page stays focused), copies the prompt and opens claude.ai.
+ * @param {string} prompt
+ * @returns {string}
+ */
+function buildChatGPTWebUrl(prompt) {
+    const params = new URLSearchParams({
+        q: prompt,
+        hints: 'search',
+    });
+    return `https://chatgpt.com/?${params.toString()}`;
+}
+
+/**
+ * Opens the ChatGPT app with a prefilled prompt. If the app does not
+ * launch (page stays focused), copies the prompt and opens chatgpt.com.
  *
  * @param {string} prompt
- * @param {string} webFallbackUrl
+ * @param {string} [webFallbackUrl]
  */
-function openClaudeWithPrompt(prompt, webFallbackUrl) {
+function openChatGPTWithPrompt(prompt, webFallbackUrl = buildChatGPTWebUrl(prompt)) {
     let appLaunched = false;
     const onBlur = () => {
         appLaunched = true;
     };
     window.addEventListener('blur', onBlur);
 
-    window.location.href = buildClaudeDesktopUrl(prompt);
+    window.location.href = buildChatGPTAppUrl(prompt);
 
     window.setTimeout(() => {
         window.removeEventListener('blur', onBlur);
@@ -146,25 +165,23 @@ function openClaudeWithPrompt(prompt, webFallbackUrl) {
 }
 
 /**
- * Initializes the Ask Claude CTA. Looks for a trigger button in the
- * DOM and wires up a click handler that opens Claude Desktop with the
- * prompt prefilled, or falls back to clipboard + claude.ai/new.
+ * Initializes the Ask ChatGPT CTA. Looks for a trigger button in the
+ * DOM and wires up a click handler that opens the ChatGPT app with the
+ * prompt prefilled, or falls back to clipboard + chatgpt.com.
  *
  * @param {Object} [options]
- * @param {string} [options.buttonSelector='[data-button="ask-claude"]']
- * @param {string} [options.claudeWebUrl='https://claude.ai/new']
+ * @param {string} [options.buttonSelector='[data-button="ask-chat-gpt"]']
  */
-export function initAskClaude({
-    buttonSelector = '[data-button="ask-claude"]',
-    claudeWebUrl = 'https://claude.ai/new',
+export function initAskChatGPT({
+    buttonSelector = '[data-button="ask-chat-gpt"]',
 } = {}) {
     const btn = document.querySelector(buttonSelector);
     if (!btn) {
-        console.warn(`initAskClaude: no ${buttonSelector} found, skipping`);
+        console.warn(`initAskChatGPT: no ${buttonSelector} found, skipping`);
         return;
     }
 
     btn.addEventListener('click', () => {
-        openClaudeWithPrompt(getAskClaudePrompt(), claudeWebUrl);
+        openChatGPTWithPrompt(getAskChatGPTPrompt());
     });
 }
