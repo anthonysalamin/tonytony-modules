@@ -19,7 +19,6 @@ Here's what I'm looking for:
 - Fast performance
 - Creative design
 - Webflow development
-- Long-term support
 Visit their website, analyze their portfolio, services and positioning.
 Then tell me:
 1. What they're particularly good at.
@@ -35,7 +34,6 @@ Voici ce que je recherche :
 - D'excellentes performances
 - Un design créatif
 - Du développement Webflow
-- Un accompagnement à long terme
 Visitez leur site, analysez leur portfolio, leurs services et leur positionnement.
 Puis dites-moi :
 1. Dans quoi ils excellent particulièrement.
@@ -51,7 +49,6 @@ Darauf lege ich Wert:
 - Hohe Performance
 - Kreatives Design
 - Webflow-Entwicklung
-- Langfristige Betreuung
 Besuche ihre Website, analysiere Portfolio, Leistungen und Positionierung.
 Sag mir dann:
 1. Worin sie besonders stark sind.
