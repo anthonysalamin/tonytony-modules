@@ -1,8 +1,8 @@
 /**
  * TONYTONY | 🥭 initAskClaude
- * Wires up the "Ask Claude if we're a fit" CTA: copies the evaluation
- * prompt to the clipboard, opens claude.ai in a new tab, and shows a
- * toast telling the visitor to paste it in.
+ * Wires up the "Ask Claude if we're a fit" CTA: opens Claude Desktop
+ * with the evaluation prompt prefilled via the claude:// deep link.
+ * Falls back to clipboard copy + claude.ai/new when Desktop is absent.
  *
  * @build 09.07.26
  * @updated 09.07.26 PHT
@@ -60,17 +60,51 @@ function fallbackCopy(text) {
 }
 
 /**
+ * @param {string} prompt
+ * @returns {string}
+ */
+function buildClaudeDesktopUrl(prompt) {
+    return `claude://claude.ai/new?q=${encodeURIComponent(prompt)}`;
+}
+
+/**
+ * Opens Claude Desktop with a prefilled prompt. If the app does not
+ * launch (page stays focused), copies the prompt and opens claude.ai.
+ *
+ * @param {string} prompt
+ * @param {string} webFallbackUrl
+ */
+function openClaudeWithPrompt(prompt, webFallbackUrl) {
+    let appLaunched = false;
+    const onBlur = () => {
+        appLaunched = true;
+    };
+    window.addEventListener('blur', onBlur);
+
+    window.location.href = buildClaudeDesktopUrl(prompt);
+
+    window.setTimeout(() => {
+        window.removeEventListener('blur', onBlur);
+        if (appLaunched) return;
+
+        copyToClipboard(prompt).then(() => {
+            window.open(webFallbackUrl, '_blank', 'noopener');
+        });
+    }, 1500);
+}
+
+/**
  * Initializes the Ask Claude CTA. Looks for a trigger button in the
- * DOM and wires up a click handler that copies the prompt and opens
- * claude.ai in a new tab.
+ * DOM and wires up a click handler that opens Claude Desktop with the
+ * prompt prefilled, or falls back to clipboard + claude.ai/new.
  *
  * @param {Object} [options]
  * @param {string} [options.buttonSelector='[data-button="ask-claude"]']
- * @param {string} [options.claudeUrl='https://claude.ai/new']
+ * @param {string} [options.claudeWebUrl='https://claude.ai/new']
  */
 export function initAskClaude({
     buttonSelector = '[data-button="ask-claude"]',
-    claudeUrl = 'https://claude.ai/new',
+    claudeWebUrl = 'https://claude.ai/new',
 } = {}) {
     const btn = document.querySelector(buttonSelector);
     if (!btn) {
@@ -79,8 +113,6 @@ export function initAskClaude({
     }
 
     btn.addEventListener('click', () => {
-        copyToClipboard(ASK_CLAUDE_PROMPT).then(() => {
-            window.open(claudeUrl, '_blank', 'noopener');
-        });
+        openClaudeWithPrompt(ASK_CLAUDE_PROMPT, claudeWebUrl);
     });
 }
