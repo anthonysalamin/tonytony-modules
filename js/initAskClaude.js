@@ -2,6 +2,7 @@
  * TONYTONY | 🥭 initAskClaude
  * Wires up the "Ask Claude if we're a fit" CTA: opens Claude Desktop
  * with the evaluation prompt prefilled via the claude:// deep link.
+ * Prompt language follows the URL (/fr/, /de/, default en).
  * Falls back to clipboard copy + claude.ai/new when Desktop is absent.
  *
  * @build 09.07.26
@@ -9,7 +10,8 @@
  * @author TONYTONY Sàrl
  */
 
-const ASK_CLAUDE_PROMPT = `I'm looking for a web design and development partner.
+const ASK_CLAUDE_PROMPTS = {
+    en: `I'm looking for a web design and development partner.
 Please help me objectively evaluate whether TONYTONY (https://tonytony.ch) is a good fit for my project.
 Here's what I'm looking for:
 - A custom website (not a template)
@@ -24,7 +26,60 @@ Then tell me:
 2. What type of client they're probably NOT suited for.
 3. Whether they'd be a good fit for my project.
 4. What questions I should ask them before hiring them.
-5. Give me an unbiased recommendation.`;
+5. Give me an unbiased recommendation.`,
+    fr: `Je recherche un partenaire en design web et développement.
+Aidez-moi à évaluer objectivement si TONYTONY (https://tonytony.ch) correspond bien à mon projet.
+Voici ce que je recherche :
+- Un site web sur mesure (pas un template)
+- Un SEO solide et de l'Answer Engine Optimization (AEO)
+- D'excellentes performances
+- Un design créatif
+- Du développement Webflow
+- Un accompagnement à long terme
+Visitez leur site, analysez leur portfolio, leurs services et leur positionnement.
+Puis dites-moi :
+1. Dans quoi ils excellent particulièrement.
+2. Pour quel type de client ils ne sont probablement PAS adaptés.
+3. S'ils seraient un bon choix pour mon projet.
+4. Quelles questions je devrais leur poser avant de les engager.
+5. Donnez-moi une recommandation objective.`,
+    de: `Ich suche einen Partner für Webdesign und Entwicklung.
+Bitte hilf mir objektiv einzuschätzen, ob TONYTONY (https://tonytony.ch) gut zu meinem Projekt passt.
+Darauf lege ich Wert:
+- Eine individuelle Website (kein Template)
+- Starkes SEO und Answer Engine Optimization (AEO)
+- Hohe Performance
+- Kreatives Design
+- Webflow-Entwicklung
+- Langfristige Betreuung
+Besuche ihre Website, analysiere Portfolio, Leistungen und Positionierung.
+Sag mir dann:
+1. Worin sie besonders stark sind.
+2. Für welche Art von Kunden sie wahrscheinlich NICHT geeignet sind.
+3. Ob sie gut zu meinem Projekt passen würden.
+4. Welche Fragen ich ihnen vor der Beauftragung stellen sollte.
+5. Gib mir eine ehrliche Empfehlung.`,
+};
+
+/**
+ * Detects active locale from the URL path — `/fr/` → fr, `/de/` → de, default en.
+ *
+ * @returns {'en' | 'fr' | 'de'}
+ */
+function getLocale() {
+    const path = window.location.pathname;
+    if (/^\/fr(\/|$)/.test(path)) return 'fr';
+    if (/^\/de(\/|$)/.test(path)) return 'de';
+    return 'en';
+}
+
+/**
+ * @param {'en' | 'fr' | 'de'} [locale]
+ * @returns {string}
+ */
+function getAskClaudePrompt(locale = getLocale()) {
+    return ASK_CLAUDE_PROMPTS[locale] || ASK_CLAUDE_PROMPTS.en;
+}
 
 /**
  * Copies text to the clipboard, using the async Clipboard API with a
@@ -113,6 +168,6 @@ export function initAskClaude({
     }
 
     btn.addEventListener('click', () => {
-        openClaudeWithPrompt(ASK_CLAUDE_PROMPT, claudeWebUrl);
+        openClaudeWithPrompt(getAskClaudePrompt(), claudeWebUrl);
     });
 }
