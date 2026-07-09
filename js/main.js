@@ -51,8 +51,8 @@ import { initSwitchTheme } from "https://cdn.tonytony.ch/js/initSwitchTheme.js?v
 import { initSwitchThemeCaseStudies } from "https://cdn.tonytony.ch/js/initSwitchThemeCaseStudies.js?v=1.0.0";
 import { initContactForm } from "https://cdn.tonytony.ch/js/initContactForm.js?v=1.0.0";
 import { initWebflowBadge } from "https://cdn.tonytony.ch/js/initWebflowBadge.js?v=1.0.0";
-import { initAskClaude } from "https://cdn.tonytony.ch/js/initAskClaude.js?v=1.0.2";
-import { initAskChatGPT } from "https://cdn.tonytony.ch/js/initAskChatGPT.js?v=1.0.1";
+import { initAskClaude } from "https://cdn.tonytony.ch/js/initAskClaude.js?v=1.0.3";
+import { initAskChatGPT } from "https://cdn.tonytony.ch/js/initAskChatGPT.js?v=1.0.2";
 // ── Runner ───────────────────────────────────────────────────────────────────
 
 function run(label, functionToTun) {

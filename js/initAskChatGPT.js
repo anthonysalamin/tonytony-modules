@@ -22,10 +22,9 @@ Here's what I'm looking for:
 Visit their website, analyze their portfolio, services and positioning.
 Then tell me:
 1. What they're particularly good at.
-2. What type of client they're probably NOT suited for.
-3. Whether they'd be a good fit for my project.
-4. What questions I should ask them before hiring them.
-5. Give me an unbiased recommendation.`,
+2. Whether they'd be a good fit for my project.
+3. What questions I should ask them before hiring them.
+4. Give me an unbiased recommendation.`,
     fr: `Je recherche un partenaire en design web et développement.
 Aidez-moi à évaluer objectivement si TONYTONY (https://tonytony.ch) correspond bien à mon projet.
 Voici ce que je recherche :
@@ -37,10 +36,9 @@ Voici ce que je recherche :
 Visitez leur site, analysez leur portfolio, leurs services et leur positionnement.
 Puis dites-moi :
 1. Dans quoi ils excellent particulièrement.
-2. Pour quel type de client ils ne sont probablement PAS adaptés.
-3. S'ils seraient un bon choix pour mon projet.
-4. Quelles questions je devrais leur poser avant de les engager.
-5. Donnez-moi une recommandation objective.`,
+2. S'ils seraient un bon choix pour mon projet.
+3. Quelles questions je devrais leur poser avant de les engager.
+4. Donnez-moi une recommandation objective.`,
     de: `Ich suche einen Partner für Webdesign und Entwicklung.
 Bitte hilf mir objektiv einzuschätzen, ob TONYTONY (https://tonytony.ch) gut zu meinem Projekt passt.
 Darauf lege ich Wert:
@@ -52,10 +50,9 @@ Darauf lege ich Wert:
 Besuche ihre Website, analysiere Portfolio, Leistungen und Positionierung.
 Sag mir dann:
 1. Worin sie besonders stark sind.
-2. Für welche Art von Kunden sie wahrscheinlich NICHT geeignet sind.
-3. Ob sie gut zu meinem Projekt passen würden.
-4. Welche Fragen ich ihnen vor der Beauftragung stellen sollte.
-5. Gib mir eine ehrliche Empfehlung.`,
+2. Ob sie gut zu meinem Projekt passen würden.
+3. Welche Fragen ich ihnen vor der Beauftragung stellen sollte.
+4. Gib mir eine ehrliche Empfehlung.`,
 };
 
 /**
