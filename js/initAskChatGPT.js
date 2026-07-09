@@ -1,9 +1,9 @@
 /**
  * TONYTONY | 🥭 initAskChatGPT
  * Wires up the "Ask ChatGPT if we're a fit" CTA: opens the ChatGPT app
- * with the evaluation prompt prefilled via the com.openai.chat:// deep link.
+ * (or chatgpt.com) with the evaluation prompt prefilled via ?q=.
  * Prompt language follows the URL (/fr/, /de/, default en).
- * Falls back to clipboard copy + chatgpt.com when the app is absent.
+ * Falls back to clipboard copy + chatgpt.com when nothing opens.
  *
  * @build 09.07.26
  * @updated 09.07.26 PHT
@@ -115,56 +115,41 @@ function fallbackCopy(text) {
  * @param {string} prompt
  * @returns {string}
  */
-function buildChatGPTAppUrl(prompt) {
-    const params = new URLSearchParams({
-        q: prompt,
-        hints: 'search',
-    });
-    return `com.openai.chat://chatgpt.com/?${params.toString()}`;
+function buildChatGPTUrl(prompt) {
+    return `https://chatgpt.com/?q=${encodeURIComponent(prompt)}`;
 }
 
 /**
- * @param {string} prompt
- * @returns {string}
- */
-function buildChatGPTWebUrl(prompt) {
-    const params = new URLSearchParams({
-        q: prompt,
-        hints: 'search',
-    });
-    return `https://chatgpt.com/?${params.toString()}`;
-}
-
-/**
- * Opens the ChatGPT app with a prefilled prompt. If the app does not
- * launch (page stays focused), copies the prompt and opens chatgpt.com.
+ * Opens ChatGPT with a prefilled prompt. Uses the https universal link so
+ * macOS/iOS hand off to the native app without triggering file-attachment
+ * flows (com.openai.chat + hints=search caused "cannot access files" errors).
+ * If nothing opens, copies the prompt and retries.
  *
  * @param {string} prompt
- * @param {string} [webFallbackUrl]
+ * @param {string} [chatGPTUrl]
  */
-function openChatGPTWithPrompt(prompt, webFallbackUrl = buildChatGPTWebUrl(prompt)) {
-    let appLaunched = false;
+function openChatGPTWithPrompt(prompt, chatGPTUrl = buildChatGPTUrl(prompt)) {
+    let opened = false;
     const onBlur = () => {
-        appLaunched = true;
+        opened = true;
     };
     window.addEventListener('blur', onBlur);
 
-    window.location.href = buildChatGPTAppUrl(prompt);
+    copyToClipboard(prompt);
+    window.open(chatGPTUrl, '_blank', 'noopener');
 
     window.setTimeout(() => {
         window.removeEventListener('blur', onBlur);
-        if (appLaunched) return;
+        if (opened) return;
 
-        copyToClipboard(prompt).then(() => {
-            window.open(webFallbackUrl, '_blank', 'noopener');
-        });
+        window.open(chatGPTUrl, '_blank', 'noopener');
     }, 1500);
 }
 
 /**
  * Initializes the Ask ChatGPT CTA. Looks for a trigger button in the
- * DOM and wires up a click handler that opens the ChatGPT app with the
- * prompt prefilled, or falls back to clipboard + chatgpt.com.
+ * DOM and wires up a click handler that opens ChatGPT with the prompt
+ * prefilled, or falls back to clipboard + chatgpt.com.
  *
  * @param {Object} [options]
  * @param {string} [options.buttonSelector='[data-button="ask-chat-gpt"]']
