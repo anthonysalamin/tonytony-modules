@@ -34,77 +34,53 @@ Then tell me:
  * @returns {Promise<void>}
  */
 function copyToClipboard(text) {
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    return navigator.clipboard.writeText(text).catch(() => fallbackCopy(text));
-  }
-  fallbackCopy(text);
-  return Promise.resolve();
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        return navigator.clipboard.writeText(text).catch(() => fallbackCopy(text));
+    }
+    fallbackCopy(text);
+    return Promise.resolve();
 }
 
 /**
  * @param {string} text
  */
 function fallbackCopy(text) {
-  const ta = document.createElement('textarea');
-  ta.value = text;
-  ta.style.position = 'fixed';
-  ta.style.opacity = '0';
-  document.body.appendChild(ta);
-  ta.select();
-  try {
-    document.execCommand('copy');
-  } catch (e) {
-    // Silently ignore — nothing more we can do without clipboard access.
-  }
-  document.body.removeChild(ta);
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+        document.execCommand('copy');
+    } catch (e) {
+        // Silently ignore — nothing more we can do without clipboard access.
+    }
+    document.body.removeChild(ta);
 }
 
 /**
- * Shows a brief toast message inside the given toast element.
- *
- * @param {HTMLElement} toastEl
- * @param {string} text
- * @param {number} [duration=4000]
- */
-function showToast(toastEl, text, duration = 4000) {
-  toastEl.textContent = text;
-  toastEl.classList.add('show');
-  clearTimeout(showToast._timer);
-  showToast._timer = setTimeout(() => {
-    toastEl.classList.remove('show');
-  }, duration);
-}
-
-/**
- * Initializes the Ask Claude CTA. Looks for a trigger button and a
- * toast element in the DOM and wires up the click handler.
+ * Initializes the Ask Claude CTA. Looks for a trigger button in the
+ * DOM and wires up a click handler that copies the prompt and opens
+ * claude.ai in a new tab.
  *
  * @param {Object} [options]
  * @param {string} [options.buttonSelector='[data-button="ask-claude"]']
- * @param {string} [options.toastSelector='#tt-ask-claude-toast']
  * @param {string} [options.claudeUrl='https://claude.ai/new']
  */
 export function initAskClaude({
-  buttonSelector = '[data-button="ask-claude"]',
-  toastSelector = '#tt-ask-claude-toast',
-  claudeUrl = 'https://claude.ai/new',
+    buttonSelector = '[data-button="ask-claude"]',
+    claudeUrl = 'https://claude.ai/new',
 } = {}) {
-  const btn = document.querySelector(buttonSelector);
-  if (!btn) {
-    console.warn(`initAskClaude: no ${buttonSelector} found, skipping`);
-    return;
-  }
+    const btn = document.querySelector(buttonSelector);
+    if (!btn) {
+        console.warn(`initAskClaude: no ${buttonSelector} found, skipping`);
+        return;
+    }
 
-  const toast = document.querySelector(toastSelector);
-  if (!toast) {
-    console.warn(`initAskClaude: no ${toastSelector} found, skipping`);
-    return;
-  }
-
-  btn.addEventListener('click', () => {
-    copyToClipboard(ASK_CLAUDE_PROMPT).then(() => {
-      showToast(toast, 'Prompt copied — paste it into the chat that just opened.');
-      window.open(claudeUrl, '_blank', 'noopener');
+    btn.addEventListener('click', () => {
+        copyToClipboard(ASK_CLAUDE_PROMPT).then(() => {
+            window.open(claudeUrl, '_blank', 'noopener');
+        });
     });
-  });
 }
