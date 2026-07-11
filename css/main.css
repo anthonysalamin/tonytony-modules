@@ -118,24 +118,3 @@ mux-player::part(poster) {
         background: var(--light-theme--background);
     }
 }
-
-/* Desktop: progressive blur */
-@media (min-width: 992px) {
-
-    .nav::before,
-    .nav::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        /* same fade for both layers */
-        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.95) 60%, rgba(0, 0, 0, 0) 100%);
-        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.95) 60%, rgba(0, 0, 0, 0) 90%);
-    }
-
-    /* blur layer */
-    .nav::before {
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-    }
-}
