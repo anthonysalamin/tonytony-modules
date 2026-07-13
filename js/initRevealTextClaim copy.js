@@ -1,6 +1,6 @@
 /**
  * TONYTONY | initializeTextRevealAnimation
- * Splits each matched element with SplitText and scrubs word opacity from dim to full across ScrollTrigger.
+ * Splits each matched element with SplitText and scrubs character opacity from dim to full across ScrollTrigger.
  *
  * @build 12.04.26
  * @updated 12.04.26 PHT
@@ -12,18 +12,13 @@ function initializeTextRevealAnimation(targetConfig, animationConfig, isProducti
     const targetElements = document.querySelectorAll(targetConfig.SELECTOR);
 
     targetElements.forEach(element => {
-        // 1. Split text into whole words
-        // 2. Wrap them in <span> tags for SEO safety and HTML validation
         const splitTextInstance = new SplitText(element, {
-            type: "words",
-            tag: "span"
+            type: "words,chars"
         });
 
-        // Set initial low-opacity state for all words
-        gsap.set(splitTextInstance.words, { opacity: 0.1 });
+        gsap.set(splitTextInstance.chars, { opacity: 0.1 });
 
-        // Animate words instead of characters
-        gsap.fromTo(splitTextInstance.words,
+        gsap.fromTo(splitTextInstance.chars,
             { opacity: 0.1 },
             {
                 opacity: 1,
@@ -58,9 +53,9 @@ export function initRevealTextClaim() {
 
         // Common animation properties
         ANIMATION_SETTINGS: {
-            TYPE: "words", // Updated to reflect word-level animation
+            TYPE: "words, chars",
             DURATION: 0.3,
-            STAGGER: 0.05 // Increased slightly since words animate faster overall than chars
+            STAGGER: 0.02
         },
 
         // Target element configurations
