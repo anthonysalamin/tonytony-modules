@@ -17,7 +17,7 @@ const POSITIONS = ['left', 'center', 'right'];
 const TRANSLATIONS = {
   en: {
     title: 'Cookies consent',
-    text: 'We may use cookies to improve performance, measure usage, and personalize your experience. You can accept all cookies or reject non-essential ones.',
+    text: 'We may use cookies to improve performance, measure usage, and personalize your experience. You are in control of your data.',
     acceptLabel: 'Accept all',
     declineLabel: 'Reject non-essential',
     privacyLabel: 'Privacy policy',
