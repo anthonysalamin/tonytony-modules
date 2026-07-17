@@ -16,7 +16,8 @@ function initializeTextRevealAnimation(targetConfig, animationConfig, isProducti
         // 2. Wrap them in <span> tags for SEO safety and HTML validation
         const splitTextInstance = new SplitText(element, {
             type: "words",
-            tag: "span"
+            tag: "span",
+            aria: "none"
         });
 
         // Set initial low-opacity state for all words
