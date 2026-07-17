@@ -20,10 +20,23 @@ function initializeTextRevealAnimation(targetConfig, animationConfig, isProducti
             aria: "none"
         });
 
-        // Animate words instead of characters.
-        // immediateRender:false keeps words at full opacity until the trigger is
-        // reached, so below-the-fold text isn't dimmed at load (passes contrast audits).
-        gsap.fromTo(splitTextInstance.words,
+        const words = splitTextInstance.words;
+
+        // Primer: words stay at full opacity on load (readable + passes contrast
+        // audits, which never scroll). They are only dimmed to 0.1 shortly before
+        // the element enters the viewport, so the reveal scrub has a dim starting
+        // point without any pop. Scrolling back above the primer restores full opacity.
+        ScrollTrigger.create({
+            trigger: element,
+            start: `${targetConfig.START.ELEMENT} ${targetConfig.PRIME.VIEWPORT}`,
+            onEnter: () => gsap.set(words, { opacity: 0.1 }),
+            onLeaveBack: () => gsap.set(words, { opacity: 1 }),
+            markers: !isProduction
+        });
+
+        // Reveal: scrub words from dim to full across the trigger range.
+        // immediateRender:false leaves the initial state to the primer above.
+        gsap.fromTo(words,
             { opacity: 0.1 },
             {
                 opacity: 1,
@@ -78,6 +91,10 @@ export function initRevealTextClaim() {
                     ELEMENT: "top",
                     VIEWPORT: "95%"
                 },
+                // Dim words 20vh below the viewport bottom, before the reveal starts
+                PRIME: {
+                    VIEWPORT: "120%"
+                },
                 END: {
                     VIEWPORT: "92%"
                 }
@@ -87,6 +104,10 @@ export function initRevealTextClaim() {
                 START: {
                     ELEMENT: "top",
                     VIEWPORT: "80%"
+                },
+                // Dim words 20vh below the viewport bottom, before the reveal starts
+                PRIME: {
+                    VIEWPORT: "120%"
                 },
                 END: {
                     VIEWPORT: "center"
