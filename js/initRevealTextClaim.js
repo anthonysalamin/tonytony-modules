@@ -20,10 +20,9 @@ function initializeTextRevealAnimation(targetConfig, animationConfig, isProducti
             aria: "none"
         });
 
-        // Set initial low-opacity state for all words
-        gsap.set(splitTextInstance.words, { opacity: 0.1 });
-
-        // Animate words instead of characters
+        // Animate words instead of characters.
+        // immediateRender:false keeps words at full opacity until the trigger is
+        // reached, so below-the-fold text isn't dimmed at load (passes contrast audits).
         gsap.fromTo(splitTextInstance.words,
             { opacity: 0.1 },
             {
@@ -31,6 +30,7 @@ function initializeTextRevealAnimation(targetConfig, animationConfig, isProducti
                 duration: animationConfig.DURATION,
                 stagger: animationConfig.STAGGER,
                 ease: "none",
+                immediateRender: false,
                 scrollTrigger: {
                     trigger: element,
                     start: `${targetConfig.START.ELEMENT} ${targetConfig.START.VIEWPORT}`,
@@ -53,6 +53,12 @@ function initializeTextRevealAnimation(targetConfig, animationConfig, isProducti
  * @author TONYTONY Sàrl
  */
 export function initRevealTextClaim() {
+    // Respect users who prefer reduced motion: skip splitting/dimming entirely
+    // so text stays at full opacity and readable.
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        return;
+    }
+
     // Configuration object with all animation settings
     const REVEAL_CONFIG = {
         PRODUCTION: true,
