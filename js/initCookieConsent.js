@@ -67,7 +67,7 @@ function getPosition() {
 const COPY = getTranslation();
 
 const OPTIONS = {
-  cookieName: 'necessary',
+  cookieName: 'Analytics_Cookies',
   cookieDuration: 180,
   title: COPY.title,
   text: COPY.text,
