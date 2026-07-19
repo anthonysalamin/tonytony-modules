@@ -50,6 +50,10 @@ TONYTONY Sàrl is a Switzerland-based studio founded and operated by Anthony Sal
 - **Multilingual Websites**: Structured multilingual implementations (EN, FR, DE and beyond)
 - **Automation & Integrations**: API workflows and no-code/low-code integrations
 
+## Tools & Projects
+
+* [Tony's SEO/AEO Audit Tool](https://seo.tonytony.ch): A dedicated web application designed to audit websites for traditional Search Engine Optimization (SEO) and Artificial Engine Optimization (AEO).
+
 ## Approach
 
 TONYTONY follows an integrated design and development process with emphasis on clarity, speed, and usability. CMS structures are built for long-term scalability and editorial autonomy. SEO, AEO, and structured data are implemented from the ground up — not bolted on after launch. Every solution is tailored to the client's context, goals, and technical landscape.
