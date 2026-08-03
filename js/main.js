@@ -54,6 +54,8 @@ import { initWebflowBadge } from "https://cdn.tonytony.ch/js/initWebflowBadge.js
 import { initAskClaude } from "https://cdn.tonytony.ch/js/initAskClaude.js?v=1.0.3";
 import { initAskChatGPT } from "https://cdn.tonytony.ch/js/initAskChatGPT.js?v=1.0.2";
 import { initCookieConsent } from "https://cdn.tonytony.ch/js/initCookieConsent.js?v=1.0.0";
+import { initMWG070 } from "https://cdn.tonytony.ch/js/initMWG070.js?v=1.0.0";
+
 // ── Runner ───────────────────────────────────────────────────────────────────
 
 function run(label, functionToTun) {
@@ -90,6 +92,7 @@ async function initApp() {
     run("MarqueeDualHorizontal", initMarqueeDualHorizontal);
     run("MarqueeDualVertical", initMarqueeDualVertical);
     run("MarqueeClients", initMarqueeClients);
+    run("MWG070", initMWG070);
 
     // layout & interaction
     run("MixItUp", initMixItUp);
