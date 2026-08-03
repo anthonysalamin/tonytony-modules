@@ -13,7 +13,7 @@ export function initSublineTyped() {
     if (!el) return;
 
     new Typed(el, {
-        strings: ["SEO^1000", "AEO^1000", "CRO^1000", "AI^1000"],
+        strings: ["SEO^1000", "AEO^1000", "AI^1000"],
         typeSpeed: 60,
         backSpeed: 30,
         startDelay: 0,
