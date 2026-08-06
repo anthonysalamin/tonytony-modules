@@ -3,15 +3,22 @@
  * Splits each matched element with SplitText and scrubs word opacity from dim to full across ScrollTrigger.
  *
  * @build 12.04.26
- * @updated 12.04.26 PHT
+ * @updated 06.08.26 PHT
  * @author TONYTONY Sàrl
  * @dependencies GSAP (ScrollTrigger, SplitText)
  */
 
 function initializeTextRevealAnimation(targetConfig, animationConfig, isProduction) {
     const targetElements = document.querySelectorAll(targetConfig.SELECTOR);
+    // Primer fires when element top hits this Y (e.g. 120% of viewport height).
+    const primeLine = window.innerHeight * (parseFloat(targetConfig.PRIME.VIEWPORT) / 100);
 
     targetElements.forEach(element => {
+        // Already past the primer on load (in view or in the pre-viewport band):
+        // skip split + dim so words never land at opacity 0.1 without a user
+        // scroll — that state is what mobile Lighthouse flags for contrast.
+        if (element.getBoundingClientRect().top < primeLine) return;
+
         // 1. Split text into whole words
         // 2. Wrap them in <span> tags for SEO safety and HTML validation
         const splitTextInstance = new SplitText(element, {
