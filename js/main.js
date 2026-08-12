@@ -55,6 +55,7 @@ import { initAskClaude } from "https://cdn.tonytony.ch/js/initAskClaude.js?v=1.0
 import { initAskChatGPT } from "https://cdn.tonytony.ch/js/initAskChatGPT.js?v=1.0.2";
 import { initCookieConsent } from "https://cdn.tonytony.ch/js/initCookieConsent.js?v=1.0.0";
 import { initMWG070 } from "https://cdn.tonytony.ch/js/initMWG070.js?v=1.0.0";
+import { initMWG087 } from "https://cdn.tonytony.ch/js/initMWG087.js?v=1.0.0";
 
 // ── Runner ───────────────────────────────────────────────────────────────────
 
@@ -93,6 +94,7 @@ async function initApp() {
     run("MarqueeDualVertical", initMarqueeDualVertical);
     run("MarqueeClients", initMarqueeClients);
     run("MWG070", initMWG070);
+    run("MWG087", initMWG087);
 
     // layout & interaction
     run("MixItUp", initMixItUp);
