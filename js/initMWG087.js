@@ -13,9 +13,9 @@ export function initMWG087() {
 
     if (!root) return;
 
-    const container = root.querySelector('.mwg087-container');
-    const cardsContainer = root.querySelector('.mwg087-cards');
-    const cards = root.querySelectorAll('.mwg087-card');
+    const container = root.querySelector('[data-mwg087="container"]');
+    const cardsContainer = root.querySelector('[data-mwg087="cards"]');
+    const cards = root.querySelectorAll('[data-mwg087="card"]');
 
     if (!container || !cardsContainer || !cards.length) return;
 
