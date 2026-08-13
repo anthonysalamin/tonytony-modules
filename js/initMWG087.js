@@ -34,7 +34,6 @@ export function initMWG087() {
             scrub: true,
             start: 'top top',
             end: '+=' + distance,
-            refreshPriority: -1,
         },
     });
 

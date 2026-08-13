@@ -3,7 +3,7 @@
  * Handles orchestration of UI, interactions, and global behaviors on DOM ready.
  *
  * @build 13.04.26
- * @updated 13.08.26 PHT
+ * @updated 13.04.26 PHT
  * @author TONYTONY Sàrl
  * @dependencies All init* modules imported from cdn.tonytony.ch; global libraries loaded separately (GSAP + plugins, Lenis, Typed.js, MixItUp, Mux Player, Fathom)
  */
@@ -32,7 +32,7 @@ import { initLanguageSwitch } from 'https://cdn.tonytony.ch/js/initLanguageSwitc
 import { initLogoTyped } from "https://cdn.tonytony.ch/js/initLogoTyped.js?v=1.0.0";
 import { initVideoHeader } from "https://cdn.tonytony.ch/js/initVideoHeader.js?v=1.0.0";
 import { initMarqueeDualHorizontal } from "https://cdn.tonytony.ch/js/initMarqueeDualHorizontal.js?v=1.0.0";
-import { initMarqueeDualVertical } from "https://cdn.tonytony.ch/js/initMarqueeDualVertical.js?v=1.0.1";
+import { initMarqueeDualVertical } from "https://cdn.tonytony.ch/js/initMarqueeDualVertical.js?v=1.0.0";
 import { initMixItUp } from "https://cdn.tonytony.ch/js/initMixItUp.js?v=1.0.0";
 import { initFAQModule } from "https://cdn.tonytony.ch/js/initFAQModule.js?v=1.0.0";
 import { initDrawCheck } from "https://cdn.tonytony.ch/js/initDrawCheck.js?v=1.0.0";
@@ -54,7 +54,7 @@ import { initWebflowBadge } from "https://cdn.tonytony.ch/js/initWebflowBadge.js
 import { initAskClaude } from "https://cdn.tonytony.ch/js/initAskClaude.js?v=1.0.3";
 import { initAskChatGPT } from "https://cdn.tonytony.ch/js/initAskChatGPT.js?v=1.0.2";
 import { initCookieConsent } from "https://cdn.tonytony.ch/js/initCookieConsent.js?v=1.0.0";
-import { initMWG087 } from "https://cdn.tonytony.ch/js/initMWG087.js?v=1.0.1";
+import { initMWG087 } from "https://cdn.tonytony.ch/js/initMWG087.js?v=1.0.0";
 
 // ── Runner ───────────────────────────────────────────────────────────────────
 
@@ -89,10 +89,10 @@ async function initApp() {
     // =========================
 
     // marquees
-    run("MWG087", initMWG087);
     run("MarqueeDualHorizontal", initMarqueeDualHorizontal);
     run("MarqueeDualVertical", initMarqueeDualVertical);
     run("MarqueeClients", initMarqueeClients);
+    run("MWG087", initMWG087);
 
     // layout & interaction
     run("MixItUp", initMixItUp);
