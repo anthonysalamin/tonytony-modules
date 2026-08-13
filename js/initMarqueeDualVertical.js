@@ -3,7 +3,7 @@
  * Drives opposing vertical marquee columns inside `[data-marquee="dual-container"]` with scroll-linked GSAP motion.
  *
  * @build 12.04.26
- * @updated 12.04.26 PHT
+ * @updated 13.08.26 PHT
  * @author TONYTONY Sàrl
  * @dependencies GSAP (ScrollTrigger)
  */
@@ -27,6 +27,7 @@ export function initMarqueeDualVertical() {
         start: "top bottom",
         end: "bottom top",
         scrub: scrub,
+        refreshPriority: 0,
         // markers: true,
         animation: gsap.timeline()
             .to(upward, { yPercent: -delta, ease: ease, force3D: true }, 0)
