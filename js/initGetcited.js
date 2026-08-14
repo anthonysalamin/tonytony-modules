@@ -21,18 +21,27 @@ export function initGetcited() {
     if (closeEl) closeEl.addEventListener("click", clear);
 
     const cancelEl = root.querySelector('[data-tt-cite="cancel"]');
-    if (cancelEl) cancelEl.addEventListener("click", clear);
+    if (cancelEl) {
+        cancelEl.addEventListener("click", () => {
+            clear();
+            if (input) input.placeholder = "You are missing out... 🫪";
+        });
+    }
 
     const submitEl = root.querySelector('[data-tt-cite="submit"]');
     if (submitEl) {
         submitEl.addEventListener("click", () => {
             const value = input ? input.value.trim() : "";
-            const domain = value || "No domain provided";
+
+            if (!value) {
+                if (input) input.placeholder = "oops, I need your domain";
+                return;
+            }
 
             const emailTo = "hey+getcited@tonytony.ch";
             const emailSubject = encodeURIComponent("Contact SEO/AEO/SEA");
             const emailBody = encodeURIComponent(
-                `Hello,\n\nI would like to import authority signals for the following domain:\n${domain}\n\nThank you.`
+                `Hello,\n\nI would like to import authority signals for the following domain:\n${value}\n\nThank you.`
             );
 
             window.location.href = `mailto:${emailTo}?subject=${emailSubject}&body=${emailBody}`;
