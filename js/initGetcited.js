@@ -24,7 +24,7 @@ export function initGetcited() {
     if (cancelEl) {
         cancelEl.addEventListener("click", () => {
             clear();
-            if (input) input.placeholder = "You are missing out... 🫪";
+            if (input) input.placeholder = "Are you sure ? 🫪";
         });
     }
 
@@ -34,7 +34,7 @@ export function initGetcited() {
             const value = input ? input.value.trim() : "";
 
             if (!value) {
-                if (input) input.placeholder = "oops, I need your domain";
+                if (input) input.placeholder = "Oops, I need your domain first 🤓";
                 return;
             }
 
