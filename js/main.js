@@ -53,7 +53,7 @@ import { initContactForm } from "https://cdn.tonytony.ch/js/initContactForm.js?v
 import { initWebflowBadge } from "https://cdn.tonytony.ch/js/initWebflowBadge.js?v=1.0.0";
 import { initAskClaude } from "https://cdn.tonytony.ch/js/initAskClaude.js?v=1.0.3";
 import { initAskChatGPT } from "https://cdn.tonytony.ch/js/initAskChatGPT.js?v=1.0.2";
-import { initGetcited } from "https://cdn.tonytony.ch/js/initGetcited.js?v=1.0.1";
+import { initGetcited } from "https://cdn.tonytony.ch/js/initGetcited.js?v=1.0.3";
 import { initCookieConsent } from "https://cdn.tonytony.ch/js/initCookieConsent.js?v=1.0.0";
 import { initMWG087 } from "https://cdn.tonytony.ch/js/initMWG087.js?v=1.0.0";
 

@@ -2,16 +2,54 @@
  * TONYTONY | initGetcited
  * Wires the Get Cited modal: clear/cancel, mailto submit with domain,
  * and horizontal badge strip drag-scroll with edge fades.
+ * Copy follows the URL locale (/fr/, /de/, default en).
  *
  * @build 14.08.26
  * @updated 14.08.26 PHT
  * @author TONYTONY Sàrl
  */
 
+const COPY = {
+    en: {
+        needDomain: "Oops, I need your domain first 🤓",
+        cancel: "Are you sure ? 🫪",
+        emailSubject: "Contact SEO/AEO/SEA",
+        emailBody: (domain) =>
+            `Hello,\n\nI would like to import authority signals for the following domain:\n${domain}\n\nThank you.`,
+    },
+    fr: {
+        needDomain: "Oups, domaine requis 🤓",
+        cancel: "Vous êtes sûr ? 🫪",
+        emailSubject: "Contact SEO/AEO/SEA",
+        emailBody: (domain) =>
+            `Bonjour,\n\nJe souhaite importer des signaux d'autorité pour le domaine suivant :\n${domain}\n\nMerci.`,
+    },
+    de: {
+        needDomain: "Ups, Domain nötig 🤓",
+        cancel: "Sind Sie sicher? 🫪",
+        emailSubject: "Kontakt SEO/AEO/SEA",
+        emailBody: (domain) =>
+            `Guten Tag,\n\nich möchte Authority-Signale für die folgende Domain importieren:\n${domain}\n\nVielen Dank.`,
+    },
+};
+
+/**
+ * Detects active locale from the URL path — `/fr/` → fr, `/de/` → de, default en.
+ *
+ * @returns {'en' | 'fr' | 'de'}
+ */
+function getLocale() {
+    const path = window.location.pathname;
+    if (/^\/fr(\/|$)/.test(path)) return "fr";
+    if (/^\/de(\/|$)/.test(path)) return "de";
+    return "en";
+}
+
 export function initGetcited() {
     const root = document.querySelector('[data-tt-cite="root"]');
     if (!root) return;
 
+    const t = COPY[getLocale()] || COPY.en;
     const input = root.querySelector('[data-tt-cite="input"]');
     const clear = () => {
         if (input) input.value = "";
@@ -24,7 +62,7 @@ export function initGetcited() {
     if (cancelEl) {
         cancelEl.addEventListener("click", () => {
             clear();
-            if (input) input.placeholder = "Are you sure ? 🫪";
+            if (input) input.placeholder = t.cancel;
         });
     }
 
@@ -34,15 +72,13 @@ export function initGetcited() {
             const value = input ? input.value.trim() : "";
 
             if (!value) {
-                if (input) input.placeholder = "Oops, I need your domain first 🤓";
+                if (input) input.placeholder = t.needDomain;
                 return;
             }
 
             const emailTo = "hey+getcited@tonytony.ch";
-            const emailSubject = encodeURIComponent("Contact SEO/AEO/SEA");
-            const emailBody = encodeURIComponent(
-                `Hello,\n\nI would like to import authority signals for the following domain:\n${value}\n\nThank you.`
-            );
+            const emailSubject = encodeURIComponent(t.emailSubject);
+            const emailBody = encodeURIComponent(t.emailBody(value));
 
             window.location.href = `mailto:${emailTo}?subject=${emailSubject}&body=${emailBody}`;
         });
