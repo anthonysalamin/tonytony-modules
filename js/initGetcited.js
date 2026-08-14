@@ -12,7 +12,7 @@
 const COPY = {
     en: {
         needDomain: "Oops, I need your domain first 🤓",
-        invalidDomain: "Try example.com 🧐",
+        invalidDomain: "Incorrect domain 🧐",
         cancel: "Are you sure ? 🫪",
         emailSubject: "Contact SEO/AEO/SEA",
         emailBody: (domain) =>
@@ -20,7 +20,7 @@ const COPY = {
     },
     fr: {
         needDomain: "Oups, domaine requis 🤓",
-        invalidDomain: "Essayez example.com 🧐",
+        invalidDomain: "Domaine incorrect 🧐",
         cancel: "Vous êtes sûr ? 🫪",
         emailSubject: "Contact SEO/AEO/SEA",
         emailBody: (domain) =>
@@ -28,7 +28,7 @@ const COPY = {
     },
     de: {
         needDomain: "Ups, Domain nötig 🤓",
-        invalidDomain: "Versuch's mit example.com 🧐",
+        invalidDomain: "Ungültige Domain 🧐",
         cancel: "Sind Sie sicher? 🫪",
         emailSubject: "Kontakt SEO/AEO/SEA",
         emailBody: (domain) =>
