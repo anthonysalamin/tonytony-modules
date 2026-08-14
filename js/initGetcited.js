@@ -12,6 +12,7 @@
 const COPY = {
     en: {
         needDomain: "Oops, I need your domain first 🤓",
+        invalidDomain: "Try example.com 🧐",
         cancel: "Are you sure ? 🫪",
         emailSubject: "Contact SEO/AEO/SEA",
         emailBody: (domain) =>
@@ -19,6 +20,7 @@ const COPY = {
     },
     fr: {
         needDomain: "Oups, domaine requis 🤓",
+        invalidDomain: "Essayez example.com 🧐",
         cancel: "Vous êtes sûr ? 🫪",
         emailSubject: "Contact SEO/AEO/SEA",
         emailBody: (domain) =>
@@ -26,12 +28,39 @@ const COPY = {
     },
     de: {
         needDomain: "Ups, Domain nötig 🤓",
+        invalidDomain: "Versuch's mit example.com 🧐",
         cancel: "Sind Sie sicher? 🫪",
         emailSubject: "Kontakt SEO/AEO/SEA",
         emailBody: (domain) =>
             `Guten Tag,\n\nich möchte Authority-Signale für die folgende Domain importieren:\n${domain}\n\nVielen Dank.`,
     },
 };
+
+/** Hostname with at least one dot and a 2+ char TLD (e.g. example.com, sub.example.co.uk). */
+const DOMAIN_RE =
+    /^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,}$/i;
+
+/**
+ * Strips protocol, path, port, trailing slash — leaves a bare hostname.
+ *
+ * @param {string} raw
+ * @returns {string}
+ */
+function normalizeDomain(raw) {
+    let v = raw.trim().toLowerCase();
+    v = v.replace(/^https?:\/\//, "");
+    v = v.split("/")[0].split("?")[0].split("#")[0];
+    v = v.replace(/:\d+$/, "").replace(/\.$/, "");
+    return v;
+}
+
+/**
+ * @param {string} domain
+ * @returns {boolean}
+ */
+function isValidDomain(domain) {
+    return DOMAIN_RE.test(domain);
+}
 
 /**
  * Detects active locale from the URL path — `/fr/` → fr, `/de/` → de, default en.
@@ -69,16 +98,23 @@ export function initGetcited() {
     const submitEl = root.querySelector('[data-tt-cite="submit"]');
     if (submitEl) {
         submitEl.addEventListener("click", () => {
-            const value = input ? input.value.trim() : "";
+            const raw = input ? input.value.trim() : "";
 
-            if (!value) {
+            if (!raw) {
                 if (input) input.placeholder = t.needDomain;
+                return;
+            }
+
+            const domain = normalizeDomain(raw);
+            if (!isValidDomain(domain)) {
+                clear();
+                if (input) input.placeholder = t.invalidDomain;
                 return;
             }
 
             const emailTo = "hey+getcited@tonytony.ch";
             const emailSubject = encodeURIComponent(t.emailSubject);
-            const emailBody = encodeURIComponent(t.emailBody(value));
+            const emailBody = encodeURIComponent(t.emailBody(domain));
 
             window.location.href = `mailto:${emailTo}?subject=${emailSubject}&body=${emailBody}`;
         });
