@@ -12,7 +12,7 @@
 const COPY = {
     en: {
         needDomain: "Oops, domain is needed.",
-        invalidDomain: "Incorrect domain 🧐",
+        invalidDomain: "Incorrect domain, try again.",
         cancel: "No is not an answer.",
         emailSubject: "Contact SEO/AEO/SEA",
         emailBody: (domain) =>
