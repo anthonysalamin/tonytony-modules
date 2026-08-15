@@ -11,25 +11,25 @@
 
 const COPY = {
     en: {
-        needDomain: "Oops, I need your domain first 🤓",
+        needDomain: "Oops, domain is needed.",
         invalidDomain: "Incorrect domain 🧐",
-        cancel: "No is not an answer 🫪",
+        cancel: "No is not an answer.",
         emailSubject: "Contact SEO/AEO/SEA",
         emailBody: (domain) =>
             `Hello,\n\nI would like to import authority signals for the following domain:\n${domain}\n\nThank you.`,
     },
     fr: {
-        needDomain: "Oups, domaine requis 🤓",
-        invalidDomain: "Domaine incorrect 🧐",
-        cancel: "Non ≠ réponse 🫪",
+        needDomain: "Oups, domaine requis.",
+        invalidDomain: "Domaine incorrect.",
+        cancel: "Non n'est pas une option.",
         emailSubject: "Contact SEO/AEO/SEA",
         emailBody: (domain) =>
             `Bonjour,\n\nJe souhaite importer des signaux d'autorité pour le domaine suivant :\n${domain}\n\nMerci.`,
     },
     de: {
-        needDomain: "Ups, Domain nötig 🤓",
-        invalidDomain: "Ungültige Domain 🧐",
-        cancel: "Nein ≠ Antwort 🫪",
+        needDomain: "Ups, Domain nötig.",
+        invalidDomain: "Ungültige Domain.",
+        cancel: "Ein 'Nein' akzeptiere ich nicht.",
         emailSubject: "Kontakt SEO/AEO/SEA",
         emailBody: (domain) =>
             `Guten Tag,\n\nich möchte Authority-Signale für die folgende Domain importieren:\n${domain}\n\nVielen Dank.`,
