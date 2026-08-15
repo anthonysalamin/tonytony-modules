@@ -16,7 +16,7 @@ const COPY = {
         goodNote: " (though it should also be good)",
         emailBody: (domain, choices) => {
             const note = choices.includes("Good") ? "" : COPY.en.goodNote;
-            return `Hello,\n\nI would like to discuss a project for the following domain: ${domain}\n\nMy priorities are: ${choices.join(" and ")}${note}.\n\nHave a great day !`;
+            return `Hello Anthony,\n\nI would like to discuss a project for the following domain: ${domain}\n\nMy priorities are: ${choices.join(" and ")}${note}.\n\nHave a great day !`;
         },
     },
     fr: {
@@ -27,7 +27,7 @@ const COPY = {
         goodNote: " (même si ça devrait aussi être bon)",
         emailBody: (domain, choices) => {
             const note = choices.includes("Good") ? "" : COPY.fr.goodNote;
-            return `Bonjour,\n\nJe souhaite discuter d'un projet pour le domaine suivant : ${domain}\n\nMes priorités sont : ${choices.join(" et ")}${note}.\n\nPassez une excellente journée !`;
+            return `Bonjour Anthony,\n\nJe souhaite discuter d'un projet pour le domaine suivant : ${domain}\n\nMes priorités sont : ${choices.join(" et ")}${note}.\n\nPassez une excellente journée !`;
         },
     },
     de: {
@@ -38,7 +38,7 @@ const COPY = {
         goodNote: " (obwohl es auch gut sein sollte)",
         emailBody: (domain, choices) => {
             const note = choices.includes("Good") ? "" : COPY.de.goodNote;
-            return `Guten Tag,\n\nich möchte ein Projekt für die folgende Domain besprechen: ${domain}\n\nMeine Prioritäten sind: ${choices.join(" und ")}${note}.\n\nEinen schönen Tag noch!`;
+            return `Hallo Anthony,\n\nich möchte ein Projekt für die folgende Domain besprechen: ${domain}\n\nMeine Prioritäten sind: ${choices.join(" und ")}${note}.\n\nEinen schönen Tag noch!`;
         },
     },
 };
