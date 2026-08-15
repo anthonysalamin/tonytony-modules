@@ -13,7 +13,7 @@ const COPY = {
     en: {
         needDomain: "Oops, domain is needed.",
         invalidDomain: "Incorrect domain, try again.",
-        cancel: "No is not an answer.",
+        cancel: "Boooooooooring.",
         emailSubject: "Contact SEO/AEO/SEA",
         emailBody: (domain) =>
             `Hello,\n\nI would like to import authority signals for the following domain:\n${domain}\n\nThank you.`,

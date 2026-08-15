@@ -11,7 +11,7 @@ const COPY = {
     en: {
         needDomain: "Oops, domain is needed.",
         invalidDomain: "Incorrect domain, try again.",
-        cancel: "No is not an answer.",
+        cancel: "Boooooooooring.",
         emailSubject: "Project Inquiry",
         emailBody: (domain, choices) =>
             `Hello,\n\nI would like to discuss a project for the following domain:\n${domain}\n\nMy priorities are: ${choices.join(" and ")}.\n\nThank you.`,
