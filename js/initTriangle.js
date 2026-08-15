@@ -73,7 +73,7 @@ function getLocale() {
 
 export function initTriangle() {
     // We scope the query to the wrapper to prevent page-wide conflicts
-    const root = document.querySelector('[data-tt-cite="root"]');
+    const root = document.querySelector('[data-triangle="root"]');
     if (!root) return;
 
     const t = COPY[getLocale()] || COPY.en;

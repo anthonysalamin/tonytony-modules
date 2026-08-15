@@ -75,7 +75,7 @@ function getLocale() {
 }
 
 export function initGetcited() {
-    const root = document.querySelector('[data-tt-cite="root"]');
+    const root = document.querySelector('[data-getcited="root"]');
     if (!root) return;
 
     const t = COPY[getLocale()] || COPY.en;
