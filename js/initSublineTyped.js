@@ -12,8 +12,10 @@ export function initSublineTyped() {
     const el = document.querySelector("[data-typed='subline']");
     if (!el) return;
 
+    const PAUSE = 700;
+
     new Typed(el, {
-        strings: ["SEO^1000", "AEO^1000", "SEA^1000"],
+        strings: [`SEO^${PAUSE}`, `AEO^${PAUSE}`, `SEA^${PAUSE}`],
         typeSpeed: 60,
         backSpeed: 30,
         startDelay: 0,
