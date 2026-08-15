@@ -1,6 +1,6 @@
 /**
  * TONYTONY | initTriangle
- * Wires the Triangle constraint modal: Fast, Good, Cheap (Pick Two).
+ * Wires the Triangle constraint modal: Fast, Good, Cheap — always pick two.
  * Handles clear/cancel, domain validation, and mailto submit.
  * Copy follows the URL locale (/fr/, /de/, default en).
  *
@@ -77,35 +77,60 @@ export function initTriangle() {
     if (!root) return;
 
     const t = COPY[getLocale()] || COPY.en;
-    
+
     // UI Elements
     const input = root.querySelector('[data-triangle="domain"]');
     const closeEl = root.querySelector('[data-triangle="close"]');
     const cancelEl = root.querySelector('[data-triangle="cancel"]');
     const submitEl = root.querySelector('[data-triangle="submit"]');
 
-    // Toggles
+    // Toggles — always exactly two on. Prefer Good > Fast > Cheap so
+    // the user keeps the strongest pair whenever we have a choice.
     const fastEl = root.querySelector('[data-triangle="fast"]');
     const cheapEl = root.querySelector('[data-triangle="cheap"]');
     const goodEl = root.querySelector('[data-triangle="good"]');
-    const toggles = [fastEl, cheapEl, goodEl].filter(Boolean);
+    const toggles = [goodEl, fastEl, cheapEl].filter(Boolean);
+    const RANK = { good: 0, fast: 1, cheap: 2 };
 
-    // --- "Pick Two" Logic ---
-    // Maintain a history array of currently checked items
-    let checkedHistory = toggles.filter(toggle => toggle.checked);
+    const keyOf = (el) => el.getAttribute("data-triangle");
+    const rankOf = (el) => RANK[keyOf(el)] ?? 9;
+    const byBest = (a, b) => rankOf(a) - rankOf(b);
 
-    toggles.forEach(toggle => {
+    const checkedToggles = () => toggles.filter((el) => el.checked);
+
+    /** Fill or trim until exactly two are on, keeping the best-ranked. */
+    function enforceTwo() {
+        const keep = new Set();
+        for (const el of [...toggles].sort(byBest)) {
+            if (keep.size >= 2) break;
+            keep.add(el);
+        }
+        toggles.forEach((el) => {
+            el.checked = keep.has(el);
+        });
+    }
+
+    enforceTwo();
+
+    toggles.forEach((toggle) => {
         toggle.addEventListener("change", (e) => {
-            if (e.target.checked) {
-                checkedHistory.push(e.target);
-                // If all three are checked, uncheck the oldest one
-                if (checkedHistory.length > 2) {
-                    const oldestToggle = checkedHistory.shift();
-                    oldestToggle.checked = false;
+            const target = e.target;
+            const others = toggles.filter((el) => el !== target);
+
+            if (target.checked) {
+                // User asked for this one — keep it, drop the weaker companion.
+                const onOthers = others.filter((el) => el.checked);
+                if (onOthers.length >= 2) {
+                    const weakest = onOthers.sort(byBest).pop();
+                    weakest.checked = false;
+                } else if (checkedToggles().length < 2) {
+                    others.sort(byBest)[0].checked = true;
                 }
             } else {
-                // Remove the unchecked item from history
-                checkedHistory = checkedHistory.filter(t => t !== e.target);
+                // User dropped this one — swap in the remaining option.
+                const off = others.find((el) => !el.checked);
+                if (off) off.checked = true;
+                else if (checkedToggles().length < 2) enforceTwo();
             }
         });
     });
@@ -140,11 +165,12 @@ export function initTriangle() {
                 return;
             }
 
-            // Extract the active priorities for the email body
-            const activeChoices = checkedHistory.map(toggle => 
-                toggle.getAttribute("data-triangle").charAt(0).toUpperCase() + 
-                toggle.getAttribute("data-triangle").slice(1)
-            );
+            const activeChoices = checkedToggles()
+                .sort(byBest)
+                .map((el) => {
+                    const key = keyOf(el);
+                    return key.charAt(0).toUpperCase() + key.slice(1);
+                });
 
             const emailTo = "hey+triangle@tonytony.ch";
             const emailSubject = encodeURIComponent(t.emailSubject);
