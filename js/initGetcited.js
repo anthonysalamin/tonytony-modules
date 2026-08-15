@@ -116,7 +116,11 @@ export function initGetcited() {
             const emailSubject = encodeURIComponent(t.emailSubject);
             const emailBody = encodeURIComponent(t.emailBody(domain));
 
-            window.location.href = `mailto:${emailTo}?subject=${emailSubject}&body=${emailBody}`;
+            window.open(
+                `mailto:${emailTo}?subject=${emailSubject}&body=${emailBody}`,
+                "_blank",
+                "noopener,noreferrer",
+            );
         });
     }
 

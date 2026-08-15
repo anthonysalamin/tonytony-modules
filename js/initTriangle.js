@@ -13,24 +13,33 @@ const COPY = {
         invalidDomain: "Incorrect domain, try again.",
         cancel: "Boooooooooring.",
         emailSubject: "Project Inquiry",
-        emailBody: (domain, choices) =>
-            `Hello,\n\nI would like to discuss a project for the following domain:\n${domain}\n\nMy priorities are: ${choices.join(" and ")}.\n\nThank you.`,
+        goodNote: " (though it should also be good)",
+        emailBody: (domain, choices) => {
+            const note = choices.includes("Good") ? "" : COPY.en.goodNote;
+            return `Hello,\n\nI would like to discuss a project for the following domain: ${domain}\n\nMy priorities are: ${choices.join(" and ")}${note}.\n\nHave a great day !`;
+        },
     },
     fr: {
         needDomain: "Oups, domaine requis.",
         invalidDomain: "Domaine incorrect.",
         cancel: "Non n'est pas une option.",
         emailSubject: "Demande de projet",
-        emailBody: (domain, choices) =>
-            `Bonjour,\n\nJe souhaite discuter d'un projet pour le domaine suivant :\n${domain}\n\nMes priorités sont : ${choices.join(" et ")}.\n\nMerci.`,
+        goodNote: " (même si ça devrait aussi être bon)",
+        emailBody: (domain, choices) => {
+            const note = choices.includes("Good") ? "" : COPY.fr.goodNote;
+            return `Bonjour,\n\nJe souhaite discuter d'un projet pour le domaine suivant : ${domain}\n\nMes priorités sont : ${choices.join(" et ")}${note}.\n\nPassez une excellente journée !`;
+        },
     },
     de: {
         needDomain: "Ups, Domain nötig.",
         invalidDomain: "Ungültige Domain.",
         cancel: "Ein 'Nein' akzeptiere ich nicht.",
         emailSubject: "Projektanfrage",
-        emailBody: (domain, choices) =>
-            `Guten Tag,\n\nich möchte ein Projekt für die folgende Domain besprechen:\n${domain}\n\nMeine Prioritäten sind: ${choices.join(" und ")}.\n\nVielen Dank.`,
+        goodNote: " (obwohl es auch gut sein sollte)",
+        emailBody: (domain, choices) => {
+            const note = choices.includes("Good") ? "" : COPY.de.goodNote;
+            return `Guten Tag,\n\nich möchte ein Projekt für die folgende Domain besprechen: ${domain}\n\nMeine Prioritäten sind: ${choices.join(" und ")}${note}.\n\nEinen schönen Tag noch!`;
+        },
     },
 };
 
@@ -176,7 +185,11 @@ export function initTriangle() {
             const emailSubject = encodeURIComponent(t.emailSubject);
             const emailBody = encodeURIComponent(t.emailBody(domain, activeChoices));
 
-            window.location.href = `mailto:${emailTo}?subject=${emailSubject}&body=${emailBody}`;
+            window.open(
+                `mailto:${emailTo}?subject=${emailSubject}&body=${emailBody}`,
+                "_blank",
+                "noopener,noreferrer",
+            );
         });
     }
 }
