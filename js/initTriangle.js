@@ -80,6 +80,38 @@ function getLocale() {
     return "en";
 }
 
+const INPUT_STATES = ["is-warn", "is-error"];
+
+/**
+ * @param {HTMLInputElement | null} input
+ */
+function resetInputState(input) {
+    if (!input) return;
+    INPUT_STATES.forEach((state) => input.classList.remove(state));
+}
+
+/**
+ * @param {HTMLInputElement | null} input
+ * @param {string} message
+ */
+function setInputWarn(input, message) {
+    if (!input) return;
+    resetInputState(input);
+    input.classList.add("is-warn");
+    input.placeholder = message;
+}
+
+/**
+ * @param {HTMLInputElement | null} input
+ * @param {string} message
+ */
+function setInputError(input, message) {
+    if (!input) return;
+    resetInputState(input);
+    input.classList.add("is-error");
+    input.placeholder = message;
+}
+
 export function initTriangle() {
     // We scope the query to the wrapper to prevent page-wide conflicts
     const root = document.querySelector('[data-triangle="root"]');
@@ -89,6 +121,7 @@ export function initTriangle() {
 
     // UI Elements
     const input = root.querySelector('[data-triangle="domain"]');
+    const defaultPlaceholder = input?.placeholder ?? "";
     const closeEl = root.querySelector('[data-triangle="close"]');
     const cancelEl = root.querySelector('[data-triangle="cancel"]');
     const submitEl = root.querySelector('[data-triangle="submit"]');
@@ -146,8 +179,18 @@ export function initTriangle() {
 
     // --- Form Actions ---
     const clear = () => {
-        if (input) input.value = "";
+        if (!input) return;
+        input.value = "";
+        resetInputState(input);
+        input.placeholder = defaultPlaceholder;
     };
+
+    if (input) {
+        input.addEventListener("focus", () => {
+            resetInputState(input);
+            input.placeholder = defaultPlaceholder;
+        });
+    }
 
     if (closeEl) closeEl.addEventListener("click", clear);
 
@@ -163,14 +206,14 @@ export function initTriangle() {
             const raw = input ? input.value.trim() : "";
 
             if (!raw) {
-                if (input) input.placeholder = t.needDomain;
+                setInputWarn(input, t.needDomain);
                 return;
             }
 
             const domain = normalizeDomain(raw);
             if (!isValidDomain(domain)) {
                 clear();
-                if (input) input.placeholder = t.invalidDomain;
+                setInputError(input, t.invalidDomain);
                 return;
             }
 

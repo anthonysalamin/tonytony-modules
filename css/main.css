@@ -112,9 +112,16 @@ mux-player::part(poster) {
     background: transparent;
 }
 
-/* Mobile / tablet: solid background, no blur */
-@media (max-width: 991px) {
-    .nav {
-        background: var(--light-theme--background);
-    }
+/* ==========================================================================
+   🥭 Components – Domain inputs (Get Cited, Triangle)
+   ========================================================================== */
+
+.tt-cite-input.is-warn::placeholder,
+[data-triangle="domain"].is-warn::placeholder {
+    color: #f59e0b;
+}
+
+.tt-cite-input.is-error::placeholder,
+[data-triangle="domain"].is-error::placeholder {
+    color: #ef4444;
 }

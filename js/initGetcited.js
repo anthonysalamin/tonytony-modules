@@ -74,6 +74,38 @@ function getLocale() {
     return "en";
 }
 
+const INPUT_STATES = ["is-warn", "is-error"];
+
+/**
+ * @param {HTMLInputElement | null} input
+ */
+function resetInputState(input) {
+    if (!input) return;
+    INPUT_STATES.forEach((state) => input.classList.remove(state));
+}
+
+/**
+ * @param {HTMLInputElement | null} input
+ * @param {string} message
+ */
+function setInputWarn(input, message) {
+    if (!input) return;
+    resetInputState(input);
+    input.classList.add("is-warn");
+    input.placeholder = message;
+}
+
+/**
+ * @param {HTMLInputElement | null} input
+ * @param {string} message
+ */
+function setInputError(input, message) {
+    if (!input) return;
+    resetInputState(input);
+    input.classList.add("is-error");
+    input.placeholder = message;
+}
+
 /**
  * Sets --tt-cite-shift on each ticker row from the first set's measured width.
  *
@@ -103,9 +135,20 @@ export function initGetcited() {
 
     const t = COPY[getLocale()] || COPY.en;
     const input = root.querySelector('[data-tt-cite="input"]');
+    const defaultPlaceholder = input?.placeholder ?? "";
     const clear = () => {
-        if (input) input.value = "";
+        if (!input) return;
+        input.value = "";
+        resetInputState(input);
+        input.placeholder = defaultPlaceholder;
     };
+
+    if (input) {
+        input.addEventListener("focus", () => {
+            resetInputState(input);
+            input.placeholder = defaultPlaceholder;
+        });
+    }
 
     const closeEl = root.querySelector('[data-tt-cite="close"]');
     if (closeEl) closeEl.addEventListener("click", clear);
@@ -124,14 +167,14 @@ export function initGetcited() {
             const raw = input ? input.value.trim() : "";
 
             if (!raw) {
-                if (input) input.placeholder = t.needDomain;
+                setInputWarn(input, t.needDomain);
                 return;
             }
 
             const domain = normalizeDomain(raw);
             if (!isValidDomain(domain)) {
                 clear();
-                if (input) input.placeholder = t.invalidDomain;
+                setInputError(input, t.invalidDomain);
                 return;
             }
 
