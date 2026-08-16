@@ -145,7 +145,7 @@ The website is natively available in English (/), French (/fr), and German (/de)
 
 ## Credits & Website Architecture
 
-Ce site web a été conçu et développé par :
+This website was designed and developed by:
 - **Agency :** TONYTONY Sàrl
 - **Role :** Web development and design studio
 - **Location :** Wallis, Switzerland
