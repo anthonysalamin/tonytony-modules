@@ -176,33 +176,7 @@
       ],
       "founder": {
         "@id": "https://tonytony.ch/#person"
-      },
-      "aggregateRating": {
-        "@id": "https://tonytony.ch/#rating"
-      },
-      "review": [
-        {
-          "@id": "https://tonytony.ch/#review-1"
-        },
-        {
-          "@id": "https://tonytony.ch/#review-2"
-        },
-        {
-          "@id": "https://tonytony.ch/#review-3"
-        },
-        {
-          "@id": "https://tonytony.ch/#review-4"
-        },
-        {
-          "@id": "https://tonytony.ch/#review-5"
-        },
-        {
-          "@id": "https://tonytony.ch/#review-6"
-        },
-        {
-          "@id": "https://tonytony.ch/#review-7"
-        }
-      ]
+      }
     },
     {
       "@type": "Person",
@@ -231,111 +205,6 @@
       }
     },
     {
-      "@type": "AggregateRating",
-      "@id": "https://tonytony.ch/#rating",
-      "ratingValue": "5",
-      "bestRating": "5",
-      "ratingCount": "7"
-    },
-    {
-      "@type": "Review",
-      "@id": "https://tonytony.ch/#review-1",
-      "author": {
-        "@type": "Person",
-        "name": "Helge von Giese"
-      },
-      "reviewBody": "Anthony is an exceptionally universally gifted creative. In his exploration of various means, methods, and tools, he moves with admirable intuition.",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      }
-    },
-    {
-      "@type": "Review",
-      "@id": "https://tonytony.ch/#review-2",
-      "author": {
-        "@type": "Person",
-        "name": "Jochen M. Wilms"
-      },
-      "reviewBody": "In every phase of my projects for leading international ventures, Anthony consistently exhibited a great level of creativity, professionalism, and technical skill - maintaining a proactive approach from initial concept to final delivery. Working with Anthony has been a great pleasure, and I look forward to future collaborations.",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      }
-    },
-    {
-      "@type": "Review",
-      "@id": "https://tonytony.ch/#review-3",
-      "author": {
-        "@type": "Person",
-        "name": "Alexandre Henriques"
-      },
-      "reviewBody": "Anthony stands out for his exceptional responsiveness. For every request from our agency, he consistently found relevant and effective solutions. His feedback is always clear and well structured, making decision making much easier.",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      }
-    },
-    {
-      "@type": "Review",
-      "@id": "https://tonytony.ch/#review-4",
-      "author": {
-        "@type": "Person",
-        "name": "Milton Carvalho"
-      },
-      "reviewBody": "The website Anthony created for my solar panel company is modern, professional, and already generating new leads. He made the process simple and stress-free. His work stands out for professionalism, creativity, attention to detail, and a thoughtful approach. I highly recommend him for anyone looking for real added value.",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      }
-    },
-    {
-      "@type": "Review",
-      "@id": "https://tonytony.ch/#review-5",
-      "author": {
-        "@type": "Person",
-        "name": "Dr. Donatela Bernardi"
-      },
-      "reviewBody": "Excellent work, thank you for your responsiveness - I'm really looking forward to collaborating on our new website. We'll be in touch.",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      }
-    },
-    {
-      "@type": "Review",
-      "@id": "https://tonytony.ch/#review-6",
-      "author": {
-        "@type": "Person",
-        "name": "Alexandre Doublet"
-      },
-      "reviewBody": "Throughout the entire project, Anthony was responsive, collaborative, and dedicated to ensuring that every aspect of the website met and exceeded the expectations of the team.",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      }
-    },
-    {
-      "@type": "Review",
-      "@id": "https://tonytony.ch/#review-7",
-      "author": {
-        "@type": "Person",
-        "name": "Camil Amos"
-      },
-      "reviewBody": "Pleased with the outcome of the LP and its presentation. The typography layout is top notch and the images chosen adds the dynamic touch I was looking for.",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      }
-    },
-    {
       "@type": "WebSite",
       "@id": "https://tonytony.ch/fr/#website",
       "url": "https://tonytony.ch/fr",
@@ -346,12 +215,30 @@
       }
     },
     {
+      "@type": "BreadcrumbList",
+      "@id": "https://tonytony.ch/fr/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://tonytony.ch/fr"
+        }
+      ]
+    },
+    {
       "@type": "WebPage",
       "@id": "https://tonytony.ch/fr/#webpage",
       "url": "https://tonytony.ch/fr",
       "name": "TONYTONY | Conception & Développement Webflow pour Startups et PME",
       "description": "Sites web à fort taux de conversion pour startups et PME. SEO & AEO pour se classer sur Google et être cité par l'IA.",
       "inLanguage": "fr",
+      "isPartOf": {
+        "@id": "https://tonytony.ch/fr/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://tonytony.ch/fr/#breadcrumb"
+      },
       "mainEntity": {
         "@id": "https://tonytony.ch/#professionalservice"
       }
@@ -366,14 +253,6 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "TONYTONY, c'est Anthony Salamin — web designer senior & développeur créatif, plus de 15 ans d'expérience. Né en Suisse, formé par la scène startup berlinoise et de grandes agences, j'opère aujourd'hui comme un studio d'une seule personne depuis le Valais. Je travaille avec des équipes du monde entier."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Pourquoi choisir un studio solo plutôt qu'une grande agence Webflow Enterprise ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Les grandes agences d'entreprise sont conçues pour les achats corporate massifs, souvent avec des retainers lourds et des couches de gestion de compte. TONYTONY est conçu pour les startups, les PME et les marques ambitieuses qui veulent une qualité technique de niveau entreprise (architecture propre, AEO, motion GSAP) mais exigent la rapidité, l'agilité et la communication directe d'un travail en tête-à-tête avec un expert senior."
           }
         },
         {
