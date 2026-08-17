@@ -236,7 +236,7 @@
       "url": "https://tonytony.ch",
       "name": "TONYTONY | Webflow Design & Development for Startups and SMEs",
       "description": "High-converting websites for startups and SMEs. SEO & AEO to rank on Google and be cited by AI.",
-      "inLanguage": "en",
+      "inLanguage": "en-CH",
       "isPartOf": {
         "@id": "https://tonytony.ch/#website"
       },
@@ -250,7 +250,7 @@
     {
       "@type": "FAQPage",
       "@id": "https://tonytony.ch/#faq",
-      "inLanguage": "en",
+      "inLanguage": "en-CH",
       "mainEntity": [
         {
           "@type": "Question",
