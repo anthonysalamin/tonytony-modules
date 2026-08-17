@@ -69,7 +69,7 @@
       "mainEntity": {
         "@id": "https://tonytony.ch/fr/projects/maude#project"
       },
-      "inLanguage": "fr"
+      "inLanguage": "fr-CH"
     },
     {
       "@type": "Article",
@@ -91,7 +91,7 @@
         "Résultat"
       ],
       "articleBody": "Contexte : Maude von Giese est décoratrice de plateau et scénographe indépendante basée à Zurich, travaillant dans le théâtre, l'opéra, le cinéma et les institutions culturelles à travers le monde germanophone et francophone. Elle avait besoin d'un site portfolio qui rende justice à la qualité saisissante et spatiale de son travail — une présence numérique aussi intentionnelle et atmosphérique que les environnements scéniques qu'elle crée. La graphiste zurichoise Lydia Perrot a développé le concept visuel et le design complet dans Figma.\n\nDéfi : Le design UI de la graphiste zurichoise Lydia Perrot allait bien au-delà d'une grille de portfolio standard. La page d'accueil présente un effet de mur 3D piloté par le scroll — les images de projets s'élèvent avec une transformation en perspective prononcée, créant une immersion spatiale — tandis que les effets de parallaxe renforcent l'atmosphère théâtrale. Le défi : traduire fidèlement cette mise en page art-directed en un build Webflow performant tout en maintenant la hiérarchie des titres sémantiquement correcte pour le SEO, malgré des éléments typographiques placés dans des positions non conventionnelles.\n\nSolution : L'ensemble du site a été construit dans Webflow, avec du CSS personnalisé et des interactions GSAP alimentant la page d'accueil en perspective et les effets de parallaxe. Les balises de titre ont été placées stratégiquement pour préserver un plan documentaire propre et indexable sans compromettre la mise en page visuelle. Chaque projet, image et bloc de texte fonctionne sur le CMS de Webflow, donnant à Maude une autonomie totale pour gérer son portfolio sans intervention de développeur.\n\nRésultat : Page d'accueil immersive à perspective 3D pilotée par le scroll, fidèle à la vision design originale de Lydia Perrot. Effets de parallaxe en couches renforçant l'identité théâtrale et spatiale du travail. Architecture entièrement pilotée par CMS — tous les projets, images et contenus modifiables par la cliente directement dans Webflow. Structure sémantique des titres préservée sur une mise en page non conventionnelle pour un SEO technique solide.",
-      "inLanguage": "fr",
+      "inLanguage": "fr-CH",
       "datePublished": "2024-06-07",
       "dateModified": "2026-04-23",
       "author": {

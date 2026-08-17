@@ -69,7 +69,7 @@
       "mainEntity": {
         "@id": "https://tonytony.ch/fr/projects/moto#project"
       },
-      "inLanguage": "fr"
+      "inLanguage": "fr-CH"
     },
     {
       "@type": "Article",
@@ -91,7 +91,7 @@
         "Résultat"
       ],
       "articleBody": "Contexte : MoTo est un acteur majeur de la gestion de projets de construction, supervisant plus de 100 projets à travers l'Allemagne, avec un focus particulier sur Munich. Leur site web, datant des années 90, ne disposait pas de CMS, n'était pas responsive et n'avait pas de gestion de formulaires appropriée — laissant l'équipe marketing sans les outils nécessaires pour gérer ou développer le site efficacement.\n\nDéfi : L'équipe n'avait pas de développeur en interne, et le domaine existant était bloqué chez un ancien registraire DNS — transformant ce qui aurait dû être une configuration simple en un processus long et complexe. Ajoutez à cela des délais serrés, et le projet exigeait une solution livrable rapidement et gérable de manière autonome par une équipe marketing non technique.\n\nSolution : Pour MoTo, un site mobile-first a été développé pour être clair, rapide et facile à gérer. Un CMS flexible a été mis en place pour donner un contrôle total à l'équipe marketing, leur permettant de créer et de faire évoluer de nouvelles sections de manière autonome. L'UX reste ciblée et pratique, tandis que le design s'inspire de leur pentagone bleu — un clin d'œil visuel à leur identité et à leur premier projet à Neubiberg.\n\nRésultat : Site web mobile-first, entièrement responsive sur tous les appareils. CMS personnalisé permettant la création et l'évolution autonome du contenu. UX propre et orientée conversion avec navigation intuitive. Système de gestion de formulaires intégré et fiable. Design visuel aligné avec l'identité de marque.",
-      "inLanguage": "fr",
+      "inLanguage": "fr-CH",
       "datePublished": "2024-06-09",
       "dateModified": "2026-04-25",
       "author": {

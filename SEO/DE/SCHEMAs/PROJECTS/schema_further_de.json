@@ -69,7 +69,7 @@
       "mainEntity": {
         "@id": "https://tonytony.ch/de/projects/further#project"
       },
-      "inLanguage": "de"
+      "inLanguage": "de-CH"
     },
     {
       "@type": "Article",
@@ -91,7 +91,7 @@
         "Ergebnis"
       ],
       "articleBody": "Kontext: Design Hotels agiert an der Schnittstelle von Hospitality und Kultur, kontinuierlich gespeist durch ein hohes Volumen an redaktionellem Content aus globalen Events und Kooperationen. Als diese Content-Pipeline wuchs, konnte der bestehende digitale Ansatz die Inhalte nicht mehr kohärent, skalierbar und visuell überzeugend präsentieren.\n\nHerausforderung: Das Marketingteam produzierte einen konstanten Strom an reichhaltigem Content — Artikel, Event-Berichterstattung und Markengeschichten — verfügte aber über kein strukturiertes Framework, um diesen effektiv zu veröffentlichen und zu präsentieren. Frühe Prototypen erkundeten mehrere Richtungen, doch keiner erfasste die erforderliche redaktionelle Tiefe vollständig. Die zentrale Herausforderung bestand darin, ein System zu entwerfen und zu bauen, das diesen Zustrom bewältigen kann und dabei Klarheit, Performance und ein Premium-Erscheinungsbild im Einklang mit der Marke bewahrt.\n\nLösung: Nach mehreren Iterationen und internen Feedback-Schleifen verlagerte sich die Richtung hin zu einem vollständig redaktionellen Designsystem. In enger Zusammenarbeit mit dem Kreativteam übernahm ich den gesamten Webentwicklungsprozess und übersetzte diese Vision in eine skalierbare digitale Plattform. Der Fokus lag auf der Strukturierung von Inhalten in flexible, wiederverwendbare Module, die es dem Marketingteam ermöglichen, dynamisch zu veröffentlichen ohne die Designintegrität zu beeinträchtigen. API-Integrationen wurden implementiert, um den Content-Fluss zu optimieren und Konsistenz über alle Kontaktpunkte hinweg sicherzustellen, während Front- und Backend für langfristige Skalierbarkeit entwickelt wurden.\n\nErgebnis: Redaktionelle Plattform, die grossvolumigen Content reibungslos bewältigt. Klarere Content-Hierarchie für fesselnderes Storytelling. Optimierte Veröffentlichung durch Backend-Logik und API-Integrationen. Skalierbare Grundlage für langfristiges Wachstum und globale Reichweite.",
-      "inLanguage": "de",
+      "inLanguage": "de-CH",
       "datePublished": "2024-06-03",
       "dateModified": "2026-04-19",
       "author": {

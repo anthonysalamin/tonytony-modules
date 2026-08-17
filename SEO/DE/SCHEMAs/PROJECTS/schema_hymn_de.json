@@ -69,7 +69,7 @@
       "mainEntity": {
         "@id": "https://tonytony.ch/de/projects/hymn#project"
       },
-      "inLanguage": "de"
+      "inLanguage": "de-CH"
     },
     {
       "@type": "Article",
@@ -91,7 +91,7 @@
         "Ergebnis"
       ],
       "articleBody": "Kontext: Hymn ist eine unabhängige Branding- und Designagentur mit Büros in Lausanne und Zürich. Ihre bestehende Website spiegelte nicht mehr das Kaliber ihrer Arbeit wider — es fehlte an Performance, Interaktivität und der technischen Grundlage, die man von einer erstklassigen Schweizer Designagentur erwartet, und sie war nicht darauf ausgelegt, mit dem Wachstum des Teams und Portfolios zu skalieren.\n\nHerausforderung: Das Designteam von Hymn hatte eine klare Vision in Figma, aber keinen Entwickler für die Umsetzung. Als Studio mit Wurzeln im Motion Design ist ihr Portfolio von Natur aus videoreich — jede Projektpräsentation basiert auf eingebettetem Video, um die feinen Details ihrer Arbeit zu vermitteln. Dieses Content-Volumen über eine zweisprachige Website zu liefern, ohne die Performance zu beeinträchtigen, war die zentrale Herausforderung.\n\nLösung: Ausgehend von Hymns Figma-Designs wurde das Frontend in Webflow mit Fokus auf Video-Performance und redaktionelle Autonomie gebaut. Oberhalb des Folds wurden Vimeo-Plus-Wiedergabe-URLs in native HTML5-Video-Elemente injiziert für sofortiges Autoplay, während unterhalb des Folds die Vimeo-API verzögerte, nutzerseitig ausgelöste Wiedergabe übernahm. In Kombination mit GSAP-Animationen und einem zweisprachigen CMS bleibt die Seite schnell und vollständig verwaltbar.\n\nErgebnis: Elegante, animationsreiche Portfolio-Website, die den kreativen Standards der Agentur entspricht. Hochperformante Vimeo-Integration mit Lazy Loading für nahtloses Autoplay und Wiedergabe. Vollständig zweisprachige Website (EN/FR) über Webflows natives, flexibles CMS verwaltet. Scroll-gesteuerte GSAP-Animationen für immersive Projektpräsentationen mit dezenter, intelligenter Reveal-on-Scroll-Navigation. SEO/AEO-bereite Architektur mit Unterstützung für strukturierte Daten.",
-      "inLanguage": "de",
+      "inLanguage": "de-CH",
       "datePublished": "2024-06-05",
       "dateModified": "2026-04-21",
       "author": {

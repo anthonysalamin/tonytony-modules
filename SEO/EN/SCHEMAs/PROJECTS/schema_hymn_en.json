@@ -69,7 +69,7 @@
       "mainEntity": {
         "@id": "https://tonytony.ch/projects/hymn#project"
       },
-      "inLanguage": "en"
+      "inLanguage": "en-CH"
     },
     {
       "@type": "Article",
@@ -91,7 +91,7 @@
         "Outcome"
       ],
       "articleBody": "Context: Hymn is an independent branding and design agency with offices in Lausanne and Zurich. Their existing website no longer reflected the caliber of their output — it lacked the performance, interactivity, and technical foundation expected from a top-tier Swiss design agency, and wasn't set up to scale as the team and portfolio grew.\n\nChallenge: Hymn's design team had a sharp vision ready in Figma, but no developer to execute it. As a studio rooted in motion design, their portfolio is inherently video-heavy — every showcase relies on embedded video to communicate the refined details of their work. Delivering that volume of content across a bilingual site without sacrificing performance was the core challenge.\n\nSolution: Working from Hymn's Figma designs, the front-end was built in Webflow with a focus on video performance and editorial autonomy. Above the fold, Vimeo Plus playback URLs were injected into native HTML5 video for instant autoplay, while below the fold, the Vimeo API handled deferred, user-triggered playback. Paired with GSAP animations and a bilingual CMS, the site stays fast and fully manageable.\n\nOutcome: Polished, animation-rich portfolio site reflecting the agency's creative standards. High-performance lazy-loaded Vimeo integration for seamless autoplay and playback. Fully bilingual site (EN/FR) managed through Webflow's native, flexible CMS. Scroll-driven GSAP animations for immersive project showcases alongside discreet, clever reveal-on-scroll navigation. SEO/AEO-ready architecture with structured data support for future updates.",
-      "inLanguage": "en",
+      "inLanguage": "en-CH",
       "datePublished": "2024-06-05",
       "dateModified": "2026-04-21",
       "author": {

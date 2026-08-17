@@ -69,7 +69,7 @@
       "mainEntity": {
         "@id": "https://tonytony.ch/projects/moto#project"
       },
-      "inLanguage": "en"
+      "inLanguage": "en-CH"
     },
     {
       "@type": "Article",
@@ -91,7 +91,7 @@
         "Outcome"
       ],
       "articleBody": "Context: MoTo is a major player in construction project management, overseeing more than 100 projects across Germany, with a particular focus in Munich. Their website, dating back to the 90s, lacked a CMS, was not responsive, and had no proper form handling — leaving the marketing team without the tools to manage or grow the site effectively.\n\nChallenge: The team had no in-house developer, and the existing domain was tied up with a former DNS registrar — turning what should have been a straightforward setup into a drawn-out process. Add tight timelines to the mix, and the project demanded a solution that could be delivered fast and managed independently by a non-technical marketing team.\n\nSolution: For MoTo, a mobile-first website was developed to be clear, fast, and easy to manage. A flexible CMS was implemented to give full control to the marketing team, enabling them to create and scale new sections independently. The UX remains focused and practical, while the design takes inspiration from their blue pentagon — a visual nod to their identity and their first project in Neubiberg.\n\nOutcome: Mobile-first, fully responsive website across all devices. Custom CMS enabling autonomous content creation and scaling. Clean, conversion-focused UX with intuitive navigation. Integrated and reliable form management system. Visual design aligned with brand identity.",
-      "inLanguage": "en",
+      "inLanguage": "en-CH",
       "datePublished": "2024-06-09",
       "dateModified": "2026-04-25",
       "author": {

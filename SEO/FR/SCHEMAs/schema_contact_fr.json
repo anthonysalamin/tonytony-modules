@@ -15,7 +15,7 @@
         "url": "https://tonytony.ch/fr/contact",
         "name": "TONYTONY | Contact",
         "description": "Contactez Anthony Salamin — réservez un appel gratuit de 15 min ou envoyez un message concernant votre projet web, audit SEO ou identité de marque.",
-        "inLanguage": "fr",
+        "inLanguage": "fr-CH",
         "isPartOf": {
           "@id": "https://tonytony.ch/#website"
         },

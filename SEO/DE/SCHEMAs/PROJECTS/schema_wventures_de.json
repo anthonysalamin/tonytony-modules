@@ -69,7 +69,7 @@
       "mainEntity": {
         "@id": "https://tonytony.ch/de/projects/wventures#project"
       },
-      "inLanguage": "de"
+      "inLanguage": "de-CH"
     },
     {
       "@type": "Article",
@@ -91,7 +91,7 @@
         "Ergebnis"
       ],
       "articleBody": "Kontext: W Ventures ist eine Berliner Risikokapitalgesellschaft mit einem Portfolio namhafter Unternehmen — Corgi, Klaviyo, Harmattan AI, Numeral und SmithRx, um nur einige zu nennen. Die bestehende Website war in die Jahre gekommen — visuell veraltet, strukturell unflexibel und entsprach nicht mehr dem Ansehen der Unternehmen, die sie unterstützen. Eine komplette digitale Neugestaltung war nötig, die sich glaubwürdig neben dem Kaliber ihrer Investitionen behaupten kann.\n\nHerausforderung: Anders als eine typische VC-Website aus Text und Logos brauchte W Ventures ein Design, das Autorität mit Zugänglichkeit ausbalanciert — seriös genug für institutionelle Glaubwürdigkeit, dynamisch genug um Gründer anzuziehen. UX/UI musste Vertrauen und Vision gleichzeitig kommunizieren, während ein CMS-gesteuertes Backend unverzichtbar war, damit das Team Portfoliounternehmen, Neuigkeiten und Teaminhalt eigenständig aktualisieren kann.\n\nLösung: Ich übernahm sowohl das UX/UI-Design als auch die komplette Webflow-Entwicklung und schuf eine Oberfläche, die klare redaktionelle Layouts mit gezielter Bewegung verbindet. GSAP-gesteuerte Scroll-Animationen und ein massgeschneidertes Dark-Theme-Erlebnis verleihen der Seite eine markante Präsenz, während die gesamte Inhaltsebene — Portfoliounternehmen, Team-Biografien, Neuigkeiten — über das Webflow-CMS für vollständige redaktionelle Autonomie läuft. Semantische Überschriftenstruktur und Performance-Optimierung sichern solide technische SEO-Grundlagen.\n\nErgebnis: Eine mutige, neu gestaltete digitale Identität, die W Ventures als glaubwürdige, moderne europäische VC-Gesellschaft positioniert. Massgeschneiderte Dark-Theme-UI mit Scroll-gesteuerten GSAP-Animationen, die die zukunftsorientierte Marke des Fonds verstärken. Vollständig CMS-gesteuerte Architektur — Portfolio, Team und Neuigkeiten ohne Entwicklerunterstützung bearbeitbar. UX/UI von TONYTONY durchgängig entworfen und entwickelt, vom Wireframe bis zur Produktion. SEO-optimierte Struktur mit sauberer Dokumenthierarchie und Grundlagen für strukturierte Daten.",
-      "inLanguage": "de",
+      "inLanguage": "de-CH",
       "datePublished": "2024-06-01",
       "dateModified": "2026-04-17",
       "author": {

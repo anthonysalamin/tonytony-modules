@@ -69,7 +69,7 @@
       "mainEntity": {
         "@id": "https://tonytony.ch/de/projects/samuel#project"
       },
-      "inLanguage": "de"
+      "inLanguage": "de-CH"
     },
     {
       "@type": "Article",
@@ -91,7 +91,7 @@
         "Ergebnis"
       ],
       "articleBody": "Kontext: Samuel Devantéry ist professioneller Fotograf und Videograf mit Sitz in Siders und bedient Kunden im gesamten Wallis mit Leistungen in Architektur-, Porträt-, Konzert-, Kulinarik-, Produkt- und Eventfotografie. Seine bestehende WordPress-Website hatte ihm jahrelang gedient, war aber in die Jahre gekommen — sie spiegelte nicht mehr die Qualität seiner visuellen Arbeit wider, verfügte nicht über moderne Performance und war nicht darauf ausgelegt, bei lokalen Suchanfragen mit hoher Kaufabsicht wie «Fotograf Wallis» oder «Fotostudio Siders» zu konkurrieren.\n\nHerausforderung: Die Website brauchte eine komplette Migration von WordPress zu Webflow ohne Verlust von Suchmaschinenrankings. Dutzende alter URLs — Blogbeiträge, ehemalige Shop-Seiten, Tag-Archive — benötigten saubere Weiterleitungen. Das CMS musste 10+ Fotografie-Kategorien unterstützen, jede mit eigenem Portfolio, Metadaten und strukturierten Daten. Eine zusätzliche Schwierigkeit: Samuels Name wird häufig falsch geschrieben («Devanthéry»), weshalb die SEO-Strategie beide Varianten erfassen musste.\n\nLösung: Die Website wurde in Webflow mit einem modularen CMS über alle Fotografie-Kategorien hinweg neu aufgebaut. Jede Dienstleistungsseite erhielt massgeschneiderte französischsprachige Meta-Tags und JSON-LD-strukturierte Daten, verknüpft mit einem einheitlichen Schema-Graphen. Eine CSV-Datei mit 74 Weiterleitungen bewältigte die WordPress-Migration. Massen-CMS-Operationen — Alt-Texte, Legenden, Korrekturen — wurden über die Webflow-API auf Hunderten von Elementen durchgeführt. Benutzerdefinierte GSAP-Animationen treiben die Startseite an: ein Endlos-Scroll-Mosaik mit Pointer-Schwenk und eine sequenzierte Bio-Text-Enthüllung. Eine llms.txt-Datei wurde für AEO-Bereitschaft hinzugefügt.\n\nErgebnis: Komplette WordPress-zu-Webflow-Migration mit 74 kuratierten 301-Weiterleitungen zur Erhaltung des SEO-Kapitals. 10+ kategoriespezifische Portfolio-Seiten mit massgeschneiderten Meta-Tags, strukturierten Daten und französischem SEO-Text. Einheitlicher JSON-LD-Wissensgraph (Person/Organization, WebSite, WebPage, CollectionPage, BlogPosting). GSAP-gesteuerte Homepage: Endlos-Mosaik-Scroll, Pointer-Schwenk und sequenzierte Bio-Text-Enthüllung. Massen-CMS-Operationen über 50+ Elemente — diversifizierte Alt-Texte, formatierte Legenden, Korrekturen — via Webflow-API. AEO-bereite llms.txt und SEO-Audit, das die Website von einer Basis von 6/10 auf eine produktionsreife Architektur anhob.",
-      "inLanguage": "de",
+      "inLanguage": "de-CH",
       "datePublished": "2024-06-11",
       "dateModified": "2026-04-27",
       "author": {

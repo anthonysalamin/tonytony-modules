@@ -69,7 +69,7 @@
       "mainEntity": {
         "@id": "https://tonytony.ch/projects/maude#project"
       },
-      "inLanguage": "en"
+      "inLanguage": "en-CH"
     },
     {
       "@type": "Article",
@@ -91,7 +91,7 @@
         "Outcome"
       ],
       "articleBody": "Context: Maude von Giese is a freelance set designer and scenographer based in Zurich, working across theater, opera, film, and cultural institutions throughout the German- and French-speaking world. She needed a portfolio site that would do justice to the striking, spatial quality of her work — a digital presence as intentional and atmospheric as the stage environments she creates. Zurich-based graphic designer Lydia Perrot developed the visual concept and full design in Figma.\n\nChallenge: The UI design from Zurich-based graphic designer Lydia Perrot went far beyond a standard portfolio grid. The homepage features a scroll-driven 3D wall effect — project images rise with a steep perspective transform, creating spatial immersion — while parallax effects throughout reinforce the theatrical atmosphere. The challenge: faithfully translating this art-directed layout into a performant Webflow build while keeping the heading hierarchy semantically correct for SEO, despite typographic elements placed in unconventional positions.\n\nSolution: The entire site was built in Webflow, with custom CSS and GSAP interactions powering the perspective-driven landing page and parallax effects. Heading tags were strategically placed to preserve a clean, crawlable document outline without compromising the visual layout. Every project, image, and text block runs on Webflow's CMS, giving Maude full autonomy to manage her portfolio without developer intervention.\n\nOutcome: Immersive, scroll-driven 3D perspective landing page faithful to Lydia Perrot's original design vision. Layered parallax effects throughout the site reinforcing the theatrical, spatial identity of the work. Fully CMS-driven architecture — all projects, images, and content editable by the client directly in Webflow. Clean semantic heading structure preserved across a non-conventional layout for strong technical SEO.",
-      "inLanguage": "en",
+      "inLanguage": "en-CH",
       "datePublished": "2024-06-07",
       "dateModified": "2026-04-23",
       "author": {

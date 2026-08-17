@@ -69,7 +69,7 @@
       "mainEntity": {
         "@id": "https://tonytony.ch/projects/further#project"
       },
-      "inLanguage": "en"
+      "inLanguage": "en-CH"
     },
     {
       "@type": "Article",
@@ -91,7 +91,7 @@
         "Outcome"
       ],
       "articleBody": "Context: Design Hotels operates at the intersection of hospitality and culture, continuously fueled by a high volume of editorial content coming from global events and collaborations. As this content pipeline grew, the existing digital approach struggled to present it in a coherent, scalable, and visually compelling way.\n\nChallenge: The marketing team was producing a constant stream of rich content — articles, event coverage, and brand stories — but lacked a structured framework to publish and showcase it effectively. Early prototypes explored multiple directions, yet none fully captured the editorial depth required. The key challenge was to design and build a system that could handle this influx while maintaining clarity, performance, and a premium feel aligned with the brand.\n\nSolution: Following several iterations and internal feedback loops, the direction shifted toward a fully editorial design system. In close collaboration with the creative team, I took ownership of the entire web development process, translating this vision into a scalable digital platform. The build focused on structuring content into flexible, reusable modules, enabling the marketing team to publish dynamically without compromising design integrity. API integrations were implemented to streamline content flow and ensure consistency across touchpoints, while the front- and back-end were developed to support long-term scalability.\n\nOutcome: Editorial platform built to handle high-volume content smoothly. Clearer content hierarchy for more engaging storytelling. Streamlined publishing via backend logic and API integrations. Scalable foundation supporting long-term growth and global reach.",
-      "inLanguage": "en",
+      "inLanguage": "en-CH",
       "datePublished": "2024-06-03",
       "dateModified": "2026-04-19",
       "author": {

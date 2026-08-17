@@ -6,7 +6,7 @@
             "@id": "https://tonytony.ch/fr/privacy-policy/#webpage",
             "url": "https://tonytony.ch/fr/privacy-policy",
             "name": "Politique de confidentialité | TONYTONY",
-            "inLanguage": "fr",
+            "inLanguage": "fr-CH",
             "description": "Découvrez comment TONYTONY collecte, utilise et protège vos données personnelles. Politique de confidentialité pour nos services de création de sites web, Webflow et SEO.",
             "dateModified": "2026-04-12",
             "isPartOf": {
@@ -23,7 +23,7 @@
                 "@id": "https://tonytony.ch/fr/privacy-policy/#policy",
                 "headline": "Politique de confidentialité",
                 "dateModified": "2026-04-12",
-                "inLanguage": "fr",
+                "inLanguage": "fr-CH",
                 "isPartOf": {
                     "@id": "https://tonytony.ch/fr/privacy-policy/#webpage"
                 },

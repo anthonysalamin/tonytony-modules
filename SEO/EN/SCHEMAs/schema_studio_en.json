@@ -74,7 +74,7 @@
         "@id": "https://tonytony.ch/#website",
         "url": "https://tonytony.ch",
         "name": "TONYTONY",
-        "inLanguage": "en",
+        "inLanguage": "en-CH",
         "publisher": {
           "@id": "https://tonytony.ch/#organization"
         }
@@ -85,7 +85,7 @@
         "url": "https://tonytony.ch/studio",
         "name": "Studio | TONYTONY",
         "description": "Get to know Anthony Salamin, the Senior Web Designer & Creative Developer behind TONYTONY. A focused studio based in Valais, Switzerland.",
-        "inLanguage": "en",
+        "inLanguage": "en-CH",
         "isPartOf": {
           "@id": "https://tonytony.ch/#website"
         },

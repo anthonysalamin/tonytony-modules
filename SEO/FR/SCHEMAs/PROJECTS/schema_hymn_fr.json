@@ -69,7 +69,7 @@
       "mainEntity": {
         "@id": "https://tonytony.ch/fr/projects/hymn#project"
       },
-      "inLanguage": "fr"
+      "inLanguage": "fr-CH"
     },
     {
       "@type": "Article",
@@ -91,7 +91,7 @@
         "Résultat"
       ],
       "articleBody": "Contexte : Hymn est une agence indépendante de branding et de design avec des bureaux à Lausanne et Zurich. Leur site existant ne reflétait plus le calibre de leur production — il manquait de performance, d'interactivité et de fondations techniques attendues d'une agence de design suisse de premier plan, et n'était pas conçu pour évoluer avec la croissance de l'équipe et du portfolio.\n\nDéfi : L'équipe design de Hymn avait une vision précise prête dans Figma, mais pas de développeur pour l'exécuter. En tant que studio ancré dans le motion design, leur portfolio est intrinsèquement riche en vidéo — chaque vitrine repose sur de la vidéo intégrée pour communiquer les détails raffinés de leur travail. Livrer ce volume de contenu sur un site bilingue sans sacrifier la performance était le défi central.\n\nSolution : À partir des designs Figma de Hymn, le front-end a été construit dans Webflow avec un focus sur la performance vidéo et l'autonomie éditoriale. Au-dessus de la ligne de flottaison, les URLs de lecture Vimeo Plus ont été injectées dans des balises vidéo HTML5 natives pour un autoplay instantané, tandis qu'en dessous, l'API Vimeo gère la lecture différée déclenchée par l'utilisateur. Associé aux animations GSAP et à un CMS bilingue, le site reste rapide et entièrement gérable.\n\nRésultat : Site portfolio soigné et riche en animations reflétant les standards créatifs de l'agence. Intégration Vimeo lazy-loaded haute performance pour un autoplay et une lecture fluides. Site entièrement bilingue (EN/FR) géré via le CMS natif et flexible de Webflow. Animations GSAP au scroll pour des vitrines de projets immersives accompagnées d'une navigation discrète et intelligente en reveal-on-scroll. Architecture SEO/AEO-ready avec support de données structurées pour les mises à jour futures.",
-      "inLanguage": "fr",
+      "inLanguage": "fr-CH",
       "datePublished": "2024-06-05",
       "dateModified": "2026-04-21",
       "author": {

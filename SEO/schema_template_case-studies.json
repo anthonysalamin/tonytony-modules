@@ -69,7 +69,7 @@
       "mainEntity": {
         "@id": "https://tonytony.ch/projects/{{PROJECT_SLUG}}#project"
       },
-      "inLanguage": "{{LANGUAGE_CODE}}"
+      "inLanguage": "{{LANGUAGE_CODE}}-CH"
     },
     {
       "@type": "Article",
@@ -91,7 +91,7 @@
         "Outcome"
       ],
       "articleBody": "Context: {{CONTEXT_TEXT}}\n\nChallenge: {{CHALLENGE_TEXT}}\n\nSolution: {{SOLUTION_TEXT}}\n\nOutcome: {{OUTCOME_TEXT}}",
-      "inLanguage": "{{LANGUAGE_CODE}}",
+      "inLanguage": "{{LANGUAGE_CODE}}-CH",
       "datePublished": "{{DATE_PUBLISHED_YYYY-MM-DD}}",
       "dateModified": "{{DATE_MODIFIED_YYYY-MM-DD}}",
       "author": {

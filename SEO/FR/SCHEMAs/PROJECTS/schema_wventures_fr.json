@@ -69,7 +69,7 @@
       "mainEntity": {
         "@id": "https://tonytony.ch/fr/projects/wventures#project"
       },
-      "inLanguage": "fr"
+      "inLanguage": "fr-CH"
     },
     {
       "@type": "Article",
@@ -91,7 +91,7 @@
         "Résultat"
       ],
       "articleBody": "Contexte : W Ventures est un fonds de capital-risque basé à Berlin avec un portefeuille de noms prestigieux — Corgi, Klaviyo, Harmattan AI, Numeral et SmithRx pour n'en citer que quelques-uns. Leur site existant avait pris du retard — visuellement daté, structurellement rigide, et ne correspondant plus au standing des entreprises qu'ils accompagnent. Ils avaient besoin d'une refonte numérique complète qui puisse se tenir dignement aux côtés du calibre de leurs investissements.\n\nDéfi : Contrairement à un site VC classique construit autour de texte et de logos, W Ventures avait besoin d'un design qui équilibre autorité et accessibilité — suffisamment sérieux pour la crédibilité institutionnelle, suffisamment dynamique pour attirer les fondateurs. L'UX/UI devait communiquer confiance et vision simultanément, tandis qu'un backend piloté par CMS était essentiel pour permettre à l'équipe de mettre à jour de manière autonome les sociétés en portefeuille, les actualités et l'équipe au fil de la croissance du fonds.\n\nSolution : J'ai dirigé à la fois le design UX/UI et le développement Webflow complet, en créant une interface qui associe des mises en page éditoriales épurées à du mouvement intentionnel. Les animations GSAP au scroll et une expérience personnalisée sur thème sombre confèrent au site une présence distinctive, tandis que l'ensemble de la couche de contenu — sociétés en portefeuille, biographies de l'équipe, actualités — fonctionne sur le CMS Webflow pour une autonomie éditoriale complète. La structure sémantique des titres et l'optimisation des performances assurent des bases techniques SEO solides.\n\nRésultat : Une identité numérique audacieuse et redessinée qui positionne W Ventures comme un fonds européen crédible et moderne. Interface sombre sur mesure avec animations GSAP au scroll renforçant l'image tournée vers l'avenir du fonds. Architecture entièrement pilotée par CMS — portefeuille, équipe et actualités modifiables sans support développeur. UX/UI conçu et développé de bout en bout par TONYTONY, du wireframe à la production. Structure optimisée pour le SEO avec hiérarchie documentaire propre et bases de données structurées pour la croissance future.",
-      "inLanguage": "fr",
+      "inLanguage": "fr-CH",
       "datePublished": "2024-06-01",
       "dateModified": "2026-04-17",
       "author": {

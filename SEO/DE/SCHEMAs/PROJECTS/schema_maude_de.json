@@ -69,7 +69,7 @@
       "mainEntity": {
         "@id": "https://tonytony.ch/de/projects/maude#project"
       },
-      "inLanguage": "de"
+      "inLanguage": "de-CH"
     },
     {
       "@type": "Article",
@@ -91,7 +91,7 @@
         "Ergebnis"
       ],
       "articleBody": "Kontext: Maude von Giese ist freischaffende Bühnenbildnerin und Szenografin mit Sitz in Zürich, tätig in Theater, Oper, Film und Kulturinstitutionen im deutsch- und französischsprachigen Raum. Sie brauchte eine Portfolio-Website, die der eindrucksvollen, räumlichen Qualität ihrer Arbeit gerecht wird — eine digitale Präsenz, die ebenso intentional und atmosphärisch ist wie die Bühnenräume, die sie gestaltet. Die Zürcher Grafikdesignerin Lydia Perrot entwickelte das visuelle Konzept und das vollständige Design in Figma.\n\nHerausforderung: Das UI-Design der Zürcher Grafikdesignerin Lydia Perrot ging weit über ein Standard-Portfolio-Raster hinaus. Die Startseite zeigt einen scroll-gesteuerten 3D-Wandeffekt — Projektbilder erheben sich mit einer steilen Perspektiv-Transformation und erzeugen räumliche Immersion — während Parallax-Effekte durchgehend die theatralische Atmosphäre verstärken. Die Herausforderung: dieses art-directed Layout originalgetreu in einen performanten Webflow-Build zu übersetzen und gleichzeitig die Überschriften-Hierarchie semantisch korrekt für SEO zu halten, trotz typografischer Elemente an unkonventionellen Positionen.\n\nLösung: Die gesamte Website wurde in Webflow gebaut, mit benutzerdefiniertem CSS und GSAP-Interaktionen für die perspektivische Landingpage und die Parallax-Effekte. Heading-Tags wurden strategisch platziert, um eine saubere, crawlbare Dokumentstruktur zu bewahren, ohne das visuelle Layout zu beeinträchtigen. Jedes Projekt, Bild und jeder Textblock läuft über das Webflow-CMS, was Maude volle Autonomie gibt, ihr Portfolio ohne Entwicklerunterstützung zu verwalten.\n\nErgebnis: Immersive, scroll-gesteuerte 3D-Perspektiv-Landingpage, getreu Lydia Perrots ursprünglicher Designvision. Geschichtete Parallax-Effekte, die die theatralische, räumliche Identität der Arbeit verstärken. Vollständig CMS-gesteuerte Architektur — alle Projekte, Bilder und Inhalte direkt in Webflow durch die Kundin bearbeitbar. Saubere semantische Überschriftenstruktur trotz unkonventionellem Layout für starkes technisches SEO.",
-      "inLanguage": "de",
+      "inLanguage": "de-CH",
       "datePublished": "2024-06-07",
       "dateModified": "2026-04-23",
       "author": {

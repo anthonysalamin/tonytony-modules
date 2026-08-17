@@ -69,7 +69,7 @@
       "mainEntity": {
         "@id": "https://tonytony.ch/fr/projects/samuel#project"
       },
-      "inLanguage": "fr"
+      "inLanguage": "fr-CH"
     },
     {
       "@type": "Article",
@@ -91,7 +91,7 @@
         "Résultat"
       ],
       "articleBody": "Contexte : Samuel Devantéry est un photographe et vidéaste professionnel basé à Sierre, au service de clients à travers le Valais avec des prestations couvrant la photographie d'architecture, de portrait, de concert, culinaire, de produit et événementielle. Son site WordPress existant l'avait servi pendant des années mais avait vieilli — il ne reflétait plus la qualité de sa production visuelle, manquait de performance moderne et n'était pas structuré pour concurrencer en recherche locale sur des requêtes à forte intention comme « photographe Valais » ou « studio photo Sierre ».\n\nDéfi : Le site nécessitait une migration complète de WordPress vers Webflow sans perdre de positionnement. Des dizaines d'URLs historiques — articles de blog, anciennes pages boutique, archives de tags — nécessitaient toutes des redirections propres. Le CMS devait supporter 10+ catégories de photographie, chacune avec son propre portfolio, ses métadonnées et ses données structurées. Difficulté supplémentaire : le nom de Samuel est fréquemment mal orthographié (« Devanthéry »), la stratégie SEO devait donc capturer les deux variantes.\n\nSolution : Le site a été reconstruit dans Webflow avec un CMS modulaire couvrant toutes les catégories de photographie. Chaque page de service a reçu des balises meta en français sur mesure et des données structurées JSON-LD liées à un graphe de schéma unifié. Un CSV de 74 redirections a géré la migration WordPress. Les opérations CMS en masse — textes alternatifs, légendes, corrections de coquilles — ont été exécutées via l'API Webflow sur des centaines d'éléments. Des animations GSAP personnalisées animent la page d'accueil : une mosaïque à défilement infini avec panoramique au pointeur et une révélation séquencée du texte bio. Un fichier llms.txt a été ajouté pour la préparation à l'AEO.\n\nRésultat : Migration complète WordPress-vers-Webflow avec 74 redirections 301 curées préservant le capital SEO. 10+ pages portfolio par catégorie avec balises meta sur mesure, données structurées et texte SEO en français. Graphe de connaissances JSON-LD unifié (Person/Organization, WebSite, WebPage, CollectionPage, BlogPosting). Page d'accueil animée GSAP : mosaïque à défilement infini, panoramique au pointeur et révélation séquencée du texte bio. Opérations CMS en masse sur 50+ éléments — textes alternatifs diversifiés, légendes formatées, corrections de coquilles — via l'API Webflow. llms.txt prêt pour l'AEO et audit SEO faisant passer le site d'une base de 6/10 à une architecture prête pour la production.",
-      "inLanguage": "fr",
+      "inLanguage": "fr-CH",
       "datePublished": "2024-06-11",
       "dateModified": "2026-04-27",
       "author": {

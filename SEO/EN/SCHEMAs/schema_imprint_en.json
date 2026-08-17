@@ -6,7 +6,7 @@
             "@id": "https://tonytony.ch/imprint/#webpage",
             "url": "https://tonytony.ch/imprint",
             "name": "Imprint | TONYTONY",
-            "inLanguage": "en",
+            "inLanguage": "en-CH",
             "description": "Legal information and imprint for TONYTONY Sàrl, a Swiss-based web design and Webflow development studio.",
             "isPartOf": {
                 "@id": "https://tonytony.ch/#website"
