@@ -1,0 +1,10 @@
+{
+  "name": "tonytony-lang",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-17",
+  "routes": [
+    { "pattern": "tonytony.ch/fr*", "zone_name": "tonytony.ch" },
+    { "pattern": "tonytony.ch/de*", "zone_name": "tonytony.ch" }
+  ],
+  "observability": { "enabled": true }
+}
