@@ -230,8 +230,8 @@
       "@type": "WebPage",
       "@id": "https://tonytony.ch/fr/#webpage",
       "url": "https://tonytony.ch/fr",
-      "name": "TONYTONY | Conception & Développement Webflow pour Startups et PME",
-      "description": "Sites web à fort taux de conversion pour startups et PME. SEO & AEO pour se classer sur Google et être cité par l'IA.",
+      "name": "Web design en Valais pour startups et PME | TONYTONY",
+      "description": "Sites web sur mesure en Valais. Référencement pensé pour Google et les réponses IA. Plus de trafic et de leads. Audit gratuit et maquette offerte.",
       "inLanguage": "fr-CH",
       "isPartOf": {
         "@id": "https://tonytony.ch/fr/#website"
