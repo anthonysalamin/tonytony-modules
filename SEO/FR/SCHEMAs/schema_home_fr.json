@@ -40,6 +40,12 @@
         "addressRegion": "VS",
         "addressCountry": "CH"
       },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 46.2192306,
+        "longitude": 7.6074894
+      },
+      "telephone": "+41774214492",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "TONYTONY Services",
