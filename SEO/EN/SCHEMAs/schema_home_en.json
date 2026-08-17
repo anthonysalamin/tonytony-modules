@@ -213,7 +213,7 @@
       "@id": "https://tonytony.ch/#website",
       "url": "https://tonytony.ch",
       "name": "TONYTONY",
-      "inLanguage": "en",
+      "inLanguage": "en-CH",
       "publisher": {
         "@id": "https://tonytony.ch/#organization"
       }
