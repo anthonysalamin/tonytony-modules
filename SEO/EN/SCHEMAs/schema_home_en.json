@@ -250,37 +250,14 @@
     {
       "@type": "FAQPage",
       "@id": "https://tonytony.ch/#faq",
+      "inLanguage": "en",
       "mainEntity": [
         {
           "@type": "Question",
           "name": "Why choose TONYTONY?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "TONYTONY is Anthony Salamin — senior web designer & creative developer, 15+ years deep. Swiss-born, shaped by Berlin's startup scene and top agencies, now operating as a focused studio of one in Valais. Working with teams around the world."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you work with clients outside Switzerland?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Based in Switzerland, working worldwide — remote-first, time zones permitting."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you handle SEO and AEO?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes — I cover technical audits, SEO, AEO (Answer Engine Optimization), keyword research, and content optimization. Everything needed to make your site visible and high-performing. AI summaries now dominate Google and are rising fast. SEO and AEO aren't separate anymore, just one smart investment."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the timeline for a website?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Between 2 and 8 weeks, depending on the project's complexity."
+            "text": "TONYTONY is Anthony Salamin, Swiss-born — senior web designer & creative developer, 15+ years deep. Shaped by Berlin's startup scene, now back in Switzerland operating as a focused studio of one in Valais. TONYTONY works with teams around the pale blue dot 🌍 and is remote first."
           }
         },
         {
@@ -288,7 +265,7 @@
           "name": "Is a multilingual website possible?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Absolutely — Webflow supports multilingual sites natively. French, German, English, Japanese, Chinese — no limits. You stay in control of your translations via the CMS."
+            "text": "Absolutely — Webflow supports multilingual sites natively. French, German, English, 日本語, 中文 — no limits. You stay in control of your translations via the CMS."
           }
         },
         {
@@ -297,6 +274,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Always — training to manage your site, technical support, and ongoing maintenance — I stay by your side long after launch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with clients outside Switzerland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Based in Switzerland, working worldwide — remote-first, time zones permitting."
           }
         }
       ]

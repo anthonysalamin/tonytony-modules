@@ -246,53 +246,38 @@
     {
       "@type": "FAQPage",
       "@id": "https://tonytony.ch/fr/#faq",
+      "inLanguage": "fr-CH",
       "mainEntity": [
         {
           "@type": "Question",
           "name": "Pourquoi choisir TONYTONY ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "TONYTONY, c'est Anthony Salamin — web designer senior & développeur créatif, plus de 15 ans d'expérience. Né en Suisse, formé par la scène startup berlinoise et de grandes agences, j'opère aujourd'hui comme un studio d'une seule personne depuis le Valais. Je travaille avec des équipes du monde entier."
+            "text": "TONYTONY, c'est Anthony Salamin — designer web senior & développeur créatif, 15+ ans d'expérience. Né en Suisse, forgé par la scène startup berlinoise, aujourd'hui de retour en Suisse en tant que studio solo en Valais. TONYTONY collabore avec des clients dans le monde entier 🌍"
           }
         },
         {
           "@type": "Question",
-          "name": "Travaillez-vous avec des clients hors de Suisse ?",
+          "name": "Un site multilingue, c'est possible ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Oui. Basé en Suisse, je travaille dans le monde entier — principalement à distance, selon les fuseaux horaires."
+            "text": "Absolument — Webflow supporte les sites multilingues nativement. Français, allemand, anglais, 日本語, 中文 — aucune limite. Vous gardez le contrôle de vos traductions via le CMS."
           }
         },
         {
           "@type": "Question",
-          "name": "Gérez-vous le SEO et l'AEO ?",
+          "name": "Et après le lancement ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Oui — je couvre les audits techniques, le SEO, l'AEO (Optimisation pour les moteurs de réponses), la recherche de mots-clés et l'optimisation du contenu. Tout ce qu'il faut pour rendre votre site visible et performant. Les résumés IA dominent désormais Google. Le SEO et l'AEO ne sont plus séparés, c'est un seul et même investissement intelligent."
+            "text": "Toujours là. Formation, support technique, maintenance — je ne disparais pas après la livraison."
           }
         },
         {
           "@type": "Question",
-          "name": "Quel est le délai pour créer un site web ?",
+          "name": "Vous travaillez aussi à l'international ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Entre 2 et 8 semaines, selon la complexité du projet."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Un site multilingue est-il possible ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolument — Webflow gère nativement les sites multilingues. Français, allemand, anglais, japonais, chinois — il n'y a pas de limites. Vous gardez le contrôle de vos traductions via le CMS."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Offrez-vous un support ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Toujours — formation pour gérer votre site, support technique et maintenance continue — je reste à vos côtés bien après le lancement."
+            "text": "Oui. Basé en Suisse, actif partout dans le monde — en remote, fuseaux horaires permis."
           }
         }
       ]

@@ -246,37 +246,14 @@
     {
       "@type": "FAQPage",
       "@id": "https://tonytony.ch/de/#faq",
+      "inLanguage": "de-CH",
       "mainEntity": [
         {
           "@type": "Question",
           "name": "Warum TONYTONY wählen?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "TONYTONY ist Anthony Salamin — Senior Web Designer & Creative Developer mit über 15 Jahren Erfahrung. Geboren in der Schweiz, geprägt von der Berliner Startup-Szene und Top-Agenturen, arbeite ich heute als fokussiertes Ein-Personen-Studio aus dem Wallis. Ich arbeite mit Teams auf der ganzen Welt."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Arbeiten Sie mit Kunden ausserhalb der Schweiz?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja. Mein Standort ist die Schweiz, aber ich arbeite weltweit — primär remote, sofern es die Zeitzonen zulassen."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Bieten Sie SEO und AEO an?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja — ich decke technische Audits, SEO, AEO (Answer Engine Optimization), Keyword-Recherche und Inhaltsoptimierung ab. Alles, was nötig ist, um Ihre Website sichtbar und leistungsstark zu machen. KI-Zusammenfassungen dominieren heute Google. SEO und AEO sind nicht mehr getrennt, sondern ein einziges smartes Investment."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Wie lange dauert die Erstellung einer Website?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Zwischen 2 und 8 Wochen, je nach Komplexität des Projekts."
+            "text": "TONYTONY ist Anthony Salamin — Senior Webdesigner & Creative Developer mit über 15 Jahren Erfahrung. In der Schweiz geboren, geprägt von der Berliner Startup-Szene, heute als fokussiertes One-Man-Studio im Wallis tätig. Zusammenarbeit mit Teams auf der ganzen Welt 🌍"
           }
         },
         {
@@ -284,7 +261,7 @@
           "name": "Ist eine mehrsprachige Website möglich?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Absolut — Webflow unterstützt mehrsprachige Websites nativ. Französisch, Deutsch, Englisch, Japanisch, Chinesisch — es gibt keine Grenzen. Sie behalten die Kontrolle über Ihre Übersetzungen via CMS."
+            "text": "Absolut — Webflow unterstützt mehrsprachige Websites nativ. Französisch, Deutsch, Englisch, 日本語, 中文 — keine Grenzen. Sie behalten die volle Kontrolle über Ihre Inhalte und Übersetzungen im CMS."
           }
         },
         {
@@ -292,7 +269,15 @@
           "name": "Bieten Sie Support an?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Immer — Schulung zur Verwaltung Ihrer Seite, technischer Support und fortlaufende Wartung — ich bleibe auch lange nach dem Launch an Ihrer Seite."
+            "text": "Immer — Schulung zur eigenständigen Verwaltung Ihrer Website, technischer Support und laufende Wartung. Ich begleite Sie auch lange nach dem Launch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Arbeiten Sie auch mit Kunden außerhalb der Schweiz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Ich bin in der Schweiz ansässig, arbeite aber weltweit — remote-first, sofern die Zeitzonen es zulassen."
           }
         }
       ]
