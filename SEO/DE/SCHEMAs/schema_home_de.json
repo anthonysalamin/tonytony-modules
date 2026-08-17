@@ -221,18 +221,6 @@
       }
     },
     {
-      "@type": "BreadcrumbList",
-      "@id": "https://tonytony.ch/de/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Startseite",
-          "item": "https://tonytony.ch/de"
-        }
-      ]
-    },
-    {
       "@type": "WebPage",
       "@id": "https://tonytony.ch/de/#webpage",
       "url": "https://tonytony.ch/de",
@@ -241,9 +229,6 @@
       "inLanguage": "de-CH",
       "isPartOf": {
         "@id": "https://tonytony.ch/de/#website"
-      },
-      "breadcrumb": {
-        "@id": "https://tonytony.ch/de/#breadcrumb"
       },
       "mainEntity": {
         "@id": "https://tonytony.ch/#professionalservice"
