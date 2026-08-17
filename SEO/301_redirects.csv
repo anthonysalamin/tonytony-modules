@@ -1,7 +1,7 @@
 source,target
 /projects/cave-du-verseau,/portfolio
 /projects/arolla-pine,/portfolio
-/projects/quatreaplus,/portfolio
+/projects/red-8,/portfolio
 /projects/urbain,/portfolio
 /projects/trient,/portfolio
 /projects/touno,/portfolio
@@ -10,7 +10,7 @@ source,target
 /projects/sierretakeuil,/portfolio
 /projects/sapa-vietnam,/portfolio
 /projects/rocklands-bouldering,/portfolio
-/projects/red-8,/portfolio
+/projects/quatreaplus,/portfolio
 /projects/portraits,/portfolio
 /projects/perversion,/portfolio
 /projects/otjandjupa,/portfolio
@@ -41,3 +41,5 @@ source,target
 /services/seo-aeo-cro,/services/seo
 /de/services/seo-aeo-cro,/de/services/seo-aeo
 /fr/services/seo-aeo-cro,/fr/services/seo-aeo
+/de/services/seo-aeo,/de/services/seo
+/fr/services/seo-aeo,/fr/services/seo

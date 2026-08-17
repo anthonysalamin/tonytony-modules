@@ -44,7 +44,7 @@ TONYTONY Sàrl is a Switzerland-based studio founded and operated by Anthony Sal
 - **Brand Identity & Design System** (https://tonytony.ch/services/branding): Logo design, typography, color systems, and visual guidelines
 - **Web Design** (https://tonytony.ch/services/web-design): Custom, modern, conversion-focused website design with UX, performance, and accessibility focus
 - **Webflow Development** (https://tonytony.ch/services/web-development): High-performance Webflow builds with CMS setup, API integrations, automation workflows, and GSAP animations
-- **SEO & AEO** (https://tonytony.ch/services/seo-aeo): Technical SEO audits, keyword research, content optimization, and structured data — for search engines and AI answer engines
+- **SEO & AEO** (https://tonytony.ch/services/seo): Technical SEO audits, keyword research, content optimization, and structured data — for search engines and AI answer engines
 - **Website Migration**: Strategic migration from legacy platforms (like WordPress) to Webflow, including rigorous redirect mapping and SEO preservation
 - **CMS Architecture**: Modular and scalable content systems for long-term editorial autonomy
 - **Multilingual Websites**: Structured multilingual implementations (EN, FR, DE and beyond)
