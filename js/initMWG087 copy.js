@@ -1,8 +1,8 @@
 /**
  * TONYTONY | initMWG087
- * Pinned horizontal scroll cards with momentum-based enter transform for each `[data-mwg087="root"]` (≥480px).
+ * Pinned horizontal scroll cards with momentum-based enter transform for `.mwg087` (≥480px).
  *
- * @build 19.08.26
+ * @build 13.08.26
  * @author TONYTONY Sàrl
  * @dependencies GSAP (global `gsap`, ScrollTrigger)
  * @consumers main.js
@@ -11,21 +11,17 @@
 export function initMWG087() {
     if (window.innerWidth < 480) return;
 
-    const roots = document.querySelectorAll('[data-mwg087="root"]');
+    const root = document.querySelector('.mwg087');
 
-    if (!roots.length) return;
+    if (!root) return;
 
-    gsap.registerPlugin(ScrollTrigger);
-
-    roots.forEach(setupCarousel);
-}
-
-function setupCarousel(root) {
     const container = root.querySelector('[data-mwg087="container"]');
     const cardsContainer = root.querySelector('[data-mwg087="cards"]');
     const cards = root.querySelectorAll('[data-mwg087="card"]');
 
     if (!container || !cardsContainer || !cards.length) return;
+
+    gsap.registerPlugin(ScrollTrigger);
 
     const distance = cardsContainer.clientWidth - window.innerWidth;
 
