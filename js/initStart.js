@@ -118,7 +118,7 @@ function shakeAndRestore(toggle, shaking) {
     const restore = () => {
         toggle.checked = true;
         shaking.delete(toggle);
-        if (typeof gsap !== "undefined") gsap.set(switchEl, { rotation: 0 });
+        if (typeof gsap !== "undefined") gsap.set(switchEl, { rotation: 0, x: 0 });
     };
 
     if (typeof gsap === "undefined") {
@@ -127,12 +127,14 @@ function shakeAndRestore(toggle, shaking) {
     }
 
     gsap.killTweensOf(switchEl);
-    gsap.set(switchEl, { transformOrigin: "50% 50%" });
+    gsap.set(switchEl, { transformOrigin: "50% 50%", rotation: 0, x: 0 });
 
     gsap.timeline({ onComplete: restore })
-        .to(switchEl, { rotation: -5, duration: 0.05, ease: "power2.out", delay: 0.15 })
-        .to(switchEl, { rotation: 10, duration: 0.05, ease: "none" })
-        .to(switchEl, { rotation: 0, duration: 0.08, ease: "power2.out" });
+        .to(switchEl, { rotation: -14, x: -5, duration: 0.08, ease: "power2.out", delay: 0.15 })
+        .to(switchEl, { rotation: 18, x: 6, duration: 0.09, ease: "none" })
+        .to(switchEl, { rotation: -12, x: -4, duration: 0.08, ease: "none" })
+        .to(switchEl, { rotation: 8, x: 3, duration: 0.08, ease: "none" })
+        .to(switchEl, { rotation: 0, x: 0, duration: 0.12, ease: "power2.out" });
 }
 
 export function initStart() {
