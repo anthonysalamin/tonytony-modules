@@ -1,9 +1,9 @@
 /**
  * TONYTONY | initFAQModule
- * Opens the first FAQ on a short delay and animates answer heights with GSAP on each question interaction.
+ * Animates answer heights with GSAP on each question interaction.
  *
  * @build 12.04.26
- * @updated 12.04.26 PHT
+ * @updated 20.08.26 PHT
  * @author TONYTONY Sàrl
  * @dependencies GSAP
  */
@@ -13,9 +13,6 @@ export function initFAQModule() {
     if (questions.length === 0) return;
 
     gsap.set(".faq__answer", { height: 0, overflow: "hidden", duration: 0 });
-
-    function openFirstFAQ() { questions[0].click(); }
-    setTimeout(openFirstFAQ, 250);
 
     questions.forEach(question => {
         let isOpen = false;
