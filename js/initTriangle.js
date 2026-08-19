@@ -5,6 +5,8 @@
  * Copy follows the URL locale (/fr/, /de/, default en).
  *
  * @author TONYTONY Sàrl
+ * @updated 19.08.26 PHT
+ * @dependencies GSAP
  */
 
 const COPY = {
@@ -22,7 +24,7 @@ const COPY = {
     fr: {
         needDomain: "Oups, domaine requis.",
         invalidDomain: "Domaine incorrect.",
-        cancel: "Non n'est pas une option.",
+        cancel: "Boooooooooring.",
         emailSubject: "Demande de projet",
         goodNote: " (même si ça devrait aussi être bon)",
         emailBody: (domain, choices) => {
@@ -33,7 +35,7 @@ const COPY = {
     de: {
         needDomain: "Ups, Domain nötig.",
         invalidDomain: "Ungültige Domain.",
-        cancel: "Ein 'Nein' akzeptiere ich nicht.",
+        cancel: "Boooooooooring.",
         emailSubject: "Projektanfrage",
         goodNote: " (obwohl es auch gut sein sollte)",
         emailBody: (domain, choices) => {
@@ -125,6 +127,7 @@ export function initTriangle() {
     const closeEl = root.querySelector('[data-triangle="close"]');
     const cancelEl = root.querySelector('[data-triangle="cancel"]');
     const submitEl = root.querySelector('[data-triangle="submit"]');
+    let typeTween;
 
     // Toggles — always exactly two on. Prefer Good > Fast > Cheap so
     // the user keeps the strongest pair whenever we have a choice.
@@ -178,7 +181,41 @@ export function initTriangle() {
     });
 
     // --- Form Actions ---
+    const killTypeTween = () => {
+        if (!typeTween) return;
+        typeTween.kill();
+        typeTween = null;
+    };
+
+    const typeCancelPlaceholder = () => {
+        if (!input) return;
+        killTypeTween();
+        const text = t.cancel;
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        if (typeof gsap === "undefined" || reduceMotion) {
+            input.placeholder = text;
+            return;
+        }
+
+        input.placeholder = "";
+        const proxy = { n: 0 };
+        typeTween = gsap.to(proxy, {
+            n: text.length,
+            duration: 1.5,
+            ease: "none",
+            onUpdate() {
+                input.placeholder = text.slice(0, Math.round(proxy.n));
+            },
+            onComplete() {
+                input.placeholder = text;
+                typeTween = null;
+            },
+        });
+    };
+
     const clear = () => {
+        killTypeTween();
         if (!input) return;
         input.value = "";
         resetInputState(input);
@@ -187,6 +224,7 @@ export function initTriangle() {
 
     if (input) {
         input.addEventListener("focus", () => {
+            killTypeTween();
             resetInputState(input);
             input.placeholder = defaultPlaceholder;
         });
@@ -197,7 +235,7 @@ export function initTriangle() {
     if (cancelEl) {
         cancelEl.addEventListener("click", () => {
             clear();
-            if (input) input.placeholder = t.cancel;
+            typeCancelPlaceholder();
         });
     }
 

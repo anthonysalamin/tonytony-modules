@@ -5,8 +5,9 @@
  * Copy follows the URL locale (/fr/, /de/, default en).
  *
  * @build 15.08.26
- * @updated 15.08.26 PHT
+ * @updated 19.08.26 PHT
  * @author TONYTONY Sàrl
+ * @dependencies GSAP
  */
 
 const COPY = {
@@ -21,7 +22,7 @@ const COPY = {
     fr: {
         needDomain: "Oups, domaine requis.",
         invalidDomain: "Domaine incorrect.",
-        cancel: "Non n'est pas une option.",
+        cancel: "Boooooooooring.",
         emailSubject: "Contact SEO/AEO/SEA",
         emailBody: (domain) =>
             `Bonjour Anthony,\n\nJe souhaiterais discuter des signaux d'autorité pour le domaine suivant : ${domain}\n\nBonne journée !`,
@@ -29,7 +30,7 @@ const COPY = {
     de: {
         needDomain: "Ups, Domain nötig.",
         invalidDomain: "Ungültige Domain.",
-        cancel: "Ein 'Nein' akzeptiere ich nicht.",
+        cancel: "Boooooooooring.",
         emailSubject: "Kontakt SEO/AEO/SEA",
         emailBody: (domain) =>
             `Hallo Anthony,\n\nich möchte Authority-Signale für die folgende Domain besprechen: ${domain}\n\nEinen schönen Tag !`,
@@ -136,7 +137,43 @@ export function initGetcited() {
     const t = COPY[getLocale()] || COPY.en;
     const input = root.querySelector('[data-tt-cite="input"]');
     const defaultPlaceholder = input?.placeholder ?? "";
+    let typeTween;
+
+    const killTypeTween = () => {
+        if (!typeTween) return;
+        typeTween.kill();
+        typeTween = null;
+    };
+
+    const typeCancelPlaceholder = () => {
+        if (!input) return;
+        killTypeTween();
+        const text = t.cancel;
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        if (typeof gsap === "undefined" || reduceMotion) {
+            input.placeholder = text;
+            return;
+        }
+
+        input.placeholder = "";
+        const proxy = { n: 0 };
+        typeTween = gsap.to(proxy, {
+            n: text.length,
+            duration: 1.5,
+            ease: "none",
+            onUpdate() {
+                input.placeholder = text.slice(0, Math.round(proxy.n));
+            },
+            onComplete() {
+                input.placeholder = text;
+                typeTween = null;
+            },
+        });
+    };
+
     const clear = () => {
+        killTypeTween();
         if (!input) return;
         input.value = "";
         resetInputState(input);
@@ -145,6 +182,7 @@ export function initGetcited() {
 
     if (input) {
         input.addEventListener("focus", () => {
+            killTypeTween();
             resetInputState(input);
             input.placeholder = defaultPlaceholder;
         });
@@ -157,7 +195,7 @@ export function initGetcited() {
     if (cancelEl) {
         cancelEl.addEventListener("click", () => {
             clear();
-            if (input) input.placeholder = t.cancel;
+            typeCancelPlaceholder();
         });
     }
 

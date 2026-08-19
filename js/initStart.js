@@ -5,7 +5,7 @@
  * Copy follows the URL locale (/fr/, /de/, default en).
  *
  * @build 18.08.26
- * @updated 18.08.26 PHT
+ * @updated 19.08.26 PHT
  * @author TONYTONY Sàrl
  * @dependencies GSAP
  */
@@ -22,7 +22,7 @@ const COPY = {
     fr: {
         needDomain: "Oups, domaine requis.",
         invalidDomain: "Domaine incorrect.",
-        cancel: "Non n'est pas une option.",
+        cancel: "Boooooooooring.",
         emailSubject: "Demande de projet",
         emailBody: (domain) =>
             `Bonjour Anthony,\n\nJe souhaite discuter d'un projet pour le domaine suivant : ${domain}\n\nJe voudrais un devis gratuit, une réponse sous 24h, sans engagement.\n\nPassez une excellente journée !`,
@@ -30,7 +30,7 @@ const COPY = {
     de: {
         needDomain: "Ups, Domain nötig.",
         invalidDomain: "Ungültige Domain.",
-        cancel: "Ein 'Nein' akzeptiere ich nicht.",
+        cancel: "Boooooooooring.",
         emailSubject: "Projektanfrage",
         emailBody: (domain) =>
             `Hallo Anthony,\n\nich möchte ein Projekt für die folgende Domain besprechen: ${domain}\n\nIch hätte gerne ein kostenloses Angebot, eine Antwort innerhalb von 24h, ohne Verpflichtung.\n\nEinen schönen Tag noch!`,
@@ -148,6 +148,7 @@ export function initStart() {
     const closeEl = root.querySelector('[data-start="close"]');
     const cancelEl = root.querySelector('[data-start="cancel"]');
     const submitEl = root.querySelector('[data-start="submit"]');
+    let typeTween;
 
     const toggles = [...root.querySelectorAll('.tt-cite-toggles input[type="checkbox"]')];
     const shaking = new Set();
@@ -172,7 +173,41 @@ export function initStart() {
         });
     });
 
+    const killTypeTween = () => {
+        if (!typeTween) return;
+        typeTween.kill();
+        typeTween = null;
+    };
+
+    const typeCancelPlaceholder = () => {
+        if (!input) return;
+        killTypeTween();
+        const text = t.cancel;
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        if (typeof gsap === "undefined" || reduceMotion) {
+            input.placeholder = text;
+            return;
+        }
+
+        input.placeholder = "";
+        const proxy = { n: 0 };
+        typeTween = gsap.to(proxy, {
+            n: text.length,
+            duration: 1.5,
+            ease: "none",
+            onUpdate() {
+                input.placeholder = text.slice(0, Math.round(proxy.n));
+            },
+            onComplete() {
+                input.placeholder = text;
+                typeTween = null;
+            },
+        });
+    };
+
     const clear = () => {
+        killTypeTween();
         if (!input) return;
         input.value = "";
         resetInputState(input);
@@ -181,6 +216,7 @@ export function initStart() {
 
     if (input) {
         input.addEventListener("focus", () => {
+            killTypeTween();
             resetInputState(input);
             input.placeholder = defaultPlaceholder;
         });
@@ -191,7 +227,7 @@ export function initStart() {
     if (cancelEl) {
         cancelEl.addEventListener("click", () => {
             clear();
-            if (input) input.placeholder = t.cancel;
+            typeCancelPlaceholder();
         });
     }
 
