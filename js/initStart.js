@@ -194,7 +194,7 @@ export function initStart() {
         const proxy = { n: 0 };
         typeTween = gsap.to(proxy, {
             n: text.length,
-            duration: 1.5,
+            duration: 0.75,
             ease: "none",
             onUpdate() {
                 input.placeholder = text.slice(0, Math.round(proxy.n));
