@@ -29,6 +29,7 @@ import { initSublineTyped } from 'https://cdn.tonytony.ch/js/initSublineTyped.js
 import { initNavigation } from "https://cdn.tonytony.ch/js/initNavigation.js?v=1.0.0";
 import { initNavBarDisplay } from "https://cdn.tonytony.ch/js/initNavBarDisplay.js?v=1.0.0";
 import { initLanguageSwitch } from 'https://cdn.tonytony.ch/js/initLanguageSwitch.js?v=1.0.0';
+import { initLanguageSwitcherBtn } from 'https://cdn.tonytony.ch/js/initLanguageSwitcherBtn.js?v=1.0.0';
 import { initLogoTyped } from "https://cdn.tonytony.ch/js/initLogoTyped.js?v=1.0.0";
 import { initVideoHeader } from "https://cdn.tonytony.ch/js/initVideoHeader.js?v=1.0.0";
 import { initMarqueeDualHorizontal } from "https://cdn.tonytony.ch/js/initMarqueeDualHorizontal.js?v=1.0.0";
@@ -84,6 +85,7 @@ async function initApp() {
     run("Navigation", initNavigation);
     run("initSublineTyped", initSublineTyped);
     run("LanguageSwitch", initLanguageSwitch);
+    run("LanguageSwitcherBtn", initLanguageSwitcherBtn);
     run("VideoHeader", initVideoHeader);
     run("LogoTyped", initLogoTyped);
 
